@@ -11,7 +11,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC Liaison (monthly)
 - SDCC Services & Tools (weekly, TBD)
 - SDCC Staff (monthly)
-- SDCC Techical (monthly)
+- SDCC Technical (monthly)
 - US ATLAS Computing Facility (weekly, remote)
 - US ATLAS Facilities Research & Development (bi-weekly, remote)
 - WLCG AuthZ Working Group (weekly, remote)
