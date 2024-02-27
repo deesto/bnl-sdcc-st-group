@@ -21,6 +21,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Vacation: excess days taken (2)
 - CVMFS: troubleshooting ATLAS nodes flagged by HC
 - CVMFS: new OSG storage repos replicated per request (scisoft, ligo-test)
+- CVMFS: fixed broken frotntier/squid/awstats log rotation on reverse proxies with ([cron hack](https://webdocs.sdcc.bnl.gov/cgit/puppet/catalog/commit/grid/cvmfs/files/frontier-rsyslog-fix.cron?id=8c3a8bf8a20f27d6d5e5dbd634ecf42699484080)) to restart rsyslog
 - User Services: issues with authentication for US ATLAS IB voting page
 - HSF/WLCG Analysis Pipelines Workshop ([remote](https://indico.cern.ch/event/1375507/registrations/103067/))
 - ATLAS VO user management, questions, troubleshooting
