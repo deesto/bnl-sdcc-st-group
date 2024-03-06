@@ -2,6 +2,7 @@
 Work logs for the S&amp;T Group in the SDCC at BNL.
 
 ## Meetings
+- ATLAS ADC (weekly)
 - Belle II BNL Software & Computing (weekly, BNL, remote)
 - Belle II Conditions Database Coordination (monthly, remote)
 - Belle II Distributed Computing (weekly, KEK, remote)
@@ -9,13 +10,25 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Rucio Token Working Group (monthly, CERN, remote)
 - SDCC ATLAS Tier 1 (weekly, remote)
 - SDCC Liaison (monthly)
-- SDCC Services & Tools (weekly, TBD)
+- SDCC Services & Tools (weekly)
 - SDCC Staff (monthly)
 - SDCC Technical (monthly)
+- SDCC User Services section (weekly)
 - US ATLAS Computing Facility (weekly, remote)
 - US ATLAS Facilities Research & Development (bi-weekly, remote)
-- WLCG AuthZ Working Group (weekly, remote)
+- WLCG AuthZ Working Group (bi-weekly, remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
+
+## 4 - 8 Mar 2024
+- ATLAS Frontier: continued investigation, treatment of heavily loaded caches
+- ATLAS: VO user management, questions, troubleshooting
+- Belle II: conditions database maintenance, co-convener meeting, minutes, docs
+- Belle II: DIRAC, nginx debugging on development nodes (Hiro)
+- ITD/SDCC IDP changes & consolidation discussions
+- SDCC interviews [2]
+- SDCC Jira Work Management issue with user log reporting and active user licensing (JST-975586)
+- SDCC Webdocs web site redirection, maintenance, turning off Drupal (Louis)
+- US ATLAS issues with custom Drupal caching & views designed by DataArt (Christian, Louis; RT#[36546](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36546))
 
 ## 26 Feb - 1 Mar 2024
 - Vacation: excess days taken (2)
