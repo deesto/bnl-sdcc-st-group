@@ -30,12 +30,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Pilot check code [has been fixed](https://github.com/PanDAWMS/pilot-wrapper/blob/master/runpilot2-wrapper.sh#L185-L199) as a result
 - CVMFS: issues with oversized files in PHENIX repository
   - caused warnings to user on publish
-  - caused spool and server partitions to run out of space (RT#)
+  - caused spool and server partitions to run out of space (RT [#36548](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36548))
 - ITD/SDCC IDP changes & consolidation discussions
 - SDCC interviews [3]
 - SDCC Jira Work Management issue with user log reporting and active user licensing (JST-975586)
 - SDCC Webdocs web site redirection, maintenance, turning off Drupal (Louis)
-- US ATLAS issues with custom Drupal caching & views designed by DataArt (Christian, Louis; RT#[36546](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36546))
+- US ATLAS issues with custom Drupal caching & views designed by DataArt (Christian, Louis; RT [#36546](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36546))
 
 ## 26 Feb - 1 Mar 2024
 - Vacation: excess days taken (2)
