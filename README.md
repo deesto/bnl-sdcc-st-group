@@ -24,8 +24,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO user management, questions, troubleshooting
 - Belle II: conditions database maintenance, co-convener meeting, minutes, docs
 - Belle II: DIRAC, nginx debugging on development nodes (Hiro)
+- Belle II: HTCondor submission issues caused by tokens on test CE at GridKa (GGUS [#164242](https://ggus.eu/index.php?mode=ticket_info&ticket_id=164242))
+- CVMFS: continued debugging of ATLAS pilot reports of WN client issues
+  - Proved that issue was with pilot check, not with CVMFS client
+  - Pilot check code [has been fixed](https://github.com/PanDAWMS/pilot-wrapper/blob/master/runpilot2-wrapper.sh#L185-L199) as a result
+- CVMFS: issues with oversized files in PHENIX repository
+  - caused warnings to user on publish
+  - caused spool and server partitions to run out of space (RT#)
 - ITD/SDCC IDP changes & consolidation discussions
-- SDCC interviews [2]
+- SDCC interviews [3]
 - SDCC Jira Work Management issue with user log reporting and active user licensing (JST-975586)
 - SDCC Webdocs web site redirection, maintenance, turning off Drupal (Louis)
 - US ATLAS issues with custom Drupal caching & views designed by DataArt (Christian, Louis; RT#[36546](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36546))
