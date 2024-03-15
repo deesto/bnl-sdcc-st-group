@@ -20,12 +20,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 18 - 22 Mar 2024
+- SDCC ATLAS workshop: preparations and setup for meeting at BNL (Indico, events, logistics)
+- Vacation: excess days taken [1]
+
 ## 11 - 15 Mar 2024
 - ATLAS Frontier: continued investigation, treatment of heavily loaded caches
   - Analysis of cache logs, associated Frontier, Panda IDs and jobs
   - All excessive load possibly associated with jobs run by [a single user](https://bigpanda.cern.ch/tasks/?username=Zachary%20Pollock) due to high mem usage, [many failures](https://bigpanda.cern.ch/task/37387219/) on single core queues
   - ADC, Frontier group now following up with user, investigating resource limit enforcement
-- CVMFS: added disk to Stratum Zero, increased file size limits for PHENIX repo (with Joe)
+- CVMFS: added disk to Stratum Zero (with Joe), increased file size limits for PHENIX repo
+- SDCC ATLAS workshop: preparations and setup for meeting at BNL (Indico, events, logistics)
 - SDCC interviews [2]
 - SDCC Jira Work Management: continued debugging issue with user log reporting and active user licensing (JST-975586)
 - (in progress)
