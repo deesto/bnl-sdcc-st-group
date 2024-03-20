@@ -21,7 +21,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 ## 18 - 22 Mar 2024
-- SDCC ATLAS workshop: preparations and setup for meeting at BNL (Indico, events, logistics)
+- SDCC ATLAS workshop: preparation, setup, logistics for meeting at BNL (Indico, events, logistics)
+- SDCC interviews [1]
+- SDCC Jira Work Management: continued debugging issue with user log reporting and active user licensing (JST-975586)
+  - Feature request required to fix bug (in progress)
 - Vacation: excess days taken [1]
 
 ## 11 - 15 Mar 2024
@@ -33,8 +36,6 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC ATLAS workshop: preparations and setup for meeting at BNL (Indico, events, logistics)
 - SDCC interviews [2]
 - SDCC Jira Work Management: continued debugging issue with user log reporting and active user licensing (JST-975586)
-- (in progress)
-
 
 ## 4 - 8 Mar 2024
 - ATLAS Frontier: continued investigation, treatment of heavily loaded caches
