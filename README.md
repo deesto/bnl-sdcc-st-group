@@ -20,11 +20,20 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 25-29 Mar 2024
+- TBD
+
 ## 18 - 22 Mar 2024
+- Belle II: HSF proposal document for conditions database migration (Ruslan)
+- Belle II: Google repo hosting version of kubernetes for conditions has disappeared
+  -  Migrated to new hosting platform & URL; our production versions have been dropped
+- CVMFS: continued discussion of SFT repo probes in ATLAS job pilot, wrapper
+- Globus transfer testing (for Joe & Iris)
 - SDCC ATLAS workshop: preparation, setup, logistics for meeting at BNL (Indico, events, logistics)
 - SDCC interviews [1]
 - SDCC Jira Work Management: continued debugging issue with user log reporting and active user licensing (JST-975586)
   - Feature request required to fix bug (in progress)
+- SDCC Projects: initial discussion on possible Prometheus/ELK monitoring pilot
 - Vacation: excess days taken [1]
 
 ## 11 - 15 Mar 2024
