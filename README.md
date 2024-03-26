@@ -21,7 +21,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 ## 25-29 Mar 2024
-- TBD
+- ATLAS: continued investigation of BNL & ATLAS-wide pilot failures related to reported CVMFS client mount issues
+- ATLAS: edited software tutorial documentation to clarify references to VO membership
+  - https://gitlab.cern.ch/atlas-sw-git/atlassoftwaredocs/-/merge_requests/693
+- ATLAS: VO user management, questions, extensive troubleshooting
+  - Investigation of reported compromised identity ("Mark Rosenbaum") & attempts to acquire VO membership (EGI-CSIRT, Mario)
+- Belle II: conditions database infrastructure deployment and maintenance issues
+  - Google has moved Kubernetes repo from previous hosting to new platform, dropped our production package version
+  - Exploring possible migration of all services to new pllatform & versions, or possiblle migration to OKD
+- Jira: accounting issue reported, finally opened related feature request
+  - https://support.atlassian.com/requests/JST-975586
+  - https://jira.atlassian.com/browse/ACCESS-1781
 
 ## 18 - 22 Mar 2024
 - Belle II: HSF proposal document for conditions database migration (Ruslan)
