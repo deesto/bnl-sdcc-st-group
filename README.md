@@ -27,11 +27,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO user management, questions, extensive troubleshooting
   - Investigation of reported compromised identity ("Mark Rosenbaum") & attempts to acquire VO membership (EGI-CSIRT, Mario)
 - Belle II: conditions database infrastructure deployment and maintenance issues
-  - Google has moved Kubernetes repo from previous hosting to new platform, dropped our production package version
-  - Exploring possible migration of all services to new pllatform & versions, or possiblle migration to OKD
+  - Google has moved Kubernetes repo [from previous hosting](https://packages.cloud.google.com/yum/repos/kubernetes-el7-\$basearch) to [new platform](https://pkgs.k8s.io), dropped our production package versions
+  - Exploring possible migration of all services to new platform & versions, or possible migration to OKD
+  - Temporarily disabled k8s repo file in production on all conditions hosts to fix broken Puppet runs
 - Jira: accounting issue reported, finally opened related feature request
   - https://support.atlassian.com/requests/JST-975586
   - https://jira.atlassian.com/browse/ACCESS-1781
+- SDCC: proposal talk to EIC Computing Retreat for improved monitoring (Prometheus, ELK, grok)
 
 ## 18 - 22 Mar 2024
 - Belle II: HSF proposal document for conditions database migration (Ruslan)
