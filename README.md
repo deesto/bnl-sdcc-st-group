@@ -30,6 +30,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Google has moved Kubernetes repo [from previous hosting](https://packages.cloud.google.com/yum/repos/kubernetes-el7-\$basearch) to [new platform](https://pkgs.k8s.io), dropped our production package versions
   - Exploring possible migration of all services to new platform & versions, or possible migration to OKD
   - Temporarily disabled k8s repo file in production on all conditions hosts to fix broken Puppet runs
+- BNL: training renewal requirement for Brookhaven Computer Facility (BCF) in ITD, (AO-BCF)
 - Jira: accounting issue reported, finally opened related feature request
   - https://support.atlassian.com/requests/JST-975586
   - https://jira.atlassian.com/browse/ACCESS-1781
