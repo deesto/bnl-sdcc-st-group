@@ -33,7 +33,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Jira: accounting issue reported, finally opened related feature request
   - https://support.atlassian.com/requests/JST-975586
   - https://jira.atlassian.com/browse/ACCESS-1781
-- SDCC: proposal talk to EIC Computing Retreat for improved monitoring (Prometheus, ELK, grok)
+- SDCC: fixes for problematic Nagios changes adding NSLS2 alerting groups and contacts
+- SDCC: [proposal talk](https://docs.google.com/presentation/d/1HWq_BFYPGfpjnXIPqDoyAzxG-ghD0WiDt49dagPK2Qk/edit?usp=sharing) with Louis to [EIC Computing Retreat](https://indico.bnl.gov/event/22825/) for improved monitoring (Prometheus, ELK, grok)
 
 ## 18 - 22 Mar 2024
 - Belle II: HSF proposal document for conditions database migration (Ruslan)
