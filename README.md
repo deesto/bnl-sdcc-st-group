@@ -26,6 +26,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - https://gitlab.cern.ch/atlas-sw-git/atlassoftwaredocs/-/merge_requests/693
 - ATLAS: VO user management, questions, extensive troubleshooting
   - Investigation of reported compromised identity ("Mark Rosenbaum") & attempts to acquire VO membership (EGI-CSIRT, Mario)
+  - Issues with user VO membership expiration caused by ATLAS IAM upgrade, nullifying VO AUP signing dates
 - Belle II: conditions database infrastructure deployment and maintenance issues
   - Google has moved Kubernetes repo [from previous hosting](https://packages.cloud.google.com/yum/repos/kubernetes-el7-\$basearch) to [new platform](https://pkgs.k8s.io), dropped our production package versions
   - Exploring possible migration of all services to new platform & versions, or possible migration to OKD
