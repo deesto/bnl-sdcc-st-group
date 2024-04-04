@@ -20,6 +20,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## US ATLAS quarterly summary (Apr 2024)
+
+## 1-5 Apr 2024
+
 ## 25-29 Mar 2024
 - ATLAS: continued investigation of BNL & ATLAS-wide pilot failures related to reported CVMFS client mount issues
 - ATLAS: edited software tutorial documentation to clarify references to VO membership
