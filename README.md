@@ -21,8 +21,19 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 ## US ATLAS quarterly summary (Apr 2024)
+- ATLAS: VO administration, maintenance, troubleshooting, user support; VOMS->IAM/token planning, testing
+- CVMFS: Stratum Zero (US ATLAS/SDCC), Stratum One (ATLAS + all of OSG & WLCG) server, cache, repository support & maintenance
 
 ## 1-5 Apr 2024
+- Belle II: continued investigation and treatment of broken k8s repos for conditions database hosts & packages
+  - DB dump and test DB server configuration for new OKD testbed
+- CVMFS: continued investigation of reports of WNs with problematic ATLAS CVMFS client mounts
+  - [RT#36646](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36646) yet another case, this time on a spar node
+- CVMFS: [confirmed with PHENIX](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36548 ) that recent config updates & file limit increases solved their container repo issues
+- SDCC: Prometheus intro talk at [Services & Tools group meeting](https://docs.google.com/document/d/1Ggue0K_m-5rEBjO5unRMr5qZquTN1BbjKqik_q3CaSU/edit); exploratory discussions with staff, sPHENIX
+  - Louis setting up new test instance
+- US ATLAS: changes to web site authentication & SSO to enable CERN login (Chris, Louis)
+  - CERN SNOW request for CERN SSO OAuth 2.0 client ID & secret ([INC3810204](https://cern.service-now.com/service-portal?id=ticket&table=u_request_fulfillment&n=INC3810204),[RQF2622183](https://cern.service-now.com/service-portal?id=ticket&table=u_request_fulfillment&n=RQF2622183))
 
 ## 25-29 Mar 2024
 - ATLAS: continued investigation of BNL & ATLAS-wide pilot failures related to reported CVMFS client mount issues
