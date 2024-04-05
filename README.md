@@ -29,8 +29,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 ## 1-5 Apr 2024
 - Belle II: continued investigation and mitigation of broken k8s repos for conditions database hosts & packages
   - DB dump and test DB server configuration for new OKD testbed
-- Belle II: investigated reports by calibration team of low failure rate (~0.1%) connectivity from KEK to conditions database
+- Belle II: investigated reports by calibration, data processing teams of low failure rate (~0.1%) connectivity from KEK to conditions database
   - Extensive connectivity & load testing with zero failure rate, errors possible in calibration setup environment at KEK
+  - Excessive requests coming from INFN Squid overloaded service, caused response times <30s for brief periods
 - Belle II Sites meeting off-hours participation, status reports & collaboration on site plans (w/Hiro)
 - CVMFS: continued investigation of reports of WNs with problematic ATLAS CVMFS client mounts
   - [RT#36646](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36646) yet another case, this time on a spar node
@@ -38,6 +39,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: Prometheus intro talk at [Services & Tools group meeting](https://docs.google.com/document/d/1Ggue0K_m-5rEBjO5unRMr5qZquTN1BbjKqik_q3CaSU/edit); exploratory discussions with staff, sPHENIX
   - Louis setting up new test instance
 - US ATLAS: changes to web site authentication & SSO to enable CERN login (Chris, Louis)
+  - Changes to login workflow to simplify process & options for US ATLAS users
   - CERN SNOW request for CERN SSO OAuth 2.0 client ID & secret ([INC3810204](https://cern.service-now.com/service-portal?id=ticket&table=u_request_fulfillment&n=INC3810204),[RQF2622183](https://cern.service-now.com/service-portal?id=ticket&table=u_request_fulfillment&n=RQF2622183))
 
 ## 25-29 Mar 2024
