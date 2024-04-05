@@ -22,11 +22,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 ## US ATLAS quarterly summary (Apr 2024)
 - ATLAS: VO administration, maintenance, troubleshooting, user support; VOMS->IAM/token planning, testing
-- CVMFS: Stratum Zero (US ATLAS/SDCC), Stratum One (ATLAS + all of OSG & WLCG) server, cache, repository support & maintenance
+- ATLAS: Frontier site cache maintenance, troubleshooting, support
+- CVMFS: Stratum Zero (US ATLAS/SDCC), Stratum One (ATLAS + all of OSG & WLCG) servers, caches, repository support & maintenance
+- SDCC: User Support section leadership (user accounts, web presence, service troubleshooting)
 
 ## 1-5 Apr 2024
-- Belle II: continued investigation and treatment of broken k8s repos for conditions database hosts & packages
+- Belle II: continued investigation and mitigation of broken k8s repos for conditions database hosts & packages
   - DB dump and test DB server configuration for new OKD testbed
+- Belle II: investigated reports by calibration team of low failure rate (~0.1%) connectivity from KEK to conditions database
+  - Extensive connectivity & load testing with zero failure rate, errors possible in calibration setup environment at KEK
+- Belle II Sites meeting off-hours participation, status reports & collaboration on site plans (w/Hiro)
 - CVMFS: continued investigation of reports of WNs with problematic ATLAS CVMFS client mounts
   - [RT#36646](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36646) yet another case, this time on a spar node
 - CVMFS: [confirmed with PHENIX](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36548 ) that recent config updates & file limit increases solved their container repo issues
