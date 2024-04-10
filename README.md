@@ -26,6 +26,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: Stratum Zero (US ATLAS/SDCC), Stratum One (ATLAS + all of OSG & WLCG) servers, caches, repository support & maintenance
 - SDCC: User Support section leadership (user accounts, web presence, service troubleshooting)
 
+## 8-12 Apr 2024
+- Belle II: continued extensive investigation of reported conditions database access failures from KEKCC & DESY
+  - No issues found in the conditions services, servers, logs; all read-only tests succeed
+  - Issues seen only in jobs using authorized JWT tokens on payload uploads to large global tags (~73k files)
+  - Possible issues with [implementation](https://gitlab.desy.de/belle2/software/basf2/-/blob/main/framework/scripts/conditions_db/cli_main.py?ref_type=heads#L400-402) of construction of global tag end points in basf2 client framework
+- SDCC: [ACAT Highlights meeting](https://indico.bnl.gov/event/22928/) (NPPS & SDCC)
+- Vacation: excess days taken [1]
+
 ## 1-5 Apr 2024
 - Belle II: continued investigation and mitigation of broken k8s repos for conditions database hosts & packages
   - DB dump and test DB server configuration for new OKD testbed
