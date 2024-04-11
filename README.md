@@ -7,6 +7,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II Conditions Database Coordination (monthly, remote)
 - Belle II Distributed Computing (weekly, KEK, remote)
 - CVMFS Coordination (monthly, CERN, remote)
+- NPP All Hands Meetings (quarterly)
 - Rucio Token Working Group (monthly, CERN, remote)
 - SDCC ATLAS Tier 1 (weekly, remote)
 - SDCC Liaison (monthly)
@@ -24,6 +25,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO administration, maintenance, troubleshooting, user support; VOMS->IAM/token planning, testing
 - ATLAS: Frontier site cache maintenance, troubleshooting, support
 - CVMFS: Stratum Zero (US ATLAS/SDCC), Stratum One (ATLAS + all of OSG & WLCG) servers, caches, repository support & maintenance
+- SDCC: facility infrastructure and support (staff & users)
 - SDCC: User Support section leadership (user accounts, web presence, service troubleshooting)
 
 ## 8-12 Apr 2024
@@ -32,6 +34,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Issues seen only in jobs using authorized JWT tokens on payload uploads to large global tags (~73k files)
   - Possible issues with [implementation](https://gitlab.desy.de/belle2/software/basf2/-/blob/main/framework/scripts/conditions_db/cli_main.py?ref_type=heads#L400-402) of construction of global tag end points in basf2 client framework
 - SDCC: [ACAT Highlights meeting](https://indico.bnl.gov/event/22928/) (NPPS & SDCC)
+- SDCC: RT user support
+- SDCC: staff opening interviews [1]
 - Vacation: excess days taken [1]
 
 ## 1-5 Apr 2024
