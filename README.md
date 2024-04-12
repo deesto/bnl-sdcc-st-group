@@ -34,6 +34,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Issues seen only in jobs using authorized JWT tokens on payload uploads to large global tags (~73k files)
   - Possible issues with [implementation](https://gitlab.desy.de/belle2/software/basf2/-/blob/main/framework/scripts/conditions_db/cli_main.py?ref_type=heads#L400-402) of construction of global tag end points in basf2 client framework
 - NPP: all-hands meeting (DEI topics only)
+- NPPS: [ePIC collaboration tools and technologies](https://indico.bnl.gov/event/22938/) meeting
 - SDCC: [ACAT Highlights meeting](https://indico.bnl.gov/event/22928/) (NPPS & SDCC)
 - SDCC: RT user support
 - SDCC: staff opening interviews [1]
