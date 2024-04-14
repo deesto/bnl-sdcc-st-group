@@ -28,6 +28,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: facility infrastructure and support (staff & users)
 - SDCC: User Support section leadership (user accounts, web presence, service troubleshooting)
 
+## 13-19 Apr
+- Belle II: continued extensive investigation of reported conditions database access failures from KEKCC & DESY
+- CVMFS: revived investigation of ATLAS reports of CVMFS client issues on WNs ([RT#36674](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36674))
+- Jira: issue, epic type fixes for Linux Farm & WLCG Monitoring projects, moved epic from one to the other (Doug)
+
 ## 8-12 Apr 2024
 - Belle II: continued extensive investigation of reported conditions database access failures from KEKCC & DESY
   - No issues found in the conditions services, servers, logs; all read-only tests succeed
@@ -35,7 +40,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Possible issues with [implementation](https://gitlab.desy.de/belle2/software/basf2/-/blob/main/framework/scripts/conditions_db/cli_main.py?ref_type=heads#L400-402) of construction of global tag end points in basf2 client framework
 - NPP: all-hands meeting (DEI topics only)
 - NPPS: [ePIC collaboration tools and technologies](https://indico.bnl.gov/event/22938/) meeting
-- SDCC: [ACAT Highlights meeting](https://indico.bnl.gov/event/22928/) (NPPS & SDCC)
+- SDCC: [ACAT Highlights meeting](https://indico.bnl.gov/event/22928/) (NPPS & SDCC) meeting
 - SDCC: RT user support
 - SDCC: staff opening interviews [1]
 - Vacation: excess days taken [1]
