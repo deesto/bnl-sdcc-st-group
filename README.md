@@ -21,17 +21,28 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 13-19 Apr
+- ATLAS: VO user management, questions, troubleshooting
+- Belle II: continued extensive investigation of reported conditions database access failures from KEKCC & DESY
+  - Still no local issues found in the conditions services, servers, logs; all service, connection, & data read tests continue to succeed
+  - Multiple non-service-related issues found with payload upload operations:
+    - JWT formatting errors (wrong number of '.' characters inserted into issued JWTs, path to token files not recognized)
+    - Too many payload files uploaded to a single GT (73k)
+    - Extended JWT lifetimes not long enough for Calibration & Data Processing upload procedures
+    - IOV aggregation code for cloning GTs [needs improvement](https://gitlab.desy.de/belle2/software/basf2/-/issues/8119/)
+- BNL: asset validation (laptop, desktop, and a server & JBOD that GS group has moved to CDCE as spares)
+- CVMFS: revived investigation of ATLAS reports of CVMFS client issues on WNs ([RT#36674](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36674))
+- CVMFS: [request from OSG](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36682) to replicate a new repo (neurodesk) in a new non-OSG, Australian domain (ardc.edu.au)
+- Jira: issue, epic type fixes for Linux Farm & WLCG Monitoring projects, moved epic from one to the other (Doug)
+- SDCC: ePIC Phonebook/InvenioRDM intergration meeting
+- SDCC: ePIC/sPHENIX PD FY25 meeting
+
 ## US ATLAS quarterly summary (Apr 2024)
 - ATLAS: VO administration, maintenance, troubleshooting, user support; VOMS->IAM/token planning, testing
 - ATLAS: Frontier site cache maintenance, troubleshooting, support
 - CVMFS: Stratum Zero (US ATLAS/SDCC), Stratum One (ATLAS + all of OSG & WLCG) servers, caches, repository support & maintenance
 - SDCC: facility infrastructure and support (staff & users)
 - SDCC: User Support section leadership (user accounts, web presence, service troubleshooting)
-
-## 13-19 Apr
-- Belle II: continued extensive investigation of reported conditions database access failures from KEKCC & DESY
-- CVMFS: revived investigation of ATLAS reports of CVMFS client issues on WNs ([RT#36674](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36674))
-- Jira: issue, epic type fixes for Linux Farm & WLCG Monitoring projects, moved epic from one to the other (Doug)
 
 ## 8-12 Apr 2024
 - Belle II: continued extensive investigation of reported conditions database access failures from KEKCC & DESY
