@@ -21,6 +21,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 22-26 Apr
+- SDCC: ePIC/sPHENIX PD FY25 meeting
+- US ATLAS: ATLAS/IRIS-HEP Kubernetes Hackathon, [Chicago](https://indico.cern.ch/event/1384683/)
+
 ## 13-19 Apr
 - ATLAS: VO user management, questions, troubleshooting
 - Belle II: continued extensive investigation of reported conditions database access failures from KEKCC & DESY
@@ -30,8 +34,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
     - Too many payload files uploaded to a single GT (73k)
     - Extended JWT lifetimes not long enough for Calibration & Data Processing upload procedures
     - IOV aggregation code for cloning GTs [needs improvement](https://gitlab.desy.de/belle2/software/basf2/-/issues/8119/)
+- Belle II: Rucio load issues caused by invalid client GeoIP location requests
 - BNL: asset validation (laptop, desktop, and a server & JBOD that GS group has moved to CDCE as spares)
 - CVMFS: revived investigation of ATLAS reports of CVMFS client issues on WNs ([RT#36674](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36674))
+  - Also seen at other sites with same WN setup as BNL, e.g., [AGLT2](https://github.com/cvmfs/cvmfs/issues/3517)
 - CVMFS: [request from OSG](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36682) to replicate a new repo (neurodesk) in a new non-OSG, Australian domain (ardc.edu.au)
 - Jira: issue, epic type fixes for Linux Farm & WLCG Monitoring projects, moved epic from one to the other (Doug)
 - SDCC: ePIC Phonebook/InvenioRDM intergration meeting
