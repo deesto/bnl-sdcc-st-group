@@ -22,7 +22,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 ## 22-26 Apr
+- ATLAS: VO user management, questions, troubleshooting
+- ATLAS: found & opened [new Github issue](https://github.com/indigo-iam/iam/issues/755) for IAM not displaying users' institution info to admins
 - SDCC: ePIC/sPHENIX PD FY25 meeting
+- CVMFS: continued discussions on [request from OSG](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36682) 
 - US ATLAS: ATLAS/IRIS-HEP Kubernetes Hackathon, [Chicago](https://indico.cern.ch/event/1384683/)
 
 ## 13-19 Apr
