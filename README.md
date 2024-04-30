@@ -21,6 +21,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 27 Apr - 3 May
+- ATLAS Frontier: overloaded again
+- Belle II: conditions DB host EOL, testing, OKD
+- SDCC: ePIC/sPHENIX PD FY25 meeting
+- SDCC: many services affected by EL7 EOL need to be migrated (e.g., Belle II CDB & DDM, CVMFS infra)
+  - GS to obtain extended support for EL7 guests within RHEV from ITD (while RHEV remains in support)
+
 ## 22-26 Apr
 - ATLAS: VO user management, questions, troubleshooting
 - ATLAS: found & opened [new Github issue](https://github.com/indigo-iam/iam/issues/755) for IAM not displaying users' institution info to admins
