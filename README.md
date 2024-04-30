@@ -22,18 +22,32 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 ## 27 Apr - 3 May
-- ATLAS Frontier: overloaded again
-- Belle II: conditions DB host EOL, testing, OKD
-- SDCC: ePIC/sPHENIX PD FY25 meeting
+- ATLAS Frontier: local caches overloaded again by analysis client requests for six days (23-28 Apr)
+  - Investigation continues with Frontier WG, ADC; no response to local coordination inqueries
+- ATLAS: VO user management, questions, troubleshooting
+- Belle II: conditions DB host EOL, testing on HSF OKD replacement
+  - Production DB dumps, infrastructure review, component replication
+- CVMFS: WLCG reports of slow replication of unpacked repo (28 Apr)
+  - No issues seen in service, possibly related to throughput slowdown due to degraded network ports
+  - Weekly spike in disk IO on Saturdays may be causing interference
+  - RHEV stole 1/3 of VM system memory (125G to 84G) as not guaranteed
+    - Required reconfiguration of VM memory in RHEV, reboot of Stratum One host (cvmfs-s1c) to reclaim lost memory
+- CVMFS: network issues on NetApp A400
+  - Issues found on two of four ports, no issues seen on network
+  - Firmware upgrade on A400 to attempt to fix, clear reported port issues
+  - Required post-upgrade fix to set one of two inter-connection ports to use proper route (Joe, Mark)
+- SDCC: ePIC/sPHENIX PD FY25 meeting, outline review, subject summary
+- SDCC: monitoring PD FY24 meetings, discussions, outline of work
+  - Monitoring/Prometheus proposal accepted by BNL for Program Development FY24 reserve funds for EIC 
 - SDCC: many services affected by EL7 EOL need to be migrated (e.g., Belle II CDB & DDM, CVMFS infra)
   - GS to obtain extended support for EL7 guests within RHEV from ITD (while RHEV remains in support)
 
 ## 22-26 Apr
 - ATLAS: VO user management, questions, troubleshooting
 - ATLAS: found & opened [new Github issue](https://github.com/indigo-iam/iam/issues/755) for IAM not displaying users' institution info to admins
-- SDCC: ePIC/sPHENIX PD FY25 meeting
 - CVMFS: minor upgrade to client and server versions on server and replica hosts due to useless GeoIP DB issue
 - CVMFS: continued discussions on [request from OSG](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36682) 
+- SDCC: ePIC/sPHENIX PD FY25 meeting
 - US ATLAS: ATLAS/IRIS-HEP Kubernetes Hackathon, [Chicago](https://indico.cern.ch/event/1384683/)
 
 ## 13-19 Apr
