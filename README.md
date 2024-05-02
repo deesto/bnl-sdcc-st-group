@@ -27,6 +27,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO user management, questions, troubleshooting
 - Belle II: conditions DB host EOL, testing on HSF OKD replacement
   - Production DB dumps, infrastructure review, component replication
+- Belle II: issues with conditions access reported by Software build team
+  - Overnight build from DESY (30 Apr) failed due to timed-out requests for global tags
+  - Metadata request times peaked at 30 seconds for a short period (18:30-20:30 30 Apr)
+  - Trieste squid sent > [1 million queries over three-hour span](https://monitoring.sdcc.bnl.gov/pub/grafana/d/b2cdb-gt-access/client-global-tag-access?orgId=1&from=1714512572684&to=1714523372684)
 - CVMFS: WLCG reports of slow replication of unpacked repo (28 Apr)
   - No issues seen in service, possibly related to throughput slowdown due to degraded network ports
   - Weekly spike in disk IO on Saturdays may be causing interference
@@ -37,10 +41,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Firmware upgrade on A400 to attempt to fix, clear reported port issues
   - Required post-upgrade fix to set one of two inter-connection ports to use proper route (Joe, Mark)
 - SDCC: ePIC/sPHENIX PD FY25 meeting, outline review, subject summary
+- SDCC: ePIC Phonebook/InvenioRDM intergration meeting
 - SDCC: monitoring PD FY24 meetings, discussions, outline of work
   - Monitoring/Prometheus proposal accepted by BNL for Program Development FY24 reserve funds for EIC 
 - SDCC: many services affected by EL7 EOL need to be migrated (e.g., Belle II CDB & DDM, CVMFS infra)
   - GS to obtain extended support for EL7 guests within RHEV from ITD (while RHEV remains in support)
+- US ATLAS: summary of CERN IAM deployment status & changes for R&D group
 
 ## 22-26 Apr
 - ATLAS: VO user management, questions, troubleshooting
