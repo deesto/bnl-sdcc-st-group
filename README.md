@@ -21,6 +21,21 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 4-10 May
+- ATLAS: VO user management, questions, troubleshooting
+- ATLAS: multiple changes, events involving VOMS->IAM transition
+  - Inconsistencies with user VO status sync
+  - Phase-out of VOMS servers in WLCG (ATLAS)
+    - Removal of `/etc/vomses`. reliance on LSC files for end points
+- BNL: annual JTA review & confirmation
+- CVMFS: added replication of new CMS repository (cms-griddata.cern.ch) per [GGUS #166626](https://ggus.eu/index.php?mode=ticket_info&ticket_id=166626)
+- CVMFS: investigation of periodic I/O issues on replica inhibiting updates of large repos over weekend
+  - Cron collecting repo size stats runs every weekend, uses too much CPU & I/O
+  - Possibility to replace cron with stats from native NetApp API for directory sizes
+- SDCC: User Services group discussions on NX upgrade, Foreman upgrade, Mattermost upgrade, web server space issues (web01)
+  - Need to upgrade old (EL6/7) web servers 
+- US ATLAS: VOMS role, group fixes for NET2 admin
+
 ## 27 Apr - 3 May
 - ATLAS Frontier: local caches overloaded again by analysis client requests for six days (23-28 Apr)
   - Investigation continues with Frontier WG, ADC; no response to local coordination inqueries
