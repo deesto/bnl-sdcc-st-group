@@ -26,7 +26,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO user management, questions, troubleshooting
 - ATLAS: multiple changes, events related to VOMS->IAM transition
   - Inconsistencies with user VO status sync
-    - >50 users disabled in IAM but valid in VOMS had to be fixed by hand (IAM curl API commands)
+    - `>`50 users disabled in IAM but valid in VOMS had to be fixed by hand (IAM curl API commands)
   - Phase-out of VOMS servers in WLCG (ATLAS)
     - Removal of `/etc/vomses`. reliance on LSC files for end points [ADC Jira](https://its.cern.ch/jira/browse/ADCINFR-214)
 - Belle II: proposal for moving conditions database from isolated kubelets to SDCC OKD/OpenShift (Ruslan)
