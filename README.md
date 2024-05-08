@@ -8,6 +8,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II Distributed Computing (weekly, KEK, remote)
 - CVMFS Coordination (monthly, CERN, remote)
 - NPP All Hands Meetings (quarterly)
+- NPPS Group Meetings (bi-weekly)
 - Rucio Token Working Group (monthly, CERN, remote)
 - SDCC ATLAS Tier 1 (weekly, remote)
 - SDCC Liaison (monthly)
@@ -23,10 +24,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 ## 4-10 May
 - ATLAS: VO user management, questions, troubleshooting
-- ATLAS: multiple changes, events involving VOMS->IAM transition
+- ATLAS: multiple changes, events related to VOMS->IAM transition
   - Inconsistencies with user VO status sync
+    - >50 users disabled in IAM but valid in VOMS had to be fixed by hand (IAM curl API commands)
   - Phase-out of VOMS servers in WLCG (ATLAS)
-    - Removal of `/etc/vomses`. reliance on LSC files for end points
+    - Removal of `/etc/vomses`. reliance on LSC files for end points [ADC Jira](https://its.cern.ch/jira/browse/ADCINFR-214)
+- Belle II: proposal for moving conditions database from isolated kubelets to SDCC OKD/OpenShift (Ruslan)
+  - Internal discussions on partitioning, funding potential OpenShift provisioning and storage
 - BNL: annual JTA review & confirmation
 - CVMFS: added replication of new CMS repository (cms-griddata.cern.ch) per [GGUS #166626](https://ggus.eu/index.php?mode=ticket_info&ticket_id=166626)
 - CVMFS: investigation of periodic I/O issues on replica inhibiting updates of large repos over weekend
@@ -34,6 +38,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Possibility to replace cron with stats from native NetApp API for directory sizes
 - SDCC: User Services group discussions on NX upgrade, Foreman upgrade, Mattermost upgrade, web server space issues (web01)
   - Need to upgrade old (EL6/7) web servers 
+- sPHENIX: meeting (Saroj, Chris P) to discuss NX upgrade, KDE client settings migration (which is [simple](https://discuss.kde.org/t/how-do-i-migrate-my-kde-settings/3074/2))
 - US ATLAS: VOMS role, group fixes for NET2 admin
 
 ## 27 Apr - 3 May
