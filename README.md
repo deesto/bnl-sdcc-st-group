@@ -29,13 +29,22 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
     - `>`50 users disabled in IAM but valid in VOMS had to be fixed by hand (IAM curl API commands)
   - Phase-out of VOMS servers in WLCG (ATLAS)
     - Removal of `/etc/vomses`. reliance on LSC files for end points [ADC Jira](https://its.cern.ch/jira/browse/ADCINFR-214)
+    - OSG published updated VO package (v136) on 9 May (OSG 3.6 loses support 30 Jun)
+  - Upcoming training/info sessions for VO admins to discuss & demo IAM
 - Belle II: proposal for moving conditions database from isolated kubelets to SDCC OKD/OpenShift (Ruslan)
   - Internal discussions on partitioning, funding potential OpenShift provisioning and storage
+  - Gained statistics on payload storage (27G), files (572048), average sizes (47.2K)
+- Belle II: requires HTCondor-CE upgrade, new robot proxies installed on gate keepers [RT#36756](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36756)
 - BNL: annual JTA review & confirmation
+- BNL: issue reported by HR with submitted timecard from Sep 2023 not being submitted
+  - Sep 2023 was transition month from PeopleSoft to Workday. Card was properly submitted. HR is investigating.
 - CVMFS: added replication of new CMS repository (cms-griddata.cern.ch) per [GGUS #166626](https://ggus.eu/index.php?mode=ticket_info&ticket_id=166626)
 - CVMFS: investigation of periodic I/O issues on replica inhibiting updates of large repos over weekend
   - Cron collecting repo size stats runs every weekend, uses too much CPU & I/O
   - Possibility to replace cron with stats from native NetApp API for directory sizes
+- CVMFS: investigation of reported WN issues leading to ATLAS site black listing
+  - ATLAS repos on old clients ran out of file descriptors; other repos unaffected
+- SDCC: staff position interviews [1]
 - SDCC: User Services group discussions on NX upgrade, Foreman upgrade, Mattermost upgrade, web server space issues (web01)
   - Need to upgrade old (EL6/7) web servers 
 - sPHENIX: meeting (Saroj, Chris P) to discuss NX upgrade, KDE client settings migration (which is [simple](https://discuss.kde.org/t/how-do-i-migrate-my-kde-settings/3074/2))
