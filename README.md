@@ -22,6 +22,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 11-17 May
+- ATLAS: VO user management, questions, troubleshooting
+  - Fix for broken Rucio user names due to errant VOMS user nicknames (defects invisible in VOMS interface)
+  - Full list of inconsistencies [reported by Petr](https://docs.google.com/spreadsheets/d/1lLktYujJizY-cZ02qFn7rWwZ-qyQMScp-RYIHLe_pB0/edit#gid=0)
+- ATLAS: [user issues](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36767) with grid authentication due to cron missing from EL9 upgrade to ATLAS CVMFS build host (reported to ADC DPA list but not elsewhere)
+- Belle II: KEK DIRAC upgrade 14 May, drained jobs 13 May to clear queue until upgrade concludes
+- CVMFS: reported ATLAS pilot/wrapper repo check issues to WLCG CVMFS WG
+- SDCC: User Services discussions on [user reported documentation issues](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36746), and resulting doc [[1](https://racfjira.atlassian.net/browse/WEB-22), [2](https://racfjira.atlassian.net/browse/WEB-23)] web migration [[3](https://racfjira.atlassian.net/browse/WEB-24)] mitigation plans.
+
 ## 4-10 May
 - ATLAS: VO user management, questions, troubleshooting
 - ATLAS: multiple changes, events related to VOMS->IAM transition
