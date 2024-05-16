@@ -1,7 +1,7 @@
 # BNL SDCC S&T Group
 Work logs for the S&amp;T Group in the SDCC at BNL.
 
-## Meetings
+## Ongoing Meetings
 - ATLAS ADC (weekly)
 - Belle II BNL Software & Computing (weekly, BNL, remote)
 - Belle II Conditions Database Coordination (monthly, remote)
@@ -18,6 +18,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC User Services section (weekly)
 - US ATLAS Computing Facility (weekly, remote)
 - US ATLAS Facilities Research & Development (bi-weekly, remote)
+- US ATLAS Tier 2 (weekly)
 - WLCG AuthZ Working Group (bi-weekly, remote)
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
@@ -27,9 +28,19 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Fix for broken Rucio user names due to errant VOMS user nicknames (defects invisible in VOMS interface)
   - Full list of inconsistencies [reported by Petr](https://docs.google.com/spreadsheets/d/1lLktYujJizY-cZ02qFn7rWwZ-qyQMScp-RYIHLe_pB0/edit#gid=0)
 - ATLAS: [user issues](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36767) with grid authentication due to cron missing from EL9 upgrade to ATLAS CVMFS build host (reported to ADC DPA list but not elsewhere)
+- Belle II: investigated new, excessive conditions request traffic from Trieste WNs bypassing site cache
 - Belle II: KEK DIRAC upgrade 14 May, drained jobs 13 May to clear queue until upgrade concludes
-- CVMFS: reported ATLAS pilot/wrapper repo check issues to WLCG CVMFS WG
+- Belle II: organized & chaired conditions database coordination meeting, provided production payload deployment details, reviewed HSF CDB proposal
+- CVMFS: reported ATLAS pilot/wrapper repo check issues to WLCG CVMFS WG, issues with SELinux file system labeling in Stratum One deployment in EL9 
+- CVMFS: added new domain, key, templates, replication for new OSG ardc.edu.au domain and neurodesk.ardc.edu.au repo per [RT #36682](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36682)
 - SDCC: User Services discussions on [user reported documentation issues](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36746), and resulting doc [[1](https://racfjira.atlassian.net/browse/WEB-22), [2](https://racfjira.atlassian.net/browse/WEB-23)] web migration [[3](https://racfjira.atlassian.net/browse/WEB-24)] mitigation plans.
+- SDCC: extensive User Services, General Services, and liaison discussions on coordinating NX server reboot downtime
+- US ATLAS: further investigation of ATLAS auth and VOMS roles, groups issues for NET2 admin
+  - CERN OpenSearch [Harvester site dashboard](https://os-atlas.cern.ch/dashboards/goto/04b4aaf4d9ff578d358fde708fbbe17d?security_tenant=global) auth seems to rely on some CERN egroup, not VO/VOMS/IAM
+- US ATLAS: questions, help for US ATLAS T2 admins trying to access SDCC Mattermost
+  - Overly complicated and obscure registration process prompted requests for docs improvement, login form relabeling
+    - 'docs.sdcc.bnl.gov' site with improved docs made public and moved into production (Louis)
+    - gitea repo moved from Louis's personal area to SDCC org, problems with absolute linking to doc base found
 
 ## 4-10 May
 - ATLAS: VO user management, questions, troubleshooting
