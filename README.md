@@ -23,12 +23,20 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 20-25 May
+- ATLAS: continues to [report CVMFS client errors on WNs at many sites](https://os-atlas.cern.ch/dashboards/app/dashboards?security_tenant=#/view/a312a030-8b0e-11e8-a7e3-ffbb2f24f6b4?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-24h,mode:quick,to:now))&_a=(description:'',filters:!(('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'006980c0-857a-11ea-9233-1dd73e396ea6',key:nativeexitcode,negate:!f,params:(query:64),type:phrase),query:(match_phrase:(nativeexitcode:64)))),fullScreenMode:!f,options:(darkTheme:!f,hidePanelTitles:!f,useMargins:!t),query:(language:lucene,query:''),timeRestore:!t,title:'Harvester%20particular%20computingsite',viewMode:view)) that fail new pilot checks
+- ATLAS: VO user management, questions, troubleshooting
+- Belle II: travel for pre-B2GM & B2GM workshops (25 May - 8 Jun)
+- Belle II: continued review & revision of conditions database migration [written proposal](https://docs.google.com/document/d/1DBDWV-wPtdnMPKqn6-vfSjagkq-wFXIRuUIjt1Lukw4/edit?usp=sharing) & [B2 Distributed Computing proposal slides](https://docs.google.com/presentation/d/1IUyvAfTALiDYxVi32YTHFng8mllI42zj9EYEGzesYro/edit?usp=sharing)
+- BNL: all-hands meeting
+- WLCG Frontier: more follow-ups to past reports of excessive ATLAS site squid use and repeated requests within jobs
+
 ## 11-17 May
 - ATLAS: VO user management, questions, troubleshooting
   - Fix for broken Rucio user names due to errant VOMS user nicknames (defects invisible in VOMS interface)
   - Full list of inconsistencies [reported by Petr](https://docs.google.com/spreadsheets/d/1lLktYujJizY-cZ02qFn7rWwZ-qyQMScp-RYIHLe_pB0/edit#gid=0)
 - ATLAS: VO admin [workshop](https://indico.cern.ch/event/1417057/) to demonstrate and [discuss](https://indico.cern.ch/event/1417057/?note=280430#2-discussion) IAM user account and proxy workflows ([slides](https://indico.cern.ch/event/1417057/contributions/5956704/attachments/2856275/5000690/IAM-user-registration-v02a-atlas-update.pdf))
-- ATLAS: [user issues](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36767) with grid authentication due to cron missing from EL9 upgrade to ATLAS CVMFS build host (reported to ADC DPA list but not elsewhere)
+- ATLAS: [user issues](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36767) with grid authentication due to cron missing from EL9 upgrade to ATLAS CVMFS build host (had been reported to ADC DPA list but not elsewhere)
 - Belle II: investigated new, excessive conditions request traffic from Trieste WNs bypassing site cache
 - Belle II: KEK DIRAC upgrade 14 May, drained jobs 13 May to clear queue until upgrade concludes
 - Belle II: organized & chaired conditions database coordination meeting, provided production payload deployment details, reviewed HSF CDB proposal
