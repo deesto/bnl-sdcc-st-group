@@ -36,6 +36,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - All submitted jobs held due to expression match with cryptic condition output; job error output showed issues with new DIRAC option (`--CVMFS_locations`)
 - Belle II: investigated slowness reported on single, user-created global tag (user_rihoppe_tracking_momSF_v0)
   - Heavy request load seen from a few sites (UVic, DESY, GridKa), but no service issues seen and reasonable response times to tests
+- BNL: tried to attend virtual DEI workshop (DEI Seminars and Workshops: Navigating Psychological Safety Hazards) but Zoom was broken (reported)
 - BNL: all-hands meeting
 - NPP: all-hands meeting (safety)
 - SDCC: consideration with Alexei of possible future collaboration & contributions by A. Alekseev to facility monitoring
