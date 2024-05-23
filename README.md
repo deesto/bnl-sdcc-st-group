@@ -26,11 +26,18 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 ## 20-25 May
 - ATLAS: continues to [report CVMFS client errors on WNs at many sites](https://os-atlas.cern.ch/dashboards/app/dashboards?security_tenant=#/view/a312a030-8b0e-11e8-a7e3-ffbb2f24f6b4?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-24h,mode:quick,to:now))&_a=(description:'',filters:!(('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'006980c0-857a-11ea-9233-1dd73e396ea6',key:nativeexitcode,negate:!f,params:(query:64),type:phrase),query:(match_phrase:(nativeexitcode:64)))),fullScreenMode:!f,options:(darkTheme:!f,hidePanelTitles:!f,useMargins:!t),query:(language:lucene,query:''),timeRestore:!t,title:'Harvester%20particular%20computingsite',viewMode:view)) that fail new pilot checks
   - More troubleshooting of IO and extended file attribute errors from CVMFS clients at UofM
+  - More reports of local errors on BNL worker nodes
 - ATLAS: VO user management, questions, troubleshooting
 - Belle II: travel for pre-B2GM & B2GM workshops (25 May - 8 Jun)
 - Belle II: continued review & revision of conditions database migration [written proposal](https://docs.google.com/document/d/1DBDWV-wPtdnMPKqn6-vfSjagkq-wFXIRuUIjt1Lukw4/edit?usp=sharing) & [B2 Distributed Computing proposal slides](https://docs.google.com/presentation/d/1IUyvAfTALiDYxVi32YTHFng8mllI42zj9EYEGzesYro/edit?usp=sharing)
-- Belle II: removed Jitendra Kumar (no longer with team) from [BNL T1 CDB support email alias](mailto:t1-belle2-cdb@bnl.gov); added RT Databases queue address so new requests will be tracked there
+- Belle II: removed Jitendra (no longer with conditions team) from [BNL T1 CDB support email alias](mailto:t1-belle2-cdb@bnl.gov); added RT Databases queue address so new requests will be tracked there
+- Belle II: [merge request](https://gitlab.desy.de/belle2/admin/jwt-server/-/merge_requests/16/commits) from Feb to remove Jitendra from validation GT list finally approved (23 May)
+- Belle II: investigated issue with all BNL jobs being held since DIRAC upgrade
+  - All submitted jobs held due to expression match with cryptic condition output; job error output showed issues with new DIRAC option (`--CVMFS_locations`)
+- Belle II: investigated slowness reported on single, user-created global tag (user_rihoppe_tracking_momSF_v0)
+  - Heavy request load seen from a few sites (UVic, DESY, GridKa), but no service issues seen and reasonable response times to tests
 - BNL: all-hands meeting
+- NPP: all-hands meeting (safety)
 - SDCC: consideration with Alexei of possible future collaboration & contributions by A. Alekseev to facility monitoring
 - SDCC: [Jira issue created](https://racfjira.atlassian.net/browse/WEB-25) to document current state of web infrastructure and services, which badly need to be updated
 - WLCG Frontier: more follow-ups to past reports of excessive ATLAS site squid use and repeated requests within jobs
