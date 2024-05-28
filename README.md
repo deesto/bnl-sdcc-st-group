@@ -23,6 +23,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 27-31 May
+- **Belle II: [Pre-B2GM Distributed Computing Workshop](https://indico.belle2.org/event/11929/) (KEK, Tsukuba, Japan)**
+- ATLAS: VO user management, questions, troubleshooting
+- ATLAS: another report of failed jobs at BNL to due broken CVMFS repos that [do not appear to have been broken](https://ggus.eu/index.php?mode=ticket_info&ticket_id=166868)
+- ATLAS: [Git merge request](https://gitlab.cern.ch/atlas-sit/librarian/-/merge_requests/29) to clean up Git keyword blacklist [still not merged after 4 years](https://gitlab.cern.ch/atlas-sit/librarian/-/merge_requests/29#note_8022704)
+- Belle II: continued investigation of jobs submission in 2-day waves, from queue max (5k) to near 0
+
 ## 20-25 May
 - ATLAS: continues to [report CVMFS client errors on WNs at many sites](https://os-atlas.cern.ch/dashboards/app/dashboards?security_tenant=#/view/a312a030-8b0e-11e8-a7e3-ffbb2f24f6b4?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-24h,mode:quick,to:now))&_a=(description:'',filters:!(('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'006980c0-857a-11ea-9233-1dd73e396ea6',key:nativeexitcode,negate:!f,params:(query:64),type:phrase),query:(match_phrase:(nativeexitcode:64)))),fullScreenMode:!f,options:(darkTheme:!f,hidePanelTitles:!f,useMargins:!t),query:(language:lucene,query:''),timeRestore:!t,title:'Harvester%20particular%20computingsite',viewMode:view)) that fail new pilot checks
   - More troubleshooting of IO and extended file attribute errors from CVMFS clients at UofM
