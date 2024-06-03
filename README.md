@@ -23,6 +23,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 2-8 Jun
+- **Belle II: [Belle II General Meeting (B2GM)]([https://indico.belle2.org/event/11929/](https://indico.belle2.org/event/11828/) (KEK, Tsukuba, Japan)**
+- ATLAS: repeated reports of failed jobs due to unavailable CVMFS repos [(GGUS #166868 re-opened)](https://ggus.eu/index.php?mode=ticket_info&ticket_id=166868)
+  - Three WNs reported with issues (acas0705, acas0965, acas1036); all investigated, no issues found with any repos on any node
+
 ## 27-31 May
 - **Belle II: [Pre-B2GM Distributed Computing Workshop](https://indico.belle2.org/event/11929/) (KEK, Tsukuba, Japan)**
 - ATLAS: VO user management, questions, troubleshooting
