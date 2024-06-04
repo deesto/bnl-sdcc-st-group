@@ -26,14 +26,19 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 ## 2-8 Jun
 - **Belle II: [Belle II General Meeting (B2GM)](https://indico.belle2.org/event/11828/) (KEK, Tsukuba, Japan)**
   - Physics talks dominated by [sudden beam loss (SBL)](https://indico.belle2.org/event/11828/contributions/75666/attachments/28829/42573/20240603B2GM-SBL.pdf) and its possible causes and consequenses
+  - First visit to KEKCC facilities (4 Jun)
+  - KEK announced annual site-wide power outage 2-5 Aug; BelleDIRAC will remain operational
+    - Tape access stopped in Aug for data migration; LSF user batch queue closes 30 Aug for sync, migration
 - ATLAS: repeated reports of failed jobs due to unavailable CVMFS repos [(GGUS #166868 re-opened)](https://ggus.eu/index.php?mode=ticket_info&ticket_id=166868)
   - Three WNs reported with issues (acas0705, acas0965, acas1036); all investigated, no issues found with any repos on any of these nodes
 - ATLAS: switch-over from VOMS Admin to IAM on 3 Jun
+  - ATLAS "team" and "alarm" groups [lost GGUS privileges due to IAM move](https://ggus.eu/index.php?mode=ticket_info&ticket_id=167033)
+- ATLAS: VO user management, questions, troubleshooting
+  - Had to ask again to remove BNL non-VO admins (Mark, Tommy, Louis) from VO admin group and notification lists
 - Belle II: issues with reduced job submission and held jobs continue
 - Belle II: issues with specific user requests for conditions timing out
-- Belle II: KEK announced annual site-wide power outage 2-5 Aug; BelleDIRAC will remain operational
-  - Tape access stopped in Aug for data migration; LSF user batch queue closes 30 Aug for sync, migration
 - SDCC: renewed expiring [Working Safely in the 725 SDCC Data Center (AO-SDCC725)](https://training.bnl.gov/Portal/AO-SDCC725) training
+- SDCC: feedback/additions to ATLAS Subsystems hardware allocation list
 - WLCG/EGI: test of [new EGI Helpdesk demo site](https://helpdesk-dev.ggus.eu/) for [GGUS replacement (Zammad)](https://indico.cern.ch/event/1369601/contributions/5917197/attachments/2856680/4996639/WLCG_Helpdesk_WLCG_Workshop_15.05.24-1.pdf)
 
 ## 27-31 May
