@@ -29,6 +29,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - First visit to KEKCC facilities (4 Jun)
   - KEK announced annual site-wide power outage 2-5 Aug; BelleDIRAC will remain operational
     - Tape access stopped in Aug for data migration; LSF user batch queue closes 30 Aug for sync, migration
+  - [Initial official proposal to experiment](https://indico.belle2.org/event/11828/contributions/77758/attachments/28893/42674/b2%20hsf%20cdb%202024.pdf) for implementation of HSF conditions database solution, with subsequent questions and technical discussion
 - ATLAS: repeated reports of failed jobs due to unavailable CVMFS repos [(GGUS #166868 re-opened)](https://ggus.eu/index.php?mode=ticket_info&ticket_id=166868)
   - Three WNs reported with issues (acas0705, acas0965, acas1036); all investigated, no issues found with any repos on any of these nodes
 - ATLAS: switch-over from VOMS Admin to IAM on 3 Jun
