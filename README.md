@@ -35,11 +35,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: switch-over from VOMS Admin to IAM on 3 Jun
   - ATLAS "team" and "alarm" groups [lost GGUS privileges due to IAM move](https://ggus.eu/index.php?mode=ticket_info&ticket_id=167033)
 - ATLAS: VO user management, questions, troubleshooting
-  - Had to ask again to remove BNL non-VO admins (Mark, Tommy, Louis) from VO admin group and notification lists
+  - Had to ask again to remove BNL non-VO admins (Mark, Tommy, Louis) from VO admin group and notification lists (done now, finally)
+  - Valid VO memberships are being suspended by IAM due to incorrect membership parameter actions (DISABLE_ACCOUNT) & states (PENDING_SUSPENSION)
+  - Current workaround is to change the membership state via [complex token CLI operations](https://codimd.web.cern.ch/muIh9zERRbSoIKK-Z4Qwjw#Using-IAM-API), which is a non-starter for some VO admins
 - Belle II: issues with reduced job submission and held jobs continue
 - Belle II: issues with specific user requests for conditions timing out
 - SDCC: renewed expiring [Working Safely in the 725 SDCC Data Center (AO-SDCC725)](https://training.bnl.gov/Portal/AO-SDCC725) training
 - SDCC: feedback/additions to ATLAS Subsystems hardware allocation list
+- SDCC: US ATLAS web site [stopped working](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36859 ). VM hosting the site was turned off, had to be restarted
 - WLCG/EGI: test of [new EGI Helpdesk demo site](https://helpdesk-dev.ggus.eu/) for [GGUS replacement (Zammad)](https://indico.cern.ch/event/1369601/contributions/5917197/attachments/2856680/4996639/WLCG_Helpdesk_WLCG_Workshop_15.05.24-1.pdf)
 
 ## 27-31 May
