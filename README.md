@@ -23,6 +23,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 10-14 Jun
+- ATLAS: VO user management, questions, troubleshooting
+  - More issues found with missing IAM functionality (e.g., [account nickname not set](https://github.com/indigo-iam/iam/issues/770), accounts not being synced to Rucio, memberships incorrectly suspended due to unknown contract termination dates) 
+- CVMFS: [followed up with CVMFS developers and experts](https://codimd.web.cern.ch/HEqxj15dSUGi_CUkGk-u6w) on repeated ATLAS pilot issue reports, to be discussed further at CERN
+  - [Another BNL WN ticket](https://ggus.eu/index.php?mode=ticket_info&ticket_id=166868) closed without much follow-up by ATLAS
+- SDCC: review, follow-ups to Alexei's FY25 PD proposal
+- SDCC: staff position interviews [1]
+
 ## 2-8 Jun
 - **Belle II: [Belle II General Meeting (B2GM)](https://indico.belle2.org/event/11828/) (KEK, Tsukuba, Japan)**
   - Physics talks dominated by [sudden beam loss (SBL)](https://indico.belle2.org/event/11828/contributions/75666/attachments/28829/42573/20240603B2GM-SBL.pdf) and its possible causes and consequenses
