@@ -29,9 +29,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: debugging and [followed up with CVMFS developers and experts](https://codimd.web.cern.ch/HEqxj15dSUGi_CUkGk-u6w) on repeated ATLAS pilot reports of CVMFS issues, to be discussed further at CERN
   - [Another BNL WN ticket](https://ggus.eu/index.php?mode=ticket_info&ticket_id=166868) closed without much follow-up by ATLAS
   - Comments and discussion on [new updates to CVMFS checks in the ATLAS pilot](https://github.com/PanDAWMS/pilot3/pull/131/) (Paul N.)
+    - Discussion moved to [CERN Jira](https://its.cern.ch/jira/browse/ATLASPANDA-998)
 - Belle II: updated expiring DESY account, password
 - Belle II: voting for incoming spokesperson to replace K. Trabelsi after current term
 - Belle II: continued presentations and discussions on replacing present conditions database deployment with HSF implementation (Ruslan)
+  - HSF CDB roadmap review, revisions, additions to new sections on future development and migration
+- Belle II: new investigations into excessive conditions request traffic from Trieste WNs via site cache
 - CVMFS: slow replcation times on Stratum One caused by repo source garbage collection, slowed by NAS connections
   - With Joe, testing changes to NetApp A400 performance tuning, increasing performance level to ["ultra" or "extreme"](https://docs.netapp.com/us-en/netapp-solutions/xcp/xcp-bp-performance-tuning.html)
 - SDCC: review, follow-ups to Alexei's FY25 PD proposal; discussions on monitoring, prototpyes, required FTE & hardware
