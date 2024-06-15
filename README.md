@@ -37,6 +37,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: new investigations into excessive conditions request traffic from Trieste WNs via site cache
 - CVMFS: slow replcation times on Stratum One caused by repo source garbage collection, slowed by NAS connections
   - With Joe, testing changes to NetApp A400 performance tuning, increasing performance level to ["ultra" or "extreme"](https://docs.netapp.com/us-en/netapp-solutions/xcp/xcp-bp-performance-tuning.html)
+- CVMFS: manual garbage collection on ATLAS nightlies and other repos to stop " CRITICAL" and "WARNING" monitoring complaints from CERN ([SLS](https://monit-grafana.cern.ch/d/plTtqczZz/sls-details?orgId=17&var-services=cvmfs_stratum1mon_bnl), [WLCG](http://wlcg-squid-monitor.cern.ch:80/cvmfsmon/api/v1.0/all&format=details&server=bnl))
 - SDCC: review, follow-ups to Alexei's FY25 PD proposal; discussions on monitoring, prototpyes, required FTE & hardware
 - SDCC: staff position interviews [1]
 
