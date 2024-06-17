@@ -26,8 +26,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 ## 15-21 Jun
 - ATLAS: provided additional feedback to Collaboration Board on grid access policy document, AUP policy
 - ATLAS: [Git merge request](https://gitlab.cern.ch/atlas-sit/librarian/-/merge_requests/29) to clean up Git keyword blacklist finally merged into production
+- ATLAS: VO user management, questions, troubleshooting
+  - [One specific issue](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC3934249) with concatenating multiple CERN accounts into a VO membership required an API fix via curl (Petr)
+- ATLAS: CERN IAM was [upgraded](https://github.com/indigo-iam/iam/commits/v1.9.0.rc.20240610/?since=2024-01-01), main fixes to AUP features in IAM dashboard
 - Belle II: checks and debugging of conditions requests coming from Trieste and overloading the metadata service (Saturday)
   - New [DESY Gitlab issue created](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/1) to track the problem
+- Belle II: participated in [Belle II Mental Wellbeing Workshop](https://indico.belle2.org/event/12235/)
+- Belle II: spokesperson election concluded with highest ranked candidate Florian Bernlochner to be ratified by next week
 - CVMFS: manual intervention over weekend to manually force check ATLAS replica to clear WLCG "warnings" on repo (Sunday, 11 hours)
 - CVMFS: follow-ups with developers on ATLAS pilot checks and issues
 - SDCC: FY'25 PD proposal additions and edits
