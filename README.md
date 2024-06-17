@@ -23,6 +23,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 15-21 Jun
+- ATLAS: provided additional feedback to Collaboration Board on grid access policy document, AUP policy
+- ATLAS: [Git merge request](https://gitlab.cern.ch/atlas-sit/librarian/-/merge_requests/29) to clean up Git keyword blacklist finally merged into production
+- Belle II: checks and debugging of conditions requests coming from Trieste and overloading the metadata service (Saturday)
+  - New [DESY Gitlab issue created](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/1) to track the problem
+- CVMFS: manual intervention over weekend to manually force check ATLAS replica to clear WLCG "warnings" on repo (Sunday, 11 hours)
+- CVMFS: follow-ups with developers on ATLAS pilot checks and issues
+- SDCC: FY'25 PD proposal additions and edits
+
 ## 10-14 Jun
 - ATLAS: VO user management, questions, troubleshooting
   - More issues found with IAM and missing functionality (e.g., [account nickname not set](https://github.com/indigo-iam/iam/issues/770), accounts not being synced to Rucio, memberships incorrectly suspended due to unknown contract termination dates) 
