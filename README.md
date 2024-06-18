@@ -26,7 +26,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 ## 15-21 Jun
 - ATLAS: provided additional feedback to Collaboration Board on grid access policy document, AUP policy
 - ATLAS: [Git merge request](https://gitlab.cern.ch/atlas-sit/librarian/-/merge_requests/29) to clean up Git keyword blacklist finally merged into production
-- ATLAS: VO user management, questions, troubleshooting
+- ATLAS: VO, IAM user management, questions, troubleshooting
   - [One specific issue](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC3934249) with concatenating multiple CERN accounts into a VO membership required an API fix via curl (Petr)
   - Other issues with VO memberships and Rucio mappings for service accounts, which must be assigned to user records but can not duplicate email address values
 - ATLAS: CERN IAM was [upgraded](https://github.com/indigo-iam/iam/commits/v1.9.0.rc.20240610/?since=2024-01-01), main fixes to AUP features in IAM dashboard
@@ -41,7 +41,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: FY'25 PD proposal, WBS 2.3.1 additions and edits
 
 ## 10-14 Jun
-- ATLAS: VO user management, questions, troubleshooting
+- ATLAS: VO, IAM user management, questions, troubleshooting
   - More issues found with IAM and missing functionality (e.g., [account nickname not set](https://github.com/indigo-iam/iam/issues/770), accounts not being synced to Rucio, memberships incorrectly suspended due to unknown contract termination dates) 
 - ATLAS: debugging and [followed up with CVMFS developers and experts](https://codimd.web.cern.ch/HEqxj15dSUGi_CUkGk-u6w) on repeated ATLAS pilot reports of CVMFS issues, to be discussed further at CERN
   - [Another BNL WN ticket](https://ggus.eu/index.php?mode=ticket_info&ticket_id=166868) closed without much follow-up by ATLAS
@@ -64,12 +64,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - First visit to KEKCC facilities (4 Jun)
   - KEK announced annual site-wide power outage 2-5 Aug; BelleDIRAC will remain operational
     - Tape access stopped in Aug for data migration; LSF user batch queue closes 30 Aug for sync, migration
+    - Details on computing affects [here](https://indico.belle2.org/event/11828/contributions/75559/attachments/29030/42887/ComputingReport-B2GMJun2024.pdf) (p15)
   - [Initial official proposal to experiment](https://indico.belle2.org/event/11828/contributions/77758/attachments/28893/42674/b2%20hsf%20cdb%202024.pdf) for implementation of HSF conditions database solution, with subsequent questions and technical discussion
 - ATLAS: repeated reports of failed jobs due to unavailable CVMFS repos [(GGUS #166868 re-opened)](https://ggus.eu/index.php?mode=ticket_info&ticket_id=166868)
   - Three WNs reported with issues (acas0705, acas0965, acas1036); all investigated, no issues found with any repos on any of these nodes
 - ATLAS: switch-over from VOMS Admin to IAM on 3 Jun
   - ATLAS "team" and "alarm" groups [lost GGUS privileges due to IAM move](https://ggus.eu/index.php?mode=ticket_info&ticket_id=167033)
-- ATLAS: VO user management, questions, troubleshooting
+- ATLAS: VO, IAM user management, questions, troubleshooting
   - Had to ask again to remove BNL non-VO admins (Mark, Tommy, Louis) from VO admin group and notification lists (done now, finally)
   - Valid VO memberships are being suspended by IAM due to incorrect membership parameter actions (DISABLE_ACCOUNT) & states (PENDING_SUSPENSION)
   - Current workaround is to change the membership state via [complex token CLI operations](https://codimd.web.cern.ch/muIh9zERRbSoIKK-Z4Qwjw#Using-IAM-API), which is a non-starter for some VO admins
