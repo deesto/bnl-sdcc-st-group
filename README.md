@@ -41,7 +41,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - OSG repos were broken/misconfigured and fixed; EGI repos hosted at RAL are unavailable as the entire replica is broken
 - SDCC: FY'25 PD proposal doc and presentation additions and edits
 - SDCC: WBS 2.3.1 CVMFS additions and edits
-- SDCC: User Services group discussions on IAM admin and issues, EL7 upgrade inventory sheet, Prometheus deployment, web and docs sites updates 
+- SDCC: User Services group discussions on IAM admin and issues, EL7 upgrade inventory sheet, Prometheus deployment, web and docs sites updates, SSH key upload issues (e.g., [1](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36906), [2](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36915))
 - SDCC: staff position interviews [2]
 
 ## 10-14 Jun
