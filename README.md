@@ -37,8 +37,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II, SDCC: VMs for B2 Rucio (blrucio0{3,4}) were reduced to minimum memory by RHEV and ran out of RAM, VMs reconfigured for more memory
 - CVMFS: manual intervention over weekend to manually force check ATLAS replica to clear WLCG "warnings" on repo (Sunday, 11 hours)
 - CVMFS: follow-ups with developers on ATLAS pilot checks and issues
-- CVMFS: found and reported replication issues with source for OSG's OASIS repository
-- SDCC: FY'25 PD proposal, WBS 2.3.1 additions and edits
+- CVMFS: found and reported replication issues with source for OSG's OASIS and all EGI repositories
+  - OSG repos were broken/misconfigured and fixed; EGI repos hosted at RAL are unavailable as the entire replica is broken
+- SDCC: FY'25 PD proposal doc and presentation additions and edits
+- SDCC: WBS 2.3.1 CVMFS additions and edits
+- SDCC: User Services group discussions on IAM admin and issues, EL7 upgrade inventory sheet, Prometheus deployment, web and docs sites updates 
+- SDCC: staff position interviews [2]
 
 ## 10-14 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
