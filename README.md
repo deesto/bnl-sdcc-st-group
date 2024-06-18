@@ -28,14 +28,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: [Git merge request](https://gitlab.cern.ch/atlas-sit/librarian/-/merge_requests/29) to clean up Git keyword blacklist finally merged into production
 - ATLAS: VO user management, questions, troubleshooting
   - [One specific issue](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC3934249) with concatenating multiple CERN accounts into a VO membership required an API fix via curl (Petr)
+  - Other issues with VO memberships and Rucio mappings for service accounts, which must be assigned to user records but can not duplicate email address values
 - ATLAS: CERN IAM was [upgraded](https://github.com/indigo-iam/iam/commits/v1.9.0.rc.20240610/?since=2024-01-01), main fixes to AUP features in IAM dashboard
 - Belle II: checks and debugging of conditions requests coming from Trieste and overloading the metadata service (Saturday)
   - New [DESY Gitlab issue created](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/1) to track the problem
 - Belle II: participated in [Belle II Mental Wellbeing Workshop](https://indico.belle2.org/event/12235/)
-- Belle II: spokesperson election concluded with highest ranked candidate Florian Bernlochner to be ratified by next week
+- Belle II: spokesperson election concluded, with highest ranked candidate Florian Bernlochner to be ratified by next week
+- Belle II, SDCC: VMs for B2 Rucio (blrucio0{3,4}) were reduced to minimum memory by RHEV and ran out of RAM, VMs reconfigured for more memory
 - CVMFS: manual intervention over weekend to manually force check ATLAS replica to clear WLCG "warnings" on repo (Sunday, 11 hours)
 - CVMFS: follow-ups with developers on ATLAS pilot checks and issues
-- SDCC: FY'25 PD proposal additions and edits
+- CVMFS: found and reported replication issues with source for OSG's OASIS repository
+- SDCC: FY'25 PD proposal, WBS 2.3.1 additions and edits
 
 ## 10-14 Jun
 - ATLAS: VO user management, questions, troubleshooting
