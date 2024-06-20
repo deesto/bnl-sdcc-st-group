@@ -30,19 +30,26 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - [One specific issue](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC3934249) with concatenating multiple CERN accounts into a VO membership required an API fix via curl (Petr)
   - Other issues with VO memberships and Rucio mappings for service accounts, which must be assigned to user records but can not duplicate email address values
 - ATLAS: CERN IAM was [upgraded](https://github.com/indigo-iam/iam/commits/v1.9.0.rc.20240610/?since=2024-01-01), main fixes to AUP features in IAM dashboard
+- ATLAS: expressed exploratory interest in [Documentation Coordinator position](https://cern.ch/ckbea), but can not self-nominate due to lack of time and ATLAS FTE
+- ATLAS: completed Strategic Collaboration Issues survey
 - Belle II: checks and debugging of conditions requests coming from Trieste and overloading the metadata service (Saturday)
   - New [DESY Gitlab issue created](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/1) to track the problem
 - Belle II: participated in [Belle II Mental Wellbeing Workshop](https://indico.belle2.org/event/12235/)
-- Belle II: spokesperson election concluded, with highest ranked candidate Florian Bernlochner to be ratified by next week
+- Belle II: spokesperson election concluded, with highest ranked candidate, Florian Bernlochner, to be ratified by next week
 - Belle II, SDCC: VMs for B2 Rucio (blrucio0{3,4}) were reduced to minimum memory by RHEV and ran out of RAM, VMs reconfigured for more memory
+- Belle II: follow-ups with Tadeas (calibration) on failed alignment on prompt calibration at BNL, but working at KEKCC
 - CVMFS: manual intervention over weekend to manually force check ATLAS replica to clear WLCG "warnings" on repo (Sunday, 11 hours)
 - CVMFS: follow-ups with developers on ATLAS pilot checks and issues
 - CVMFS: found and reported replication issues with source for OSG's OASIS and all EGI repositories
   - OSG repos were broken/misconfigured and fixed; EGI repos hosted at RAL are unavailable as the entire replica is broken
-- SDCC: FY'25 PD proposal doc and presentation additions and edits
-- SDCC: WBS 2.3.1 CVMFS additions and edits
-- SDCC: User Services group discussions on IAM admin and issues, EL7 upgrade inventory sheet, Prometheus deployment, web and docs sites updates, SSH key upload issues (e.g., [1](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36906), [2](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36915))
+- SDCC: multiple iterations on additions and edits for EIC FY'25 PD proposal doc and presentation
+- SDCC: WBS 2.3.1 CVMFS milestone additions and edits
+- SDCC: User Services group discussions on IAM admin and issues, EL7 upgrade inventory sheet, Prometheus deployment, web and docs sites updates, NX testbed issues, SSH key upload issues (e.g., [1](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36906), [2](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36915))
+  - Discussion and debugging of Puppet deployment and failures on EL8 for test NX campus server (nx-campus01) (Saroj, Joe, Mark, Jason)
+- SDCC: proposal for contract work for A. Alekseev on updating monitoring infrastructure (Alexei, Ofer, Louis)
 - SDCC: staff position interviews [2]
+- BNL: holiday [1]
+  - Observed Juneteenth holiday by reading about its history and origins, watching related content (e.g., PBS's "[Juneteenth: Faith & Freedom](https://www.pbs.org/video/juneteenth-faith-freedom-ap4dcr/)"), discussing with colleagues and friends
 
 ## 10-14 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
