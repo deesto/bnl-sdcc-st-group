@@ -43,6 +43,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: found and reported replication issues with source for OSG's OASIS and all EGI repositories
   - OSG repos were broken/misconfigured and fixed; EGI repos hosted at RAL are unavailable as the entire replica is broken
   - RAL outage causing needless "warning" and "critical" alerts on downstream replicas from WLCG monitoring
+- CVMFS: created [Github issue](https://github.com/cvmfs/cvmfs/issues/3615) to centrally track ATLAS debugging efforts
 - SDCC: multiple iterations on additions and edits for EIC FY'25 PD proposal doc and presentation
 - SDCC: WBS 2.3.1 CVMFS milestone additions and edits to document and scrubbing slides
 - SDCC: User Services group discussions on IAM admin and issues, EL7 upgrade inventory sheet, Prometheus deployment, web and docs sites updates, NX testbed issues, SSH key upload issues, user account issues (e.g., [1](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36906), [2](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36915))
