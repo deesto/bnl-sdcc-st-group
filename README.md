@@ -42,14 +42,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: follow-ups with developers on ATLAS pilot checks and issues
 - CVMFS: found and reported replication issues with source for OSG's OASIS and all EGI repositories
   - OSG repos were broken/misconfigured and fixed; EGI repos hosted at RAL are unavailable as the entire replica is broken
+  - RAL outage causing needless "warning" and "critical" alerts on downstream replicas from WLCG monitoring
 - SDCC: multiple iterations on additions and edits for EIC FY'25 PD proposal doc and presentation
-- SDCC: WBS 2.3.1 CVMFS milestone additions and edits
-- SDCC: User Services group discussions on IAM admin and issues, EL7 upgrade inventory sheet, Prometheus deployment, web and docs sites updates, NX testbed issues, SSH key upload issues (e.g., [1](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36906), [2](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36915))
+- SDCC: WBS 2.3.1 CVMFS milestone additions and edits to document and scrubbing slides
+- SDCC: User Services group discussions on IAM admin and issues, EL7 upgrade inventory sheet, Prometheus deployment, web and docs sites updates, NX testbed issues, SSH key upload issues, user account issues (e.g., [1](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36906), [2](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36915))
   - Discussion and debugging of Puppet deployment and failures on EL8 for test NX campus server (nx-campus01) (Saroj, Joe, Mark, Jason)
 - SDCC: proposal for contract work for A. Alekseev on updating monitoring infrastructure (Alexei, Ofer, Louis)
+- SDCC: EIC/EPIC collaborative tools discussions and [meeting on Friday](https://indico.bnl.gov/event/23988/)
 - SDCC: staff position interviews [2]
 - BNL: holiday [1]
   - Observed Juneteenth holiday by reading about its history and origins, watching related content (e.g., PBS's "[Juneteenth: Faith & Freedom](https://www.pbs.org/video/juneteenth-faith-freedom-ap4dcr/)"), discussing with colleagues and friends
+- BNL: vacation day [1] (tried to take on 21 Jun but could not)
 
 ## 10-14 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
