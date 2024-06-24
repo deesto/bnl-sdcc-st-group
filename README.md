@@ -23,6 +23,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 24-28 Jun
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - ATLAS software tutorial [24-28 Jun](https://indico.cern.ch/event/1412088/) (means more new VO registrations)
+- CVMFS: added to [central CVMFS Github](https://github.com/cvmfs/cvmfs/issues/3615) issue on ATLAS pilot and other client problems
+- Belle II: more trouble with conditions metadata reqeusts from Trieste proxy (proxy.ts.infn.it)
+  - 46k requests in 19 minutes (24 Jun 10:19-10-38 EDT) brought metadata service response time from a few ms avg to 40s at peak (10:26 EDT)
+    - Service alert triggered in Grafana, which sent alerts to the 't1-belle2-cdb' mail alias (recipients: me + RT)
+      - RT rejected incoming email from Grafana; I removed the alias from the Grafana alerts, which now emails only me directly
+- Belle II: DIRAC Workshop in Lyon last week included [tutorial on DIRAC X install](https://github.com/DIRACGrid/diracx-charts/tree/master/k3s) via [K3s](https://docs.k3s.io/)
+
 ## 15-21 Jun
 - ATLAS: provided additional feedback to Collaboration Board on grid access policy document, AUP policy
 - ATLAS: [Git merge request](https://gitlab.cern.ch/atlas-sit/librarian/-/merge_requests/29) to clean up Git keyword blacklist finally merged into production
