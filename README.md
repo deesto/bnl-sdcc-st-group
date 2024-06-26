@@ -26,16 +26,19 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 ## 24-28 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - ATLAS software tutorial [24-28 Jun](https://indico.cern.ch/event/1412088/) (means more new VO registrations)
-- CVMFS: added to [central CVMFS Github](https://github.com/cvmfs/cvmfs/issues/3615) issue on ATLAS pilot and other client problems
 - Belle II: more trouble with conditions metadata reqeusts from Trieste proxy (proxy.ts.infn.it)
   - 46k requests in 19 minutes (24 Jun 10:19-10-38 EDT) brought metadata service response time from a few ms avg to 40s at peak (10:26 EDT)
     - Service alert triggered in Grafana, which sent alerts to the 't1-belle2-cdb' mail alias (recipients: me + RT)
       - RT rejected incoming email from Grafana; I removed the alias from the Grafana alerts, which now emails only me directly
+  - New Squid config deployed at Trieste, seems to alleviate all issues, suggesting previous config prevented caching
 - Belle II: DIRAC Workshop in Lyon last week included [tutorial on DIRAC X install](https://github.com/DIRACGrid/diracx-charts/tree/master/k3s) via [K3s](https://docs.k3s.io/)
 - Belle II: further edits and polishing of HSF CDB proposal and roadmap documents, to be reviewed via charter next week
 - CVMFS: further tuning of Stratum One VM and attached A400 NAS to alleviate I/O bottlenecks
   - With Joe: added CPU, doubled swap on VM
+- CVMFS: added to [central CVMFS Github](https://github.com/cvmfs/cvmfs/issues/3615) issue on ATLAS pilot, site caches, and other client problems
 - ITD: ITD/SDCC Network meeting on analytics with Prometheus (Louis, Mark, Nick, Ofer)
+- ITD: created Sympa account to continue managing legacy [RACF Frontier email list](https://lists.bnl.gov/sympa/review/racf-frontier-l) after transition from mailman list server
+  - Opened ITD Help ticket (INC0193929) on broken list archives
 - Physics: Physics Department Day of Reflection on Safety Meeting (26 Jun)
 - SDCC: final edits and updates to WBS docs (milestones, accomplishments, challenges)
 - SDCC: more edits and updates to PD request '25 EIC docs (proposal and slides)
