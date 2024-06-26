@@ -32,11 +32,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
     - Service alert triggered in Grafana, which sent alerts to the 't1-belle2-cdb' mail alias (recipients: me + RT)
       - RT rejected incoming email from Grafana; I removed the alias from the Grafana alerts, which now emails only me directly
 - Belle II: DIRAC Workshop in Lyon last week included [tutorial on DIRAC X install](https://github.com/DIRACGrid/diracx-charts/tree/master/k3s) via [K3s](https://docs.k3s.io/)
+- Belle II: further edits and polishing of HSF CDB proposal and roadmap documents, to be reviewed via charter next week
+- CVMFS: further tuning of Stratum One VM and attached A400 NAS to alleviate I/O bottlenecks
+  - With Joe: added CPU, doubled swap on VM
 - ITD: ITD/SDCC Network meeting on analytics with Prometheus (Louis, Mark, Nick, Ofer)
 - SDCC: final edits and updates to WBS docs (milestones, accomplishments, challenges)
 - SDCC: more edits and updates to PD request '25 EIC docs (proposal and slides)
 - SDCC: User Services group discussions on Prometheus deployment and monitoring services, NX testbed issues, SSH key upload issues
 - US ATLAS: '24 OTP review and edit (T1, cloud ops)
+- BNL: completed and submitted annual performance goals
 - BNL: vacation days [2] (27-28 Jun)
 
 ## 15-21 Jun
