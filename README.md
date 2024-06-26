@@ -36,9 +36,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: further tuning of Stratum One VM and attached A400 NAS to alleviate I/O bottlenecks
   - With Joe: added CPU, doubled swap on VM
 - ITD: ITD/SDCC Network meeting on analytics with Prometheus (Louis, Mark, Nick, Ofer)
+- Physics: Physics Department Day of Reflection on Safety Meeting (26 Jun)
 - SDCC: final edits and updates to WBS docs (milestones, accomplishments, challenges)
 - SDCC: more edits and updates to PD request '25 EIC docs (proposal and slides)
 - SDCC: User Services group discussions on Prometheus deployment and monitoring services, NX testbed issues, SSH key upload issues
+- SDCC: staff appreciation pizza luncheon (26 Jun)
 - US ATLAS: '24 OTP review and edit (T1, cloud ops)
 - BNL: completed and submitted annual performance goals
 - BNL: vacation days [2] (27-28 Jun)
