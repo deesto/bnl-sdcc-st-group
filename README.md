@@ -36,9 +36,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: further tuning of Stratum One VM and attached A400 NAS to alleviate I/O bottlenecks
   - With Joe: added CPU, doubled swap on VM
 - CVMFS: added to [central CVMFS Github](https://github.com/cvmfs/cvmfs/issues/3615) issue on ATLAS pilot, site caches, and other client problems
+  - Further collaboration with CVMFS devs (Jakob, Valentin) and sites (AGLT2, NET2, SWT2) to debug site client issues
+- CVMFS: responded to 27 Jun ATLAS "News of the Day" to explain "1% unavailability for cvmfs.fnal.gov and cvmfs.racf.bnl.gov" related to broken services at RAL, not at FNAL or BNL site replicas
+  - Also requested correction of ATLAS monitoring deprecated 'cvmfs.racf.bnl.gov' service alias to 'cvmfs.sdcc.bnl.gov'
 - ITD: ITD/SDCC Network meeting on analytics with Prometheus (Louis, Mark, Nick, Ofer)
 - ITD: created Sympa account to continue managing legacy [RACF Frontier email list](https://lists.bnl.gov/sympa/review/racf-frontier-l) after transition from mailman list server
   - Opened ITD Help ticket (INC0193929) on broken list archives
+    - Migrated archive was broken; fix required an archive rebuild (Dennis)
 - Physics: Physics Department Day of Reflection on Safety Meeting (26 Jun)
 - SDCC: final edits and updates to WBS docs (milestones, accomplishments, challenges)
 - SDCC: more edits and updates to PD request '25 EIC docs (proposal and slides)
