@@ -26,9 +26,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 ## 1-5 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Nagoya user [reported broken VOMS access](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC3956017) since switchover to IAM
-- Belle II: troubleshooting of problematic conditions metadata from Trieste site proxy continues
+- ATLAS: continued investigation of CVMFS client issues at other sites (AGLT2, NET2)
+- Belle II: troubleshooting of problematic conditions metadata requests from Trieste site proxy continues
+  - Squid reconfiguration, redeployment (as Frontier Squid) did not solve issues as thought previously
   - After much testing, all problematic requests seem to come only from jobs by one specific user
-  - Metadata response times during user's jobs spike to 30s; other jobs from the site cause no load 
+  - Metadata response times during user's jobs spike to 30s; all other jobs from the site cause no load 
 - Belle II: HTCondorCE at NGI_DE [seems finally fixed](https://ggus.eu/index.php?mode=ticket_info&ticket_id=164242) and ready for token requests
 - CVMFS: troubleshooting hung Stratum Zero publication transaction on STAR repository (RT#[36960](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36960))
   - Transaction stuck/hung since 2 Apr, no other repos affected
@@ -36,7 +38,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Subsequent sync during publication affected by user changing files in publication area during transaction, similar changes during previous transaction likely caused initial hang
 - SDCC: Indico group/ACL modifications for Luisa, Tony
 - SDCC, Physics: discussions on use of project code 27167 for EIC (not possible for me to charge 100% FTE to this project)
-- BNL: holiday [1: 4 Jul]
+- SDCC: User Services discussions on monitoring (Prometheus high availability and federated deployment)
+- BNL: holiday [1: 4 Jul], vacation days [1: 5 Jul]
 
 ## 24-28 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
