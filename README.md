@@ -23,6 +23,20 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 1-5 Jul
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - Nagoya user [reported broken VOMS access](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC3956017) since switchover to IAM
+- Belle II: troubleshooting of problematic conditions metadata from Trieste site proxy continues
+  - After much testing, all problematic requests seem to come only from jobs by one specific user
+  - Metadata response times during user's jobs spike to 30s; other jobs from the site cause no load 
+- Belle II: HTCondorCE at NGI_DE [seems finally fixed](https://ggus.eu/index.php?mode=ticket_info&ticket_id=164242) and ready for token requests
+- CVMFS: troubleshooting hung Stratum Zero publication transaction on STAR repository (RT#[36960](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36960))
+  - Transaction stuck/hung since 2 Apr, no other repos affected
+  - First clear attempt failed with [missing lock file in transaction](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36960#txn-1109739)
+  - Subsequent sync during publication affected by user changing files in publication area during transaction
+- SDCC: Indico group/ACL modifications for Luisa, Tony
+- SDCC, Physics: discussions on use of project code 27167 for EIC (not possible for me to charge 100% FTE to this project)
+
 ## 24-28 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - ATLAS software tutorial [24-28 Jun](https://indico.cern.ch/event/1412088/) (means more new VO registrations)
