@@ -33,9 +33,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: troubleshooting hung Stratum Zero publication transaction on STAR repository (RT#[36960](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36960))
   - Transaction stuck/hung since 2 Apr, no other repos affected
   - First clear attempt failed with [missing lock file in transaction](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36960#txn-1109739)
-  - Subsequent sync during publication affected by user changing files in publication area during transaction
+  - Subsequent sync during publication affected by user changing files in publication area during transaction, similar changes during previous transaction likely caused initial hang
 - SDCC: Indico group/ACL modifications for Luisa, Tony
 - SDCC, Physics: discussions on use of project code 27167 for EIC (not possible for me to charge 100% FTE to this project)
+- BNL: holiday [1: 4 Jul]
 
 ## 24-28 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
