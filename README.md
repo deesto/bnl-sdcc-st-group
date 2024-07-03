@@ -26,6 +26,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 ## 1-5 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Nagoya user [reported broken VOMS access](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC3956017) since switchover to IAM
+  - Some users having problems with expired VO memberships despite valid contracts; require manual fixes in IAM
 - ATLAS: continued investigation of CVMFS client issues at other sites (AGLT2, NET2)
 - Belle II: troubleshooting of problematic conditions metadata requests from Trieste site proxy continues
   - Squid reconfiguration, redeployment (as Frontier Squid) did not solve issues as thought previously
@@ -40,11 +41,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Transaction stuck/hung since 2 Apr, no other repos affected
   - First clear attempt failed with [missing lock file in transaction](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36960#txn-1109739)
   - Subsequent sync during publication affected by user changing files in publication area during transaction, similar changes during previous transaction likely caused initial hang
+- CVMFS: discussions with WLCG Stratum Operations teams regarding irrelevant "critical" alerts at replica sites for source repo issues
 - SDCC: Indico group/ACL modifications for Luisa, Tony
 - SDCC, Physics: discussions on use of project code 27167 for EIC (not possible for me to charge 100% FTE to this project)
 - SDCC: User Services discussions on monitoring (Prometheus high availability and federated deployment)
 - SDCC: web support for expired certificate on backend server for Physics BMX web server (RT#[36965](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36965)) 
-- BNL: holiday [1: 4 Jul], vacation days [1: 5 Jul]
+- BNL: holiday [1: 4 Jul], vacation day [1: 5 Jul]
 
 ## 24-28 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
