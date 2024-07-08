@@ -39,6 +39,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: continued debugging of STAR repository publication issues on BNL Stratum Zero (RT#[36960](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36960))
   - Issues with large files/number of files, nested catalogs (followed up with Yuri)
 - CVMFS: continued discussion and debugging of ATLAS WN repo hangs in [CVMFS Gitlab bug report](https://github.com/cvmfs/cvmfs/issues/3628)
+  - Another shared pool (spool) WN hang reported on ATLAS repos (RT#[36960](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36993)
+    - Problem and mitigation detailed in [Github issue](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2215522356)
 
 ## 1-5 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
