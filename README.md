@@ -29,7 +29,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
     - IAM [Github issue opened](https://github.com/indigo-iam/iam/issues/805) for instantiating a grace period to avoid such suspensions
   - Discussions with admins, ADC on whether group manager privileges should be permitted to add/remove/modify other group managers
 - Belle II: continued troubleshooting of problematic conditions metadata requests from Trieste site proxy
-  - Testing of jobs submitted to grid (versus local submission at Trieste) delated by world-wide issues, but completed successfully with no strain on metadata services
+  - Testing of jobs submitted to grid (versus local submission at Trieste) delayed by world-wide issues, but completed successfully with no strain on metadata services
 - CVMFS: issues over holiday weekend/vacation with NFS/GPFS shared mounts on publishing write hosts (`cvmfswrite0{1,2}`)
   - Hung mounts on write hosts [reported by sPHENIX](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36978)
   - Write hosts could not reach GPFS server (phnxgpfs02.rcf.bnl.gov); all write mounts hung
