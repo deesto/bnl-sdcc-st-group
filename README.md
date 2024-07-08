@@ -23,6 +23,23 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 6-12 Jul
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - Issues with IAM suspending valid VO memberships for users with concurrent contract end/start dates
+    - IAM [Github issue opened](https://github.com/indigo-iam/iam/issues/805) for instantiating a grace period to avoid such suspensions
+  - Discussions with admins, ADC on whether group manager privileges should be permitted to add/remove/modify other group managers
+- Belle II: continued troubleshooting of problematic conditions metadata requests from Trieste site proxy
+  - Testing of jobs submitted to grid (versus local submission at Trieste) delated by world-wide issues, but completed successfully with no strain on metadata services
+- CVMFS: issues over holiday weekend/vacation with NFS/GPFS shared mounts on publishing write hosts (`cvmfswrite0{1,2}`)
+  - Hung mounts on write hosts [reported by sPHENIX](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36978)
+  - Write hosts could not reach GPFS server (phnxgpfs02.rcf.bnl.gov); all write mounts hung
+  - A WN writing calibration data to the repository also reported hung/down (spool0801)
+  - After phnxgpfs02 was recovered (actions unknown), mounts on cvmfswrite02 recovered; mounts on cvmfswrite01 did not
+    - cvmfswrite01 was rebooted (also unknown)
+- CVMFS: continued debugging of STAR repository publication issues on BNL Stratum Zero (RT#[36960](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36960))
+  - Issues with large files/number of files, nested catalogs (followed up with Yuri)
+- CVMFS: continued discussion and debugging of ATLAS WN repo hangs in [CVMFS Gitlab bug report](https://github.com/cvmfs/cvmfs/issues/3628)
+
 ## 1-5 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Nagoya user [reported broken VOMS access](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC3956017) since switchover to IAM
