@@ -28,6 +28,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Issues with IAM suspending valid VO memberships for users with concurrent contract end/start dates
     - IAM [Github issue opened](https://github.com/indigo-iam/iam/issues/805) for instantiating a grace period to avoid such suspensions
   - Discussions with admins, ADC on whether group manager privileges should be permitted to add/remove/modify other group managers
+  - IAM VOMS authority pod on OpenShift [went unavailable overnight (8-9 Jul)](https://cern.service-now.com/service-portal?id=outage&n=otg0150883)
+    - Caused by host OpenShift/OKD4 [control plane OOM issue](https://cern.service-now.com/service-portal?id=outage&n=OTG0150648)
+- Belle II: [HSF CDB panel review](https://indico.bnl.gov/event/24046/) document preparation, review, meeting (11 Jul)
 - Belle II: continued troubleshooting of problematic conditions metadata requests from Trieste site proxy
   - Testing of jobs submitted to grid (versus local submission at Trieste) delayed by world-wide issues, but completed successfully with no strain on metadata services
 - CVMFS: issues over holiday weekend/vacation with NFS/GPFS shared mounts on publishing write hosts (`cvmfswrite0{1,2}`)
@@ -39,10 +42,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: continued debugging of STAR repository publication issues on BNL Stratum Zero (RT#[36960](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36960))
   - Issues with large files/number of files, nested catalogs (followed up with Yuri)
 - CVMFS: continued discussion and debugging of ATLAS WN repo hangs in [CVMFS Gitlab bug report](https://github.com/cvmfs/cvmfs/issues/3628)
-  - Another shared pool (spool) WN hang reported on ATLAS repos (RT#[36960](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36993)
+  - Another BNL shared pool (spool) WN hang reported on ATLAS repos (RT#[36960](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36993)
     - Problem and mitigation detailed in [Github issue](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2215522356)
-  - Another issue reported on acas0720 in the [SDCC ATLAS MM channel](https://chat.sdcc.bnl.gov/sdcc/pl/mo5tdqqf8j85ppjb657nonfgnr), but node was rebooted before I could investigate
+  - Another BNL issue reported on acas0720 in the [SDCC ATLAS MM channel](https://chat.sdcc.bnl.gov/sdcc/pl/mo5tdqqf8j85ppjb657nonfgnr), but node was rebooted before I could investigate
     - Reboot or prior crash caused orphaned inodes, CVMFS client removal of broken, empty cache files, and cache DB rebuild
+  - More client issues at AGLT2, possibly due to local cron interference or exceedingly short autofs timeout (45s)
 - SDCC: ACL modification of internal Grafana instance [htcondor dashboard area](https://monitoring.sdcc.bnl.gov/grafana/dashboards/f/W7WwOH7mk/htcondor) to permit editing for Ivan
 - BNL: vacation days [1.5: 11-12 Jul]
 
