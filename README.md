@@ -24,17 +24,22 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 ## 15-19 Jul
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - CERN to move IAM deployment from OpenShift to Kubernetes (OpenStack) [likely in September for ATLAS](https://twiki.cern.ch/twiki/bin/view/LCG/WLCGOpsMinutes240711)
 - Belle II: DIRAC version upgraded 16 Jul ("BelleDIRAC" v6.0.1), no downtime expected (except web app during migration)
 - Belle II: SuperKEKB schedule announced for run 2024c: 9 Oct - 27 Dec (or sooner depending on budget)
 - Belle II: KEKCC replacement schedule announced by CRC coinciding with summer shutdown (2-5 Aug)
   - Data in current HSM tape system will not be available after 2 Aug, migrated to new system afterward
-  - CentOS 7 LSF queues closed 30 Aug, resumed in new system 2 Sep in RHEL9
+  - CentOS 7 LSF queues closed 30 Aug, to be resumed in new system 2 Sep in RHEL9
 - Belle II: continued testing and analysis of problematic conditions requests from Trieste
+- Belle II: participated in US Belle II Climate Survey
+- BNL: renewed expiring training requirement for Security Programs and Responsibilities (GE-CIA)
 - CVMFS: continued debugging and recommendations for ATLAS sites with hung client mounts
   - Best advice is to update clients and allocate enough cache space for ATLAS jobs (>=50G)
 - CVMFS: more analysis of continued VM/NAS slowness during repo garbage collection; more adjustments needed
-- SDCC: discussions on collaborating with Sasha Alekseev, funding, integrating monitoring work into facility services
+- SDCC: discussions on collaborating with Sasha Alekseev: funding, integrating monitoring work into facility services
 - SDCC: discussions on utilizing PD'24 EIC development funds for monitoring improvements
+- US ATLAS: participated in US ATLAS Climate Survey
 - BNL: vacation days [1.5: 18-19 Jul)
 
 ## 6-12 Jul
