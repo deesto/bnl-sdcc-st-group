@@ -23,6 +23,20 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 15-19 Jul
+- Belle II: DIRAC version upgraded 16 Jul ("BelleDIRAC" v6.0.1), no downtime expected (except web app during migration)
+- Belle II: SuperKEKB schedule announced for run 2024c: 9 Oct - 27 Dec (or sooner depending on budget)
+- Belle II: KEKCC replacement schedule announced by CRC coinciding with summer shutdown (2-5 Aug)
+  - Data in current HSM tape system will not be available after 2 Aug, migrated to new system afterward
+  - CentOS 7 LSF queues closed 30 Aug, resumed in new system 2 Sep in RHEL9
+- Belle II: continued testing and analysis of problematic conditions requests from Trieste
+- CVMFS: continued debugging and recommendations for ATLAS sites with hung client mounts
+  - Best advice is to update clients and allocate enough cache space for ATLAS jobs (>=50G)
+- CVMFS: more analysis of continued VM/NAS slowness during repo garbage collection; more adjustments needed
+- SDCC: discussions on collaborating with Sasha Alekseev, funding, integrating monitoring work into facility services
+- SDCC: discussions on utilizing PD'24 EIC development funds for monitoring improvements
+- BNL: vacation days [1.5: 18-19 Jul)
+
 ## 6-12 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Issues with IAM suspending valid VO memberships for users with concurrent contract end/start dates
@@ -33,6 +47,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: [HSF CDB panel review](https://indico.bnl.gov/event/24046/) document preparation, review, meeting (11 Jul)
 - Belle II: continued troubleshooting of problematic conditions metadata requests from Trieste site proxy
   - Testing of jobs submitted to grid (versus local submission at Trieste) delayed by world-wide issues, but completed successfully with no strain on metadata services
+  - Also found problematic period (4:59-5:18am 11 Jul) during which [89k metadata requests from DESY in 19 minutes](https://monitoring.sdcc.bnl.gov/pub/grafana/d/b2cdb-gt-access/client-global-tag-access?orgId=1&from=1720688351289&to=1720689478301) slowed metadata response times [to >40s](https://monitoring.sdcc.bnl.gov/grafana/d/CGFE-OYGz/cdb-ha-monitor?orgId=1&var-host=blcond03.sdcc.bnl.gov&var-host=blcond04.sdcc.bnl.gov&var-proxy=All&var-sv=All&from=1720688351289&to=1720689478301&viewPanel=25)
+    - Another similar load from DESY (12:15-12:20 11 Jul) of 22k requests in 5 minutes pushed metadata response times over one minute
 - CVMFS: issues over holiday weekend/vacation with NFS/GPFS shared mounts on publishing write hosts (`cvmfswrite0{1,2}`)
   - Hung mounts on write hosts [reported by sPHENIX](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36978)
   - Write hosts could not reach GPFS server (phnxgpfs02.rcf.bnl.gov); all write mounts hung
