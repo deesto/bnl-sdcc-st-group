@@ -26,8 +26,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 ## 15-19 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - CERN to move IAM deployment from OpenShift to Kubernetes (OpenStack) [likely in September for ATLAS](https://twiki.cern.ch/twiki/bin/view/LCG/WLCGOpsMinutes240711)
-- Belle II: DIRAC version upgraded 16 Jul ("BelleDIRAC" v6.0.1), no downtime expected (except web app during migration)
-- Belle II: SuperKEKB schedule announced for run 2024c: 9 Oct - 27 Dec (or sooner depending on budget)
+- Belle II: DIRAC version upgraded 16 Jul ("BelleDIRAC" v6.0.1), no downtime (except web app during migration)
+- Belle II: SuperKEKB schedule announced for run 2024c: 9 Oct - 27 Dec (or shorter depending on budget)
 - Belle II: KEKCC replacement schedule announced by CRC coinciding with summer shutdown (2-5 Aug)
   - Data in current HSM tape system will not be available after 2 Aug, migrated to new system afterward
   - CentOS 7 LSF queues closed 30 Aug, to be resumed in new system 2 Sep in RHEL9
@@ -37,8 +37,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: continued debugging and recommendations for ATLAS sites with hung client mounts
   - Best advice is to update clients and allocate enough cache space for ATLAS jobs (>=50G)
 - CVMFS: more analysis of continued VM/NAS slowness during repo garbage collection; more adjustments needed
+- CVMFS: investigated reports of OSG complaints about CVMFS, plans to [move to Pelican](https://agenda.hep.wisc.edu/event/2175/contributions/30967/attachments/9736/12132/Pelican%20Overview%20-%20HTC24.pdf), at [HTC '24](https://agenda.hep.wisc.edu/event/2175/)
+- CVMFS: fixed problem with OSG 'xenon' repo garbage collection that triggered warning from CERN central monitoring
 - SDCC: discussions on collaborating with Sasha Alekseev: funding, integrating monitoring work into facility services
 - SDCC: discussions on utilizing PD'24 EIC development funds for monitoring improvements
+- SDCC: User Services discussions on monitoring work, Mattermost server profile changes for nicknames [due to RT#37025](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37025), UptimeRobot license issues
 - US ATLAS: participated in US ATLAS Climate Survey
 - BNL: vacation days [1.5: 18-19 Jul)
 
