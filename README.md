@@ -23,6 +23,20 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 20-26 Jul
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS: CVMFS client issues on ATLAS WN (acas0934) reported by CRC at ADC daily meeting 24 Jul, forwarded by Ivan
+  - 'unpacked' repo was hung, fuse mount stuck [details](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2248213577)
+- Belle II: migrating current [RocketChat](https://chat.belle2.org/) chat service to [Mattermost](https://b2chat2.kek.jp/) 1-5 Aug
+- Belle II: migrating current [Confluence](https://confluence.desy.de/display/BI/) service to [XWiki](https://it-xwiki-tst.desy.de/xwiki/bin/view/BI/) mid-Aug
+- Belle II: DIRAC version hot-patched to BelleDIRAC 6.0.1 after last week's upgrade to [deprecate file query workflow](https://gitlab.desy.de/belle2/computing/distributed-computing/developments/belledirac/-/merge_requests/926/diffs)
+- CVMFS: fixed problem with OSG 'spt' repo garbage collection that triggered warning from CERN central monitoring
+- CVMFS: I/O delays on Stratum One continue weekly while garbage collection runs on 'unpacked' and other large repositories
+- CVMFS: GPFS server issues [again caused broken NFS mounts](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37038) on CVMFS Stratum Zero, write nodes, and other sPHENIX hosts (Fri, Sat 19-20 Jul)
+- SDCC: User Services discussions on monitoring work, Drupal UI issues caused by upgrade
+- BNL: vacation days (3: 23,24,27 Jul)
+  - Vacation day on 24 Jul interrupted 18 times by separate BNL "exercise" contacts: 4 text messages, 4 mobile phone calls, 4 office phone calls, 3 work emails, 3 personal emails
+
 ## 15-19 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - CERN to move IAM deployment from OpenShift to Kubernetes (OpenStack) [likely in September for ATLAS](https://twiki.cern.ch/twiki/bin/view/LCG/WLCGOpsMinutes240711)
@@ -43,7 +57,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: discussions on utilizing PD'24 EIC development funds for monitoring improvements
 - SDCC: User Services discussions on monitoring work, Mattermost server profile changes for nicknames [due to RT#37025](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37025), UptimeRobot license issues
 - US ATLAS: participated in US ATLAS Climate Survey
-- BNL: vacation days [1.5: 18-19 Jul)
+- BNL: vacation days (1.5: 18-19 Jul)
 
 ## 6-12 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
