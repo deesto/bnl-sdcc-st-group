@@ -25,6 +25,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 ## 20-26 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
+  - IAM threshold, timing for detecting user contract gaps, triggering user suspensions [being discussed and mitigated](https://github.com/indigo-iam/iam/issues/805)
 - ATLAS: CVMFS client issues on ATLAS WN (acas0934) reported by CRC at ADC daily meeting 24 Jul, forwarded by Ivan
   - 'unpacked' repo was hung, fuse mount stuck [details](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2248213577)
 - Belle II: migrating current [RocketChat](https://chat.belle2.org/) chat service to [Mattermost](https://b2chat2.kek.jp/) 1-5 Aug
