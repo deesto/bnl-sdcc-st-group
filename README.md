@@ -31,7 +31,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: DESY moving all account services to [MFA protection via OTP](https://it.desy.de/services/mfa/setup_tokens/index_eng.html)
 - CVMFS: v2.11.4 [released](https://cvmfs.readthedocs.io/en/2.11/cpt-releasenotes.html); includes fix for widespread client cache manager clean-up issues
 - CVMFS: I/O issues blocking normal operations on Stratum One during weekly garbage collection continue, additional resources likely required
+- CVMFS: OSG request to add a new repo (ligo-test.storage.igwn.org) for replication, which I added [five months ago](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36511), [finally closed on OSG's side](https://support.opensciencegrid.org/support/tickets/public/5748d4e1496005e9a81fc5bd30a25d7373ce61cbc7399f9429878d53b823888d) on 1 Aug
+- Phisics: participated in social event engagement survey
 - SDCC: requested renewal of Cyber conduit [COND0000417](https://bnlprod.servicenowservices.com/sp?id=form&table=u_csmis&filter=&sys_id=64a7b93fdb201700c4a976721f96193d&v=) for facility-wide Puppet server access
+  - Vulerabilities found by CS scan that I can not access, details reported to host network admins (also unknown)
+- SDCC: User Services discussions on monitoring work, tape backups of old web areas (with Tim), test GLPI deployment and Puppet code, more Drupal issues caused by upgrade
 - BNL: Lab-wide "BBQ", 1 Aug 3pm; lab-wide all-hands meeting beforehand canceled (director was ill)
 - BNL: vacation days (3: 29-31 Jul)
 
