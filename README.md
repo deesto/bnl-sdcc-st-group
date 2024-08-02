@@ -30,6 +30,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: KEK annual summer power outage and maintenance ([2-5 Aug](https://ccwww.kek.jp/kekccnl/CN_NEWS/NEWS_n256.html)) 
 - Belle II: DESY moving all account services to [MFA protection via OTP](https://it.desy.de/services/mfa/setup_tokens/index_eng.html)
 - CVMFS: v2.11.4 [released](https://cvmfs.readthedocs.io/en/2.11/cpt-releasenotes.html); includes fix for widespread client cache manager clean-up issues
+- CVMFS: upgraded servers (Stratum Zero and One) to latest minor version
+  - Updates coded in Git, Puppet could not be executed because Cobbler for RHEL7 is broken
+  - Manual Cobbler updates, sync fixes required:
+    - Cobbler CVMFS repository mirror (cvmfs-x86_64-rhel7) manually synced via Cobbler web interface
+    - Cobbler replication script on main server (gcemaster02) for syncing with external Cobbler server (extcob02) cloned and modified to sync only target repo (necessary to exclude broken/abandoned reops that otherwise block sync)
+    - On Stratum One (cvmfs-s1c), yum caching of broken repo data fixed by cleaning yum, disabling proxy in yum config, rebuilding yum cache
 - CVMFS: I/O issues blocking normal operations on Stratum One during weekly garbage collection continue, additional resources likely required
 - CVMFS: OSG request to add a new repo (ligo-test.storage.igwn.org) for replication, which I added [five months ago](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36511), [finally closed on OSG's side](https://support.opensciencegrid.org/support/tickets/public/5748d4e1496005e9a81fc5bd30a25d7373ce61cbc7399f9429878d53b823888d) on 1 Aug
 - Phisics: participated in social event engagement survey
