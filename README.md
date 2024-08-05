@@ -23,6 +23,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+## 5-9 Aug
+- Belle II: scheduled KEK outage concluded, jobs began to refill HTCondor queues 5 Aug at 5 AM
+- CVMFS: EL9 client hung on atlas-nightlies repo on ATLAS WN (acas0934), [required manual fix](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2269369105)
+  - Recommend client upgrade on all WNs (for better cache management), increase of shared cache from 50G
+- SDCC: checked, verified TSM backups for twiki05 (old US ATLAS TWiki site) can be discontinued, VM to be decommissioned
+- SDCC: Jira administration to grant staff view access to EL7 host update list (required new role, security scheme creation, permission scheme modifications) 
+
 ## 29 Jul - 2 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Verification, clean-up of group manager lists in ATLAS de, phys-hdbs, uk VO groups
