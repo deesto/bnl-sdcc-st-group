@@ -25,10 +25,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 ## 5-9 Aug
 - Belle II: scheduled KEK outage concluded, jobs began to refill HTCondor queues 5 Aug at 5 AM
+- Belle II: announced to DC and other computing teams the ITD Networking intervention to upgrade firmware on vulnerible Juniper firewall appliances (7 Aug)
+- Belle II: problematic conditions access from Trieste continues, but little interest from others to investigate their ends leads me to drop debugging 
 - CVMFS: EL9 client hung on atlas-nightlies repo on ATLAS WN (acas0934), [required manual fix](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2269369105)
   - Recommend client upgrade on all WNs (for better cache management), increase of shared cache from 50G
+- CVMFS: announced to SDCC liaisons planned downtime to move Stratum Zero repo sync storage from shared GPFS to dedicated CVMFS NAS (8 Aug)
+- CVMFS: manually fixed, synced cobbler mirror of EL9 packages so WNs with client v2.11.x can upgrade to 2.11.4 (Costin)
+- CVMFS: fix for permissions, modes on cron files managing cache access log rotation; affected AWStats collection for WLCG
 - SDCC: checked, verified TSM backups for twiki05 (old US ATLAS TWiki site) can be discontinued, VM to be decommissioned
-- SDCC: Jira administration to grant staff view access to EL7 host update list (required new role, security scheme creation, permission scheme modifications) 
+- SDCC: Jira administration to grant staff view access to EL7 host update list (required new role, security scheme creation, permission scheme modifications)
+- SDCC: investigation of expired CA chains and certificates overwriting valid files on web proxies, invalidating all web sites
+  - Someone moved production proxy to personal git branch with expired files
 
 ## 29 Jul - 2 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
