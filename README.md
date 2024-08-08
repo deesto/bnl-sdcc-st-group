@@ -28,13 +28,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: announced to DC and other computing teams the ITD Networking intervention to upgrade firmware on vulnerible Juniper firewall appliances (7 Aug)
 - Belle II: problematic conditions access from Trieste continues; escalated to other groups (DC, Software)
   - [New Distributed Computing issue](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/382) opened, linked to [existing CDB issue](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/1)
+- Belle II: sync of conditions payload files from production to test partition, for possible mounting in OKD test instance
+  - Current production payload stats: 607,315 files (reg: 596,806, dir: 10,509), 28.87 GB total size
 - CVMFS: EL9 client hung on atlas-nightlies repo on ATLAS WN (acas0934), [required manual fix](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2269369105)
   - Recommend client upgrade on all WNs (for better cache management), increase of shared cache from 50G
 - CVMFS: announced to SDCC liaisons planned downtime to move Stratum Zero repo sync storage from shared GPFS to dedicated CVMFS NAS (8 Aug)
-  - Initial sync of repo partition taking > 24h, will complicate move if incremental sync is not shorter
+  - Migration canceled as initial sync of repo partition took > 48h
 - CVMFS: manually fixed, synced cobbler mirror of EL9 packages so WNs with client v2.11.x can upgrade to 2.11.4 (Costin)
 - CVMFS: fix for permissions, modes on cron files managing cache access log rotation; affected AWStats collection for WLCG
-- SDCC: checked, verified TSM backups for twiki05 (old US ATLAS TWiki site) can be discontinued, VM to be decommissioned
+- SDCC: checked, verified TSM backups for twiki05 (old US ATLAS TWiki site) should be discontinued; VM was [decommissioned](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37106); other old web VMs being checked
 - SDCC: Jira administration to grant staff view access to EL7 host update list (required new role, security scheme creation, permission scheme modifications)
 - SDCC: investigation of expired CA chains and certificates overwriting valid files on web proxies, invalidating all web sites
   - Someone moved production proxy to personal git branch with expired files
