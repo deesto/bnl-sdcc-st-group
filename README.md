@@ -24,6 +24,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 ## 5-9 Aug
+- ATLAS: VO, IAM user management, questions, troubleshooting
 - Belle II: scheduled KEK outage concluded, jobs began to refill HTCondor queues 5 Aug at 5 AM
 - Belle II: announced to DC and other computing teams the ITD Networking intervention to upgrade firmware on vulnerible Juniper firewall appliances (7 Aug)
 - Belle II: problematic conditions access from Trieste continues; escalated to other groups (DC, Software)
@@ -36,12 +37,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Migration canceled as initial sync of repo partition took > 48h
 - CVMFS: manually fixed, synced cobbler mirror of EL9 packages so WNs with client v2.11.x can upgrade to 2.11.4 (Costin)
 - CVMFS: fix for permissions, modes on cron files managing cache access log rotation; affected AWStats collection for WLCG
-- SDCC: checked, verified TSM backups for twiki05 (old US ATLAS TWiki site) should be discontinued; VM was [decommissioned](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37106); other old web VMs being checked
+- SDCC: verified that TSM backups for twiki05 (old US ATLAS TWiki site) should be discontinued; VM was [decommissioned](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37106); other old web VMs being checked
 - SDCC: Jira administration to grant staff view access to EL7 host update list (required new role, security scheme creation, permission scheme modifications)
 - SDCC: investigation of expired CA chains and certificates overwriting valid files on web proxies, invalidating all web sites
   - Someone moved production proxy to personal git branch with expired files
-- SDCC: User Services discussion on monitoring test bed containers and deployment, Git/Puppet changes to production proxies and testing changes
-- BNL: renewed expiring [Active Shooter (TQ-ACTIVESHOOTER) training](https://training.bnl.gov/portal/TQ-ACTIVESHOOTER)
+- SDCC: User Services discussion on monitoring, test bed containers and deployment, Git/Puppet modifications to production proxies and testing changes
+- BNL: renewed expiring [Active Shooter (TQ-ACTIVESHOOTER)](https://training.bnl.gov/portal/TQ-ACTIVESHOOTER) training
 
 ## 29 Jul - 2 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
