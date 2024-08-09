@@ -37,6 +37,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Migration canceled as initial sync of repo partition took > 48h
 - CVMFS: manually fixed, synced cobbler mirror of EL9 packages so WNs with client v2.11.x can upgrade to 2.11.4 (Costin)
 - CVMFS: fix for permissions, modes on cron files managing cache access log rotation; affected AWStats collection for WLCG
+- CVMFS: extensive troubleshooting and debugging of several Alma9 clients that had recently been upgraded (9 Aug, with Ofer, Costin, Valentin)
+  - Some clients were recoverable; other clients had a defunct core cvmfs2 client that could not be killed, required host reboot via IPMI
+  - Debugging details [here](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2278340001) and [here](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2278520857)
 - SDCC: verified that TSM backups for twiki05 (old US ATLAS TWiki site) should be discontinued; VM was [decommissioned](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37106); other old web VMs being checked
 - SDCC: Jira administration to grant staff view access to EL7 host update list (required new role, security scheme creation, permission scheme modifications)
 - SDCC: investigation of expired CA chains and certificates overwriting valid files on web proxies, invalidating all web sites
