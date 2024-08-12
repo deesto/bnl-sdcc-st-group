@@ -23,6 +23,21 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 11-16 Aug
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: learned that the GS group [decommissioned](https://racfjira.atlassian.net/browse/SIG-4) the OKD instance in which Belle II (and EPIC) were testing CDB migration and planning to migrate from current deployment
+  - No consutation with or announcement to Belle II or EPIC, because the instance was owned by ATLAS, and ATLAS T1 reps OKed the decommissioning
+  - GS group propose Belle II move to the [RHIC OKD instance](https://console-openshift-console.apps.rcf.bnl.gov/) while OpenShift is prepared for production (possibly next month)
+  - Belle II need estimates on cost of OpenShift hosting (still approximately 5% of overall operational cost, but ~2x current RHEV costs)
+- Belle II: updates for issues reported against both [CDBWeb](https://gitlab.desy.de/belle2/software/basf2/-/issues/5539) and the [b2conditionsdb tools](https://gitlab.desy.de/belle2/software/basf2/-/issues/8119), both likely related to slowness and time-outs on copying large quantities of IOVs
+- CVMFS: many more ATLAS Alma 9 WN issues reported over weekend, required manual intervention to restore CVMFS client, caches
+  - All mounts restored on all WNs except one (acas0909), which had more problems than CVMFS client mounts alone
+  - All problematic WNs also logged segfaults on ATLAS software (MemoryMonitor, athena)
+  - Details [here](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2283916710)
+- CVMFS: dedicated NetApp NAS reported degraded cluster network alert, because LACP is not yet properly configured
+- CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations (11 Aug), still needs attention & possible reconfiguration
+- SDCC: User Services discussions on RT ticket handling and user replies, monitoring improvements
+
 ## 5-9 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - Belle II: scheduled KEK outage concluded, jobs began to refill HTCondor queues 5 Aug at 5 AM
