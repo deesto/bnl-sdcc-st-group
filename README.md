@@ -34,8 +34,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - All mounts restored on all WNs except one (acas0909), which had more problems than CVMFS client mounts alone
   - All problematic WNs also logged segfaults on ATLAS software (MemoryMonitor, athena)
   - Details [here](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2283916710)
+  - Debugging, fixing, testing of many more hung nodes & repos, scripting to test all necessary ATLAS mounts
 - CVMFS: dedicated NetApp NAS reported degraded cluster network alert, because LACP is not yet properly configured
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations (11 Aug), still needs attention & possible reconfiguration
+  - +64G memory (memory and guaranteed) added to VM, rebooted (13 Aug)
 - SDCC: User Services discussions on RT ticket handling and user replies, monitoring improvements
 
 ## 5-9 Aug
