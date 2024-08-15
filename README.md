@@ -35,10 +35,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - All problematic WNs also logged segfaults on ATLAS software (MemoryMonitor, athena)
   - Details [here](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2283916710)
   - Debugging, fixing, testing of many more hung nodes & repos, scripting to test all necessary ATLAS mounts
+  - CERN running the same version (upgraded 11.2.3->.4) on RHEL9, starting to see issues on WNs
+  - Issues [also found on CMS nodes at CERN](https://github.com/cvmfs/cvmfs/issues/3650) in both Alma 8 & 9
+- Belle II: new comments on [old conditions issue](https://gitlab.desy.de/belle2/software/basf2/-/issues/6019) involving excessive DB requests during payload queries
+  - Also updated [task list](https://gitlab.desy.de/belle2/software/cdb/database/-/issues/1) of other outstanding conditions applications issues
 - CVMFS: dedicated NetApp NAS reported degraded cluster network alert, because LACP is not yet properly configured
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations (11 Aug), still needs attention & possible reconfiguration
   - +64G memory (memory and guaranteed) added to VM, rebooted (13 Aug)
-- SDCC: User Services discussions on RT ticket handling and user replies, monitoring improvements
+- SDCC: User Services discussions on RT ticket handling and user replies, monitoring improvements, VM resource allocation (and fixes)
 
 ## 5-9 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
