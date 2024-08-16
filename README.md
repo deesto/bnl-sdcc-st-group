@@ -42,7 +42,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: dedicated NetApp NAS reported degraded cluster network alert, because LACP is not yet properly configured
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations (11 Aug), still needs attention & possible reconfiguration
   - +64G memory (memory and guaranteed) added to VM, rebooted (13 Aug)
-- SDCC: User Services discussions on RT ticket handling and user replies, monitoring improvements, VM resource allocation (and fixes)
+- ITD: [issue with BNL Indico](https://bnlprod.servicenowservices.com/esc?id=ticket&table=incident&sys_id=6cace3d11b8c5290b34c86ebe54bcb06) and BNL users without Indico accounts
+- SDCC: User Services discussions on RT ticket handling and user replies, monitoring improvements, VM resource allocation (and fixes), ePIC web site, NX issues with Puppet modules to create user home dirs, [issues with sPHENIX intranet web login](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37124) via BNL AD
 
 ## 5-9 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
