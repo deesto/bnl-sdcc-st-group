@@ -23,6 +23,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 19-23 Aug
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - Users [still being pointed to VOMS Admin](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC4033110) instead of IAM for VO registration
+- CVMFS: announced to SDCC liaisons rescheduling of planned downtime to move Stratum Zero repo sync storage from shared GPFS to dedicated CVMFS NAS (22 Aug)
+- BNL/SDCC: participated in joint staff/lab management meeting on SDCC reorganization
+- BNL: participated in Brookhaven Lab DEIA pulse survey (by external provider, Perceptyx)
+
 # 11-16 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - Belle II: learned that the GS group [decommissioned](https://racfjira.atlassian.net/browse/SIG-4) the OKD instance in which Belle II (and EPIC) were testing CDB migration and planning to migrate from current deployment
