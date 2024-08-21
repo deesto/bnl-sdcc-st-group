@@ -27,7 +27,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Users [still being pointed to VOMS Admin](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC4033110) instead of IAM for VO registration
 - CVMFS: announced to SDCC liaisons rescheduling of planned downtime to move Stratum Zero repo sync storage from shared GPFS to dedicated CVMFS NAS (22 Aug)
-- BNL/SDCC: participated in joint staff/lab management meeting on SDCC reorganization
+- CVMFS: continued extensive debugging and troubleshooting of ATLAS WN client issues at BNL, provided output and traces to developers, helping other sites with issues
+- SDCC: meeting with ePIC (Maxim) on potential plans for web presence, solutions from moving from Github, adding federated login
+- BNL/SDCC: participated in joint staff/lab/CDS management meeting on SDCC reorganization
+- BNL: multiple issues with BNL Travel and itineraries for upcoming trips (CVMFS workshop, Rucio workshop, B2GM)
 - BNL: participated in Brookhaven Lab DEIA pulse survey (by external provider, Perceptyx)
 
 # 11-16 Aug
