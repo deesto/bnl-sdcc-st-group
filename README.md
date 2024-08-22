@@ -26,9 +26,19 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 19-23 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Users [still being pointed to VOMS Admin](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC4033110) instead of IAM for VO registration
-- CVMFS: announced to SDCC liaisons rescheduling of planned downtime to move Stratum Zero repo sync storage from shared GPFS to dedicated CVMFS NAS (22 Aug)
+  - Corrected [ATLAS TWiki documentation](https://twiki.cern.ch/twiki/bin/view/AtlasComputing/WorkBookStartingGrid) to remove VOMS Admin link, direct users to IAM
+  - VO admin privileges have been moved from a VOMS Admin style group/role, to a separate user property in IAM (ca be assigned/revoked to/from any user via UI)
+- Belle II: fix to rucio-conveyor-submitter systemd service files to re-enable sleep option 
+- Belle II/CVMFS: plans to create new Stratum Zero repository for Belle II for testing (Michel)
+- CVMFS: rescheduled planned downtime to move Stratum Zero repo sync storage from shared GPFS to dedicated CVMFS NAS (22 Aug)
+  - Prolonged due to problems with data sync to target partition
 - CVMFS: continued extensive debugging and troubleshooting of ATLAS WN client issues at BNL, provided output and traces to developers, helping other sites with issues
+  - New client version [2.11.5](http://ecsft.cern.ch/dist/cvmfs/cvmfs-2.11.5/) [released for testing](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2302950814)
+  - Network switch reboot caused additional client issues on some WNs, caused HC site auto-exclusion, required manual fixes (to both the clients and the HC queue)
 - SDCC: meeting with ePIC (Maxim) on potential plans for web presence, solutions from moving from Github, adding federated login
+- SDCC: modifications to 'liaison' alias to remove inactive member causing email bounces (John M.) 
+- SDCC: Jira administration, modifications to add new staff to users, groups (James L.)
+- SDCC User Services: discussions on [ticket for US ATLAS web site enhancements](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37144 ) for institution and member lists (also merged multiple stray RT tickets into original, sPHENIX [web auth requests](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37124), monitoring development
 - BNL/SDCC: participated in joint staff/lab/CDS management meeting on SDCC reorganization
 - BNL: multiple issues with BNL Travel and itineraries for upcoming trips (CVMFS workshop, Rucio workshop, B2GM)
 - BNL: participated in Brookhaven Lab DEIA pulse survey (by external provider, Perceptyx)
