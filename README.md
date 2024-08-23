@@ -31,6 +31,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: fix to rucio-conveyor-submitter systemd service files to re-enable sleep option
   - also temporarily increased threads to account for imbalance in submitter counts between service VMs
 - Belle II/CVMFS: plans to create new Stratum Zero repository for Belle II for testing (Michel)
+- Belle II: Cyber Security vulnerability reports from Jerome on Kibana installations on two DIRAC VMs
+  - Installed by remote Belle II Distributed Computing team; informed of need to upgrade and mitigate [vulnerabilties](https://discuss.elastic.co/t/kibana-8-14-2-7-17-23-security-update-esa-2024-22/364424)
 - CVMFS: rescheduled planned downtime to move Stratum Zero repo sync storage from shared GPFS to dedicated CVMFS NAS (22 Aug)
   - Downtime prolonged due to multiple issues with data syncs and sync options, NFS/GPFS share export options, NFS mount options, nested sphenix calibration data mount complications (on write nodes, dev node, WNs), mounts on write nodes in fstab vs. automount
 - CVMFS: continued extensive debugging and troubleshooting of ATLAS WN client issues at BNL, provided output and traces to developers, helping other sites with issues
