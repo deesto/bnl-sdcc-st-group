@@ -23,7 +23,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
-# 19-23 Aug
+# 26-30 Aug
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - Users are having trouble adding their own certificates to their VO memberships, requires VO admin to add PEM encoded certificate data
+- Belle II: Distributed Computing addressing Kibana vulnerability by moving to OpenSearch dashboards this week
+- Belle II: conditions database team need additional privileges in OKD, eventually OpenShift, for viewing (or creating) persisitent storage objects
+- Belle II: feedback on HSF CDB migration proposals and planning documentation
+
+# 19-24 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Users [still being pointed to VOMS Admin](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC4033110) instead of IAM for VO registration
   - Corrected [ATLAS TWiki documentation](https://twiki.cern.ch/twiki/bin/view/AtlasComputing/WorkBookStartingGrid) to remove VOMS Admin link, direct users to IAM
@@ -34,7 +41,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: Cyber Security vulnerability reports from Jerome on Kibana installations on two DIRAC VMs
   - Installed by remote Belle II Distributed Computing team; informed of need to upgrade and mitigate [vulnerabilties](https://discuss.elastic.co/t/kibana-8-14-2-7-17-23-security-update-esa-2024-22/364424)
 - CVMFS: rescheduled planned downtime to move Stratum Zero repo sync storage from shared GPFS to dedicated CVMFS NAS (22 Aug)
-  - Downtime prolonged due to multiple issues with data syncs and sync options, NFS/GPFS share export options, NFS mount options, nested sphenix calibration data mount complications (on write nodes, dev node, WNs), mounts on write nodes in fstab vs. automount
+  - Downtime prolonged (>48 hours) due to multiple issues with data syncs and sync options, NFS/GPFS share export options, NFS mount options, nested sphenix calibration data moun complications (on write nodes, dev node, WNs), mounts on write nodes in fstab vs. automount
+  - Downtime issues were inaccurately communicated by some as a CVMFS issue
 - CVMFS: continued extensive debugging and troubleshooting of ATLAS WN client issues at BNL, provided output and traces to developers, helping other sites with issues
   - New client version [2.11.5](http://ecsft.cern.ch/dist/cvmfs/cvmfs-2.11.5/) [released for testing](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2302950814)
   - Network switch reboot caused additional client issues on some WNs, caused HC site auto-exclusion, required manual fixes (to both the clients and the ATLAS HC queue)
