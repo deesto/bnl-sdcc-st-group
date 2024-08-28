@@ -24,11 +24,21 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 # 26-30 Aug
-- ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS: VO, IAM user management, DDM user mapping issues, questions, troubleshooting
   - Users are having trouble adding their own certificates to their VO memberships, requires VO admin to add PEM encoded certificate data
+  - Changes to user certificate DNs result in new certificates needing to be added to VO memberships, DDM support for remapping account to new DN
 - Belle II: Distributed Computing addressing Kibana vulnerability by moving to OpenSearch dashboards this week
 - Belle II: conditions database team need additional privileges in OKD, eventually OpenShift, for viewing (or creating) persisitent storage objects
 - Belle II: feedback on HSF CDB migration proposals and planning documentation
+- CVMFS: reported issue with WLCG Stratum One monitoring and false "NORESPONSE" error reporting
+- CVMFS: investigated [reported issue](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37154) with missing read-only mounts on experiment publishing write nodes after last week's data migration
+  - Read-only mounts were set up to share the same base mount point as NFS write mounts
+  - All mounts needed to be un/re-mounted individually
+  - Scripts deployed by farm on nodes to auto-mount [via puppet](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/src/branch/production/linuxfarm/farm/manifests/resources.pp) don't seem to work
+- CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations (25 Aug, 17 hours to complete a snapshot on the unpacked repo), still needs attention & possible reconfiguration
+  - Addition of 64G memory (memory and guaranteed) to VM did not help
+- SDCC User Services: discussions on web authentication, Matomo visitor stat collection issues with Belle II site
+- SDCC/sPHENIX: explanation of CVMFS data migration issues in sPHENIX coordination meeting 
 
 # 19-24 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
@@ -61,6 +71,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - GS group propose Belle II move to the [RHIC OKD instance](https://console-openshift-console.apps.rcf.bnl.gov/) while OpenShift is prepared for production (possibly next month)
   - Belle II need estimates on cost of OpenShift hosting (still approximately 5% of overall operational cost, but ~2x current RHEV costs)
 - Belle II: updates for issues reported against both [CDBWeb](https://gitlab.desy.de/belle2/software/basf2/-/issues/5539) and the [b2conditionsdb tools](https://gitlab.desy.de/belle2/software/basf2/-/issues/8119), both likely related to slowness and time-outs on copying large quantities of IOVs
+- Belle II: new comments on [old conditions issue](https://gitlab.desy.de/belle2/software/basf2/-/issues/6019) involving excessive DB requests during payload queries
+  - Also updated [task list](https://gitlab.desy.de/belle2/software/cdb/database/-/issues/1) of other outstanding conditions applications issues
 - CVMFS: many more ATLAS Alma 9 WN issues reported over weekend, required manual intervention to restore CVMFS client, caches
   - All mounts restored on all WNs except one (acas0909), which had more problems than CVMFS client mounts alone
   - All problematic WNs also logged segfaults on ATLAS software (MemoryMonitor, athena)
@@ -68,8 +80,6 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Debugging, fixing, testing of many more hung nodes & repos, scripting to test all necessary ATLAS mounts
   - CERN running the same version (upgraded 11.2.3->.4) on RHEL9, starting to see issues on WNs
   - Issues [also found on CMS nodes at CERN](https://github.com/cvmfs/cvmfs/issues/3650) in both Alma 8 & 9
-- Belle II: new comments on [old conditions issue](https://gitlab.desy.de/belle2/software/basf2/-/issues/6019) involving excessive DB requests during payload queries
-  - Also updated [task list](https://gitlab.desy.de/belle2/software/cdb/database/-/issues/1) of other outstanding conditions applications issues
 - CVMFS: dedicated NetApp NAS reported degraded cluster network alert, because LACP is not yet properly configured
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations (11 Aug), still needs attention & possible reconfiguration
   - +64G memory (memory and guaranteed) added to VM, rebooted (13 Aug)
