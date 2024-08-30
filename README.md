@@ -36,8 +36,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - All mounts needed to be un/re-mounted individually
   - Scripts deployed by farm on nodes to auto-mount [via puppet](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/src/branch/production/linuxfarm/farm/manifests/resources.pp) don't seem to work
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations (25 Aug, 17 hours to complete a snapshot on the unpacked repo), still needs attention & possible reconfiguration
-  - Addition of 64G memory (memory and guaranteed) to VM did not help
-- SDCC User Services: discussions on web authentication, Matomo visitor stat collection issues with Belle II site
+- CVMFS: changes to EL7 Puppet code, write nodes, Stratum Zero to create new Belle II repo for local computing team to test and publish new software versions
+  - Plans to port changes and fixes to EL8+ repos next week
+- CVMFS: more extensive debigging and fixing of clients on ATLAS WNs throughout the week. Plans to roll out new .5 minor version upgrade next week.
+  - Addition of memory (+64G memory and guaranteed) to RHEV VM did not help
+- sPHENIX: investigation of shift schedule web site and changes [requested by experiment](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37160). Eventually implemented by Dmitry (no details given).
+- SDCC User Services: discussions on web authentication, Matomo visitor stat collection issues with Belle II site, PrivacyIdea issues and fixes
 - SDCC/sPHENIX: explanation of CVMFS data migration issues in sPHENIX coordination meeting 
 
 # 19-24 Aug
