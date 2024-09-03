@@ -23,6 +23,19 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 1-6 Sep
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS: 50k jobs on 5 nodes failed at BNL during 24h span over holiday weekend, cited CVMFS issues
+  - CVMFS was functional, working slowly on all 5 nodes. System load was > 1500 on all 5 nodes.
+  - Killing processes with CVMFS mounts and wiping client cache releived high load instantly
+- Belle II: BNL site "banned" (temporarily closed) for new jobs beginning 1 Sep to prepare for dCache upgrade (4 Sep)
+- Belle II: troubleshooting of problematic SSH connections from KEKCC access nodes to login nodes after WN EL9 refresh
+- Belle II: confirmed mitigation for Kibana and ElasticSearch on local DIRAC VMs passed cyber security scans and closed vulnerability
+- Belle II: set up new local 'belle' repo for testing DIRAC and other software and configuration changes
+  - Added to Stratum Zero and file system on experiment write nodes; need to add signing key to WNs and Stratum One
+- CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
+- BNL: 1 holiday [2 Sep]
+
 # 26-30 Aug
 - ATLAS: VO, IAM user management, DDM user mapping issues, questions, troubleshooting
   - Users are having trouble adding their own certificates to their VO memberships, requires VO admin to add PEM encoded certificate data
