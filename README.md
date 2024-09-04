@@ -26,14 +26,19 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 1-6 Sep
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: 50k jobs on 5 nodes failed at BNL during 24h span over holiday weekend, cited CVMFS issues
-  - CVMFS was functional, working slowly on all 5 nodes. System load was > 1500 on all 5 nodes.
+  - CVMFS was functional, working slowly, with system load was > 1500 on all 5 nodes.
   - Killing processes with CVMFS mounts and wiping client cache releived high load instantly
 - Belle II: BNL site "banned" (temporarily closed) for new jobs beginning 1 Sep to prepare for dCache upgrade (4 Sep)
+ - Testing of local dCache access and transfers after upgrade (multiple times)
 - Belle II: troubleshooting of problematic SSH connections from KEKCC access nodes to login nodes after WN EL9 refresh
 - Belle II: confirmed mitigation for Kibana and ElasticSearch on local DIRAC VMs passed cyber security scans and closed vulnerability
 - Belle II: set up new local 'belle' repo for testing DIRAC and other software and configuration changes
-  - Added to Stratum Zero and file system on experiment write nodes; need to add signing key to WNs and Stratum One
+  - Added to Stratum Zero, Stratum One replica, and file system on experiment write nodes; signing key not yet pushed out to WNs
+- Belle II: added cloud auth credentials files for Napoli, EGI test sites to DIRAC certification server (bldiracvm04) for Silvio
+- CVMFS: usual debugging and fixing of clients on ATLAS WNs
+  - Pushing for Farm team to upgrade v.4->.5 ASAP since .5 should alleviate most issues seen (and .4 is a known bugged version)
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
+- US ATLAS: attended IRIS-HEP Institute Retreat, with breakout session focus on data challenge reactions and planning (remote)
 - BNL: 1 holiday [2 Sep]
 
 # 26-30 Aug
@@ -51,7 +56,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations (25 Aug, 17 hours to complete a snapshot on the unpacked repo), still needs attention & possible reconfiguration
 - CVMFS: changes to EL7 Puppet code, write nodes, Stratum Zero to create new Belle II repo for local computing team to test and publish new software versions
   - Plans to port changes and fixes to EL8+ repos next week
-- CVMFS: more extensive debigging and fixing of clients on ATLAS WNs throughout the week. Plans to roll out new .5 minor version upgrade next week.
+- CVMFS: more extensive debugging and fixing of clients on ATLAS WNs throughout the week. Plans to roll out new .5 minor version upgrade next week.
   - Addition of memory (+64G memory and guaranteed) to RHEV VM did not help
 - sPHENIX: investigation of shift schedule web site and changes [requested by experiment](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37160). Eventually implemented by Dmitry (no details given).
 - SDCC User Services: discussions on web authentication, Matomo visitor stat collection issues with Belle II site, PrivacyIdea issues and fixes
