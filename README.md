@@ -29,6 +29,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - CVMFS was functional, working slowly, with system load was > 1500 on all 5 nodes.
   - Killing processes with CVMFS mounts and wiping client cache releived high load instantly
 - ATLAS: another issue with WNs upgrade to CVMFS 2.11.5 found with [SQlite catalog errors](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2331757572), seems to have caused ~200 ATLAS job failures within one hour
+  - Progress being tracked in [a new issue report](https://github.com/cvmfs/cvmfs/issues/3659)
 - Belle II: BNL site "banned" (temporarily closed) for new jobs beginning 1 Sep to prepare for dCache upgrade (4 Sep)
  - Testing of local dCache access and transfers after upgrade (multiple times)
 - Belle II: troubleshooting of problematic SSH connections from KEKCC access nodes to login nodes after WN EL9 refresh
@@ -40,7 +41,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: usual debugging and fixing of clients on ATLAS WNs
   - Pushing for Farm team to upgrade v.4->.5 ASAP since .5 should alleviate most issues seen (and .4 is a known bugged version)
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
-- Jira: issue [opened in March](https://jira.atlassian.com/browse/ACCESS-1781) to properly display user access dates assigned a "Label" (guard-s7) by Atlassian
+- Jira: issue [opened in March](https://jira.atlassian.com/browse/ACCESS-1781) to properly display user access dates has now been assigned a "Label" (guard-s7) by Atlassian
 - US ATLAS: attended IRIS-HEP Institute Retreat, with breakout session focus on data challenge reactions and planning (remote)
 - BNL: 1 holiday [2 Sep]
 
