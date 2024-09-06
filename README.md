@@ -31,7 +31,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: another issue with WNs upgrade to CVMFS 2.11.5 found with [SQlite catalog errors](https://github.com/cvmfs/cvmfs/issues/3628#issuecomment-2331757572), seems to have caused ~200 ATLAS job failures within one hour
   - Progress being tracked in [a new issue report](https://github.com/cvmfs/cvmfs/issues/3659)
 - Belle II: BNL site "banned" (temporarily closed) for new jobs beginning 1 Sep to prepare for dCache upgrade (4 Sep)
- - Testing of local dCache access and transfers after upgrade (multiple times)
+  - Testing of local dCache access and transfers after upgrade (multiple times)
 - Belle II: troubleshooting of problematic SSH connections from KEKCC access nodes to login nodes after WN EL9 refresh
   - Also confirmed environment setup issues after refresh
 - Belle II: confirmed mitigation for Kibana and ElasticSearch on local DIRAC VMs passed cyber security scans and closed vulnerability
