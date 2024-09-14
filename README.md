@@ -32,7 +32,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: KEKCC outage continues due to failed core services after hardware refresh and migration
 - Belle II: help with deployment of new local CVMFS repository for grid tools and software development and testing, remote client configuration and access
 - Belle II: migrated KEKCC account data from "old" to "new" login systems per [data migration guidelines](https://wiki.kek.jp/pages/viewpage.action?pageId=399474874)
-- CVMFS: ATLAS T1 WNs all upgraded to latest client version (2.11.5) during ATLAS-wide job drain
+- CVMFS: ATLAS T1 WNs all upgraded to latest client version (2.11.5) during ATLAS-wide job drain (Costin)
+  - Very few CVMFS related issues noted after our implemented upgrade procedure (kill processes, wipe cache, upgrade client, reboot)
+  - CMS at CERN [have begun finding](https://github.com/cvmfs/cvmfs/issues/3650) the same client issues [we initially reported](https://github.com/cvmfs/cvmfs/issues/3628) for ATLAS jobs
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
 - CVMFS: NetApp degraded cluster network alert (Sat 7 Sep)
   - Trigerred again on malfunctioning LACP, but does not affect functionality, can be ignored (Joe)
@@ -53,7 +55,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC Jira: cloud site UI for creating new issues is broken: infinite loop on creating new issues, no error or feedback shown to user
   - Issue creation form is missing required field (Assignee) for some users, fails silently
   - New [Atlassian Support request filed](https://support.atlassian.com/requests/JST-1040335)
-- SDCC User Services: discussions on Overleaf issues, monitoring development, SSO service issues
+- SDCC User Services: discussions on Overleaf issues, monitoring development, promtail/logstash/loki message encoding, SSO service issues
 - SDCC Web: [ATLAS VO instructions](https://www.sdcc.bnl.gov/experiments/joining-atlas-vo) corrected (again) to point to ATLAS IAM instead of VOMS
 - SDCC Web: SDCC Drupal site search function, results broken; fixed by clearing the Drupal site cache (Louis)
 
