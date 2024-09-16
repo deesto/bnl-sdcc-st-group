@@ -23,9 +23,20 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 14-21 Sep
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - Discussions on clean-up of defunct "software" roles in atlas/cn/usatlas
+  - Discrepencies between IAM features on CERN instances in OpenShift and k8s, due to lack of restart on one instance; fixed with "rollout restart"
+- ATLAS: ongoing discussion on eliminating invalid ATLAS job requests for 'projects' CVMFS repo on BNL WNs
+- CVMFS: workshop at CERN (16-18 Sep), talk on ATLAS client issues and fixes
+- CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
+- SDCC: Jira user, group management for new member
+- US ATLAS: help debugging NHC time-out failures on CVMFS repo mounts (atlas-nightlies)
+- BNL travel (Geneva, 14-21 Sep)
+
 # 7-13 Sep
 - ATLAS: VO, IAM user management, questions, troubleshooting
-  - User continue to try to access retired VOMS service instead of IAM
+  - Users continue to try to access retired VOMS service instead of IAM
   - CERN upgraded IAM instances to v1.10.1, enabled auto-enroll for new users to atlas group, may enable secondary account logins
 - ATLAS: following up with ADC on job attempts to access the CERN CVMFS 'projects' repo, which is restricted to CERN and fails everywhere else, filling WN logs with errors
 - Belle II: reviews of CDB migration Review Board final report and subsequent documentation
