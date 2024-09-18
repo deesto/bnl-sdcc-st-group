@@ -27,10 +27,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Discussions on clean-up of defunct "software" roles in atlas/cn/usatlas
   - Discrepencies between IAM features on CERN instances in OpenShift and k8s, due to lack of restart on one instance; fixed with "rollout restart"
+  - Issues with outdated documnentation on [CERN ATLAS TWiki](https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/WorkBookStartingGrid)
 - ATLAS: ongoing discussion on eliminating invalid ATLAS job requests for 'projects' CVMFS repo on BNL WNs
-- CVMFS: workshop at CERN (16-18 Sep), talk on ATLAS client issues and fixes
+- Belle II: issues with held jobs on BNL HTCondor gatekeepers, resulting notifications via GK scripts (Kevin)
+- Belle II: follow-up meetings to discuss conditions database migration plans, workflows, effects
+- CVMFS: [workshop at CERN](https://indico.cern.ch/event/1347727/) (16-18 Sep)
+  - Gave [talk](https://indico.cern.ch/event/1347727/contributions/5673381/) on ATLAS deployment, status, client issues and fixes
+  - Coincided with [CERN70 community event](https://indico.cern.ch/event/1421217)
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
-- SDCC: Jira user, group management for new member
+- SDCC: Jira user, group management for new collaboration member
+- SDCC: notified by Atlassian that liccensing cost for Jira Cloud [will increase again this year](https://www.atlassian.com/licensing/future-pricing/cloud-advantaged-pricing-10/faqs)
 - US ATLAS: help debugging NHC time-out failures on CVMFS repo mounts (atlas-nightlies)
 - BNL travel (Geneva, 14-21 Sep)
 
