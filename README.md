@@ -27,12 +27,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Discussions on clean-up of defunct "software" roles in atlas/cn/usatlas
   - Discrepencies between IAM features on CERN instances in OpenShift and k8s, due to lack of restart on one instance; fixed with "rollout restart"
-  - Issues with outdated documnentation on [CERN ATLAS TWiki](https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/WorkBookStartingGrid)
+  - Issues with outdated documentation on [CERN ATLAS TWiki](https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/WorkBookStartingGrid)
 - ATLAS: ongoing discussion on eliminating invalid ATLAS job requests for 'projects' CVMFS repo on BNL WNs
 - Belle II: issues with held jobs on BNL HTCondor gatekeepers, resulting notifications via GK scripts (Kevin)
 - Belle II: follow-up meetings to discuss conditions database migration plans, workflows, effects
+- Belle II: user issues with setting grid environment, incompatible encryption levels in CILogon certificates
+- Belle II: issues with trying to set up OKD project and persistent storage in RHIC instance for CDB migration
 - CVMFS: [workshop at CERN](https://indico.cern.ch/event/1347727/) (16-18 Sep)
   - Gave [talk](https://indico.cern.ch/event/1347727/contributions/5673381/) on ATLAS deployment, status, client issues and fixes
+    - Several follow-ups and discussions resulting from the talk (e.g., using `cvmfs_info` utility for possible repo health checks)
   - Coincided with [CERN70 community event](https://indico.cern.ch/event/1421217)
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
 - SDCC: Jira user, group management for new collaboration member
