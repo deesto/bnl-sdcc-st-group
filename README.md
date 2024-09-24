@@ -23,6 +23,31 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 30 Sep - 5 Oct
+
+- BNL travel (Tsukuba, 4-12 Oct)
+
+# 23-29 Sep
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - Several problems with user grid access, missing group management privileges, disk quota issues, incorrect user metadata (e.g., email address and nickname records)
+- Belle II: problems with user certificates issued by CILogon and RC2-40-CBC encryption algorithm
+  - Users must add `-legacy` flag when extracting certificate/key pair from issued .p12 container for grid use
+- Belle II: US mgmt wants to reinstate Motomo statistics service, currently hampered by GeoIP inacuracy
+  - Only a few user visits to the site per year may not justify dev work toward fixing dedicated service
+- CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
+  - 17 hour delay on 'unpacked' repo snapshot due to garbage collection
+- SDCC: more issues with SSO/MFA causing service failures
+  - User self-service token page broke: 500 gateway error after entering life number
+  - Several RT tickets from users who could not delete their own tokens
+    - Tickets [closed](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37235) by manually deleting user tokens, without action toward fixing or diagnosing service issue
+    - Service found to be broken since July
+   - PrivacyIdea token updated recently was faulty, needed to be regenerated with 'admin' role, replaced (`pi-manage api createtoken -r admin`)
+   - Email and web entry form templates updated with more user-friendly prompts and info
+   - Details added to [ongoing Jira SSO issue](https://racfjira.atlassian.net/browse/SSO-90)
+- BNL: renewed expiring ['Brookhaven Training Qualification (TQ-PROPERTY)' mandatory training course](https://training.bnl.gov/portal/TQ-PROPERTY)
+- BNL travel (San Diego, 28 Sep - 4 Oct)
+
+
 # 14-21 Sep
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Discussions on clean-up of defunct "software" roles in atlas/cn/usatlas
