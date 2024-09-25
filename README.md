@@ -24,14 +24,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 # 30 Sep - 5 Oct
-
+- [7th Rucio Workshop](https://indico.cern.ch/event/1343110/) (30 Sep - 4 Oct)
 - BNL travel (Tsukuba, 4-12 Oct)
 
 # 23-29 Sep
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Several problems with user grid access, missing group management privileges, disk quota issues, incorrect user metadata (e.g., email address and nickname records)
+  - CERN IAM instances have removed user `endTime` values to address incorrectly expiring memberships 
+- ATLAS: [Fabrics meeting](https://indico.cern.ch/event/1433230/) for CVMFS talks and discussion (25 Sep)
 - Belle II: problems with user certificates issued by CILogon and RC2-40-CBC encryption algorithm
   - Users must add `-legacy` flag when extracting certificate/key pair from issued .p12 container for grid use
+  - Users should also move away from CILogon certificates as their CA support ends in 2025
 - Belle II: US mgmt wants to reinstate Motomo statistics service, currently hampered by GeoIP inacuracy
   - Only a few user visits to the site per year may not justify dev work toward fixing dedicated service
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
@@ -44,9 +47,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
    - PrivacyIdea token updated recently was faulty, needed to be regenerated with 'admin' role, replaced (`pi-manage api createtoken -r admin`)
    - Email and web entry form templates updated with more user-friendly prompts and info
    - Details added to [ongoing Jira SSO issue](https://racfjira.atlassian.net/browse/SSO-90)
+- SDCC: Projects meeting on Hiro's behalf (25 Sep)
 - BNL: renewed expiring ['Brookhaven Training Qualification (TQ-PROPERTY)' mandatory training course](https://training.bnl.gov/portal/TQ-PROPERTY)
 - BNL travel (San Diego, 28 Sep - 4 Oct)
-
 
 # 14-21 Sep
 - ATLAS: VO, IAM user management, questions, troubleshooting
