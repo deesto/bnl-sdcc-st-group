@@ -37,8 +37,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Users should also move away from CILogon certificates as their CA support ends in 2025
 - Belle II: US mgmt wants to reinstate Motomo statistics service, currently hampered by GeoIP inacuracy
   - Only a few user visits to the site per year may not justify dev work toward fixing dedicated service
+- Belle II: work on OKD instance of conditions database test instance and persistent storage, connectivity to existing PostgreSQL test database
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
   - 17 hour delay on 'unpacked' repo snapshot due to garbage collection
+- Jira: begun renewal process for annual Jira Workplace Management subscription renewal
+  - SHI still involved in purchasing; exclusive SHI contact from last year's cycle no longer with company
+  - Deactivated Confluence cloud instance (unused) to enable removal from renewal quote
 - SDCC: more issues with SSO/MFA causing service failures
   - User self-service token page broke: 500 gateway error after entering life number
   - Several RT tickets from users who could not delete their own tokens
@@ -47,8 +51,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
    - PrivacyIdea token updated recently was faulty, needed to be regenerated with 'admin' role, replaced (`pi-manage api createtoken -r admin`)
    - Email and web entry form templates updated with more user-friendly prompts and info
    - Details added to [ongoing Jira SSO issue](https://racfjira.atlassian.net/browse/SSO-90)
+- SDCC: User Services discussions and recommendations on improving user email documentation, adding new password requirements to documentation and announcement
 - SDCC: Projects meeting on Hiro's behalf (25 Sep)
 - BNL: renewed expiring ['Brookhaven Training Qualification (TQ-PROPERTY)' mandatory training course](https://training.bnl.gov/portal/TQ-PROPERTY)
+- BNL: submitted [annual Conflict of Interest Disclosure disclosure form](https://brookhaven.ospreycompliancesuite.com/) (which looked like phishing) as required
 - BNL travel (San Diego, 28 Sep - 4 Oct)
 
 # 14-21 Sep
