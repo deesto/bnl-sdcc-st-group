@@ -23,9 +23,23 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 6-12 Oct
+- Belle II: 49th [Belle II General Meeting (B2GM)](https://indico.belle2.org/event/13003/) in Tsukuba (7-11 Oct)
+- BNL travel (Tsukuba through 12 Oct)
+- 
 # 30 Sep - 5 Oct
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - Continued issues with VO memberships incorrectly expiring and auto-suspension 
+- Belle II: possible issue with grid environment (gbasf2) and job submission on BNL shared pool nodes due to outdated libraries on EL7
+- CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
+  - 17-hour delay on snapshots for 'unpacked' repository (normally 5-minute interval)
 - [7th Rucio Workshop](https://indico.cern.ch/event/1343110/) (30 Sep - 4 Oct)
-- BNL travel (Tsukuba, 4-12 Oct)
+- Jira: continued renewal process for annual Jira Workplace Management subscription renewal, dealing with SHI intervention
+  - Jira & Confluence subscription prices increasing 5-10%
+- WLCG: opened [ticket in new support system](https://helpdesk.ggus.eu/#ticket/zoom/1067) to clarify/correct missing roles from user account
+- BNL: multiple discussions with BNL travel and corresponding groups regarding persistent issues with BNL-booked flights
+- BNL: submitted annual performance appraisal self assessment (1 Oct deadline)
+- BNL travel (San Diego through 4 Oct, Tsukuba, 4-12 Oct)
 
 # 23-29 Sep
 - ATLAS: VO, IAM user management, questions, troubleshooting
@@ -52,7 +66,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
    - Email and web entry form templates updated with more user-friendly prompts and info
    - Details added to [ongoing Jira SSO issue](https://racfjira.atlassian.net/browse/SSO-90)
 - SDCC: User Services discussions and recommendations on improving user email documentation, adding new password requirements to documentation and announcement
-- SDCC: Projects meeting on Hiro's behalf (25 Sep)
+- SDCC: Projects meeting (on Hiro's behalf, 25 Sep)
 - BNL: renewed expiring ['Brookhaven Training Qualification (TQ-PROPERTY)' mandatory training course](https://training.bnl.gov/portal/TQ-PROPERTY)
 - BNL: submitted [annual Conflict of Interest Disclosure disclosure form](https://brookhaven.ospreycompliancesuite.com/) (which looked like phishing) as required
 - BNL travel (San Diego, 28 Sep - 4 Oct)
