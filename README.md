@@ -26,14 +26,21 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 6-12 Oct
 - Belle II: 49th [Belle II General Meeting (B2GM)](https://indico.belle2.org/event/13003/) in Tsukuba (7-11 Oct)
 - BNL travel (Tsukuba through 12 Oct)
-- 
+ 
 # 30 Sep - 5 Oct
 - ATLAS: VO, IAM user management, questions, troubleshooting
-  - Continued issues with VO memberships incorrectly expiring and auto-suspension 
+  - Continued issues with VO memberships incorrectly expiring and auto-suspension
+  - `hr.cern:action` and `lifecycle:status` membership values still problematic for some users
 - Belle II: possible issue with grid environment (gbasf2) and job submission on BNL shared pool nodes due to outdated libraries on EL7
+  - Also an issue with xrdcp failing against BNL Belle II dCache storage (but succeeding with ATLAS dCache)
+    - Misconfiguration on dCache door nodes corrected
+- Belle II: continued discussion, planning for conditions database services platform migration
+  - Dedicated session to be held during B2GM
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
   - 17-hour delay on snapshots for 'unpacked' repository (normally 5-minute interval)
+- CVMFS: continued degraded cluster network alerts reported on dedicated NetApp NAS, because LACP is not yet properly configured
 - [7th Rucio Workshop](https://indico.cern.ch/event/1343110/) (30 Sep - 4 Oct)
+  - Many discussions about token auth, CILogon's [x.509 CA retirement in 2025](https://ca.cilogon.org/retirement) (Rucio team was not yet aware)
 - Jira: continued renewal process for annual Jira Workplace Management subscription renewal, dealing with SHI intervention
   - Jira & Confluence subscription prices increasing 5-10%
 - WLCG: opened [ticket in new support system](https://helpdesk.ggus.eu/#ticket/zoom/1067) to clarify/correct missing roles from user account
