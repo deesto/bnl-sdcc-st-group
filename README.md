@@ -24,7 +24,23 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 # 6-12 Oct
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - Users still can't add certificates to their own memberships, requires manual admin addition of PEM encoded certificate content
 - Belle II: 49th [Belle II General Meeting (B2GM)](https://indico.belle2.org/event/13003/) in Tsukuba (7-11 Oct)
+  - Serious concerns about physics runs in 2025
+    - New dust prevention devices ("knockers", "kickers", "wigglers") to be tested on beam pipes to combat sudden beam loss
+    - 2025 first run may be truncated to 2-3 months due to maintenance work and high electricity costs
+  - KEKCC data center migration issues continue to be found & fixed
+    - Belle II grid environment scripts were not migrated to new systems
+      - New Squids were not being set/used, forced uncached requests for conditions data from NAT appliances
+  - Meetings with multiple groups on feature requests and development for conditions data migration to HSF CDB solution
+- CVMFS: Costin deployed new EL9 experiment repository wrote node (cvmfswrite03)
+  - Found some issues with permissions on root-squashed NFS mount for repository writes, missing accounts/users
+  - [Verified by Chris P](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37269) for sPHENIX software builds
+- CVMFS: continued ATLAS investigation into broken requests for proprietary 'projects' repo data outside of CERN
+- CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
+- Jira: administrative intervention, modification of CRISP project settings and exclusive ACLs by new project leads
+- Jira: continued renewal process for annual Jira Workplace Management subscription renewal, dealing with SHI intervention
 - BNL travel (Tsukuba through 12 Oct)
  
 # 30 Sep - 5 Oct
