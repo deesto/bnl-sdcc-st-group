@@ -23,6 +23,27 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 14-18 Oct
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - Issues with creating new service accounts, associating them with user memberships
+    - IAM has no capacity for GUI management of service accounts, must be created/managed via API token curl calls
+  - Users can now add their own certificate DNs after IAM update
+  - 785 DNs issued by retired/invalid CAs, 96 unused VO roles purged from IAM
+  - AUP expiration of 1-year intervals restored
+- ATLAS: debugging of CVMFS client issues
+  - NET2 running out of cache within containerized clients
+    - Max nfiles (`CVMFS_NFILES`), other parameters not passed through to service container image
+  - [CVMFS developer talk at CHEP 2024](https://indico.cern.ch/event/1338689/contributions/6010994/) to address challenges of serving billions of files in highly parallel environments
+- Belle II: discussions with CILogon on pending CA closure, plans for users to migrate to CERN for certificates
+- CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
+- CVMFS: discussions with developers, MWT2 about possible use of Varnish caching
+- Jira: continued renewal process for annual Jira Workplace Management subscription renewal, dealing with SHI intervention
+- SDCC: more issues with IDM/IPA auth service and expired certificates
+  - Services failed overnight (11 Oct 2:30 AM)
+- SDCC: discussions on distribution of successful FY'25 PD proposal for EIC Computing at BNL
+- SDCC: Indico management of new [ECSJI event sub-category](https://indico.bnl.gov/category/591/) and requested ACLs (Alexei)
+- SDCC: User Services team discussions on SSH key upload issue reports & improvements
+
 # 6-12 Oct
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Users still can't add certificates to their own memberships, requires manual admin addition of PEM encoded certificate content
