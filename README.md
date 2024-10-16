@@ -29,7 +29,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
     - IAM has no capacity for GUI management of service accounts, must be created/managed via API token curl calls
   - Users can now add their own certificate DNs after IAM update
   - 785 DNs issued by retired/invalid CAs, 96 unused VO roles purged from IAM
-  - AUP expiration of 1-year intervals restored
+  - AUP expiration of 1-year intervals restored (14 Oct)
+    - 1700 ATLAS users were sent "AUP signature reminder" renewal emails from IAM with faulty link (16 Oct)
+      - AUP link access does not work without first logging into IAM
+    - ATLAS Secretariat were flooded with help requests from confused users
+    - Improved instructions sent in follow-up email to most affected users
 - ATLAS: debugging of CVMFS client issues
   - NET2 running out of cache within containerized clients
     - Max nfiles (`CVMFS_NFILES`), other parameters not passed through to service container image
@@ -43,6 +47,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: discussions on distribution of successful FY'25 PD proposal for EIC Computing at BNL
 - SDCC: Indico management of new [ECSJI event sub-category](https://indico.bnl.gov/category/591/) and requested ACLs (Alexei)
 - SDCC: User Services team discussions on SSH key upload issue reports & improvements
+- SDCC: staff position interviews [2]
 
 # 6-12 Oct
 - ATLAS: VO, IAM user management, questions, troubleshooting
