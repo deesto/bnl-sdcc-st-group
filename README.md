@@ -34,20 +34,33 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
       - AUP link access does not work without first logging into IAM
     - ATLAS Secretariat were flooded with help requests from confused users
     - Improved instructions sent in follow-up email to most affected users
+    - Email templates for AUP communications modified to include admin contact info
+- ATLAS: debugging of admin-level token generation for IAM with oidc
+  - Tokens generated to manage VO users failed with permissions issues
+  - Missing `scim` scopes for read/write operations (in addition to known `iam:admin` scopes)
 - ATLAS: debugging of CVMFS client issues
   - NET2 running out of cache within containerized clients
     - Max nfiles (`CVMFS_NFILES`), other parameters not passed through to service container image
-  - [CVMFS developer talk at CHEP 2024](https://indico.cern.ch/event/1338689/contributions/6010994/) to address challenges of serving billions of files in highly parallel environments
+  - [CVMFS developer talk at CHEP 2024](https://indico.cern.ch/event/1338689/contributions/6010994/) (Laura) to address challenges of serving billions of files in highly parallel environments
 - Belle II: discussions with CILogon on pending CA closure, plans for users to migrate to CERN for certificates
+- Belle II: direct conditions access requests from KEKCC NAT appliances still seen after environment script fix, cache variable injection restored
+  - Environment variables only set for interactive users, not batch job submission
+  - Discussions on adding environment to b2setup before running basf2
+- Belle II: issues with data transfers to BNL tape ([GGUS](https://ggus.eu/index.php?mode=ticket_info&ticket_id=168596))
+  - Caused by central DDM policy to block attempts to overwrite existing data on tape, to be mitigated manually
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
 - CVMFS: discussions with developers, MWT2 about possible use of Varnish caching
+- CVMFS: client failure debugging on ATLAS WN (acas0958)
+  - atlas-nightlies repo failed to respond, corrupted cache caused by hd failure; node removed from HTCondor pool
 - Jira: continued renewal process for annual Jira Workplace Management subscription renewal, dealing with SHI intervention
 - SDCC: more issues with IDM/IPA auth service and expired certificates
   - Services failed overnight (11 Oct 2:30 AM)
 - SDCC: discussions on distribution of successful FY'25 PD proposal for EIC Computing at BNL
+  - Heavily reduced awarded funding require reductions to allocated FTE, HW producement, project scoping
 - SDCC: Indico management of new [ECSJI event sub-category](https://indico.bnl.gov/category/591/) and requested ACLs (Alexei)
 - SDCC: User Services team discussions on SSH key upload issue reports & improvements
 - SDCC: staff position interviews [2]
+- BNL: all-hands meeting (17 Oct)
 
 # 6-12 Oct
 - ATLAS: VO, IAM user management, questions, troubleshooting
