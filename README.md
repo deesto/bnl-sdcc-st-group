@@ -23,6 +23,21 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 21-25 Oct
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: job submission downtime due to migration of grid services to new KEKCC nodes (20 Oct)
+- Belle II: HTCondor submission errors to pps-htcondor-ce.gridka.de [finally solved](https://ggus.eu/index.php?mode=ticket_info&ticket_id=164242)
+  - Ticket initially submitted Oct 2023
+- Belle II: grave concerns about abandoning Airflow for calibration and creating a new framework based on Luigi/b2luigi
+- CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
+  - 20-hour delay on snapshots for 'unpacked' repository (normally 5-minute interval)
+- Jira: continued renewal process for annual Jira Workplace Management subscription renewal, dealing with SHI intervention
+  - Statement of Work (SOW) now required by BNL purchasing for software subscriptions; created & submitted
+- SDCC: updated US ATLAS 2.3.1 milestone for CVMFS upgrade completion (Alexei)
+  - Dependent upon OpenShift and EL9 infrastructure availability
+- SDCC: provided feedback as requested for staff performance appraisals
+- SDCC: staff position interviews [1]
+
 # 14-18 Oct
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Issues with creating new service accounts, associating them with user memberships
