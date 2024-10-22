@@ -25,16 +25,25 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 21-25 Oct
 - ATLAS: VO, IAM user management, questions, troubleshooting
+  - Managing service accounts with IAM & tokens still an issue
 - Belle II: job submission downtime due to migration of grid services to new KEKCC nodes (20 Oct)
 - Belle II: HTCondor submission errors to pps-htcondor-ce.gridka.de [finally solved](https://ggus.eu/index.php?mode=ticket_info&ticket_id=164242)
   - Ticket initially submitted Oct 2023
 - Belle II: grave concerns about abandoning Airflow for calibration and creating a new framework based on Luigi/b2luigi
+- Belle II: [issues](https://gitlab.desy.de/belle2/data-production/calibration/automated-calibration-tasks/-/issues/1843) with calibration and current Airflow process on both current EL9 shared pool nodes and EL9 (Alma) test node (`spar0108`)
+  - gfal access working on EL7 but root access fails, but can not be reproduced with local admin accounts
+  - possibly failed temporarily due to DIRAC migration, unavailablilty
+  - calibration jobs running under account of user who is no longer in the B2 collaboration, may eventually expire
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
   - 20-hour delay on snapshots for 'unpacked' repository (normally 5-minute interval)
 - Jira: continued renewal process for annual Jira Workplace Management subscription renewal, dealing with SHI intervention
+  - Quote from Atlassian requested, provided, [issue closed](https://getsupport.atlassian.com/servicedesk/customer/portal/68/DDS-69557)
   - Statement of Work (SOW) now required by BNL purchasing for software subscriptions; created & submitted
+  - [Requisition/Purchase Order 455019](https://psfinance.psoft.bnl.gov/psp/Fsprod/EMPLOYEE/ERP/c/REQUISITION_ITEMS.BNL_REQ.GBL?Page=BNL_REQ_HDR&Action=U&BUSINESS_UNIT=BNL&REQ_ID=0000455019) created, submitted, approved, pinned, dispatched
+  - SHI included in PO by BNL despite providing no value or assistance in the purchasing process, because they're "a known vendor"
 - SDCC: updated US ATLAS 2.3.1 milestone for CVMFS upgrade completion (Alexei)
   - Dependent upon OpenShift and EL9 infrastructure availability
+- SDCC: User Services team discussions on monitoring improvement project work and time allocation, Belle II site analytics
 - SDCC: provided feedback as requested for staff performance appraisals
 - SDCC: staff position interviews [1]
 
