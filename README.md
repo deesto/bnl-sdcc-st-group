@@ -12,6 +12,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Rucio Token Working Group (monthly, CERN, remote)
 - SDCC ATLAS Tier 1 (weekly, remote)
 - SDCC Liaison (monthly)
+- SDCC Projects (weekly)
 - SDCC Services & Tools (weekly)
 - SDCC Staff (monthly)
 - SDCC Technical (monthly)
@@ -26,13 +27,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 21-25 Oct
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Managing service accounts with IAM & tokens still an issue
+  - CERN ATLAS IAM email templates, AUP instructions modified to include VO admin contact info
 - Belle II: job submission downtime due to migration of grid services to new KEKCC nodes (20 Oct)
 - Belle II: HTCondor submission errors to pps-htcondor-ce.gridka.de [finally solved](https://ggus.eu/index.php?mode=ticket_info&ticket_id=164242)
   - Ticket initially submitted Oct 2023
 - Belle II: grave concerns about abandoning Airflow for calibration and creating a new framework based on Luigi/b2luigi
 - Belle II: [issues](https://gitlab.desy.de/belle2/data-production/calibration/automated-calibration-tasks/-/issues/1843) with calibration and current Airflow process on both current EL9 shared pool nodes and EL9 (Alma) test node (`spar0108`)
   - gfal access working on EL7 but root access fails, but can not be reproduced with local admin accounts
-  - possibly failed temporarily due to DIRAC migration, unavailablilty
+  - likely failed temporarily due to DIRAC unavailablilty during migration
   - calibration jobs running under account of user who is no longer in the B2 collaboration, may eventually expire
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
   - 20-hour delay on snapshots for 'unpacked' repository (normally 5-minute interval)
@@ -41,6 +43,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Statement of Work (SOW) now required by BNL purchasing for software subscriptions; created & submitted
   - [Requisition/Purchase Order 455019](https://psfinance.psoft.bnl.gov/psp/Fsprod/EMPLOYEE/ERP/c/REQUISITION_ITEMS.BNL_REQ.GBL?Page=BNL_REQ_HDR&Action=U&BUSINESS_UNIT=BNL&REQ_ID=0000455019) created, submitted, approved, pinned, dispatched
   - SHI included in PO by BNL despite providing no value or assistance in the purchasing process, because they're "a known vendor"
+- SDCC: new user account request form stopped creating RT tickets for new submissions (RT#[37322](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37322))
+  - Form submission succeeded, but email notification was never sent to admins or recorded in RT
+  - sendmail on script backend host (web01) was "running" but broken (`sendmail dead but pid file exists`), needed a restart
+  - Backend is EL6, Puppet is broken, unmonitored, needs to be upgraded/replaced
+- SDCC: monitoring infrastructure [meeting](https://docs.google.com/document/d/1OGr2SvrQe7CKvmEhnTRXCYelRFTAIXa-AueFKk19HyM/edit?tab=t.0)
 - SDCC: updated US ATLAS 2.3.1 milestone for CVMFS upgrade completion (Alexei)
   - Dependent upon OpenShift and EL9 infrastructure availability
 - SDCC: User Services team discussions on monitoring improvement project work and time allocation, Belle II site analytics
