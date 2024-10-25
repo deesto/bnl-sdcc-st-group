@@ -27,6 +27,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 21-25 Oct
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Managing service accounts with IAM & tokens still an issue
+    - Extensive debugging on oidc-client operations at CERN lxplus (not installed at BNL) and local client installation
   - CERN ATLAS IAM email templates, AUP instructions modified to include VO admin contact info
 - Belle II: job submission downtime due to migration of grid services to new KEKCC nodes (20-24 Oct)
 - Belle II: HTCondor submission errors to pps-htcondor-ce.gridka.de [finally solved](https://ggus.eu/index.php?mode=ticket_info&ticket_id=164242)
@@ -37,13 +38,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - likely failed temporarily due to DIRAC unavailablilty during migration
   - calibration jobs running under account of user who is no longer in the B2 collaboration, may eventually expire, also ran out of 10TB GPFS quota
 - Belle II: [first collisions](https://www-linac.kek.jp/skekb/snapshot/lumhist/lumhist.html) in data taking for 2024c run (24 Oct)
+- CVMFS: found and reported issues with Stratum One services at [Sampa, BR](http://sampacs01.if.usp.br:8000/cvmfs/)
+  - Also found they were replicating our BNL test repo, which is undesirable -- had them stop replication, investigating why this was done 
 - CVMFS: Stratum One operations still flagged with slowness by WLCG during intensive weekend operations
   - 20-hour delay on snapshots for 'unpacked' repository (normally 5-minute interval)
 - Jira: continued renewal process for annual Jira Workplace Management subscription renewal, dealing with SHI intervention
   - Quote from Atlassian requested, provided, [issue closed](https://getsupport.atlassian.com/servicedesk/customer/portal/68/DDS-69557)
   - Statement of Work (SOW) now required by BNL purchasing for software subscriptions; created & submitted
-  - [Requisition/Purchase Order 455019](https://psfinance.psoft.bnl.gov/psp/Fsprod/EMPLOYEE/ERP/c/REQUISITION_ITEMS.BNL_REQ.GBL?Page=BNL_REQ_HDR&Action=U&BUSINESS_UNIT=BNL&REQ_ID=0000455019) created, submitted, approved, pinned, dispatched
+  - Requisition/Purchase Order [455019](https://psfinance.psoft.bnl.gov/psp/Fsprod/EMPLOYEE/ERP/c/REQUISITION_ITEMS.BNL_REQ.GBL?Page=BNL_REQ_HDR&Action=U&BUSINESS_UNIT=BNL&REQ_ID=0000455019) created, submitted, approved, pinned, dispatched
   - SHI included (who in turn included Carahsoft) in PO by BNL despite providing no value or assistance in the purchasing process, and quoting a price higher than the quote I obtained directly from Atlassian, because they're "a known vendor"
+- GGUS: more testing of roles, VO assignments for new GGUS migration to [new helpdesk service](https://helpdesk.ggus.eu/)
 - SDCC: new user account request form stopped creating RT tickets for new submissions (RT#[37322](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37322))
   - Form submission succeeded, but email notifications of new requests never sent to admins or recorded in RT
   - sendmail on script backend host (web01) was "running" but broken ('`sendmail dead but pid file exists`'), needed a restart
