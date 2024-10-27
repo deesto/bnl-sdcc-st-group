@@ -24,6 +24,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 26 Oct - 1 Nov
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- CVMFS: issues with replication of one repository from OSG (eic)
+  - Replication snapshot at 26 Oct 02:14 hung, subsequent snapshot at 02:29 failed, core dumped, corrupted catalog, prevented later scheduled snapshots from succeeding
+  - mitigated 27 Oct by checking repository, repairing catalog
+  - many full snapshot processes delayed, hung, orphaned due to heavy IO on NAS from weekly maintenance operations
+
 # 21-25 Oct
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Managing service accounts with IAM & tokens still an issue
@@ -55,7 +62,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: monitoring infrastructure [meeting](https://docs.google.com/document/d/1OGr2SvrQe7CKvmEhnTRXCYelRFTAIXa-AueFKk19HyM/edit?tab=t.0)
 - SDCC: updated US ATLAS 2.3.1 milestone for CVMFS upgrade completion (Alexei)
   - Dependent upon OpenShift and EL9 infrastructure availability
-- SDCC: User Services team discussions on monitoring improvement project work and time allocation, prod monitoring troublehsooting, Belle II site analytics
+- SDCC: User Services team discussions on monitoring improvement project work and time allocation, prod monitoring troubleshooting, Belle II site analytics
 - SDCC: provided feedback as requested for staff performance appraisals
 - SDCC: staff position interviews [1]
 
