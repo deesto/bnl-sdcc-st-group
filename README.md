@@ -26,6 +26,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 26 Oct - 1 Nov
 - ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: issues with CVMFS Stratum One at KEKCC after data center migration
+- Belle II: all hotels in Tsukuba for next B2GM (Feb 2025) already fully booked (national holliday on 25 Feb)
 - CVMFS: issues with replication of one repository from OSG (eic)
   - Replication snapshot at 26 Oct 02:14 hung, subsequent snapshot at 02:29 failed, core dumped, corrupted catalog, prevented later scheduled snapshots from succeeding
   - mitigated 27 Oct by checking repository, repairing catalog
