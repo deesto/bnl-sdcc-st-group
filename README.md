@@ -26,12 +26,27 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 26 Oct - 1 Nov
 - ATLAS: VO, IAM user management, questions, troubleshooting
+  - Problems found with IAM new user activation, expiring registration keys
 - Belle II: issues with CVMFS Stratum One at KEKCC after data center migration
-- Belle II: all hotels in Tsukuba for next B2GM (Feb 2025) already fully booked (national holliday on 25 Feb)
+- Belle II: issues persist with KEKCC NAT direct access to conditions DB services, bypassing site squids, being investigated by KEKCC core team
+- Belle II: issues with job submission to BNL after DIRAC migration, EL7-EL9 gatekeeper migration
+  - Gatekeeper changes to try and integrate non-token-based submission authentication with Gratia, which no longer supports x.509 auth, broke HTCondor job condition matching
+  - BNL closing Belle II EL7 pools & shared WNs for EL9 (i.e., spool -> spoolsub nodes); calibration & other submit groups must migrate soon
+- Belle II: [issues reported](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/426) with data transfer failures to/from BNL tape and temp SEs
+  - Test TPC attempts very slow on first try (6 minutes for 2.7G file), subsequent attempts succeed & complete much faster
+- Belle II: KEKCC now subject to Japanese security export controls, requires annual affiliation registration for all user accounts
+- Belle II: all hotels in Tsukuba for next B2GM (Feb 2025) already fully booked (national holiday on 25 Feb)
+- BNL: [reported ITD issue](https://bnlprod.servicenowservices.com/esc?id=ticket&table=incident&sys_id=a2ed141d47a59e10869b4080236d43a9) with BNL Indico not providing preference to hide Zoom links
+  - Indico Zoom plugin required, not installed at BNL, to be revisted when local expert returns from holiday
 - CVMFS: issues with replication of one repository from OSG (eic)
   - Replication snapshot at 26 Oct 02:14 hung, subsequent snapshot at 02:29 failed, core dumped, corrupted catalog, prevented later scheduled snapshots from succeeding
   - mitigated 27 Oct by checking repository, repairing catalog
   - many full snapshot processes delayed, hung, orphaned due to heavy IO on NAS from weekly maintenance operations
+- SDCC: many issues found with current production monitoring services and systems
+  - production ElasticSearch services out of allocated shards, can not create additional shards
+  - problematic dcache Logstash pipelines caused many service errors, removed from production config (RT#[36357](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36357))
+- SDCC: continued claims of missing new user account requests (RT#[37322](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37322))
+- SDCC: provided feedback on recent interview candidates
 
 # 21-25 Oct
 - ATLAS: VO, IAM user management, questions, troubleshooting
