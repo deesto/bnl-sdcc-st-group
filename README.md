@@ -45,8 +45,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: many issues found with current production monitoring services and systems
   - production ElasticSearch services out of allocated shards, can not create additional shards
   - problematic dcache Logstash pipelines caused many service errors, removed from production config (RT#[36357](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36357))
-- SDCC: continued claims of missing new user account requests (RT#[37322](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37322))
+- SDCC: another claim of missing new user account requests (RT#[37322](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37322))
+  - no evidence to show any user account requests were missing or lost during or since issues fixed last week
+  - improvements made to log request submissions, failures (Louis) to address [outstanding ticket](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37322) on the service
 - SDCC: provided feedback on recent interview candidates
+- SDCC: User Services discussions on user account scripts and logging, monitoring improvements and collaboration with staff
 
 # 21-25 Oct
 - ATLAS: VO, IAM user management, questions, troubleshooting
