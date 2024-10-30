@@ -1,4 +1,4 @@
-# BNL SDCC S&T Group
+# BNL SDCC S&amp;T Group
 Work logs for the S&amp;T Group in the SDCC at BNL.
 
 ## Ongoing Meetings
@@ -33,9 +33,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Gatekeeper changes to try and integrate non-token-based submission authentication with Gratia, which no longer supports x.509 auth, broke HTCondor job condition matching
   - BNL closing Belle II EL7 pools & shared WNs for EL9 (i.e., spool -> spoolsub nodes); calibration & other submit groups must migrate soon
 - Belle II: [issues reported](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/426) with data transfer failures to/from BNL tape and temp SEs
-  - Test TPC attempts very slow on first try (6 minutes for 2.7G file), subsequent attempts succeed & complete much faster
+  - Test TPC attempts very slow on first try (6 minutes for 2.7G file from pNFS to local home), subsequent attempts succeed & complete much faster
 - Belle II: KEKCC now subject to Japanese security export controls, requires annual affiliation registration for all user accounts
-- Belle II: all hotels in Tsukuba for next B2GM (Feb 2025) already fully booked (national holiday on 25 Feb)
+- Belle II: all hotels in Tsukuba for next B2GM (Feb 2025) already fully booked (university entrance exams 24-25 Feb, national holiday on 25 Feb)
 - BNL: [reported ITD issue](https://bnlprod.servicenowservices.com/esc?id=ticket&table=incident&sys_id=a2ed141d47a59e10869b4080236d43a9) with BNL Indico not providing preference to hide Zoom links
   - Indico Zoom plugin required, not installed at BNL, to be revisted when local expert returns from holiday
 - CVMFS: issues with replication of one repository from OSG (eic)
@@ -46,7 +46,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - production ElasticSearch services out of allocated shards, can not create additional shards
   - problematic dcache Logstash pipelines caused many service errors, removed from production config (RT#[36357](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36357))
 - SDCC: another claim of missing new user account requests (RT#[37322](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37322))
-  - no evidence to show any user account requests were missing or lost during or since issues fixed last week
+  - no evidence to suggest any user account requests were missing or lost during or since issues fixed last week
   - improvements made to log request submissions, failures (Louis) to address [outstanding ticket](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37322) on the service
 - SDCC: provided feedback on recent interview candidates
 - SDCC: User Services discussions on user account scripts and logging, monitoring improvements and collaboration with staff
