@@ -38,6 +38,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: all hotels in Tsukuba for next B2GM (Feb 2025) already fully booked (university entrance exams 24-25 Feb, national holiday on 25 Feb)
 - BNL: [reported ITD issue](https://bnlprod.servicenowservices.com/esc?id=ticket&table=incident&sys_id=a2ed141d47a59e10869b4080236d43a9) with BNL Indico not providing preference to hide Zoom links
   - Indico Zoom plugin required, not installed at BNL, to be revisted when local expert returns from holiday
+- CVMFS: issues with replication of OSG's 'colorado.xsede.org' repo
+  - replication began to fail from OSG source 29 Oct
+  - OSG discontinued repo, and its entire hosting domain, with no notification
+  - removed from Stratum One and all replication infrastructure
 - CVMFS: issues with replication of one repository from OSG (eic)
   - Replication snapshot at 26 Oct 02:14 hung, subsequent snapshot at 02:29 failed, core dumped, corrupted catalog, prevented later scheduled snapshots from succeeding
   - mitigated 27 Oct by checking repository, repairing catalog
