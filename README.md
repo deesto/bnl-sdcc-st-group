@@ -24,6 +24,22 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 2-8 Nov
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - Continued issues with user VO memberships auto-suspended by IAM
+  - Adjacent contract end & begin dates still seen as lapsing, triggering susppension, requiring manual admin overrides (often multiple)
+  - New [IAM issue](https://github.com/indigo-iam/iam/issues/863) opened to allow admins to temporarily override expiration dates
+- Belle II: web site and visitor tracking discussions with US management, including [AWStats](https://www.usbelleii.bnl.gov/awstats/awstats.pl?config=belleii) features and testing
+- Belle II: US users need to be made aware of imminent [CILogon certificate CA retirement](https://ca.cilogon.org/retirement), recommendations to user other CAs (e.g., CERN, KEK)
+- Belle II: issues with Xwiki access and authorization for editing
+  - New [Github issue](https://gitlab.desy.de/belle2/collaborative-services/xwiki-migration/-/issues/47) opened for DESY to check and fix user and group auth
+- CVMFS: continued issues with Stratum One snapshotting and other operations
+  - operations on 'unpacked' repo continue to strain other operations
+    - single repo check ran for 4+ days
+  - many full snapshot processes delayed, hung, orphaned due to heavy IO on NAS from weekly maintenance operations
+- SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements, web site analytics
+- WLCG: discussions with token profile group on accounting groups and attribute syntax
+
 # 26 Oct - 1 Nov
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Problems found with IAM new user activation, expiring registration keys
