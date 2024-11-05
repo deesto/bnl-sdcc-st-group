@@ -26,6 +26,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 2-8 Nov
 - ATLAS: VO, IAM user management, questions, troubleshooting
+  - Created & configured new ATLAS 'phys-higp' & 'phys-hmbs' VO groups, production sub-groups, group managers, WLCG role labels
   - Continued issues with user VO memberships auto-suspended by IAM
   - Adjacent contract end & begin dates still seen as lapsing, triggering susppension, requiring manual admin overrides (often multiple)
   - New [IAM issue](https://github.com/indigo-iam/iam/issues/863) opened to allow admins to temporarily override expiration dates
@@ -37,7 +38,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - operations on 'unpacked' repo continue to strain other operations
     - single repo check ran for 4+ days
   - many full snapshot processes delayed, hung, orphaned due to heavy IO on NAS from weekly maintenance operations
-- SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements, web site analytics
+- CVMFS: more discussion with OSG about why they are replicating our internal test repo, and getting it removed from replication
+- SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements, web site analytics, Drupal site issues, web site & VM hosting issues
 - WLCG: discussions with token profile group on accounting groups and attribute syntax
 
 # 26 Oct - 1 Nov
