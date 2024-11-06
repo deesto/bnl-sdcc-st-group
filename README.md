@@ -30,6 +30,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Continued issues with user VO memberships auto-suspended by IAM
   - Adjacent contract end & begin dates still seen as lapsing, triggering susppension, requiring manual admin overrides (often multiple)
   - New [IAM issue](https://github.com/indigo-iam/iam/issues/863) opened to allow admins to temporarily override expiration dates
+- ATLAS: closed [ATLAS CVMFS Github issue collector](https://github.com/cvmfs/cvmfs/issues/3615) as completed, due to lack of participation from other ATLAS sites
 - Belle II: web site and visitor tracking discussions with US management, including [AWStats](https://www.usbelleii.bnl.gov/awstats/awstats.pl?config=belleii) features and testing
 - Belle II: US users need to be made aware of imminent [CILogon certificate CA retirement](https://ca.cilogon.org/retirement), recommendations to user other CAs (e.g., CERN, KEK)
 - Belle II: issues with Xwiki access and authorization for editing
@@ -38,7 +39,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - operations on 'unpacked' repo continue to strain other operations
     - single repo check ran for 4+ days
   - many full snapshot processes delayed, hung, orphaned due to heavy IO on NAS from weekly maintenance operations
+    - Created CVMFS [Github issue report](https://github.com/cvmfs/cvmfs/issues/3690) on sleeping processes left over from completed replication runs
 - CVMFS: more discussion with OSG about why they are replicating our internal test repo, and getting it removed from replication
+  - Created OSG [Github patch](https://github.com/opensciencegrid/topology/pull/4292) and merge request to remove repo from OSG topology
+  - Created OSG [Support Ticket #78082](https://support.opensciencegrid.org/support/tickets/public/0085f28307a35fd917297f245ada3969396bbcab68fc3f8d3f73afe02e548302) to officialy request that they discontinue replication of this repository
+- CVMFS: investigated and reported slowness of 'cvmfsmon' API calls in WLCG monitoring
+  - API calls take up to 2.4 minutes to return 2.4KB of [BNL Stratum One JSON data](http://wlcg-squid-monitor.cern.ch/cvmfsmon/api/v1.0/all&format=details&server=bnl)
+- CVMFS: responded to OSG queries regarding rejection of AWS Cloudfront requests for 'neurodesk' repository data from Stratum One
+  -  `HEAD` requests to Stratum One from `130.176.179.164` (no DNS entry) for a `cvmfs.neurodesk.org` URL, which is an unknown destination and therefore denied for proxying
+- SDCC: emphasized critical state of monitoring services, need for improvements and staff involvement in Projects meeting
 - SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements, web site analytics, Drupal site issues, web site & VM hosting issues
 - WLCG: discussions with token profile group on accounting groups and attribute syntax
 
