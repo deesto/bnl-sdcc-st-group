@@ -30,11 +30,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Continued issues with user VO memberships auto-suspended by IAM
   - Adjacent contract end & begin dates still seen as lapsing, triggering susppension, requiring manual admin overrides (often multiple)
   - New [IAM issue](https://github.com/indigo-iam/iam/issues/863) opened to allow admins to temporarily override expiration dates
+  - New [CERN Service Now issue](https://cern.service-now.com/service-portal?id=ticket&table=u_request_fulfillment&n=RQF2906708) requesting data access and synchronization details from CERN Oracle HR team
+  - Discussions with ATLAS Computing management regarding continued effort and allocated time
 - ATLAS: closed [ATLAS CVMFS Github issue collector](https://github.com/cvmfs/cvmfs/issues/3615) as completed, due to lack of participation from other ATLAS sites
 - Belle II: web site and visitor tracking discussions with US management, including [AWStats](https://www.usbelleii.bnl.gov/awstats/awstats.pl?config=belleii) features and testing
 - Belle II: US users need to be made aware of imminent [CILogon certificate CA retirement](https://ca.cilogon.org/retirement), recommendations to user other CAs (e.g., CERN, KEK)
 - Belle II: issues with Xwiki access and authorization for editing
   - New [Github issue](https://gitlab.desy.de/belle2/collaborative-services/xwiki-migration/-/issues/47) opened for DESY to check and fix user and group auth
+  - Page access is available with login plus SSO; editing is disabled without VPN access or other workarounds
+- Belle II: Rucio services stressed by single user (zhoujs), warned to fix access code or face suspension
+- Belle II: discussions on conditions data services migration, responsibilities, timelines, collaboration of tasks with other groups
+  - scheduling remains heavily dependent upon OpenShift deployment
 - CVMFS: continued issues with Stratum One snapshotting and other operations
   - operations on 'unpacked' repo continue to strain other operations
     - single repo check ran for 4+ days
@@ -48,7 +54,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: responded to OSG queries regarding rejection of AWS Cloudfront requests for 'neurodesk' repository data from Stratum One
   -  `HEAD` requests to Stratum One from `130.176.179.164` (no DNS entry) for a `cvmfs.neurodesk.org` URL, which is an unknown destination and therefore denied for proxying
 - SDCC: emphasized critical state of monitoring services, need for improvements and staff involvement in Projects meeting
+- SDCC: Farm team working on EL9 migration on shared pool nodes, addressing [year-old user ticket](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36230) on EL9 env
 - SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements, web site analytics, Drupal site issues, web site & VM hosting issues
+- SDCC: staff position interviews [1]
 - WLCG: discussions with token profile group on accounting groups and attribute syntax
 
 # 26 Oct - 1 Nov
