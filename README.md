@@ -24,6 +24,25 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 11-15 Nov
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - Continued issues with new user registration one-time verification being invalidated before users can confirm them
+    - may be triggered by email anti-spam or IDS systems checking the links
+    - records on IAM service side show confirmation links being sent via email as expected
+    - followed up manually with remaining unconfirmed requests
+  - Continued issues with user VO memberships auto-suspended by IAM
+    - possible causes, CERN HR->IAM sync interval and details still unclear
+  - Many ATLAS discussions on continued VO effort vs. current resource allocation
+- Belle II: HEP FY25 US-Japan Cooperation Program suspended for at least 1 year
+- Belle II: DIRAC hosts (and other services) at BNL need to be [migrated to EL9](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/tasks/-/issues/210)
+- CVMFS: continued issues with Stratum One snapshotting and other operations
+  - operations on 'unpacked' repo continue to strain other operations
+- CVMFS: resolved reported issues with 'neurodesk' repo replication and access from CDN
+  - incorrect probe settings corrected on Cloudflare/Jetstream services; replication to be requested by experiment at RAL, IHEP, AU Stratum One sites
+- ITD: RHEL Satellite incorrectly flagged, paused unused channel (Satellite Tools 6 Beta), sent notifications 24x/day; subscriptions had to be cleaned up on service side
+- SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements
+- BNL: holiday (1)
+
 # 2-8 Nov
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Created & configured new ATLAS 'phys-higp' & 'phys-hmbs' VO groups, production sub-groups, group managers, WLCG role labels
