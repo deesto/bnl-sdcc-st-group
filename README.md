@@ -33,6 +33,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Continued issues with user VO memberships auto-suspended by IAM
     - possible causes, CERN HR->IAM sync interval and details still unclear
   - Many ATLAS discussions on continued VO effort vs. current resource allocation
+- ATLAS: debugging of reported CVMFS client issues at other sites, incorrect use of [CVMFS development add-on client check script](https://raw.githubusercontent.com/cvmfs/cvmfs/refs/heads/devel/add-ons/check_cvmfs.sh)
 - Belle II: HEP FY25 US-Japan Cooperation Program suspended for at least 1 year
 - Belle II: DIRAC hosts (and other services) at BNL need to be [migrated to EL9](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/tasks/-/issues/210)
 - CVMFS: continued issues with Stratum One snapshotting and other operations
@@ -41,6 +42,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - incorrect probe settings corrected on Cloudflare/Jetstream services; replication to be requested by experiment at RAL, IHEP, AU Stratum One sites
 - ITD: RHEL Satellite incorrectly flagged, paused unused channel (Satellite Tools 6 Beta), sent notifications 24x/day; subscriptions had to be cleaned up on service side
 - SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements
+  - with Louis and Sasha, found many error messages from facility nodes likely related to EIC computing that were apparently abandoned and running out of disk 
+- WLCG: Open Technical Forum (OTP) and DOMA combined meeting (13 Nov), focussed discussion on token readiness and CVMFS deployments
 - BNL: holiday (1)
 
 # 2-8 Nov
