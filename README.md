@@ -34,16 +34,22 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
     - possible causes, CERN HR->IAM sync interval and details still unclear
   - Many ATLAS discussions on continued VO effort vs. current resource allocation
 - ATLAS: debugging of reported CVMFS client issues at other sites, incorrect use of [CVMFS development add-on client check script](https://raw.githubusercontent.com/cvmfs/cvmfs/refs/heads/devel/add-ons/check_cvmfs.sh)
+- ATLAS: entered FTE allocation prediction for Tier-1 operations for OTP management
 - Belle II: HEP FY25 US-Japan Cooperation Program suspended for at least 1 year
 - Belle II: DIRAC hosts (and other services) at BNL need to be [migrated to EL9](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/tasks/-/issues/210)
+- Belle II: many jobs at BNL stuck in waiting state (stalled, pilot not running)
+  - pilots assigned to gatekeeper (bgk03) by DIRAC, missing from HTCondorCE
+- Belle II: GEANT grid certificate CA service (users and hosts) via Sectigo ending in Jan 2025; users and sites must renew beforehand, possibly find alternate CA
+- BNL: ITD update on [reported Indico issue](https://bnlprod.servicenowservices.com/esc?id=ticket&table=incident&sys_id=a2ed141d47a59e10869b4080236d43a9) from 28 Oct with missing preference to hide Zoom links
+  - ITD will test Zoom plugin, but no time table for testing or possible deployment
 - CVMFS: continued issues with Stratum One snapshotting and other operations
   - operations on 'unpacked' repo continue to strain other operations
 - CVMFS: resolved reported issues with 'neurodesk' repo replication and access from CDN
   - incorrect probe settings corrected on Cloudflare/Jetstream services; replication to be requested by experiment at RAL, IHEP, AU Stratum One sites
 - ITD: RHEL Satellite incorrectly flagged, paused unused channel (Satellite Tools 6 Beta), sent notifications 24x/day; subscriptions had to be cleaned up on service side
 - SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements
-  - with Louis and Sasha, found many error messages from facility nodes likely related to EIC computing that were apparently abandoned and running out of disk 
-- WLCG: Open Technical Forum (OTP) and DOMA combined meeting (13 Nov), focussed discussion on token readiness and CVMFS deployments
+  - with Louis and Sasha, found many error messages from facility nodes likely related to EIC computing that were abandoned and running out of disk 
+- WLCG: Open Technical Forum (OTF) and DOMA combined meeting (13 Nov), focussed discussion on token readiness and CVMFS deployments
 - BNL: holiday (1)
 
 # 2-8 Nov
