@@ -40,15 +40,20 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: many jobs at BNL stuck in waiting state (stalled, pilot not running)
   - pilots assigned to gatekeeper (bgk03) by DIRAC, missing from HTCondorCE
 - Belle II: GEANT grid certificate CA service (users and hosts) via Sectigo ending in Jan 2025; users and sites must renew beforehand, possibly find alternate CA
+- Belle II: issues with Rucio traces and message queue build-up
+  - increased then reduced kronos service chunk size to adjust trace flow (size of 5 seems to work best)
 - BNL: ITD update on [reported Indico issue](https://bnlprod.servicenowservices.com/esc?id=ticket&table=incident&sys_id=a2ed141d47a59e10869b4080236d43a9) from 28 Oct with missing preference to hide Zoom links
   - ITD will test Zoom plugin, but no time table for testing or possible deployment
 - CVMFS: continued issues with Stratum One snapshotting and other operations
   - operations on 'unpacked' repo continue to strain other operations
 - CVMFS: resolved reported issues with 'neurodesk' repo replication and access from CDN
   - incorrect probe settings corrected on Cloudflare/Jetstream services; replication to be requested by experiment at RAL, IHEP, AU Stratum One sites
+- CVMFS: reported issues with cvmfs-servermon service and cvmfs-stratum-alarm alerts, enumerated issues and suggested improvements
 - ITD: RHEL Satellite incorrectly flagged, paused unused channel (Satellite Tools 6 Beta), sent notifications 24x/day; subscriptions had to be cleaned up on service side
-- SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements
+- SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements, NX upgrade and migration issues, GLPI upgrade issues
   - with Louis and Sasha, found many error messages from facility nodes likely related to EIC computing that were abandoned and running out of disk 
+- SDCC: [login issues reported](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37396) with SDCC federated account login, caused by Windows Security
+- SDCC/NPPS: joint meeting to summarize important talks at CHEP, DPHEP, HEPIX
 - WLCG: Open Technical Forum (OTF) and DOMA combined meeting (13 Nov), focussed discussion on token readiness and CVMFS deployments
 - BNL: holiday (1)
 
