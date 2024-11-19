@@ -24,6 +24,23 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 18-22 Nov
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - issues with expiring AUP agreements for ATLAS service accounts (which shouldn't be attached to people)
+  - issues with IAM not checking certificate CAs along with DNs, using VOMS AA API
+  - issues with VO admins not resonding to issues without being specifically prompted
+- ATLAS: investigated reports of CVMFS issues affecting all US client sites
+- Belle II: transient issues with conditions metadata service during heavy request load from KEKCC
+  - 5m requests within a few hours on 18 Nov, heavy load continues since 16 Nov
+- Belle II: updates to [Computing wiki page for US certificates](https://xwiki.desy.de/xwiki/bin/view/BI/Belle%20II%20Internal/Computing%20WebHome/Computing%20GettingStarted/Computing%20Belle-II-Grid-Certificate/Grid%20certificates%20andor%20BNL%20computing%20account%20for%20Belle%20II%20member/) to warn users of imminent retirement of CILogon CA service
+- Belle II: announced current SuperKEKB run to continue through 27 Dec supported by KEK discresionary budget
+- Belle II: announced [scheduled power cut](https://stw.kek.jp/stpg/shisetsu/construction/) for maintenance rolling throughout 11 Jan - 8 Feb
+- Belle II: research, reflection in observation of LGBTQ in STEM day at Belle II (18 Nov), found [STEM Day site](https://prideinstem.org/lgbtstemday/) and articles
+- CVMFS: continued issues with Stratum One snapshotting and other operations
+  - operations on 'unpacked' repo continue to strain other operations
+- CVMFS: review of pending Git changes in production branch affecting write hosts (`cvmfswrite0[1-2]`): most changes not related to CVMFS (mount options for write partitions)
+- SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements, NX upgrade and migration issues, GLPI upgrade issues
+
 # 11-15 Nov
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Continued issues with new user registration one-time verification being invalidated before users can confirm them
