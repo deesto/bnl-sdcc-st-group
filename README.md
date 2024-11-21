@@ -31,7 +31,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - issues with VO admins not resonding to issues without being specifically prompted
   - updates to `perf-idtracking` VO group membership, management per current team
 - ATLAS: investigated reports of CVMFS issues affecting all US client sites
-  - one site claimed client issues at all sites; no additional details or follow-ups provided
+  - one site claimed client issues at all sites; no additional details or follow-ups provided; no such incident found
 - Belle II: transient issues with conditions metadata service during heavy request load from KEKCC
   - 5m requests within a few hours on 18 Nov, heavy load continues since 16 Nov
 - Belle II: updates to [Computing wiki page for US certificates](https://xwiki.desy.de/xwiki/bin/view/BI/Belle%20II%20Internal/Computing%20WebHome/Computing%20GettingStarted/Computing%20Belle-II-Grid-Certificate/Grid%20certificates%20andor%20BNL%20computing%20account%20for%20Belle%20II%20member/) to warn users of imminent retirement of CILogon CA service
@@ -39,12 +39,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: announced [scheduled power cut](https://stw.kek.jp/stpg/shisetsu/construction/) for maintenance rolling throughout 11 Jan - 8 Feb
 - Belle II: research, reflection in observation of LGBTQ in STEM day at Belle II (18 Nov), found [STEM Day site](https://prideinstem.org/lgbtstemday/) and articles
 - Belle II: discussions with KEKCC core computing team regarding issues with CVMFS services migration issues, contractor service breaches
+- Belle II: updates to DDM Rucio accounting dashboards in [private](https://monitoring.sdcc.bnl.gov/grafana/d/ddm-site-accounting-dev/ddm-site-accounting) vs [public](https://monitoring.sdcc.bnl.gov/pub/grafana/d/ddm-site-accounting/ddm-site-accounting) Grafana instances
+  - SDCC public Grafana won't allow edits to dashboard, requires complete deletion/recreation or admin-level manual overwrite of existing object 
 - CVMFS: continued issues with Stratum One snapshotting and other operations
   - operations on 'unpacked' repo continue to strain other operations
 - CVMFS: review of pending Git changes in production branch affecting write hosts (`cvmfswrite0{1-2}`): most changes not related to CVMFS (mount options for write partitions)
 - SDCC: monitoring infrastructure [meeting](https://docs.google.com/document/d/1OGr2SvrQe7CKvmEhnTRXCYelRFTAIXa-AueFKk19HyM/edit?tab=t.0), discussions on technical specifications and requirements, possible integration with BNL Cyber's [Gravwell](https://www.gravwell.io/) logging implementation, data retention requiremnts, storage needs and purchasing quotes
+- SDCC: many discussions assessing FTE allocation to ATLAS VO work
 - SDCC: Projects meeting
-- SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements, NX upgrade and migration issues, GLPI upgrade issues
+- SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements, NX upgrade and migration issues, GLPI upgrade issues, MM user token generation and management (per [RT ticket request](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37415))
 
 # 11-15 Nov
 - ATLAS: VO, IAM user management, questions, troubleshooting
