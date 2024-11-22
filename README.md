@@ -44,10 +44,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: continued issues with Stratum One snapshotting and other operations
   - operations on 'unpacked' repo continue to strain other operations
 - CVMFS: review of pending Git changes in production branch affecting write hosts (`cvmfswrite0{1-2}`): most changes not related to CVMFS (mount options for write partitions)
-- SDCC: monitoring infrastructure [meeting](https://docs.google.com/document/d/1OGr2SvrQe7CKvmEhnTRXCYelRFTAIXa-AueFKk19HyM/edit?tab=t.0), discussions on technical specifications and requirements, possible integration with BNL Cyber's [Gravwell](https://www.gravwell.io/) logging implementation, data retention requiremnts, storage needs and purchasing quotes
+- Cyber/SDCC: meeting on Cyber's Gravwell infrastructure and potential for addition to improved facility monitoring pipeline
+- SDCC: monitoring infrastructure [meeting](https://docs.google.com/document/d/1OGr2SvrQe7CKvmEhnTRXCYelRFTAIXa-AueFKk19HyM/edit?tab=t.0), discussions on technical specifications and requirements, possible integration with BNL Cyber's [Gravwell](https://www.gravwell.io/) logging implementation, data retention requiremnts, storage needs and purchasing quotes, GLPI deployment and testing
 - SDCC: many discussions assessing FTE allocation to ATLAS VO work
 - SDCC: Projects meeting
 - SDCC: User Services discussions on production monitoring issues and fixes, development monitoring improvements, NX upgrade and migration issues, GLPI upgrade issues, MM user token generation and management (per [RT ticket request](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37415))
+- WLCG: further testing of new GGUS Helpdesk replacement, debugging missing teams and roles, functional [ticket testing](https://helpdesk.ggus.eu/*ticket/zoom/1240)
 
 # 11-15 Nov
 - ATLAS: VO, IAM user management, questions, troubleshooting
