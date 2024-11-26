@@ -24,6 +24,24 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 25-29 Nov
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - issues with 'perf-flavtag' membership and privileges granting access to RSEs
+  -  GEANT CA users urged to renew existing certificates before pending service interruption and change (Jan 2025)
+- Belle II: many jobs at BNL continue to stall immediately after submission
+  - jobs exceeding memory request on submission (request 2G memory, using 3G)
+- Belle II: conditions database HSF migration meeting, review of planned task assignment
+- Belle II: was somehow missing from main computing list ('comp@belle2.org'), had to request membership
+- CVMFS: continued issues with Stratum One snapshotting and other operations
+  - weekly automated operations on 'unpacked' repo continue to strain other operations (5m interval snapshot delayed 18 hours)
+  - gc process on 'singularity' repo delayed 15 days
+- SDCC: brainstorming for possible FAAST initiatives, cloud computing expansion, data streaming 
+- SDCC: Jira administration for [CRISP project](https://racfjira.atlassian.net/jira/core/projects/CRISP/); even site admins can not create new project tasks due to assigned access limitations
+- WLCG: further testing of GGUS replacement system, [assignment of team roles](https://helpdesk.ggus.eu/#ticket/zoom/1241), [ticket actions and privileges](https://helpdesk.ggus.eu/#ticket/zoom/1067), [Belle II computing team permissions](https://helpdesk.ggus.eu/#ticket/zoom/1238) (posting succeeded; mail delivery failed)
+- BNL: had to complete benefits open enrollment (by accepting previous/default options)
+- BNL: renewed expiring Basic Records Management (TQ-BRM) training via challenge exam
+- BNL: holidays (2: 28-29 Nov)
+
 # 18-22 Nov
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - issues with expiring AUP agreements for ATLAS service accounts (which shouldn't be attached to people)
