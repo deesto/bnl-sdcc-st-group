@@ -24,6 +24,29 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 2-6 Dec
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - continued issues with user membership suspensions due to incorrect contract end date synchronization
+    - IAM service team found inconsistent query results for user records from HR Oracle user DB
+      - CERN DB team increased refresh interval of `cf_person_particpation` mview from 1 day to 1 minute
+      - possible issue with `gdt2511_voms_institutes` view as well if end date = today's date; investigation pending
+    - detailed discussion and debigging in [CERN SNOW ticket](https://cern.service-now.com/service-portal?id=ticket&table=u_request_fulfillment&n=RQF2906708)
+  - legacy 'production' role removed from excess/inactive [list of 70 ATLAS VO members](https://docs.google.com/spreadsheets/d/1ePZyVQ3iOpVV2yXzUy8Fgt-qBOC94BYG5QpK60fgepI/edit?gid=1929951473#gid=1929951473) (Petr)
+- Belle II: continued concerns regarding imminent [CILogon certificate CA retirement](https://ca.cilogon.org/retirement) and subsequent loss of x.509 certificates for user authentication
+  - renewed discussions with CILogon regarding possible temporary extension of CA services
+    - Extension of CILogon CA service seems unlikely; DUNE is also not ready, but CILogon is working with them to expedite token adoption (not possible for Belle II yet)
+  - notified all US Belle II partitipants with registered CILogon certificate DNs of CA retirement, recommendations for different CA providers
+- Belle II: continued investigation of running jobs being held at BNL, presumably due to memory requirements, cgroup config changes
+- Belle II: continued issues with calibration job issues with dcache access: works with root, fails with any posix access
+  - needs to work from new spool nodes (e.g., spoolsub01); xroot will be used in the future but can not change current calibration run to use it now
+  - posix issues were related to incompatible NFSv4.1 mount options; fixed and remounted (Hiro, Farm)
+- CVMFS: continued issues with Stratum One snapshotting and other operations
+  - weekly automated operations on 'unpacked' repo continue to strain other operations (5m interval snapshot delayed 18 hours)
+  - added new mount options to further optimize NFS performance on Stratum One (with Joe), possibility to also move to NFSv4 if necessary
+- ITD: secure DNS key rotation issue disrupted name resolution for two hours, interrupted access (1 Dec 8-10 AM)
+  - also affected external email delivery: unknown volume of lost messages not sent or retried during outage
+- SDCC: discussion of technical issues with sPHENIX HSF CDB implementation in OKD related to client storage privileges
+
 # 25-29 Nov
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - issues with 'perf-flavtag' membership and privileges granting access to RSEs
