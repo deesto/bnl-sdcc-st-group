@@ -28,28 +28,36 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 2-6 Dec
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - continued issues with user membership suspensions due to incorrect contract end date synchronization
+    - CERN FAP-BC scripts to clean up RU institute users after 30 Nov may have inadvertantly affected other users' records
     - IAM service team found inconsistent query results for user records from HR Oracle user DB
       - CERN DB team increased refresh interval of `cf_person_particpation` mview from 1 day to 1 minute
       - possible issue with `gdt2511_voms_institutes` view as well if end date = today's date; investigation pending
     - detailed discussion and debigging in [CERN SNOW ticket](https://cern.service-now.com/service-portal?id=ticket&table=u_request_fulfillment&n=RQF2906708)
-  - legacy 'production' role removed from excess/inactive [list of 70 ATLAS VO members](https://docs.google.com/spreadsheets/d/1ePZyVQ3iOpVV2yXzUy8Fgt-qBOC94BYG5QpK60fgepI/edit?gid=1929951473#gid=1929951473) (Petr)
+  - issues with "expired" one-time VO registration confirmation emails [from IAM](https://github.com/indigo-iam/iam/issues/862) continue to affect users
+  - legacy 'production' role removed from excess/inactive [list of 70 ATLAS VO members](https://docs.google.com/spreadsheets/d/1ePZyVQ3iOpVV2yXzUy8Fgt-qBOC94BYG5QpK60fgepI/edit?gid=1929951473#gid=1929951473) (Petr, including Hiro's privileges, which needed to be manually restored)
+  - several users having issues with certificate replacement/renewal and VO registration
+  - multiple users with complaints about fragmented, incomplete certificate documentation spread amongst multiple sites, confusing emails from IAM
 - Belle II: continued concerns regarding imminent [CILogon certificate CA retirement](https://ca.cilogon.org/retirement) and subsequent loss of x.509 certificates for user authentication
   - renewed discussions with CILogon regarding possible temporary extension of CA services
     - Extension of CILogon CA service will not be provided; DUNE is also not ready, but CILogon is working with them to expedite token adoption (not possible for Belle II yet)
   - notified all US Belle II partitipants with registered CILogon certificate DNs of CA retirement, recommendations for different CA providers
+  - WLCG, IGTF suggestion to investigate possbility of using [eMudhra CA](https://www.e-mudhra.com/home) (commercial provider in India, requires payment)
 - Belle II: continued investigation of running jobs being held at BNL, presumably due to memory requirements, cgroups config changes
 - Belle II: continued issues with calibration job issues with dcache access: works with root, fails with any posix access
   - needs to work from new spool nodes (e.g., spoolsub01); xroot will be used in the future but can not change current calibration run to use it now
   - posix issues were related to incompatible NFSv4.1 mount options; fixed and remounted (Hiro, Farm)
 - Belle II: experiment document server has been migrated from Invenio to [PubDB](https://docs.belle2.org/) ([service and migration details](https://xwiki.desy.de/xwiki/bin/view/BI/Belle%20II%20Collaborative%20Services%20and%20Tools/PubDB/))
+- Belle II: helped debugging of CVMFS client issues on NAF farm nodes at DESY (possible user load correlation, or issue with newer kernels or EL 9.4/9.5 compatability)
+- Belle II: Jan-Feb 2025 KEKCC power outage downtime schedule [finalized](https://wiki.kek.jp/pages/viewpage.action?pageId=426934473) (10-13 Jan, 8 Feb)
 - CVMFS: continued issues with Stratum One snapshotting and other operations
   - weekly automated operations on 'unpacked' repo continue to strain other operations (5m interval snapshot delayed 18 hours)
   - added new mount options to further optimize NFS performance on Stratum One (with Joe), possibility to also move to NFSv4 if necessary
 - CVMFS: major version 2.12 made [available for testing](https://ecsft.cern.ch/dist/cvmfs/cvmfs-2.12.0/)
 - ITD: secure DNS key rotation issue disrupted name resolution for two hours, interrupted access (1 Dec 8-10 AM)
   - also affected external email delivery: unknown volume of lost incoming messages not sent or retried during outage
-- SDCC: discussion of technical issues with sPHENIX HSF CDB implementation in OKD related to client storage privileges
-- SDCC: User Services discussions on GLPI upgrade and optimization, production monitoring issues and fixes, development monitoring improvements, NX upgrade and migration issues
+- SDCC: sPHENIX discussion of technical issues with HSF CDB implementation in OKD related to client storage privileges, Insure++ license server migration, NX migration
+- SDCC: User Services discussions on GLPI upgrade and optimization, production monitoring issues and fixes, development monitoring work, NX upgrade and migration issues, insure++ license server and software migration, Mattermost token API access and [user debugging](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37415)
+  - Creating a new NFS volume for SDCC software distribution (Saroj, Joe)
 
 # 25-29 Nov
 - ATLAS: VO, IAM user management, questions, troubleshooting
