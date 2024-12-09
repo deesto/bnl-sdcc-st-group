@@ -25,6 +25,21 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 9-13 Dec
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - issues with support for `voms-*` packages and EL9 compatability: package updates break with newer Java versions
+- Belle II: continued concerns regarding imminent [CILogon certificate CA retirement](https://ca.cilogon.org/retirement) and subsequent loss of x.509 certificates for user authentication
+  - recommended mitigations from WLCG (including paid extension of CA service) unfortunately do not seem feasible
+- CVMFS: continued issues with Stratum One snapshotting and other operations
+  - weekly automated maintenance on repos continue to strain other operations
+    - 'ams' replication delayed 9 hours, 'unpacked' replication delayed 20 hours
+- CVMFS: cache checking issues found in new 2.12 release; awaiting bug fixes and validation before testing locally
+  - GPG signature missing from [latest `release` package ](https://ecsft.cern.ch/dist/cvmfs/cvmfs-release/cvmfs-release-latest.noarch.rpm) (fixed)
+- NPP: all-hands meeting (9 Dec, 1.5 hours)
+- SDCC: BNL Indico management for RACF category and users, [new category created](https://indico.bnl.gov/category/601/) for SDCC/HTCondor collaborative meetings 
+- SDCC: user token access to MatterMost [solved](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37415) (with appropriate access level granted, and without elevating privileges)
+- BNL: renewed expiring "Ethical Behavior and Professional Conduct" [training](https://training.bnl.gov/portal/TQ-EMP-ETHICS)
+
 # 2-6 Dec
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - continued issues with user membership suspensions due to incorrect contract end date synchronization
