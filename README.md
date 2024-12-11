@@ -30,16 +30,22 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - issues with support for `voms-*` packages and EL9 compatability: package updates break with newer Java versions
 - Belle II: continued concerns regarding imminent [CILogon certificate CA retirement](https://ca.cilogon.org/retirement) and subsequent loss of x.509 certificates for user authentication
   - recommended mitigations from WLCG (including paid extension of CA service) unfortunately do not seem feasible
-- Belle II: batch issues on new local submit nodes, affecting calibration runs (sssd, condor services)
+- Belle II: batch issues on new local submit nodes, affecting calibration runs
+  - sssd, condor services not started after host reboots, not actively monitored
+- Belle II: continued issues with grid jobs being held on submit at BNL, requiring adjustment to max job memory on submit side to try and balance job allocation efficiency (testing 3GB/max/job)
 - Belle II: GEANT certificate users warned of CA provider change in January, urged to renew certificates beforehand
 - CVMFS: continued issues with Stratum One snapshotting and other operations
   - weekly automated maintenance on repos continue to strain other operations
     - 'ams' replication delayed 9 hours; 'unpacked' replication delayed 20 hours
 - CVMFS: cache checking issues found in new 2.12 release; awaiting bug fixes and validation before testing locally
   - GPG signature missing from [latest `release` package ](https://ecsft.cern.ch/dist/cvmfs/cvmfs-release/cvmfs-release-latest.noarch.rpm) (fixed)
+- CVMFS: troubleshooting of Stratum Zero and repair of PHENIX repo and publishing service after user configuration caused kernel panic
+  - required stopping of all publishing processes, unmounting repo partition, resetting and restoring repository (10 Dec)
 - NPP: all-hands meeting (9 Dec, 1.5 hours)
 - SDCC: BNL Indico management for RACF category and users, [new category created](https://indico.bnl.gov/category/601/) for SDCC/HTCondor collaborative meetings 
 - SDCC: user token access to MatterMost [solved](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37415) (with appropriate access level granted, and without elevating privileges)
+- SDCC: Globus support for lack of server-side multi-user end point configuration ([RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37494))
+- SDCC: acknowledged/disabled host and service Nagios alerts for retired BNLBox back-ends (bnlbox0{3,4})
 - SDCC: User Services discussions on monitoring work, NX migration
 - WLCG: 2nd [Open Technical Forum (OTF)](https://indico.cern.ch/event/1478941/) on storage challenges (10 Dec)
 - BNL: renewed expiring "Ethical Behavior and Professional Conduct" [training](https://training.bnl.gov/portal/TQ-EMP-ETHICS)
