@@ -41,12 +41,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - GPG signature missing from [latest `release` package ](https://ecsft.cern.ch/dist/cvmfs/cvmfs-release/cvmfs-release-latest.noarch.rpm) (fixed)
 - CVMFS: troubleshooting of Stratum Zero and repair of PHENIX repo and publishing service after user configuration caused kernel panic
   - required stopping of all publishing processes, unmounting repo partition, resetting and restoring repository (10 Dec)
+- CVMFS: pushing back on the [new WLCG baseline requirement](https://twiki.cern.ch/twiki/bin/view/LCG/WLCGOpsMinutes241205#WLCG_baseline_for_CVMFS_stratum) to [include cvmfs-servermon](https://twiki.cern.ch/twiki/bin/view/LCG/WLCGBaselineTable) in all Stratum One installations, which was misrepresented to WLCG as a request on my behalf
+- ITD: discussions regarding federation, IDP, authentication, tokens v. x.509 auth, InCommon, CILogon CA retirement
 - NPP: all-hands meeting (9 Dec, 1.5 hours)
 - SDCC: BNL Indico management for RACF category and users, [new category created](https://indico.bnl.gov/category/601/) for SDCC/HTCondor collaborative meetings 
 - SDCC: user token access to MatterMost [solved](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37415) (with appropriate access level granted, and without elevating privileges)
 - SDCC: Globus support for lack of server-side multi-user end point configuration ([RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37494))
 - SDCC: acknowledged/disabled host and service Nagios alerts for retired BNLBox back-ends (bnlbox0{3,4})
-- SDCC: User Services discussions on monitoring work, NX migration
+- SDCC: User Services discussions on monitoring work, NX migration, staff onboarding documentation content and availability, NFS mounts and options for software distribution, Drupal import feed module issues
+  - US ATLAS Drupal site built by DataArt using custom CERN feed import module, broke due to lack of maintenance and auto-updates from [remote Git repo](https://gitlab.cern.ch/web-team/drupal/public/d10/modules/cern-indico-feeds)
+  - after feed module fix, 2/968 feeds broken due to module restriction on room names (256 char)
+- SDCC: Jupyter/Jupyterhub debugging and testing (jupyter, atlas-jupyter, jupyter-dev)
 - WLCG: 2nd [Open Technical Forum (OTF)](https://indico.cern.ch/event/1478941/) on storage challenges (10 Dec)
 - BNL: renewed expiring "Ethical Behavior and Professional Conduct" [training](https://training.bnl.gov/portal/TQ-EMP-ETHICS)
 - BNL: obtained electronic travel authorisation (ETA) for travel to/through UK (valid 8 Jan 2025-2027)
