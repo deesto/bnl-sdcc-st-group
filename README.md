@@ -27,11 +27,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 16-20 Dec
 - Belle II: due to budget and maintenance concerns, skipping three-month run in 2025ab periods (early and mid 2025), to instead extend late 2025 run to seven months (Nov 2025 - May 2026)
-- Belle II: datacenter blackout at Napoli site caused by fire at site (affecting LCG.Napoli.it/Napoli-TMP-SE/Napoli-DATA-SE)
+- Belle II: datacenter blackout at Napoli caused by fire (affecting LCG.Napoli.it site, and Napoli-TMP-SE/Napoli-DATA-SE)
 - Belle II: heavy conditions payload access continues, due to [repeated requests](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-campaigns/-/issues/23#note_1162730) for a few payload files at sites without caches
 - Belle II: follow-ups to year-old [report](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/63#note_1163219) on slow and failed conditions data access: requests for old, invalid global tags not cached in CVMFS, should not be used
 - Belle II: updates to new analysis facility [documentation](https://gitlab.desy.de/belle2/computing/computing-facilities/bnl-analysis-facility/-/wikis/home)
-
+- CERN: renewed expiring mandatory Data Privacy training
+- CVMFS: continued issues with Stratum One snapshotting and other operations due to NAS I/O
+  - weekly automated maintenance on repos continue to strain other operations: 'unpacked' replication delayed 18 hours
+  - no improvement seen after optimizing NFS mount options
+- SDCC: User Services discussions on monitoring work, awstats implementation for US ATLAS Drupal, Git information and documentation
 
 # 9-13 Dec
 - ATLAS: VO, IAM user management, questions, troubleshooting
