@@ -25,6 +25,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 16-20 Dec
+- Belle II: run changes
+- Belle II: fire at Napoli site
+- Belle II: heavy conditions payload access continues
+- Belle II: updates to new analysis facility [documentation](https://gitlab.desy.de/belle2/computing/computing-facilities/bnl-analysis-facility/-/wikis/home)
+
+
 # 9-13 Dec
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - issues with support for `voms-*` packages and EL9 compatability: package updates break with newer Java versions
