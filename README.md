@@ -27,18 +27,22 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 16-20 Dec
 - ATLAS: VO, IAM user management, questions, troubleshooting
+  - Multiple user issues with certificate problems, DN mapping to ATLAS DDM services, DDM production privileges remaining for users who no longer have production roles in IAM, access problems to ATLAS sites related to CERN e-group membership
 - Belle II: due to budget and maintenance concerns, skipping three-month run in 2025ab periods (early and mid 2025), to instead extend late 2025 run to seven months (Nov 2025 - May 2026)
 - Belle II: datacenter blackout at Napoli caused by fire (affecting LCG.Napoli.it site, and Napoli-TMP-SE/Napoli-DATA-SE)
 - Belle II: heavy conditions payload access continues, due to [repeated requests](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-campaigns/-/issues/23#note_1162730) for a few payload files at sites without caches
 - Belle II: follow-ups to year-old [report](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/63#note_1163219) on slow and failed conditions data access: requests for old, invalid global tags not cached in CVMFS, should not be used
 - Belle II: updates to new analysis facility [documentation](https://gitlab.desy.de/belle2/computing/computing-facilities/bnl-analysis-facility/-/wikis/home)
 - Belle II: conditions database meetings, discussions on migration to (and availabiliity of) OpenShift hosting, migration and testing timelines, HSF CDB development and maintenance
-- Belle II: issues with file transfers from BNL to CNAF (no issues found with BNL FTS or 
+- Belle II: issues with file transfers from BNL to CNAF (no issues found with BNL FTS or GFAL access), possibly related to SHA1 signed host certificates
+- Belle II: one old Condor gatekeeper (bgk01) being retired, another (bgk02) being upgraded to Alma 9; Nagios disabled for bgk01
 - CERN: renewed expiring mandatory Data Privacy training
 - CVMFS: continued issues with Stratum One snapshotting and other operations due to NAS I/O
   - weekly automated maintenance on repos continue to strain other operations: 'unpacked' replication delayed 18 hours
   - no improvement seen after optimizing NFS mount options
-- SDCC: User Services discussions on monitoring work, awstats implementation for US ATLAS Drupal, Git information and documentation, GLPI upgrade and deployment, email service and documentation, NFS share details and deployment for software distribution
+- CVMFS: patched [version 2.12.3](https://ecsft.cern.ch/dist/cvmfs/cvmfs-2.12.3/) released by devs, client deployment to farm not likely until another bug-free feature release
+- ITD: migration of mail relay servers from MS Exchange to postfix caused message and content formatting issues for all non-Outlook clients, requires manual per-user fix to accounts on ITD side 
+- SDCC: User Services discussions on monitoring work, awstats implementation for US ATLAS Drupal, Git information and documentation, GLPI upgrade and deployment, email service and documentation, NFS share details and deployment for software distribution, NX service maintenance and troubleshooting and documentation
 
 # 9-13 Dec
 - ATLAS: VO, IAM user management, questions, troubleshooting
