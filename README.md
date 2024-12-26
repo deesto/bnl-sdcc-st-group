@@ -25,6 +25,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 23-27 Dec
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: KEKCC downtime schedule established during next month's KEK site-wide maintenance and power outage (10-13 Jan, 8 Feb)
+- CVMFS: investigated continued issues reported by WLCG monitoring on Stratum One operations
+  - delayed maintenance operations on 'unpacked' repo reported as "warning" by monitoring on Christmas day (completion delayed by 10 days)
+    - reported back that probe and gc code check seem faulty; gc is scheduled 1x/week and will not be retried until 28 Dec
+- SDCC: wildcard SSL certificates expiring 5 Jan, affecting many services, need to be renewed and replaced in Git repositories
+- BNL: F&O power intervention planned for next week (30 Dec, during BNL "quiet period"), not communicated to SDCC until 18 Dec, will cause downtime and possible recovery issues
+- BNL: holidays (2: 24-25 Dec)
+
 # 16-20 Dec
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Multiple user issues with certificate problems, DN mapping to ATLAS DDM services, DDM production privileges remaining for users who no longer have production roles in IAM, access problems to ATLAS sites related to CERN e-group membership
