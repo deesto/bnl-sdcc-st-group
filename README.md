@@ -25,6 +25,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 30 Dec - 3 Jan
+- Belle II: SuperKEKB acheived peak luminosity of 5.1 * 10^34 cm^-2 s^-1 (previous peak of 4.71 * 10^34 cm^-1 s^-1 during Jun 2022 run)
+- Belle II: complaints about service access failures during F&O power intervention, [GGUS tickets](https://ggus.eu/index.php?mode=ticket_info&ticket_id=169519) and [Gitlab issues](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/462#note_1166386) created by experiment
+- CVMFS: delay in 'unpacked' gc operations reported on 25 Dec not cleared until 29 Dec (14 day interval)
+- SDCC: preparation and revovery from F&O forced power test (30 Dec)
+- SDCC: broken web site announcement scripts did not record, publish announcement about F&O power intervention, could not be used to show experiments with questions and complaints about downtime
+- BNL: holiday (1: 1 Jan)
+
 # 23-27 Dec
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - Belle II: KEKCC downtime schedule established during next month's KEK site-wide maintenance and power outage (10-13 Jan, 8 Feb)
