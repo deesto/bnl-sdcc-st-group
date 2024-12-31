@@ -26,11 +26,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 # 30 Dec - 3 Jan
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - ATLAS user [manually "banned"](https://ggus.eu/index.php?mode=ticket_info&ticket_id=169504#update#12) (credentials revoked) in IAM due to millions of Rucio requests that took down CE at INFN 
 - Belle II: SuperKEKB acheived peak luminosity of 5.1 * 10^34 cm^-2 s^-1 (previous peak of 4.71 * 10^34 cm^-1 s^-1 during Jun 2022 run)
 - Belle II: complaints about service access failures during F&O power intervention, [GGUS tickets](https://ggus.eu/index.php?mode=ticket_info&ticket_id=169519) and [Gitlab issues](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/462#note_1166386) created by experiment
 - CVMFS: delay in 'unpacked' gc operations reported on 25 Dec not cleared until 29 Dec (14 day interval)
-- SDCC: preparation and revovery from F&O forced power test (30 Dec)
-- SDCC: broken web site announcement scripts did not record, publish announcement about F&O power intervention, could not be used to show experiments with questions and complaints about downtime
+- Frontier: found, reported dependency issues with minor version upgrade of latest frontier-squid package
+- SDCC: with Joe, migration of CVMFS, Frontier service VMs from RHEV to OpenShift
+- SDCC: with Jason, replacement of expiring InCommon wildcard SSL host certificates, pushed to Git to be propagated via Puppet to necessary hosts
+- SDCC: preparation and recovery from F&O forced power test (30 Dec)
+- SDCC: F&O downtime recovery exposed issues with web site announcement scripts (did not record or publish announcements about F&O power intervention, could not be used as a reference for experiments with questions and complaints about downtime)
+- SDCC: F&O downtime recovery exposed issues with NX service (host certificates left at defaults, httpd service not enabled on boot)
 - BNL: holiday (1: 1 Jan)
 
 # 23-27 Dec
