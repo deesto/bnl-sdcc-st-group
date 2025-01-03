@@ -30,13 +30,18 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - ATLAS user [manually "banned"](https://ggus.eu/index.php?mode=ticket_info&ticket_id=169504#update#12) (credentials revoked) in IAM due to millions of Rucio requests that took down CE at INFN 
 - Belle II: SuperKEKB acheived peak luminosity of 5.1 * 10^34 cm^-2 s^-1 (previous peak of 4.71 * 10^34 cm^-1 s^-1 during Jun 2022 run)
 - Belle II: complaints about service access failures during F&O power intervention, [GGUS tickets](https://ggus.eu/index.php?mode=ticket_info&ticket_id=169519) and [Gitlab issues](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/462#note_1166386) created by experiment
+- Belle II: renewed expiring host certificates on conditions database VMs
+- Belle II: with Joe, migrated conditions service VMs from RHEV to OpenShift
+  - hosting platform network issues caused extended outages on metadata and payload services; services ran crippled and at risk for a day
 - CVMFS: delay in 'unpacked' gc operations reported on 25 Dec not cleared until 29 Dec (14 day interval)
+- CVMFS: with Joe, migrated all services VMs from RHEV to OpenShift
+- Frontier: with Joe, migrated all caching services VMs from RHEV to OpenShift
 - Frontier: found, reported dependency issues with minor version upgrade of latest frontier-squid package
-- SDCC: with Joe, migration of CVMFS, Frontier service VMs from RHEV to OpenShift
 - SDCC: with Jason, replacement of expiring InCommon wildcard SSL host certificates, pushed to Git to be propagated via Puppet to necessary hosts
 - SDCC: preparation and recovery from F&O forced power test (30 Dec)
 - SDCC: F&O downtime recovery exposed issues with web site announcement scripts (did not record or publish announcements about F&O power intervention, could not be used as a reference for experiments with questions and complaints about downtime)
 - SDCC: F&O downtime recovery exposed issues with NX service (host certificates left at defaults, httpd service not enabled on boot)
+- SDCC: User Services discussions on monitoring work, SDCC web site issues, GLPI upgrade and deployment, email service and documentation, NX service maintenance and troubleshooting
 - BNL: holiday (1: 1 Jan)
 
 # 23-27 Dec
