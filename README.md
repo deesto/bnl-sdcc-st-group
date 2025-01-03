@@ -35,6 +35,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - hosting platform network issues caused extended outages on metadata and payload services; services ran crippled and at risk for a day
 - CVMFS: delay in 'unpacked' gc operations reported on 25 Dec not cleared until 29 Dec (14 day interval)
 - CVMFS: with Joe, migrated all services VMs from RHEV to OpenShift
+  - problem found with sphenix repo publishing during migration (illegal publication attempt of new, recursive dir); fixed manually
+  - liaisons turned intervention announcement into platform for complaints about mail client handling of host certificates (using SSH tunnels instead of SOCKS proxy as recommended) 
 - Frontier: with Joe, migrated all caching services VMs from RHEV to OpenShift
 - Frontier: found, reported dependency issues with minor version upgrade of latest frontier-squid package
 - SDCC: with Jason, replacement of expiring InCommon wildcard SSL host certificates, pushed to Git to be propagated via Puppet to necessary hosts
@@ -42,7 +44,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: F&O downtime recovery exposed issues with web site announcement scripts (did not record or publish announcements about F&O power intervention, could not be used as a reference for experiments with questions and complaints about downtime)
 - SDCC: F&O downtime recovery exposed issues with NX service (host certificates left at defaults, httpd service not enabled on boot)
 - SDCC: User Services discussions on monitoring work, SDCC web site issues, GLPI upgrade and deployment, email service and documentation, NX service maintenance and troubleshooting
-- BNL: holiday (1: 1 Jan)
+- BNL: holiday (1: 1 Jan), lots of activity during BNL (not so) "quiet period"
 
 # 23-27 Dec
 - ATLAS: VO, IAM user management, questions, troubleshooting
