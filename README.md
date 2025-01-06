@@ -25,6 +25,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 6-10 Jan
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - Issues with users who have multiple experiment affiliations and VO access (secondary affiliations not always extended in CERN HR DB)
+- CVMFS: continued reported delays in Stratum One operations by WLCG/cvmfs-servermon monitoring
+  - 'ams' repo snapshot delayed 9 hours (4 Jan); 'unpacked' repo snapshot delayed 22 hours (5 Jan)
+- CVMFS: Nagios again reporting transient spool mounts (in /var/spool/cvmfs) on Stratum Zero as critical failures (as of 3 Jan), required manual [acknowledgement and override](https://monitoring.sdcc.bnl.gov/nagios-rhel7/cgi-bin/extinfo.cgi?type=2&host=cvmfs-s0a.sdcc.bnl.gov&service=mountpoints)
+- SDCC: fixed [complaints about COSMO web issues](https://rt.racf.bnl.gov/rt//Ticket/Display.html?id=37529) by clearing stale/hung GPFS mount on back end sile server host
+- SDCC: many hosts (including spweb0{1,2}) evicted from GPFS clusters due to server-side disk expansion and upgrade
+  - 27 client hosts affected, required manual client package and kernel module fixes
+  - both spweb0{1,2} are being used as backends by sphenix-intra for different purposes (01: jsroot, elog; 02: phpmyadmin, HTML content)
+
 # 30 Dec - 3 Jan
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - ATLAS user [manually "banned"](https://ggus.eu/index.php?mode=ticket_info&ticket_id=169504#update#12) (credentials revoked) in IAM due to millions of Rucio requests that took down CE at INFN 
