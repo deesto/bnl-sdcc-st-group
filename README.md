@@ -28,13 +28,21 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 6-10 Jan
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Issues with users who have multiple experiment affiliations and VO access (secondary affiliations not always extended in CERN HR DB)
+  - Problematic Rucio userr from last week reinstated by ATLAS ADC
+- ATLAS: CERN power cut 8 Jan 6am CEST to test emergency generators
+- Belle II: grid downtime scheduled during KEKCC shutdown next week (10-14 Jan); job draining to begin 9 Jan; Rucio to be upgraded
+- Belle II: fielded complaints about conditions data access issues over weekend due to OpenShift network configuration issues
 - CVMFS: continued reported delays in Stratum One operations by WLCG/cvmfs-servermon monitoring
   - 'ams' repo snapshot delayed 9 hours (4 Jan); 'unpacked' repo snapshot delayed 22 hours (5 Jan)
 - CVMFS: Nagios again reporting transient spool mounts (in /var/spool/cvmfs) on Stratum Zero as critical failures (as of 3 Jan), required manual [acknowledgement and override](https://monitoring.sdcc.bnl.gov/nagios-rhel7/cgi-bin/extinfo.cgi?type=2&host=cvmfs-s0a.sdcc.bnl.gov&service=mountpoints)
-- SDCC: fixed [complaints about COSMO web issues](https://rt.racf.bnl.gov/rt//Ticket/Display.html?id=37529) by clearing stale/hung GPFS mount on back end sile server host
+- Frontier: our frontier-squid installations on EL7 are no longer supported until we migrate to EL8/9, as of version 5.9-2.1
+- SDCC: fixed [complaints about COSMO web issues](https://rt.racf.bnl.gov/rt//Ticket/Display.html?id=37529) by clearing stale/hung GPFS mount on back end file server host
 - SDCC: many hosts (including spweb0{1,2}) evicted from GPFS clusters due to server-side disk expansion and upgrade
   - 27 client hosts affected, required manual client package and kernel module fixes
   - both spweb0{1,2} are being used as backends by sphenix-intra for different purposes (01: jsroot, elog; 02: phpmyadmin, HTML content)
+- SDCC: post mortem meeting for 30 Dec F&O power intervention (8 Jan)
+- SDCC: issues with OKD due to expired SSL certificate
+- SDCC: Jira generating trial subscription requests for disabled and unwanted products; security setting to disable requests is broken; [Atlassian support ticket](https://support.atlassian.com/requests/JST-1085974/) filed
 
 # 30 Dec - 3 Jan
 - ATLAS: VO, IAM user management, questions, troubleshooting
