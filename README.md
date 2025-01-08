@@ -32,6 +32,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: CERN power cut 8 Jan 6am CEST to test emergency generators
 - Belle II: grid downtime scheduled during KEKCC shutdown next week (10-14 Jan); job draining to begin 9 Jan; Rucio to be upgraded
 - Belle II: fielded complaints about conditions data access issues over weekend due to OpenShift network configuration issues
+- CVMFS: found issues with overlapping and failing snapshots for multiple OSG repos triggered by crons for cvmfs-server, similar to symptoms outlined in [previous GitHub issue report](https://github.com/cvmfs/cvmfs/issues/3690)
 - CVMFS: continued reported delays in Stratum One operations by WLCG/cvmfs-servermon monitoring
   - 'ams' repo snapshot delayed 9 hours (4 Jan); 'unpacked' repo snapshot delayed 22 hours (5 Jan)
 - CVMFS: Nagios again reporting transient spool mounts (in /var/spool/cvmfs) on Stratum Zero as critical failures (as of 3 Jan), required manual [acknowledgement and override](https://monitoring.sdcc.bnl.gov/nagios-rhel7/cgi-bin/extinfo.cgi?type=2&host=cvmfs-s0a.sdcc.bnl.gov&service=mountpoints)
@@ -40,12 +41,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: many hosts (including spweb0{1,2}) evicted from GPFS clusters due to server-side disk expansion and upgrade
   - 27 client hosts affected, required manual client package and kernel module fixes
   - both spweb hosts being used as backends by sphenix-intra for different purposes (01: jsroot, elog; 02: phpmyadmin, HTML content)
+- SDCC: Projects meeting reports and discussions
 - SDCC: discussions for post mortem meeting for 30 Dec F&O power intervention (8 Jan)
 - SDCC: issues with OKD due to expired SSL certificate
 - SDCC: Jira generating trial subscription requests for disabled and unwanted products; security setting to disable requests is broken; [Atlassian support ticket](https://support.atlassian.com/requests/JST-1085974/) filed
 - SDCC: Gitea admin and troubleshooting of organizations and team memberships
-- SDCC: User Services discussions on monitoring work, Git and Pupppet information and documentation, SSL certificate information and replacement, NX service maintenance and troubleshooting
-
+- SDCC: debugged test web proxy failures and issues on proxytest00, fixed expired SSL certificates and virtual host configurations, brought outdated test_proxy Git environment up to date with production, restored Puppet functionality, debugged broken OKD proxying to restore service access
+  - many sites and services will break again next year when the new SSL certificate expires, unless this host is updated or Git and Puppet management are cleaned up
+  - details added to [new Jira issue]([https://racfjira.atlassian.net/browse/WEB-26)
+- SDCC: User Services discussions on monitoring work, Git and Pupppet information and documentation, SSL certificate information and replacement, NX service maintenance and troubleshooting, web server maintenance and responsibilities
 
 # 30 Dec - 3 Jan
 - ATLAS: VO, IAM user management, questions, troubleshooting
