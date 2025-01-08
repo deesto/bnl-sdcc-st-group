@@ -48,7 +48,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: Gitea admin and troubleshooting of organizations and team memberships
 - SDCC: debugged test web proxy failures and issues on proxytest00, fixed expired SSL certificates and virtual host configurations, brought outdated test_proxy Git environment up to date with production, restored Puppet functionality, debugged broken OKD proxying to restore service access
   - many sites and services will break again next year when the new SSL certificate expires, unless this host is updated or Git and Puppet management are cleaned up
-  - details added to [new Jira issue]([https://racfjira.atlassian.net/browse/WEB-26)
+  - details added to [new Jira issue](https://racfjira.atlassian.net/browse/WEB-26)
 - SDCC: User Services discussions on monitoring work, Git and Pupppet information and documentation, SSL certificate information and replacement, NX service maintenance and troubleshooting, web server maintenance and responsibilities
 
 # 30 Dec - 3 Jan
