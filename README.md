@@ -25,6 +25,27 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 13-17 Jan
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: problems with Rucio front ends after migration to OpenShift VMs, upgraded version, EL9 upgrade
+  - extensive debugging of faulty GeoIP code, SSL version mismatches
+- CVMFS: another [reported issue](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37557) with sPHENIX data hosting on our Stratum Zero
+- CVMFS: continued chasing and disproving reported problems and delays in Stratum One operations by WLCG/cvmfs-servermon monitoring
+  - also produced repeated alerts for Stratum One at KEKCC, which was in known downtime
+- SDCC: post mortem meeting for F&O power intervention
+  - Communication and coordination lacking between F&O and facility must be improved
+- SDCC: security reports from Jerome on Rucio, Kibana for Belle II (Hiro)
+  - Mitigation not clear as openssl version already latest for Alma9/RHEL9
+- SDCC: [SET repository](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37556) SSL certificate expiration, lack of support and maintenance
+  - most staff denied access to server (nnsdset01) and its gateway (nnsdssh01)
+  - problem wil recur annually since certificate was not deployed and managed via Puppet 
+- SDCC: with Costin, fixed broken package repository mirroring, added support for ARM architecture
+  - required hacking of item_repo.py and utils.py scripts, arch addition via CLI:
+    - `cobbler repo edit --name=${repo-name}cvmfs-aarch64-el9 --arch=${new-arch-name}`
+  - cobbler mirror host (extcob02) still outdated, system time broken, dhcpd broken, needs to be fixed/replaced
+- SDCC: User Services discussions on monitoring work, SSL certificate information and replacement, AFS [documentation](https://www.sdcc.bnl.gov/services/storage-services/distributed-storage/afs-distributed-file-system-service) (should be deprecated/deleted), web server maintenance and responsibilities
+
+
 # 6-10 Jan
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - Issues with users who have multiple experiment affiliations and VO access (secondary affiliations not always extended in CERN HR DB)
