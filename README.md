@@ -27,11 +27,19 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 13-17 Jan
 - ATLAS: VO, IAM user management, questions, troubleshooting
+  - issues with recently created hmbs and higp VO groups: created at VO root instead of within '/atlas' sub-group
+     - in IAM by default new groups are added to VO root, must instead be added as "subgroups" of 'atlas' group
+- ATLAS: [reported CERN issue](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC4293493) with OTP testing on lxplus9-future WNs
 - Belle II: problems with Rucio front ends after migration to OpenShift VMs, upgraded version, EL9 upgrade
   - extensive debugging of faulty GeoIP code, SSL version mismatches
+  - edits to replica_sorter and httpd systemd service config to short circuit GeoIP errors
+- Belle II: production conditions database backup and restore to test bed for verification of migration scripts
+- Belle II: additional complaints of conditions payload and IoV [calibration upload issues](https://gitlab.desy.de/belle2/data-production/calibration/prompt/-/issues/59), possibly recurrence or variation of previously seen issues caused by excessive concurrent uploads
 - CVMFS: another [reported issue](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37557) with sPHENIX data hosting on our Stratum Zero
+  - reported possible data missing from repo, but no problems or errors seen in publication or other server operations
 - CVMFS: continued chasing and disproving reported problems and delays in Stratum One operations by WLCG/cvmfs-servermon monitoring
   - also produced repeated alerts for Stratum One at KEKCC, which was in known downtime
+  - monitor incorrectly reports BNL replica is "unavailable" (disproven with response times < 0.5s)
 - SDCC: post mortem meeting for F&O power intervention
   - Communication and coordination lacking between F&O and facility must be improved
 - SDCC: security reports from Jerome on Rucio, Kibana for Belle II (Hiro)
@@ -43,8 +51,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - required hacking of item_repo.py and utils.py scripts, arch addition via CLI:
     - `cobbler repo edit --name=${repo-name}cvmfs-aarch64-el9 --arch=${new-arch-name}`
   - cobbler mirror host (extcob02) still outdated, system time broken, dhcpd broken, needs to be fixed/replaced
-- SDCC: User Services discussions on monitoring work, SSL certificate information and replacement, AFS [documentation](https://www.sdcc.bnl.gov/services/storage-services/distributed-storage/afs-distributed-file-system-service) (should be deprecated/deleted), web server maintenance and responsibilities
-
+- SDCC: Jira Work Management instance and subscription will be [migrated by Atlassian to "Jira"](https://www.atlassian.com/licensing/jira-work-management) after 3 Feb
+- SDCC: continuing to work with Atlassian on Jira [trial subscription issue](https://support.atlassian.com/requests/JST-1085974/)
+- SDCC: User Services discussions on monitoring work, SSL certificate information and replacement, AFS [documentation](https://www.sdcc.bnl.gov/services/storage-services/distributed-storage/afs-distributed-file-system-service) (should be deprecated/deleted), web server maintenance and responsibilities, IDM/IPA service maintenance warnings and their effects on account audit scripts, GLPI package deployment
 
 # 6-10 Jan
 - ATLAS: VO, IAM user management, questions, troubleshooting
