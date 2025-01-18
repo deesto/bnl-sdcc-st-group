@@ -25,7 +25,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
-# 13-17 Jan
+# 13-18 Jan
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - issues with recently created hmbs and higp VO groups: created at VO root instead of within '/atlas' sub-group
      - in IAM by default new groups are added to VO root, must instead be added as "subgroups" of 'atlas' group
@@ -35,6 +35,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - edits to replica_sorter and httpd systemd service config to short circuit GeoIP errors
 - Belle II: production conditions database backup and restore to test bed for verification of migration scripts
 - Belle II: additional complaints of conditions payload and IoV [calibration upload issues](https://gitlab.desy.de/belle2/data-production/calibration/prompt/-/issues/59), possibly recurrence or variation of previously seen issues caused by excessive concurrent uploads
+  - at least partially caused by VM platform move from RHEV to OpenShift; guest network interface MTU had to be reduced to 1400 (including docker pod virtual interfaces) 
 - CVMFS: another [reported issue](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37557) with sPHENIX data hosting on our Stratum Zero
   - reported possible data missing from repo, but no problems or errors seen in publication or other server operations
 - CVMFS: continued chasing and disproving reported problems and delays in Stratum One operations by WLCG/cvmfs-servermon monitoring
