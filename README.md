@@ -25,6 +25,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 20-24 Jan
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: more issues with conditions payload and IoV uploads since RHEV -> OpenShift mmigration
+- SDCC: [ATLAS TIM](https://indico.cern.ch/event/1472836/timetable/) (21-23 Jan)
+- BNL: holiday (1: 20 Jan)
+
 # 13-18 Jan
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - issues with recently created hmbs and higp VO groups: created at VO root instead of within '/atlas' sub-group
