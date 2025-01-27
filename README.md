@@ -25,10 +25,45 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 10-14 Feb
+- ATLAS: [INDIGO IAM Hackathon and Workshop](https://indico.cern.ch/event/1460011/), CERN (10-12 Feb)
+- BNL: travel (CERN, 1-11 Feb)
+
+# 3-7 Feb
+- ATLAS: [ATLAS Software & Computing Week #80](https://indico.cern.ch/event/1477564/), CERN (3-7 Feb)
+- BNL: travel (CERN, 1-11 Feb)
+
+# 27 Jan - 1 Feb
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - group management changes for 'perf-muons'
+  - odd 'account not active' errors for users who changed experiments to ATLAS
+  - intermittent access issues to 'voms-atlas-auth.app.cern.ch' (Shaojun)
+- ATLAS: help with US ATLAS user grid access issues, changes to required grid certificate permissions, changes to related [SDCC docs](https://www.sdcc.bnl.gov/information/installing-grid-certificate)
+- Belle II: conditions service issues temporarily mitigated by reverting VM migration to OpenShift back to RHEV (23 Jan)
+  - Downgrading MTU values of virtual interfaces within VMs not enough to solve calibration upload issues
+  - MTU of k8s pods within VMs also need to be modified below OpenShift overhead threshold
+  - Calibration team have verified all uploads and operations fully restored after reversion to RHEV hosting
+  - VIrtual networking issues in pods must be solved and verified before SDCC RHEV permanent retirement in a few months
+  - Plan to migrate pods from inside VMs to pure OpenShift hosting
+- Belle II: issues with broken access to ['CDBWeb' conditions global tag web interface](https://cdbweb.sdcc.bnl.gov/)
+  - caused by mismatch in permitted Postgres DB connections between master (4k) and replica (1k) servers
+  - CDBWeb application reads contitions data from replica server (blconddb04)
+- Belle II: issues with Rucio: tracer disabled, Chinese CA certificate user access
+- Belle II: continued discussion with Distributed Computing on replacing US user grid certificates with KEK CA (enrollment session to be held at B2GM)
+- Belle II: issues with host and service certificate replacement on DIRAC ElasticSearch nodes (bldiracvm0{3,6})
+- CVMFS: OSG finally acted on and [closed ticket (OSG #78082) from November](https://support.opensciencegrid.org/support/tickets/public/0085f28307a35fd917297f245ada3969396bbcab68fc3f8d3f73afe02e548302) on removing our local test repository from their OASIS replication
+- SDCC: Nagios server (nagios03) broken again by problems with Puppet server (gcemaster06), erased existing external resources (Nagios config and contact lists)
+  - temporariliy mitigated with Puppet service restart (Jason), but requires more attention and fixing
+- SDCC: continuing to work with Atlassian on Jira [trial subscription issue](https://support.atlassian.com/requests/JST-1085974/)
+- SDCC: User Services discussions on monitoring work, Matomo replacement with AWStats, user account activity summary automation
+- BNL: continued battle with Travel to get trip to KEK submitted for B2GM (less than a month away)
+- BNL/DOE: Department of Energy Accountability Exercise
+- BNL: travel (CERN, 1-11 Feb)
+
 # 20-24 Jan
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - Belle II: more issues with conditions payload and IoV uploads since RHEV -> OpenShift mmigration
-- SDCC: [ATLAS TIM](https://indico.cern.ch/event/1472836/timetable/) (21-23 Jan)
+- SDCC: [ATLAS TIM](https://indico.cern.ch/event/1472836/timetable/) (Stony Brook, 21-23 Jan)
 - BNL: holiday (1: 20 Jan)
 
 # 13-18 Jan
