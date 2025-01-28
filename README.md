@@ -44,21 +44,24 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - Downgrading MTU values of virtual interfaces within VMs not enough to solve calibration upload issues
   - MTU of k8s pods within VMs also need to be modified below OpenShift overhead threshold
   - Calibration team have verified all uploads and operations fully restored after reversion to RHEV hosting
-  - VIrtual networking issues in pods must be solved and verified before SDCC RHEV permanent retirement in a few months
+  - Virtual networking issues in pods must be solved and verified before SDCC RHEV permanent retirement in a few months
   - Plan to migrate pods from inside VMs to pure OpenShift hosting
 - Belle II: issues with broken access to ['CDBWeb' conditions global tag web interface](https://cdbweb.sdcc.bnl.gov/)
   - Postgres DB replica service failure caused by mismatch in permitted connections between master (4k) and replica (1k) servers
   - CDBWeb application reads contitions data from replica server (blconddb04)
 - Belle II: issues with Rucio: tracer disabled, Chinese CA certificate user access
-- Belle II: continued discussion with Distributed Computing on replacing US user grid certificates with KEK CA (enrollment session to be held at B2GM)
+- Belle II: continued discussion with Distributed Computing on replacing US user grid certificates with KEK CA, possible in-person CA enrollment session to be held at B2GM
 - Belle II: issues with host and service certificate replacement on DIRAC ElasticSearch nodes (bldiracvm0{3,6})
+- Belle II: discussions on possible Google SoC effort for conditions code improvements and enhancements
 - CVMFS: OSG finally acted on and [closed ticket (OSG #78082) from November](https://support.opensciencegrid.org/support/tickets/public/0085f28307a35fd917297f245ada3969396bbcab68fc3f8d3f73afe02e548302) on removing our local test repository from their OASIS replication
 - CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
   - snapshot on 'unpacked' repo delayed 20 hours (19 Jan), 19 hours (26 Jan)
+  - trying to optimize NAS storage performance with NFSv4.1 mount and extended mount options for replica storage -- failed due to NFS export issues (r/w ACLs, root squash, LDAP dependencies)
 - SDCC: Nagios server (nagios03) broken again by problems with Puppet server (gcemaster06), erased existing external resources (Nagios config and contact lists)
-  - temporariliy mitigated with Puppet service restart (Jason), but requires more attention and fixes
+  - temporariliy mitigated with Puppet service restart (Jason), but requires dedicated attention and fixes
 - SDCC: continuing to work with Atlassian on Jira [trial subscription issue](https://support.atlassian.com/requests/JST-1085974/)
-- SDCC: User Services discussions on monitoring work, Matomo replacement with AWStats, user account activity summary automation, sPHENIX wiki protection and access
+- SDCC: discussions on EIC monitoring effort, funds for storage purchases, possible postdoc effort
+- SDCC: User Services discussions on monitoring work, Matomo replacement with AWStats, user account activity summary automation, sPHENIX wiki protection and access, NX service problems, OTP auth issues
 - BNL: continued battle with Travel to get trip to KEK submitted for B2GM (less than a month away)
 - BNL: travel (CERN, 1-11 Feb)
 
