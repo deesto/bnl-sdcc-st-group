@@ -35,9 +35,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 27 Jan - 1 Feb
 - ATLAS: VO, IAM user management, questions, troubleshooting
-  - group management changes for 'perf-muons'
+  - group management changes for 'perf-muons', 'perf-jets', ['phys-higp', 'phys-hmbs'](https://its.cern.ch/jira/browse/CREMREQ-244) groups, and corresponding production sub-groups
   - odd 'account not active' registration errors for users who changed experiments to ATLAS
   - intermittent access issues to 'voms-atlas-auth.app.cern.ch' (Shaojun)
+  - change to Harvester/PanDA/pilot token issuer instances (from 'atlas-auth.web.cern.ch' to 'atlas-auth.cern.ch') caused lost job heatbeats and drained grid of jobs ([ATLAS Jira ticket](https://its.cern.ch/jira/browse/ATLASPANDA-1291))
 - ATLAS: help with US ATLAS user grid access issues, changes to required grid certificate permissions, changes to related [SDCC docs](https://www.sdcc.bnl.gov/information/installing-grid-certificate)
 - CERN: continued testing fixes to OTP issues on future EL9 lxplus and tunnel nodes ([CERN ticket](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC4293493))
 - Belle II: conditions service issues temporarily mitigated by reverting VM migration to OpenShift back to RHEV (23 Jan)
@@ -57,11 +58,18 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
   - snapshot on 'unpacked' repo delayed 20 hours (19 Jan), 19 hours (26 Jan)
   - trying to optimize NAS storage performance with NFSv4.1 mount and extended mount options for replica storage -- failed due to NFS export issues (r/w ACLs, root squash, LDAP dependencies)
+  - addressed WLCG monitoring complaints related to aborted maintenance processes and other errors caused by NFS mount failures during testing
+- CVMFS: spurrious errors in attr reporting from v2.12.4 client (reports itself as 2.12.4.4 instead of 2.12.4.0)
+  - to be fixed in [upcoming v2.12.5 release](https://github.com/cvmfs/cvmfs/commit/7fa12220ade41aba5d97fc95a10a0b3cbf899abb)
+- CVMFS: NFS mount issues, stale file handles on Alma 9 write host (cvmfswrite05) [reported by sPHENIX](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37593)
+  - some NFS export changes made the night before but should not have affected client mounts
 - SDCC: Nagios server (nagios03) broken again by problems with Puppet server (gcemaster06), erased existing external resources (Nagios config and contact lists)
   - temporariliy mitigated with Puppet service restart (Jason), but requires dedicated attention and fixes
 - SDCC: continuing to work with Atlassian on Jira [trial subscription issue](https://support.atlassian.com/requests/JST-1085974/)
 - SDCC: discussions on EIC monitoring effort, funds for storage purchases, possible postdoc effort
-- SDCC: User Services discussions on monitoring work, Matomo replacement with AWStats, user account activity summary automation, sPHENIX wiki protection and access, NX service problems, OTP auth issues
+- SDCC: Indico category management for new staff, user roles
+- SDCC: had to delete and recreate my SDCC OTP token to fix sync issue with incorrect token and account mappings
+- SDCC: User Services discussions on monitoring work, Matomo replacement with AWStats, user account activity summary automation, sPHENIX wiki protection and access, NX service problems, OTP token and auth issues, GLPI deployment
 - BNL: continued battle with Travel to get trip to KEK submitted for B2GM (less than a month away)
 - BNL: travel (CERN, 1-11 Feb)
 
