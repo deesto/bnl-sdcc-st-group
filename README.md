@@ -66,6 +66,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - to be fixed in [upcoming v2.12.5 release](https://github.com/cvmfs/cvmfs/commit/7fa12220ade41aba5d97fc95a10a0b3cbf899abb)
 - CVMFS: NFS mount issues, stale file handles on Alma 9 write host (cvmfswrite05) [reported by sPHENIX](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37593)
   - some NFS export changes made the night before but should not have affected client mounts
+- CVMFS: more issues caused by NFS/NetApp exported hung mounts on Stratum Zero, reported [by sPHENIX](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37600)
+  - multiple corrupted repositories required manual recovery 
 - SDCC: Nagios server (nagios03) broken again by problems with Puppet server (gcemaster06), erased existing external resources (Nagios config and contact lists)
   - temporariliy mitigated with Puppet service restart (Jason), but requires dedicated attention and fixes
 - SDCC: continuing to work with Atlassian on Jira [trial subscription issue](https://support.atlassian.com/requests/JST-1085974/)
