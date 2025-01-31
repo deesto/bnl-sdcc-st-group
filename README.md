@@ -64,6 +64,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - addressed WLCG monitoring complaints related to aborted maintenance processes and other errors caused by NFS mount failures during testing
 - CVMFS: spurrious errors in attr reporting from v2.12.4 client (reports itself as 2.12.4.4 instead of 2.12.4.0)
   - to be fixed in [upcoming v2.12.5 release](https://github.com/cvmfs/cvmfs/commit/7fa12220ade41aba5d97fc95a10a0b3cbf899abb)
+   - version .5 now [scrapped for v.6](https://github.com/cvmfs/cvmfs/compare/cvmfs-2.12.5...cvmfs-2.12.6)
 - CVMFS: NFS mount issues, stale file handles on Alma 9 write host (cvmfswrite05) [reported by sPHENIX](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37593)
   - some NFS export changes made the night before but should not have affected client mounts
 - CVMFS: more issues caused by NFS/NetApp exported hung mounts on Stratum Zero, reported [by sPHENIX](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37600)
