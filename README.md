@@ -39,6 +39,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - odd 'account not active' registration errors for users who changed experiments to ATLAS
   - intermittent access issues to 'voms-atlas-auth.app.cern.ch' (Shaojun)
   - change to Harvester/PanDA/pilot token issuer instances (from 'atlas-auth.web.cern.ch' to 'atlas-auth.cern.ch') caused lost job heatbeats and drained grid of jobs ([ATLAS Jira ticket](https://its.cern.ch/jira/browse/ATLASPANDA-1291))
+    - required [fix on PanDA side](https://its.cern.ch/jira/browse/ATLASPANDA-1294) to add support for token types issued by both instances
+  - multiple premature VO membership expirations due to end-of-month contract and appointment changes 
 - ATLAS: help with US ATLAS user grid access issues, changes to required grid certificate permissions, changes to related [SDCC docs](https://www.sdcc.bnl.gov/information/installing-grid-certificate)
 - CERN: continued testing fixes to OTP issues on future EL9 lxplus and tunnel nodes ([CERN ticket](https://cern.service-now.com/service-portal?id=ticket&table=incident&n=INC4293493))
 - Belle II: conditions service issues temporarily mitigated by reverting VM migration to OpenShift back to RHEV (23 Jan)
@@ -54,6 +56,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: continued discussion with Distributed Computing on replacing US user grid certificates with KEK CA, possible in-person CA enrollment session to be held at B2GM
 - Belle II: issues with host and service certificate replacement on DIRAC ElasticSearch nodes (bldiracvm0{3,6})
 - Belle II: discussions on possible Google SoC effort for conditions code improvements and enhancements
+- Belle II: more pings issued for latent basf2 client tasks related to conditions, CDBWeb ([Gitlab issue](https://gitlab.desy.de/belle2/software/cdb/database/-/issues/1)); assignments and reminders updated
 - CVMFS: OSG finally acted on and [closed ticket (OSG #78082) from November](https://support.opensciencegrid.org/support/tickets/public/0085f28307a35fd917297f245ada3969396bbcab68fc3f8d3f73afe02e548302) on removing our local test repository from their OASIS replication
 - CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
   - snapshot on 'unpacked' repo delayed 20 hours (19 Jan), 19 hours (26 Jan)
@@ -70,7 +73,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: Indico category management for new staff, user roles
 - SDCC: had to delete and recreate my SDCC OTP token to fix sync issue with incorrect token and account mappings
 - SDCC: User Services discussions on monitoring work, Matomo replacement with AWStats, user account activity summary automation, sPHENIX wiki protection and access, NX service problems, OTP token and auth issues, GLPI deployment
-- BNL: continued battle with Travel to get trip to KEK submitted for B2GM (less than a month away)
+- BNL: continued battle with Travel, DOE advisories to get trip to KEK submitted for B2GM (less than a month away)
+- BNL: renewed expiring, required Cyber Security training via challenge exam ([GE-CYBERSEC-CE](https://training.bnl.gov/portal/GE-CYBERSEC-CE)) 
 - BNL: travel (CERN, 1-11 Feb)
 
 # 20-24 Jan
