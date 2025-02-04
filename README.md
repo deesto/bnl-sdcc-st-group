@@ -31,6 +31,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 3-7 Feb
 - ATLAS: [ATLAS Software & Computing Week #80](https://indico.cern.ch/event/1477564/), CERN (3-7 Feb)
+  - breakout meetings on monitoring, CVMFS, service token support, shared (and not shared) cross-experiment services
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: deletion slowness and time-outs on new Rucio tracer node (blrucio09)
+  - disabled bearer tokens (`RETRIEVE_BEARER_TOKEN`) in GFAL2 http plugin
+  - reaper threads temporarily doubled to help speed up deletion queue processing
+- Belle II: working with Ruslan to establish new OpenShift pod project for testing conditions service migration from current production JavaVM pods on VMs
 - BNL: travel (CERN, 1-11 Feb)
 
 # 27 Jan - 1 Feb
