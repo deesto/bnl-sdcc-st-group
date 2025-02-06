@@ -37,7 +37,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - disabled bearer tokens (`RETRIEVE_BEARER_TOKEN`) in GFAL2 http plugin
   - reaper threads temporarily doubled to help speed up deletion queue processing
 - Belle II: working with Ruslan to establish new OpenShift pod project for testing conditions service migration from current production JavaVM pods on VMs
+- Belle II: re-signed expiring 'belle' virtual organization AUP agreement
+- CVMFS: meeting with devs (Valentin) on priorities for 2025, issues with Stratum server tools, problems with specific repos that affect downstream servers and sites (unpacked, projects, shared.storage.igwn.org)
+- CVMFS: more problems found with NFS mounts on Stratum One and write nodes
+  - local 'atlas' repository mount hung, corrupted data, required manual recovery (6 Feb)
+- CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
+  - snapshot on 'unpacked' repo delayed 19 hours (2 Feb)
+  - trying to optimize NAS storage performance with NFSv4.1 mount and extended mount options for replica storage -- failed due to NFS export issues (r/w ACLs, root squash, LDAP dependencies)
+  - recent NFS mount and mount tweaks gave no observable performance benefit 
+- BNL/SDCC organizational transition meeting with lab management (remote via Zoom w/Alexei, 6 Feb)
 - BNL: travel (CERN, 1-11 Feb)
+- BNL travel issues with electronic country clearance (eCC) for B2GM trip: incorrect destination and contact data submitted, caused interruption in appllication process, required correction
 
 # 27 Jan - 1 Feb
 - ATLAS: VO, IAM user management, questions, troubleshooting
