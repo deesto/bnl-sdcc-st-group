@@ -33,12 +33,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: [ATLAS Software & Computing Week #80](https://indico.cern.ch/event/1477564/), CERN (3-7 Feb)
   - breakout meetings on monitoring, CVMFS, service token support, shared (and not shared) cross-experiment services
 - ATLAS: VO, IAM user management, questions, troubleshooting
-- Belle II: deletion slowness and time-outs on new Rucio tracer node (blrucio09)
+- Belle II: deletion slowness and time-outs on new Rucio node (blrucio09)
   - disabled bearer tokens (`RETRIEVE_BEARER_TOKEN`) in GFAL2 http plugin
   - reaper threads temporarily doubled to help speed up deletion queue processing
 - Belle II: working with Ruslan to establish new OpenShift pod project for testing conditions service migration from current production JavaVM pods on VMs
 - Belle II: re-signed expiring 'belle' virtual organization AUP agreement
+- Belle II: discussions with conditions, distributed computing teams on [new DAQ usage](https://indico.belle2.org/event/14328/#6-daq-possibility-of-a-quick-d) of sub-run metadata and collateral effects and expectations (e.g., calibration builds)
 - CVMFS: meeting with devs (Valentin) on priorities for 2025, issues with Stratum server tools, problems with specific repos that affect downstream servers and sites (unpacked, projects, shared.storage.igwn.org)
+- CVMFS: meeting with ATLAS SFT on client use plans and priorities
 - CVMFS: more problems found with NFS mounts on Stratum One and write nodes
   - local 'atlas' repository mount hung, corrupted data, required manual recovery (6 Feb)
 - CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
