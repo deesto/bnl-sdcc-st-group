@@ -27,6 +27,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 10-14 Feb
 - ATLAS: [INDIGO IAM Hackathon and Workshop](https://indico.cern.ch/event/1460011/), CERN (10-12 Feb)
+  - [live meeting notes](https://docs.google.com/document/d/1goe9_pfbeiNx5r113_Kk821tyhFJqhiPglXn3qXNmzg/edit?tab=t.0)
+  - feedback to IAM devs, admins on ATLAS, Belle II, DUNE use and requirements
+- Belle II: user reported issues with global tag access for release-09-00-00
+  - caused by incorrect pre-loading of required GTs (data_prompt_rel08)
+- CVMFS: remote questions on access issues to STAR repo [RT #37622](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37622)
 - BNL: travel (CERN, 1-11 Feb)
 
 # 3-7 Feb
