@@ -29,9 +29,23 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: [INDIGO IAM Hackathon and Workshop](https://indico.cern.ch/event/1460011/), CERN (10-12 Feb)
   - [live meeting notes](https://docs.google.com/document/d/1goe9_pfbeiNx5r113_Kk821tyhFJqhiPglXn3qXNmzg/edit?tab=t.0)
   - feedback to IAM devs, admins on ATLAS, Belle II, DUNE use and requirements
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - user initial registration link issues continue, caused by HEAD requests by some email clients (e.g., Outlook) on behalf of user, invalidating one-time links
+    - [fixed in IAM](https://github.com/indigo-iam/iam/issues/862), to be deployed in upcoming ATLAS instance upgrade 
 - Belle II: user reported issues with global tag access for release-09-00-00
   - caused by incorrect pre-loading of required GTs (data_prompt_rel08)
+- Belle II: continued issues with some DESY users forwarding email to their BNL accounts, denied by BNL DMARC policy
+  - reported to DESY UCO (rt #1474850), under investigation but not likely much they can do on their side
+- Belle II: discussions, meetings, prep work related to planned migration of conditions to HSF Reference Conditions Database implementation
+- CVMFS: still finding stale file handles, broken NFS mounts on Stratum Zero, required fixes and remounts of spool partitions for each repository
+  - restarted broken spool mount daemons; eventually required host reboot, check and recovery of affected repositories
+- CVMFS: major upgrade of server, client versions on Stratum Zero service (v2.11.5 -> 2.12.6)
 - CVMFS: remote questions on access issues to STAR repo [RT #37622](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37622)
+- SDCC: continuing to work with Atlassian on Jira [trial subscription issue](https://support.atlassian.com/requests/JST-1085974/), issue finally resolved
+- BNL: travel eCC corrected, resubmitted, and approved for Belle II GM travel
+- BNL: HR meeting (12 Feb)
+- BNL: delayed site opening due to weather (12 Feb)
+- BNL: vacation days (2: 13-14 Feb)
 - BNL: travel (CERN, 1-11 Feb)
 
 # 3-7 Feb
