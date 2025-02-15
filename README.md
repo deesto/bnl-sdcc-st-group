@@ -25,7 +25,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
-# 10-14 Feb
+# 10-15 Feb
 - ATLAS: [INDIGO IAM Hackathon and Workshop](https://indico.cern.ch/event/1460011/), CERN (10-12 Feb)
   - [live meeting notes](https://docs.google.com/document/d/1goe9_pfbeiNx5r113_Kk821tyhFJqhiPglXn3qXNmzg/edit?tab=t.0)
   - feedback to IAM devs, admins on ATLAS, Belle II, DUNE use and requirements
@@ -40,6 +40,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: still finding stale file handles, broken NFS mounts on Stratum Zero, required fixes and remounts of spool partitions for each repository
   - restarted broken spool mount daemons; eventually required host reboot, check and recovery of affected repositories
 - CVMFS: major upgrade of server, client versions on Stratum Zero service (v2.11.5 -> 2.12.6)
+- CVMFS: server software upgrade triggered VM reboot, which resulted in three-day Stratum Zero publishing outage (13-15 Feb)
+  - upgrade reverted to previous version during debugging
+  - ultimate cause found to be misconfigured NFS systemd mount script (NFS export was being mounted instead of local partition)
+  - after diagnosis and fix, all Stratum Zero repositories needed to be manually recovered, as well as their corresponding Stratum One replicas
+    - debugging, fix, and recovery cost me three days and two nights of out-of-office time (two vacation days, one weekend day)
 - CVMFS: remote questions on access issues to STAR repo [RT #37622](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37622)
 - SDCC: continuing to work with Atlassian on Jira [trial subscription issue](https://support.atlassian.com/requests/JST-1085974/), issue finally resolved
 - BNL: travel eCC corrected, resubmitted, and approved for Belle II GM travel
