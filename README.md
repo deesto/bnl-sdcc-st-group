@@ -25,6 +25,25 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 3- 7 Mar
+- BNL: vacation days (3: 3-5 Mar)
+- BNL: travel (KEK, 21 Feb - 6 Mar)
+
+# 24 Mar - 1 Feb
+- Belle II: General Meeting and 
+- BNL: travel (KEK, 21 Feb - 6 Mar)
+
+# 17-21 Feb
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - issues with DDM access, DN replacement
+- CVMFS: additional replica repair required after last week's publishing issue: outdated replica reflogs updated and replaced
+- CVMFS: [RT ticket on failed remote access](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37622) closed; issue was client-side firewall restriction
+- CVMFS: discussions on fragmentation and optimization of Stratum Zero repository content for local ATLAS jobs (with Shuwei) 
+- SDCC: httpd virtual host creation and maintenance process improvement discussion, and updating proxy servers (Louis, with Chris, Ofer)
+- SDCC: SPHENIX Jenkins server (jenkins01) fixes for CVMFS client version, GPFS client version to repair Puppet runs (with Joe)
+  - issues remain with manual Jenkins .jar file management
+- BNL: travel (KEK, 21 Feb - 6 Mar)
+
 # 10-15 Feb
 - ATLAS: [INDIGO IAM Hackathon and Workshop](https://indico.cern.ch/event/1460011/), CERN (10-12 Feb)
   - [live meeting notes](https://docs.google.com/document/d/1goe9_pfbeiNx5r113_Kk821tyhFJqhiPglXn3qXNmzg/edit?tab=t.0)
