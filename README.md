@@ -30,19 +30,32 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - BNL: travel (KEK, 21 Feb - 6 Mar)
 
 # 24 Mar - 1 Feb
-- Belle II: General Meeting and 
+- Belle II: General Meeting and Pre-B2GM Computing meetings
 - BNL: travel (KEK, 21 Feb - 6 Mar)
 
 # 17-21 Feb
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - issues with DDM access, DN replacement
-- CVMFS: additional replica repair required after last week's publishing issue: outdated replica reflogs updated and replaced
+- ATLAS: WLCG/DOMA General Meeting (19 Feb)
+- Belle II: working with SDCC infra team to enable NFS mounts within OpenShift for conditions database services testing
+  - also working to correct and optimize persistent volume (PV) and claims (PVC) permissions and provisioning
+- Belle II: solidifying plans to formally interview US Belle II users at [a special B2GM session](https://indico.belle2.org/event/13868/sessions/4487/) for KEK grid certificate issuer clearance
+- Belle II: continued discussions on HSF Reference Conditions Database implementation in Belle II and elsewhere (Ruslan, Paul, Michel)
+- Belle II: new DAQ sub-runs determined to be internal and for online processing, not for offline; likely no implications for conditions data or Distributed Computing
+- Belle II: submitted annual renewal request for KEKCC and KDS service accounts
+- CVMFS: additional replica repair required after last week's publishing issue: outdated replica reflogs updated and replaced; failed/aborted garbage collection processes repaired and resumed
+  - mounts and mount scripts on Stratum Zero need to be cleaned up and solidified
 - CVMFS: [RT ticket on failed remote access](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37622) closed; issue was client-side firewall restriction
 - CVMFS: discussions on fragmentation and optimization of Stratum Zero repository content for local ATLAS jobs (with Shuwei) 
 - SDCC: httpd virtual host creation and maintenance process improvement discussion, and updating proxy servers (Louis, with Chris, Ofer)
 - SDCC: SPHENIX Jenkins server (jenkins01) fixes for CVMFS client version, GPFS client version to repair Puppet runs (with Joe)
   - issues remain with manual Jenkins .jar file management
+- SDCC Jira: investigating notification from Atlassian regarding "confirmed" product orders by Carahsoft that were not requested
+  - As Carahsoft have somehow established themselves as "Atlassian partner" for our Jira instance, I have no visibility into billing
+  - Passed on to Carahsoft account representatives (A. Gregg, N. Coughlin) for explanation and detailed information
+  - Possibly related to Atlassian's changing Jira product names and migrating data, but no details provided
 - BNL: travel (KEK, 21 Feb - 6 Mar)
+- BNL: vacation carryover request submitted prior to 1 Mar deadline 
 
 # 10-15 Feb
 - ATLAS: [INDIGO IAM Hackathon and Workshop](https://indico.cern.ch/event/1460011/), CERN (10-12 Feb)
