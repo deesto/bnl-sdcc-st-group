@@ -37,9 +37,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - issues with DDM access, DN replacement
 - ATLAS: WLCG/DOMA General Meeting (19 Feb)
-- Belle II: working with SDCC infra team to enable NFS mounts within OpenShift for conditions database services testing
+- ATLAS: discussions with ATLAS, CVMFS, US ATLAS teams on possible use of Varnish caching with or in place of Squid, expressed interest in testing
+- Belle II: working with SDCC infra team, CDB team to enable NFS mounts within OpenShift for conditions database services testing
   - also working to correct and optimize persistent volume (PV) and claims (PVC) permissions and provisioning
-- Belle II: solidifying plans to formally interview US Belle II users at [a special B2GM session](https://indico.belle2.org/event/13868/sessions/4487/) for KEK grid certificate issuer clearance
+- Belle II: contributions to slides, talks on conditions database service status and migration for next week's B2GM
+- Belle II: schedule established to formally interview US Belle II users at [a special B2GM session](https://indico.belle2.org/event/13868/sessions/4487/) for KEK grid certificate issuer clearance
 - Belle II: continued discussions on HSF Reference Conditions Database implementation in Belle II and elsewhere (Ruslan, Paul, Michel)
 - Belle II: new DAQ sub-runs determined to be internal and for online processing, not for offline; likely no implications for conditions data or Distributed Computing
 - Belle II: submitted annual renewal request for KEKCC and KDS service accounts
