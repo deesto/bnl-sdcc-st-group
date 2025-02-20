@@ -54,7 +54,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - As Carahsoft have somehow established themselves as "Atlassian partner" for our Jira instance, I have no visibility into billing
   - Passed on to Carahsoft account representatives (A. Gregg, N. Coughlin) for explanation and detailed information
   - Possibly related to Atlassian's changing Jira product names and migrating data, but no details provided
+  - Atlassian changed our 100 seat license to only 50 seats -- less than our active users -- during migration of "Jira Work Management" to "Jira"
+    - As Carahsoft have changed our license to a partner-managed subscription, Carahsoft need to follow up on this
+- SDCC User Services: discussions on monitoring, web proxies and virtual hosts, Jupyter proxies and back-end issues
 - BNL: travel (KEK, 21 Feb - 6 Mar)
+- BNL: submitted Annual Property Pass Inventory Verification for FY25 form
 - BNL: vacation carryover request submitted prior to 1 Mar deadline 
 
 # 10-15 Feb
