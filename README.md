@@ -30,7 +30,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - BNL: travel (KEK, 21 Feb - 6 Mar)
 
 # 24 Mar - 1 Feb
-- Belle II: General Meeting and Pre-B2GM Computing meetings
+- Belle II: [general collaboration meeting](https://indico.belle2.org/event/13868/) and [Pre-B2GM Computing](https://indico.belle2.org/event/14015/) meetings
+  - most [reports](https://indico.belle2.org/event/13868/contributions/85461/attachments/33031/48798/B2GM_Mitsuka_20250226.pdf) concluding vacuum sealant (VacSeal) compound as likely cause of sudden beam loss (SBL) 
+  - many meetings on conditions services, data processing, data management
+  - issues with DIRAC DB performance; DB service restart failed, required service host reboots and job submission downtime (>24h)
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - issues with old/incorrect user CERN accounts linked to VO membership; requires VO record patch via curl token calls (CERN [SNOW #RQF3043728](https://cern.service-now.com/service-portal?id=ticket&table=u_request_fulfillment&n=RQF3043728))
+- CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
+  - snapshot on 'unpacked' repo delayed 20 hours (24 Feb)
+  - other sites also reporting issues with garbage collection impacting replication operations: sft GC running at DESY > 12 hours
+- SDCC: removal of ex-staff user from staff groups in facility services (Jira, RT) 
 - BNL: travel (KEK, 21 Feb - 6 Mar)
 
 # 17-21 Feb
