@@ -28,11 +28,21 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 10-14 Mar
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: [request from CMS](https://helpdesk.ggus.eu/#ticket/zoom/2569) to make new CVMFS repo (cms-griddata) available on BNL WNs, Stratum One replica
-- Belle II: temporarily reduced Rucio cleaner daemon sleep times to help process growing backlog of DDM rules and locks, with Cedric
+- Belle II: temporarily reduced (and then restored) default Rucio cleaner daemon sleep times to help process growing backlog of DDM rules and locks, with Cedric (11 Mar)
 - Belle II: site checks for current IPv6 support for services (- conditions, - DIRAC, + FTS), with Silvio
 - Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
+- Belle II: time on Rucio server (blrucio06) fell > 1300 seconds behind standdard time, beginning with power outage
+  - ntpd stopped running after VM failed due to power outage; required manual `ntpdate` run with specific ntp server as argument 
+- Belle II: Invenio docs service has been shut down in favor of PubDB ([details](https://xwiki.desy.de/xwiki/bin/view/BI/Belle%20II%20Collaborative%20Services%20and%20Tools/PubDB/))
 - CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
   - snapshot on 'unpacked' repo delayed 42 hours (11 Feb); others delayed > 48 hours (e.g., na61.cern.ch, 9 Feb)
+- CVMFS: Stratum Zero server again triggering Nagios alerts on spool storage mounts after data center power outage
+  - read-only repo-specific spool mounts are transient and should not be tracked as critical alerts by Nagios
+- CVMFS: dev team and collaborators now looking into Varnish replacement for Squid, new working group established
+  - looking into Varnish use in ATLAS/US ATLAS, with Ilija
+- SDCC: monitoring prototype meeting, discussions
+  - additional funding found for Prometheus storage purchase, Rob to request purchasing quotes
+  - a few PB of old, out of warranty storage from retired GPFS can also be used for proof of concept
 
 # 3- 8 Mar
 - ATLAS: VO, IAM user management, questions, troubleshooting
