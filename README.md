@@ -25,7 +25,21 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
-# 3- 7 Mar
+# 10-14 Mar
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS: [request from CMS](https://helpdesk.ggus.eu/#ticket/zoom/2569) to make new CVMFS repo (cms-griddata) available on BNL WNs, Stratum One replica
+- Belle II: temporarily reduced Rucio cleaner daemon sleep times to help process growing backlog of DDM rules and locks, with Cedric
+- Belle II: site checks for current IPv6 support for services (- conditions, - DIRAC, + FTS), with Silvio
+- Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
+- CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
+  - snapshot on 'unpacked' repo delayed 42 hours (11 Feb); others delayed > 48 hours (e.g., na61.cern.ch, 9 Feb)
+
+# 3- 8 Mar
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
+- Belle II: issues with Rucio front-end services (3 Mar)
+  - related to disparate /var partition sizes for two front-end hosts (blrucio0{7,8}): one was a factor of 3 smaller and ran out of space
+- SDCC: recovery of multiple services and hosts after 7 Mar SDCC data center power outage (CVMFS, )
 - BNL: vacation days (3: 3-5 Mar)
 - BNL: travel (KEK, 21 Feb - 6 Mar)
 
