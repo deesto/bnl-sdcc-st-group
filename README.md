@@ -31,7 +31,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: temporarily reduced (and then restored) default Rucio cleaner daemon sleep times to help process growing backlog of DDM rules and locks, with Cedric (11 Mar)
 - Belle II: site checks for current IPv6 support for services (- conditions, - DIRAC, + FTS), with Silvio
 - Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
-- Belle II: time on Rucio server (blrucio06) fell > 1300 seconds behind standdard time, beginning with power outage
+- Belle II: time on Rucio server (blrucio06) fell > 1300 seconds behind standard time, beginning with power outage
   - ntpd stopped running after VM failed due to power outage; required manual `ntpdate` run with specific ntp server as argument 
 - Belle II: Invenio docs service has been shut down in favor of PubDB ([details](https://xwiki.desy.de/xwiki/bin/view/BI/Belle%20II%20Collaborative%20Services%20and%20Tools/PubDB/))
 - CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
@@ -43,13 +43,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: monitoring prototype meeting, discussions
   - additional funding found for Prometheus storage purchase, Rob to request purchasing quotes
   - a few PB of old, out of warranty storage from retired GPFS can also be used for proof of concept
+- SDCC: troubleshooting of broken Drupal site (no private menu, no editing or admin tools)
+  - group and site admin roles were dropped by a recent Drupal update, required manual reinstatement
+- SDCC: troubleshooting of missing data in Grafana plots
+  - production ElasticSearch data lost for Belle II conditions services for substantial periods (27 Feb - 11 Mar, 12 Mar 2-3:30am), cause unknown
 
 # 3- 8 Mar
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
 - Belle II: issues with Rucio front-end services (3 Mar)
   - related to disparate /var partition sizes for two front-end hosts (blrucio0{7,8}): one was a factor of 3 smaller and ran out of space
-- SDCC: recovery of multiple services and hosts after 7 Mar SDCC data center power outage (CVMFS, )
+- SDCC: recovery of multiple services and hosts after 7 Mar SDCC data center power outage
 - BNL: vacation days (3: 3-5 Mar)
 - BNL: travel (KEK, 21 Feb - 6 Mar)
 
