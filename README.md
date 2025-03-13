@@ -34,8 +34,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: time on Rucio server (blrucio06) fell > 1300 seconds behind standard time, beginning with power outage
   - ntpd stopped running after VM failed due to power outage; required manual `ntpdate` run with specific ntp server as argument 
 - Belle II: Invenio docs service has been shut down in favor of PubDB ([details](https://xwiki.desy.de/xwiki/bin/view/BI/Belle%20II%20Collaborative%20Services%20and%20Tools/PubDB/))
+- Belle II: production InfluxDB service feeding Grafana was shut down (because Carlos confirmed it was not in use)
+  - with Joe, RHEV VM restored, moved to OpenShift, still needs software update and migration to EL9
+  - warnings triggered and sent to B2 T1 CDB mail alias (which is currently just me and RT, and mail rejected by RT)
+- Belle II: OpenShift pod version of current conditions services deployment ready for testing, requires routing to WAN for external tests (by software and data processing teams)
+  - infra team needs to transition firewall rules to OpenShift haproxy ACLs in order to enable WAN access
 - CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
   - snapshot on 'unpacked' repo delayed 42 hours (11 Feb); others delayed > 48 hours (e.g., na61.cern.ch, 9 Feb)
+  - exploring whether disabling NFS 'atime' attribute and overhead might improve performance
+    - no NFS client-side 'noatime' mount option, must be disabled on NFS export side (NetApp NAS)
+    - disabled on NetApp (13 Mar), to determine impact on high IO operations over the weekend
 - CVMFS: Stratum Zero server again triggering Nagios alerts on spool storage mounts after data center power outage
   - read-only repo-specific spool mounts are transient and should not be tracked as critical alerts by Nagios
 - CVMFS: dev team and collaborators now looking into Varnish replacement for Squid, new working group established
@@ -43,10 +51,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: monitoring prototype meeting, discussions
   - additional funding found for Prometheus storage purchase, Rob to request purchasing quotes
   - a few PB of old, out of warranty storage from retired GPFS can also be used for proof of concept
+  - request from sPHENIX for more storage to add their current run TSDB data to Prometheus ([RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37539))
 - SDCC: troubleshooting of broken Drupal site (no private menu, no editing or admin tools)
   - group and site admin roles were dropped by a recent Drupal update, required manual reinstatement
 - SDCC: troubleshooting of missing data in Grafana plots
   - production ElasticSearch data lost for Belle II conditions services for substantial periods (27 Feb - 11 Mar, 12 Mar 2-3:30am), cause unknown
+- SDCC: debates on user account management and whether separate accounts are required for every desired experiment/group, or if one account with multiple GIDs can now suffice instead
+- SDCC: help NPPS troubleshoot certificate and VO related issues with PanDA token authentication, and [PanDA DOMA IAM instance at CERN](https://panda-iam-doma.cern.ch/)
+- SDCC: meetings and discussions on Drupal upgrades, migrations for STAR to other solutions (e.g., possibly InvenioRDM for doc management based on similar EPIC requirements)
 
 # 3- 8 Mar
 - ATLAS: VO, IAM user management, questions, troubleshooting
