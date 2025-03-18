@@ -25,6 +25,21 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 17-21 Mar
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - ATLAS SW tutorials announced for 24 Mar, 7 Apr (number of new VO requests will spike)
+- Belle II: heavy use of conditions services continue, current VM hosting conditions database (blconddb03) can not keep up; additional resources requested
+  - VM CPU usage (16 cores) at 100% for > 2 days, system loads 600-800 under heavy request loads
+  - conditions service under constant high load: 7M requests from KEKCC in 24h, .5M in 1h (14 Mar), backend DB service handling > 1k connections at peak
+- Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
+- CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
+  - snapshot on 'unpacked' repo delayed 19 hours (16 Feb)
+  - disabling NFS 'atime' attribute on NetApp side did not improve client performance
+- SDCC: User Services team discussions on monitoring prototyping (hardware specs, contractor tasks, waiting on storage quotes from Vast, others)
+- CERN: completed required renewal of EDH, family status, contact forms
+- BNL: renewed expiring [Brookhaven Computer Facility (BCF) in ITD training](https://training.bnl.gov/portal/AO-BCF) (18 Mar)
+- BNL: vacation days (2: 20-21 Mar)
+
 # 10-14 Mar
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - users failing to sign AUP by clicking links distributed by "old" IAM instance (https://atlas-auth.cern.ch v. old https://atlas-auth.web.cern.ch service)
