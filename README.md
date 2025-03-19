@@ -31,10 +31,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: heavy use of conditions services continue, current VM hosting conditions database (blconddb03) can not keep up; additional resources requested
   - VM CPU usage (16 cores) at 100% for > 2 days, system loads 600-800 under heavy request loads
   - conditions service under constant high load: 7M requests from KEKCC in 24h, .5M in 1h (14 Mar), backend DB service handling > 1k connections at peak
+  - 18 Mar: CPU cores doubled to 32; reboot required to pick up new resources, but OpenShift VM was stuck in "migration"; VM shut down, moved to different hypervisor, restarted; load has normalized since
+- Belle II: working with infrastructure team to get conditions test deployment in OpenShift ready for testing
+  - issues with ingress connectivity, NFS mount ACLs 
 - Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
 - CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
   - snapshot on 'unpacked' repo delayed 19 hours (16 Feb)
   - disabling NFS 'atime' attribute on NetApp side did not improve client performance
+  - discussions of copying the replica data to dupllicate VM and "local" disk object store in OpenShift
+- CVMFS: acknowledged "critical" Nagios alert on Stratum Zero temporary repository spool storage, which is not supposed to be monitored 
 - SDCC: User Services team discussions on monitoring prototyping (hardware specs, contractor tasks, waiting on storage quotes from Vast, others)
 - CERN: completed required renewal of EDH, family status, contact forms
 - BNL: renewed expiring [Brookhaven Computer Facility (BCF) in ITD training](https://training.bnl.gov/portal/AO-BCF) (18 Mar)
