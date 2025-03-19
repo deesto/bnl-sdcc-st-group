@@ -40,6 +40,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - disabling NFS 'atime' attribute on NetApp side did not improve client performance
   - discussions of copying the replica data to dupllicate VM and "local" disk object store in OpenShift
 - CVMFS: acknowledged "critical" Nagios alert on Stratum Zero temporary repository spool storage, which is not supposed to be monitored 
+- CVMFS: broken repository mount for STAR prevented new content publishing (reported by Gene in [RT#37769](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37769))
+  - while debugging also noticed similar issue for sPHENIX repo
+  - required manual fixes to correct r/o and r/w repo mounts, abort hung transactions, successfully complete test transactions and subsequent garbage collection
 - SDCC: User Services team discussions on monitoring prototyping (hardware specs, contractor tasks, waiting on storage quotes from Vast, others)
 - CERN: completed required renewal of EDH, family status, contact forms
 - BNL: renewed expiring [Brookhaven Computer Facility (BCF) in ITD training](https://training.bnl.gov/portal/AO-BCF) (18 Mar)
