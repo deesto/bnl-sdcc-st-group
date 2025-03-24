@@ -27,13 +27,25 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 17-21 Mar
 - ATLAS: VO, IAM user management, questions, troubleshooting
+  - increased request demand due to ATLAS Software tutorials
+  - x.509 auth has been removed from the production ATLAS IAM instance; only CERN SSO login is now permitted 
+  - issues with new service accounts: can not be created/requested by users; need to be manually created by admins, entered into Rucio/DDM mappings
+- Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
+  - first round complete; only three candidates can be chosen to move to next stage for proposal and interview; other candidates informed of decision ASAP so they can move on to other projects
+- BNL: meeting on "HR matter" (24 Mar)
+ 
+# 17-21 Mar
+- ATLAS: VO, IAM user management, questions, troubleshooting
   - ATLAS SW tutorials announced for 24 Mar, 7 Apr (number of new VO requests will spike)
 - Belle II: heavy use of conditions services continue, current VM hosting conditions database (blconddb03) can not keep up; additional resources requested
   - VM CPU usage (16 cores) at 100% for > 2 days, system loads 600-800 under heavy request loads
   - conditions service under constant high load: 7M requests from KEKCC in 24h, .5M in 1h (14 Mar), backend DB service handling > 1k connections at peak
-  - 18 Mar: CPU cores doubled to 32; reboot required to pick up new resources, but OpenShift VM was stuck in "migration"; VM shut down, moved to different hypervisor, restarted; load has normalized since
+  - 18 Mar: CPU cores doubled to 32; reboot required to pick up new resources, but OpenShift VM was stuck in "migration"; VM shut down, moved to different hypervisor, restarted; system load has normalized since the change
 - Belle II: working with infrastructure team to get conditions test deployment in OpenShift ready for testing
   - issues with ingress connectivity, NFS mount ACLs 
+- Belle II: production monitoring services were interrupted for several hours (20 Mar)
+  - Production Grafana disabled due to questionable security issue ('playground' area dashboards editable by anonymous users, as designed)
+  - Mitigation found and applied; public and procected service instances being migrated to latest version (v8->11) for testing and verification
 - Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
 - CVMFS: continued delays reported by WLCG monitoring on Stratum One operations due to high storage I/O
   - snapshot on 'unpacked' repo delayed 19 hours (16 Feb)
