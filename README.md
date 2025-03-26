@@ -30,18 +30,24 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - increased request demand due to ATLAS Software tutorials
   - x.509 auth has been removed from the production ATLAS IAM instance; only CERN SSO login is now permitted 
   - issues with new service accounts: can not be created/requested by users; need to be manually created by admins, entered into Rucio/DDM mappings
-  - request from EGI operations to provide the total number of registered ATLAS VO members, which IAM does not permit
+  - request from EGI operations to provide the total number of registered ATLAS VO members, which IAM UI does not permit
+    - API count (~3600 users) [via curl](https://atlas-auth.cern.ch/stats) inaccurate (includes deactivated/suspended users)
 - Belle II: fielded more complaints from users about conditions metadata response slowness during heavy loads (ongoing)
 - Belle II: more work with SDCC infra team to correct config issues with OpenShift deployment for conditions migration project (storage mounts and claims, project permissions)
 - Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
   - first round complete; only three candidates can be chosen to move to next stage for proposal and interview; other candidates informed of decision ASAP so they can move on to other projects
+  - Zoom meetings with two primary candidates, mentoring to shape project proposals for SoC submission
 - CVMFS: reported Stratum Zero publishing read-only mount issue to developers, similar to [earlier reported issue](https://cernvm-forum.cern.ch/t/publishers-auto-umount/528)
+- CVMFS: had to report again that STAR's auto-catalog configuration is problematic and requires attention to avoid further publishing issues
+- HSF/IRIS-HEP: registered for [Analysis Reproducibility Training sessions](https://indico.cern.ch/event/1508102/) but did not have any free time to attend
 - SDCC: added missing Ops Team staff members to 'webstaff' LDAP group for access to protected group pages
   - 'webstaff' group has an astounding 78 member accounts (for a ~35 member team)
 - SDCC: quote evaluation and discussion on storage purchase for monitoring PD prototype (e.g., Vast quote for 338TB NVMe raw / 200TB usable for $150k, 2 years)
 - SDCC: RT user and group management
 - SDCC: checked exported dashboards to newly upgraded 'monitoring-dev' Grafana instances (internal and public) for compatability, functionality issues (Costin)
 - SDCC: discussions on monitoring PD personnel issues and funding
+- SDCC: discussion on whether to preserve [CHEP 2012 web site](https://www.chep2012.org) (hosted on old VM)
+- SDCC: discussions on OpenShift resource management and VM eviction policies: production VMs should *never* be evicted or rebooted due to hosting resource restrictions
 - BNL: meeting on "HR matter" (24 Mar)
  
 # 17-21 Mar
