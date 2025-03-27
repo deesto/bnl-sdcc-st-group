@@ -32,11 +32,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - issues with new service accounts: can not be created/requested by users; need to be manually created by admins, entered into Rucio/DDM mappings
   - request from EGI operations to provide the total number of registered ATLAS VO members, which IAM UI does not permit
     - API count (~3600 users) [via curl](https://atlas-auth.cern.ch/stats) inaccurate (includes deactivated/suspended users)
-- Belle II: fielded more complaints from users about conditions metadata response slowness during heavy loads (ongoing)
-- Belle II: more work with SDCC infra team to correct config issues with OpenShift deployment for conditions migration project (storage mounts and claims, project permissions)
+  - users still being directed to defunct VOMS Admin URLs for VO management
+    - further updates to [ATLAS TWiki](https://twiki.cern.ch/twiki/bin/view/AtlasComputing/WorkBookStartingGrid) to remove VOMS Admin references, update IAM URLs
+- Belle II: fielded more complaints from users about conditions metadata response slowness during heavy loads (ongoing; [detailed discussion](https://questions.belle2.org/question/15218/error-conditions-database-problem-parsing-payload-information/))
+- Belle II: more work with SDCC infra team to correct config issues with OpenShift deployment for conditions migration project (storage mounts and claims, project permissions, ingress eroutes, SSL issues)
 - Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
   - first round complete; only three candidates can be chosen to move to next stage for proposal and interview; other candidates informed of decision ASAP so they can move on to other projects
   - Zoom meetings with two primary candidates, mentoring to shape project proposals for SoC submission
+- Belle II: migrating DIRAC servers from RHEV to OpenShift (Hiro)
 - CVMFS: reported Stratum Zero publishing read-only mount issue to developers, similar to [earlier reported issue](https://cernvm-forum.cern.ch/t/publishers-auto-umount/528)
 - CVMFS: had to report again that STAR's auto-catalog configuration is problematic and requires attention to avoid further publishing issues
 - HSF/IRIS-HEP: registered for [Analysis Reproducibility Training sessions](https://indico.cern.ch/event/1508102/) but did not have any free time to attend
@@ -48,7 +51,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: discussions on monitoring PD personnel issues and funding
 - SDCC: discussion on whether to preserve [CHEP 2012 web site](https://www.chep2012.org) (hosted on old VM)
 - SDCC: discussions on OpenShift resource management and VM eviction policies: production VMs should *never* be evicted or rebooted due to hosting resource restrictions
-- BNL: meeting on "HR matter" (24 Mar)
+- SDCC: testing and debugging of new Grafana instances; added timeout override to address connection issues for long queries
+- BNL: multiple meetings on "HR matter" (24,27 Mar)
  
 # 17-21 Mar
 - ATLAS: VO, IAM user management, questions, troubleshooting
