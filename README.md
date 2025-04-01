@@ -25,6 +25,32 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 31 Mar - 4 Apr
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - x.509 auth login removal has been reverted in the production ATLAS IAM instance, in addition to CERN SSO login
+  - user AUP agreement link was broken, held over from old IAM instance in OpenShift; redirected to current OpenStack instance
+- Belle II: fielded more complaints from users about conditions metadata response slowness as heavy incoming request loads continue (ongoing)
+- Belle II: more work with SDCC infra team to correct config issues with OpenShift deployment for conditions migration project (external access)
+  - custom OpenShift class (`internet_apps`) created for external access, applied to metadata and file service pods for http, https connectivity (Rob) 
+- Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
+  - Mentoring to shape promary candidate project proposals for SoC submission
+  - concerns over citizenship of primary candidates (India, Pakistan) and DOE restrictions; following up with GUV Center
+- CVMFS: more debugging of mass client issues at US MWT2 site; developers also involved in debugging
+  - likely caused by [known cache tracking issue](https://github.com/cvmfs/cvmfs/issues/3520), mitigated by [fix in v2.12.7](https://github.com/cvmfs/cvmfs/pull/3588)
+- SDCC: production ELK servers (gs-elk0{1,2}) ran out of disk, shards, breaking logging and Grafana plots (31 Mar - 1 Apr)
+  - also dropping data in intervals of seconds, hours, sometimes weeks
+- SDCC: user issue with Invenio account naming [opened last week](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37794), not addressed by Invenio experts until reminded 5 days later
+- SDCC: debugging of broken user account request form (Louis)
+  - form fails to submit and validate due to broken experiment selection dropdown
+  - no code changes made, yet form stopped working on all browsers (31 Mar)
+  - form used very old jQuery version (1.11.3/2015); updating to latest did not fix issues
+  - users now finding the form broken and [opening help tickets](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37806)
+- SDCC: [cleaned up](https://webdocs.sdcc.bnl.gov/cgit/puppet/catalog/commit/?id=4a3b83c8ed5d15b2c1a97d0bbd5b083cad4e7af6) errantly uploaded Mac .DS_Store desktop file from web module in production EL7 Git repo
+  - no httpd/apache/web modules exist in EL8/9 repos
+- SDCC: addressed complaint from CS about sudden "flooding" of syslog messages for Frontier client requests from WN farm nodes
+  - we've been logging these records for ~15 years and sending them to CS at their request
+- BNL: vacation days (1: 31 Mar)
+
 # 17-21 Mar
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - increased request demand due to ATLAS Software tutorials
@@ -344,6 +370,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - details added to [new Jira issue](https://racfjira.atlassian.net/browse/WEB-26)
 - SDCC: EOS overview meeting w/CERN
 - SDCC: User Services discussions on monitoring work and [Prometheus deployment](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37539), Git and Pupppet information and documentation, SSL certificate information and replacement, NX service maintenance and troubleshooting, web server maintenance and responsibilities
+
+# -- 2024 -- 
 
 # 30 Dec - 3 Jan
 - ATLAS: VO, IAM user management, questions, troubleshooting
