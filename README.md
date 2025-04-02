@@ -33,7 +33,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: more work with SDCC infra team to correct config issues with OpenShift deployment for conditions migration project (external access)
   - custom OpenShift class (`internet_apps`) created for external access, applied to metadata and file service pods for http, https connectivity (Rob) 
 - Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
-  - Mentoring to shape promary candidate project proposals for SoC submission
+  - Mentoring to shape primary candidate project proposals for SoC submission
+  - rejections sent to several excellent candidates, so they can move on to other projects
   - concerns over citizenship of primary candidates (India, Pakistan) and DOE restrictions; following up with GUV Center
 - CVMFS: more debugging of mass client issues at US MWT2 site; developers also involved in debugging
   - likely caused by [known cache tracking issue](https://github.com/cvmfs/cvmfs/issues/3520), mitigated by [fix in v2.12.7](https://github.com/cvmfs/cvmfs/pull/3588)
@@ -42,13 +43,20 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: user issue with Invenio account naming [opened last week](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37794), not addressed by Invenio experts until reminded 5 days later
 - SDCC: debugging of broken user account request form (Louis)
   - form fails to submit and validate due to broken experiment selection dropdown
-  - no code changes made, yet form stopped working on all browsers (31 Mar)
+  - no changes made, yet form stopped working on all browsers (31 Mar)
   - form used very old jQuery version (1.11.3/2015); updating to latest did not fix issues
   - users now finding the form broken and [opening help tickets](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37806)
+  - Puppet had been turned off (but not disabled) for years on the host (web01), was shut down and turned back on, Puppet ran and [updated many files](https://webdocs.sdcc.bnl.gov/foreman/config_reports/95603036)
+  - JavaScript was reverted from old host (useraccounts01, also turned off), form now functioning again (Louis)
 - SDCC: [cleaned up](https://webdocs.sdcc.bnl.gov/cgit/puppet/catalog/commit/?id=4a3b83c8ed5d15b2c1a97d0bbd5b083cad4e7af6) errantly uploaded Mac .DS_Store desktop file from web module in production EL7 Git repo
   - no httpd/apache/web modules exist in EL8/9 repos
 - SDCC: addressed complaint from CS about sudden "flooding" of syslog messages for Frontier client requests from WN farm nodes
   - we've been logging these records for ~15 years and sending them to CS at their request
+- BNL: renewed suddenly expired "Foreign Affairs Counter Threat" training (CT420/2025/DL/0001)
+  - period of validity was misreported at 7 years, reduced to 6 years
+  - training and account renewal are not possible; new accounts required at State Dept, [Foreign Service Institute (FSI)](https://sis.fsi.state.gov), [Okta](https://state.okta.com/)
+    - new accounts also requires third-party Okta app installed on separate device for three-factor authentication
+    - account and training requests must be reviewed and approved by DOE representative
 - BNL: vacation days (1: 31 Mar)
 
 # 17-21 Mar
