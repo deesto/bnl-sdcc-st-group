@@ -29,6 +29,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - x.509 auth login removal has been reverted in the production ATLAS IAM instance, in addition to CERN SSO login
   - user AUP agreement link was broken, held over from old IAM instance in OpenShift; redirected to current OpenStack instance
+  - more issues with expired one-time verification links emailed from IAM to users
+  - CERN IAM admins introduced [OpenSearch "Jeedy" activity log access](https://os-jeedy.cern.ch) -- but access is broken outside of CERN
+- ATLAS: contacted Frontier experts to again inquire about extremely high client request rates on site caches (29 Mar - 3 Apr, [WLCG cache rate monitoring](http://wlcg-squid-monitor.cern.ch/snmpstats/mrtgall/BNL-ATLAS_frontier-cache.sdcc.bnl.gov/proxy-hit.html))
 - Belle II: fielded more complaints from users about conditions metadata response slowness as heavy incoming request loads continue (ongoing)
 - Belle II: more work with SDCC infra team to correct config issues with OpenShift deployment for conditions migration project (external access)
   - custom OpenShift class (`internet_apps`) created for external access, applied to metadata and file service pods for http, https connectivity (Rob) 
@@ -52,11 +55,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - no httpd/apache/web modules exist in EL8/9 repos
 - SDCC: addressed complaint from CS about sudden "flooding" of syslog messages for Frontier client requests from WN farm nodes
   - we've been logging these records for ~15 years and sending them to CS at their request
+- SDCC: follow-up and discussions on storage quotes and purchases for monitoring prototype system PD
 - BNL: renewed suddenly expired "Foreign Affairs Counter Threat" training (CT420/2025/DL/0001)
   - period of validity was misreported at 7 years, reduced to 6 years
   - training and account renewal are not possible; new accounts required at State Dept, [Foreign Service Institute (FSI)](https://sis.fsi.state.gov), [Okta](https://state.okta.com/)
     - new accounts also requires third-party Okta app installed on separate device for three-factor authentication
     - account and training requests must be reviewed and approved by DOE representative
+  - four hour course, completed (2-3 Apr)
 - BNL: vacation days (1: 31 Mar)
 
 # 17-21 Mar
