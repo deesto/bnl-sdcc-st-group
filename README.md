@@ -31,13 +31,26 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - many issues with user registrations (failed verification links, duplicate registrations, trying to log into VOMS instead of IAM) 
 - Belle II: planning to move all conditions services from RHEV VMs to OpenShift pod deployment
   - requires more testing and validation of current test deployment from B2 groups (software, data production, calibration) 
+- Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
+  - urged finalists to submit completed proposals before [CERN HSF projects'](https://summerofcode.withgoogle.com/organizations/cern-hsf/programs/2025/proposals/details) 8 Apr deadline 
+- Belle II: reviewed current US Belle II user documentation for certificates and grid usage (on [DESY XWiki](https://xwiki.desy.de/xwiki/bin/view/BI/Belle%20II%20Internal/Computing%20WebHome/Computing%20GettingStarted/Computing%20Belle-II-Grid-Certificate/Grid%20certificates%20andor%20BNL%20computing%20account%20for%20Belle%20II%20member/))
+  - most content will be obsolete after CILogon certificate CA retirement in May, including BNL account instructions (as prerequisite to obtaining CILogon certificate access) 
+- Belle II: still trying to get travel approved for Joint Computing, Data Production, and Software [Workshop](https://indico.belle2.org/event/13885/) in Karlsruhe (12-16 May)
+- Belle II: discussion on old servers to be retired, specifically bltest0{1,2}, which I can not even log into
+- CVMFS: GGUS ticket for [CMS repo installation on BNL WNs](https://helpdesk.ggus.eu/#ticket/zoom/2576/) seems to have been incorrectly reassigned to AGLT2
 - SDCC: issues with all SSO login over weekend (6 Apr)
   - First reported by [sPHENIX in RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37827), affected all experiment and staff logins
-  - user/pass login worked, SSO redirect failed on all sites
+  - SDCC account user/pass login continued to function, but SSO redirect failed on all sites
   - change made on InCommon side (md.incommon.org) to block HTTP connections, not adjusted to HTTPS on our IDP
 - SDCC: continued issues with production monitoring services
   - production ELK hosts (gs-elk0{1,2}) running out of disk, not enough memory to maintain ES shards
 - SDCC: issues with SDCC Drupal search function (results overlayed by nav menu element)
+  - not caused by corrupt cache nor alleviated by cache refresh as thought: required CSS object dispolay layer override (Christian)
+  - other Drupal issues found (announcement page view permissions, critical security update needed)
+    - permissions lost again for viewing some (but not all) content, possible reversion of previous role assignment issues
+- SDCC: discussions on getting HTCondor AdStash to work with OpenSeach v1 (and why it's still not yet working with v2 when [this was fixed in January](https://osg-htc.org/docs/release/osg-24/#january-6-2025-htcondor-2403-upcoming-htcondor-2430)) 
+- SDCC: moved my office from b.510 M2-27 to b.725 (after previous occupant finally moved out 7 Apr)
+- WLCG: obtained and reviewed [training material](https://drive.google.com/file/d/18v0Jbhy1Breoqb6zDFMI-r4RV7efTlFw/view) on WLCG's new Helpdesk from Pavel (via [ticket](https://helpdesk.ggus.eu/#ticket/zoom/1419))
 
 # 31 Mar - 4 Apr
 - ATLAS: VO, IAM user management, questions, troubleshooting
