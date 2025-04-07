@@ -29,6 +29,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - increased request demand due to ATLAS Software tutorials
   - many issues with user registrations (failed verification links, duplicate registrations, trying to log into VOMS instead of IAM) 
+- Belle II: planning to move all conditions services from RHEV VMs to OpenShift pod deployment
+  - requires more testing and validation of current test deployment from B2 groups (software, data production, calibration) 
 - SDCC: issues with all SSO login over weekend (6 Apr)
   - First reported by [sPHENIX in RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37827), affected all experiment and staff logins
   - user/pass login worked, SSO redirect failed on all sites
