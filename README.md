@@ -25,6 +25,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 7-11 Apr
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - increased request demand due to ATLAS Software tutorials
+  - many issues with user registrations (failed verification links, duplicate registrations, trying to log into VOMS instead of IAM) 
+- SDCC: issues with all SSO login over weekend (6 Apr)
+  - First reported by [sPHENIX in RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37827), affected all experiment and staff logins
+- SDCC: continued issues with production monitoring services
+  - production ELK hosts (gs-elk0{1,2}) running out of disk, not enough memory to maintain ES shards
+- SDCC: issues with SDCC Drupal search function (results overlayed by nav menu element)
+
 # 31 Mar - 4 Apr
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - x.509 auth login removal has been reverted in the production ATLAS IAM instance, in addition to CERN SSO login
