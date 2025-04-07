@@ -31,6 +31,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - many issues with user registrations (failed verification links, duplicate registrations, trying to log into VOMS instead of IAM) 
 - SDCC: issues with all SSO login over weekend (6 Apr)
   - First reported by [sPHENIX in RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37827), affected all experiment and staff logins
+  - user/pass login worked, SSO redirect failed on all sites
+  - change made on InCommon side (md.incommon.org) to block HTTP connections, not adjusted to HTTPS on our IDP
 - SDCC: continued issues with production monitoring services
   - production ELK hosts (gs-elk0{1,2}) running out of disk, not enough memory to maintain ES shards
 - SDCC: issues with SDCC Drupal search function (results overlayed by nav menu element)
