@@ -28,7 +28,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 7-11 Apr
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - increased request demand due to ATLAS Software tutorials
-  - many issues with user registrations (failed verification links, duplicate registrations, trying to log into VOMS instead of IAM, broken AMI associations) 
+  - many issues with user registrations (failed verification links, duplicate registrations, trying to log into VOMS instead of IAM, broken AMI associations, contract date or affiliation issues that caused auto-suspension of VO memberships) 
 - Belle II: planning to move all conditions services from RHEV VMs to OpenShift pod deployment
   - requires more testing and validation of current test deployment from B2 groups (software, data production, calibration) 
 - Belle II: applicant vetting and support for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
@@ -38,7 +38,18 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: still trying to get travel approved for Joint Computing, Data Production, and Software [Workshop](https://indico.belle2.org/event/13885/) in Karlsruhe (12-16 May)
 - Belle II: discussion on old servers to be retired, specifically bltest0{1,2}, which I can not even log into
 - CVMFS: GGUS ticket for [CMS repo installation on BNL WNs](https://helpdesk.ggus.eu/#ticket/zoom/2576/) seems to have been incorrectly reassigned to AGLT2
-- CVMFS: massive changes to Puppet code in both [EL7](https://webdocs.sdcc.bnl.gov/cgit/puppet/catalog/diff/?id=2df11956c18cd217f433b6af940c6986a04e9ba4&id2=81b4020c73e5356fe64a8bf861e566b7e306aefc) and [EL9 repos](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/673) to fix puppet issues for EL8+ (short array names changed to FQDNs to prevent key conflicts) and add lint features (parameter data typing, parameter documentation, class documentation, class/define bracket closure and spacing) 
+- CVMFS: hundreds of changes to Puppet code in both [EL7](https://webdocs.sdcc.bnl.gov/cgit/puppet/catalog/diff/?id=2df11956c18cd217f433b6af940c6986a04e9ba4&id2=81b4020c73e5356fe64a8bf861e566b7e306aefc) and [EL9 repos](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/673) to fix puppet issues for EL8+ (short array names changed to FQDNs to prevent key conflicts) and add lint features (parameter data typing, parameter documentation, class documentation, class/define bracket closure and spacing)
+  - unfortunately, this change and other subsequent merges caused client issues across the site and all WNs (10 Apr)
+  - signing key location in client configuration was either erased or reverted to old, invalid values
+  - all client mounts of all repos hung
+  - required several code fixes and manual intervention in addition to Puppet deployments
+  - ATLAS farm completely drained due to broken CVMFS cern.ch repo configs (reported in [GGUS](https://helpdesk.ggus.eu/#ticket/zoom/3135/13013) and ADC dailies)
+  - sPHENIX lost access to data movement and archival scripts (hsi, htar, pftp) linked on user, dev, and prod hosts to broken SDCC repos in CVMFS
+  - NFS mounts on CVMFS write hosts (cvmfswrite0{4,5}) also broke and went stale, required manual remounting ([RT report](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37849))
+  - Puppet code merge request to EL7 git repo withdrawn to prevent similar issues on server side
+- CVMFS: complaint from DUNE user about accessing protected content on OSG's dune.osgstorage.org repo on BNL WNs ([RT report](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37830))
+    - file access seems to require authentication and special client config; awaiting confirmation from user and further info from OSG
+- NPPS/SDCC: invited to join EIC Software and Computing staffing panel (Alexei, Torre)
 - SDCC: issues with all SSO login over weekend (6 Apr)
   - First reported by [sPHENIX in RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37827), affected all experiment and staff logins
   - SDCC account user/pass login continued to function, but SSO redirect failed on all sites
@@ -50,10 +61,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - other Drupal issues found (announcement page view permissions, critical security update needed)
     - permissions lost again for viewing some (but not all) content, possible reversion of previous role assignment issues
 - SDCC: discussions on getting HTCondor AdStash to work with OpenSeach v1 (and why it's still not yet working with v2 when [this was fixed in January](https://osg-htc.org/docs/release/osg-24/#january-6-2025-htcondor-2403-upcoming-htcondor-2430)) 
+- SDCC: discussion of transferring CFN PI/liaison privileges from Sam to Jae Lee ([RT request](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37848))
 - SDCC: moved my office from b.510 M2-27 to b.725 (after previous occupant finally moved out 7 Apr)
 - SDCC: more issues [reported](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37836 ) with SET repository and HTTPS connections
   - SSL issuing CA certificate seems to be missing or expired
 - WLCG: obtained and reviewed [training material](https://drive.google.com/file/d/18v0Jbhy1Breoqb6zDFMI-r4RV7efTlFw/view) on WLCG's new Helpdesk from Pavel (via [ticket](https://helpdesk.ggus.eu/#ticket/zoom/1419))
+- BNL: administrative rigmarole involving BNL property asset 00157475, JBOD incorrectly labeled as 'Network Servers' and awaiting excess procedure
 
 # 31 Mar - 4 Apr
 - ATLAS: VO, IAM user management, questions, troubleshooting
