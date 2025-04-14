@@ -28,8 +28,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 14-18 Apr
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: Varnish test deployment for US ATLAS started, stalled
-  - new OpenShift project space for US ATLAS deployments ('experiment-atlas'), new OpenShift BuildConfig ('varnish-atlas') and build of Ilija's GIthub repo code, build succeeds but deployment fails
+  - new OpenShift project space for US ATLAS deployments ('experiment-atlas'), new OpenShift BuildConfig ('varnish-atlas') and build of [Ilija's Github repo](https://github.com/ivukotic/v4A/) code, build succeeds but deployment fails
 - Belle II: DDM and other teams continue to report BNL Grafana data loss issues since move to new servers and versions
+- Belle II: configuration, debugging of Java pod replacement deployment on OpenShift, and preparations for wide-scale testing by B2 teams
+  - issues with stalling 'bouncer' pod, possibly breaking under test load
+  - old ingress route from previous deployment found, cleaned up, but did not seem to affect pod functionality
 - CVMFS: more client repo hangs on ATLAS WNs, calls over weekend about WN issues without much detail given
   - [new GGUS ticket](https://helpdesk.ggus.eu/#ticket/zoom/3170/) filed on Monday
 - CVMFS: Stratum One reports from WLCG of delayed operations continue
@@ -38,6 +41,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: hunted down and found obsolete ATLAS pages and links for BNL dCache instructions:
   - users find [this ATLAS TWiki page](https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/SPARatBNL#Data_Storage), which claims to be obsolete and replaced by [this US ATLAS ReadTheDocs page](https://usatlas.readthedocs.io/projects/af-docs/en/latest/), which links to[a page for BNL users](https://usatlas.readthedocs.io/projects/af-docs/en/latest/sshlogin/ssh2BNL/), 
 which links to [these instructions for using BNL storage](https://usatlas.readthedocs.io/projects/af-docs/en/latest/doma/storage/BNL/storage-at-bnl/), which tells people to open a ticket in order to obtain an ATLAS pNFS storage area
+- SDCC: storage quote discussions for monitoring PD with ThunderCat
+- BNL: due to recent ITD BNL Domain account change, I can no longer connect to MS Teams meetings, unless I migrate my SDCC email to BNL's Outlook 365 service
 - BNL: finally retired and excessed asset 00157475 with Equipment Movement Request (EMR) 00019258
 
 # 7-11 Apr
