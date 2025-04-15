@@ -30,19 +30,25 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: Varnish test deployment for US ATLAS started, stalled
   - new OpenShift project space for US ATLAS deployments ('experiment-atlas'), new OpenShift BuildConfig ('varnish-atlas') and build of [Ilija's Github repo](https://github.com/ivukotic/v4A/) code, build succeeds but deployment fails
 - Belle II: DDM and other teams continue to report BNL Grafana data loss issues since move to new servers and versions
+  - influx service on production ELK server producing inconsistent data in different dashboards and intervals, timing out in some cases
 - Belle II: configuration, debugging of Java pod replacement deployment on OpenShift, and preparations for wide-scale testing by B2 teams
-  - issues with stalling 'bouncer' pod, possibly breaking under test load
-  - old ingress route from previous deployment found, cleaned up, but did not seem to affect pod functionality
-- CVMFS: more client repo hangs on ATLAS WNs, calls over weekend about WN issues without much detail given
-  - [new GGUS ticket](https://helpdesk.ggus.eu/#ticket/zoom/3170/) filed on Monday
+  - extensive load testing of pod deployment with B2 Software and Calibration teams (Giacomo's ["hammer" test code](https://gitlab.desy.de/giacomo.depietro/hammer-cdb/)) 
+  - found and addressed issues with stalling 'bouncer' pod breaking under moderate test load
+    - more connections enabled in pods (pgbouncer set to max 10k, B2S pods max 500 each, 900 connections now seen on test DB backkend during high loads)
+  - old ingress route from previous deployment found, cleaned up, may not have affected pod functionality
+- Belle II: applicant vetting, support, final selection for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
+- CVMFS: more client repo hangs on ATLAS WNs, calls over weekend about potential WN issues without no detail given
+  - [new GGUS ticket](https://helpdesk.ggus.eu/#ticket/zoom/3170/) filed on Monday, a few isolated WN repos found hung and fixed
 - CVMFS: Stratum One reports from WLCG of delayed operations continue
   - unpacked repo replication delayed 20 hours due to garbage collection (13 Apr)
-- SDCC: Jira user management and group assignment for ITD Networking staff (Nick F.)
+  - agreed to disable disk usage reports on NFS mounted volumes (thought to cause enough IO to disrupt operations)
+- SDCC: Jira user management and group assignment for ITD Networking staff
 - SDCC: hunted down and found obsolete ATLAS pages and links for BNL dCache instructions:
-  - users find [this ATLAS TWiki page](https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/SPARatBNL#Data_Storage), which claims to be obsolete and replaced by [this US ATLAS ReadTheDocs page](https://usatlas.readthedocs.io/projects/af-docs/en/latest/), which links to[a page for BNL users](https://usatlas.readthedocs.io/projects/af-docs/en/latest/sshlogin/ssh2BNL/), 
+  - users find [this ATLAS TWiki page](https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/SPARatBNL#Data_Storage), which claims to be obsolete and replaced by [this US ATLAS ReadTheDocs page](https://usatlas.readthedocs.io/projects/af-docs/en/latest/), which links to [a page for BNL users](https://usatlas.readthedocs.io/projects/af-docs/en/latest/sshlogin/ssh2BNL/), 
 which links to [these instructions for using BNL storage](https://usatlas.readthedocs.io/projects/af-docs/en/latest/doma/storage/BNL/storage-at-bnl/), which tells people to open a ticket in order to obtain an ATLAS pNFS storage area
-- SDCC: storage quote discussions for monitoring PD with ThunderCat
-- BNL: due to recent ITD BNL Domain account change, I can no longer connect to MS Teams meetings, unless I migrate my SDCC email to BNL's Outlook 365 service
+- SDCC: storage quote discussions for monitoring PD (VAST, ThunderCat)
+- BNL: due to recent ITD BNL Domain account authentication change, I can no longer connect to MS Teams meetings, unless I migrate my SDCC email to BNL's Outlook 365 service
+- BNL: signed new lab-wide flexible work arrangement Workday agreement
 - BNL: finally retired and excessed asset 00157475 with Equipment Movement Request (EMR) 00019258
 
 # 7-11 Apr
