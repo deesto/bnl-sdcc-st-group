@@ -39,6 +39,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: applicant vetting, support, final selection for [Google Summer of Code project](https://hepsoftwarefoundation.org/gsoc/2025/proposal_HSFCondDB_AILogAnalysis.html) (Intelligent Log Analysis for the HSF Conditions Database)
 - CVMFS: more client repo hangs on ATLAS WNs, calls over weekend about potential WN issues without no detail given
   - [new GGUS ticket](https://helpdesk.ggus.eu/#ticket/zoom/3170/) filed on Monday, a few isolated WN repos found hung and fixed
+  - more WN issues [reported](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37857), this time on shared pool WNs
+    - client config for OSG repos [fixed and pushed upstream](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/685), run on select WNs
 - CVMFS: Stratum One reports from WLCG of delayed operations continue
   - unpacked repo replication delayed 20 hours due to garbage collection (13 Apr)
   - agreed to disable disk usage reports on NFS mounted volumes (thought to cause enough IO to disrupt operations)
@@ -47,8 +49,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - users find [this ATLAS TWiki page](https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/SPARatBNL#Data_Storage), which claims to be obsolete and replaced by [this US ATLAS ReadTheDocs page](https://usatlas.readthedocs.io/projects/af-docs/en/latest/), which links to [a page for BNL users](https://usatlas.readthedocs.io/projects/af-docs/en/latest/sshlogin/ssh2BNL/), 
 which links to [these instructions for using BNL storage](https://usatlas.readthedocs.io/projects/af-docs/en/latest/doma/storage/BNL/storage-at-bnl/), which tells people to open a ticket in order to obtain an ATLAS pNFS storage area
 - SDCC: storage quote discussions for monitoring PD (VAST, ThunderCat)
+  - going with VAST for PD storage, possibly other vendor for smaller server purchase
+- SDCC: discussions on faciliity technical liaison position for DUNE experiment (Hiro)
+- SDCC: US ATLAS milestone update on CVMFS upgrade (#191): delayed by RHEL9 infrastructure rollout delays
+- SDCC: more issues with InCommon IDP and facility SSO
+  - "MDQ" aggregate IDP endpoints were changed on InCommon side, not updated on our side to use new endpoints, causing failed metadata downloads
 - BNL: due to recent ITD BNL Domain account authentication change, I can no longer connect to MS Teams meetings, unless I migrate my SDCC email to BNL's Outlook 365 service
 - BNL: signed new lab-wide flexible work arrangement Workday agreement
+- BNL: expiring training JTA (GE-JTA-REV) [reviewed](https://www.bnl.gov/training/info.php?t=GE-JTA-REV) and [confirmed](https://btmsadmin.bnl.gov/jtareview)
 - BNL: finally retired and excessed asset 00157475 with Equipment Movement Request (EMR) 00019258
 
 # 7-11 Apr
