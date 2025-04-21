@@ -25,6 +25,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 21-25 Apr
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: DIRAC (BelleDIRAC) upgrade to v.6.10 on 21 Apr; no new job submission 20-21 Apr
+- Belle II: heavy conditions access over weekend from KEKCC Squids, even during DIRAC downtime (19-21 Apr)
+  - service went unresponsive multiple times overnight/weekend due to high load, completely unresponsive 20 Apr 3:40-3:50 AM
+- Belle II: continued testing,, debugging of Java pod replacement deployment on OpenShift
+- CVMFS: continued Stratum One reports from WLCG of delayed operations
+  - unpacked repo replication delayed 20 hours due to garbage collection (20 Apr)
+
 # 14-18 Apr
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: Varnish test deployment for US ATLAS started, stalled
@@ -54,6 +63,7 @@ which links to [these instructions for using BNL storage](https://usatlas.readth
 - SDCC: US ATLAS milestone update on CVMFS upgrade (#191): delayed by RHEL9 infrastructure rollout delays
 - SDCC: more issues with InCommon IDP and facility SSO
   - "MDQ" aggregate IDP endpoints were changed on InCommon side, not updated on our side to use new endpoints, causing failed metadata downloads
+- SDCC: `rterm` script broken on all NX terminal nodes; was missing 'slogin' symlink to ssh binary; fixed manually, but should be managed by git/puppet
 - BNL: due to recent ITD BNL Domain account authentication change, I can no longer connect to MS Teams meetings, unless I migrate my SDCC email to BNL's Outlook 365 service
 - BNL: signed new lab-wide flexible work arrangement Workday agreement
 - BNL: expiring training JTA (GE-JTA-REV) [reviewed](https://www.bnl.gov/training/info.php?t=GE-JTA-REV) and [confirmed](https://btmsadmin.bnl.gov/jtareview)
