@@ -30,9 +30,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: DIRAC (BelleDIRAC) upgrade to v.6.10 on 21 Apr; no new job submission 20-21 Apr
 - Belle II: heavy conditions access over weekend from KEKCC Squids, even during DIRAC downtime (19-21 Apr)
   - service went unresponsive multiple times overnight/weekend due to high load, completely unresponsive 20 Apr 3:40-3:50 AM
-- Belle II: continued testing,, debugging of Java pod replacement deployment on OpenShift
+- Belle II: continued testing, debugging of Java pod replacement deployment on OpenShift
+  - with Infrastructure team
 - CVMFS: continued Stratum One reports from WLCG of delayed operations
   - unpacked repo replication delayed 20 hours due to garbage collection (20 Apr)
+- BNL: vacation days (2.5: 23-25 Apr) 
 
 # 14-18 Apr
 - ATLAS: VO, IAM user management, questions, troubleshooting
@@ -64,6 +66,8 @@ which links to [these instructions for using BNL storage](https://usatlas.readth
 - SDCC: more issues with InCommon IDP and facility SSO
   - "MDQ" aggregate IDP endpoints were changed on InCommon side, not updated on our side to use new endpoints, causing failed metadata downloads
 - SDCC: `rterm` script broken on all NX terminal nodes; was missing 'slogin' symlink to ssh binary; fixed manually, but should be managed by git/puppet
+- SDCC: GPFS mount also [reported missing](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37862) from all NX terminal nodes; fixed with NFS mounts (Hiro)
+- SDCC: announcement script/form broke again: first web site was not updated, then old code mistakenly pushed to live site and overwrote web entries with old data
 - BNL: due to recent ITD BNL Domain account authentication change, I can no longer connect to MS Teams meetings, unless I migrate my SDCC email to BNL's Outlook 365 service
 - BNL: signed new lab-wide flexible work arrangement Workday agreement
 - BNL: expiring training JTA (GE-JTA-REV) [reviewed](https://www.bnl.gov/training/info.php?t=GE-JTA-REV) and [confirmed](https://btmsadmin.bnl.gov/jtareview)
