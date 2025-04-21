@@ -27,13 +27,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 21-25 Apr
 - ATLAS: VO, IAM user management, questions, troubleshooting
-- Belle II: DIRAC (BelleDIRAC) upgrade to v.6.10 on 21 Apr; no new job submission 20-21 Apr
+- ATLAS: progressing with Varnish test deployment for US ATLAS started, after modifications to base image (Lincoln, Ilija)
+- Belle II: DIRAC (BelleDIRAC) upgrade to v6.10 on 21 Apr; no new job submission 20-21 Apr
+  - Rucio front end modifications to DID script to change metadata plugin scope (from json to all)
 - Belle II: heavy conditions access over weekend from KEKCC Squids, even during DIRAC downtime (19-21 Apr)
   - service went unresponsive multiple times overnight/weekend due to high load, completely unresponsive 20 Apr 3:40-3:50 AM
 - Belle II: continued testing, debugging of Java pod replacement deployment on OpenShift
-  - with Infrastructure team
+  - need to recreate or replace current logging and monitoring in OpenShift project, with Infrastructure team
 - CVMFS: continued Stratum One reports from WLCG of delayed operations
   - unpacked repo replication delayed 20 hours due to garbage collection (20 Apr)
+- ITD: more debugging of Teams access issues with BNL domain account and MS authentication (with T. Svakis)
+- SDCC: meetings and discussions on [monitoring infrastructure](https://docs.google.com/document/d/1OGr2SvrQe7CKvmEhnTRXCYelRFTAIXa-AueFKk19HyM/edit?usp=sharing) and PD storage purchase 
 - BNL: vacation days (2.5: 23-25 Apr) 
 
 # 14-18 Apr
