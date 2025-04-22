@@ -28,8 +28,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 21-25 Apr
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - account suspensions due to adjoining contract dates; issues with generating grid proxies with missing x.509 credentials in IAM
-  - CERN IAM team updating ATLAS instance to [v1.11.0 on 30 Apr](https://cern.service-now.com/service-portal?id=outage&n=OTG0155584)
-- ATLAS: progressing with Varnish test deployment for US ATLAS started, after modifications to base image (Lincoln, Ilija)
+  - CERN IAM team updating ATLAS instance to [v1.11.0 on 30 Apr](https://cern.service-now.com/service-portal?id=outage&n=OTG0155584), should solve multiplle known issues
+- ATLAS: progressing with Varnish test deployment in OpenShift for US ATLAS started, after modifications to base image (Lincoln, Ilija)
+  - working with infra team to verify security of deployment, add routes and ingress connections
 - Belle II: DIRAC (BelleDIRAC) upgrade to v6.10 on 21 Apr; no new job submission 20-21 Apr
   - Rucio front end modifications to DID script to change metadata plugin scope (from json to all)
 - Belle II: heavy conditions access over weekend from KEKCC Squids, even during DIRAC downtime (19-21 Apr)
@@ -38,11 +39,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - need to recreate or replace current logging and monitoring in OpenShift project, with Infrastructure team
 - CVMFS: continued Stratum One reports from WLCG of delayed operations
   - unpacked repo replication delayed 20 hours due to garbage collection (20 Apr)
+  - auger.egi.eu garbage collection delayed 10 days until run manually (22 Apr)
 - CVMFS: failing ATLAS pilot errors [determined](https://helpdesk.ggus.eu/#ticket/zoom/3170/) to be harmless and not site-specific
 - ITD: more debugging of Teams access issues with BNL domain account and MS authentication (with T. Svakis)
 - SDCC: meetings and discussions on [monitoring infrastructure](https://docs.google.com/document/d/1OGr2SvrQe7CKvmEhnTRXCYelRFTAIXa-AueFKk19HyM/edit?usp=sharing) and PD storage purchase 
-- SDCC: sPHENIX internal ELOG logbook went down ([RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37870))
-  - proxied by webproxy00, running on backend spweb01; logbook directory went unavailable; elogd and httpd restarted
+- SDCC: sPHENIX internal ELOG logbook went unavailable ([RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37870))
+  - proxied by webproxy00, running on backend spweb01; custom logbook directory disappeared; mount lost due to GPFS server operations; elogd and httpd restarted
+- SDCC: notified Jira users of upcoming changes to site navigation being [pushed out by Atlassian](https://support.atlassian.com/jira-software-cloud/docs/what-is-the-new-navigation-in-jira/)
 - BNL: renewed [expiring property pass](https://psfinance.psoft.bnl.gov/psp/Fsprod/EMPLOYEE/ERP/c/MANAGE_ASSETS.BNL_PROPERTY_PASS.GBL?Page=BNL_PROPERTY_PASS&Action=U&BUSINESS_UNIT=BNL&BNL_PASS_ID=PP000711) for BNL-issued laptop
 - BNL: vacation days (2.5: 23-25 Apr) 
 
