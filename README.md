@@ -25,6 +25,18 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 28 Apr - 2 May
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS: followups on outdated [CERN ATLAS TWiki content](https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/SPARatBNL) for BNL user storage and disk quota information; TWiki page edited to remove outdated content and point to [ATLAS AF docs]( https://usatlas.readthedocs.io/projects/af-docs/en/latest/)
+- Belle II: setup help for IN2P3CC with new conditions cache 
+- Belle II: account, Comanage setup for Computing team members for access to Openshift project
+- Belle II: more work with infrastructure team on storage claims and changes, project access privileges
+- SDCC: EIC monitoring PD disk requisition pinned for purchasing; smaller CPU purchase quotes to add worker nodes to Openshift pool
+- SDCC: issues with sPHENIX Gitea and other web applications using LDAP entries for users with multiple accounts, need for primary/preferred account field for records, should match BNL Active Directory values
+- SDCC: [complaints from US ATLAS](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37895) on outdated 'review' and 'po' web sites, both hosted by BNL Physics
+- SDCC: meeting, discussions on monitoring improvements for HPSS, possible Prometheus and Grafana implementation 
+- BNL: vacation days (3: 28-30 Apr) 
+
 # 21-25 Apr
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - account suspensions due to adjoining contract dates; issues with generating grid proxies with missing x.509 credentials in IAM
