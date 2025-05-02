@@ -28,13 +28,24 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 28 Apr - 2 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: followups on outdated [CERN ATLAS TWiki content](https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/SPARatBNL) for BNL user storage and disk quota information; TWiki page edited to remove outdated content and point to [ATLAS AF docs]( https://usatlas.readthedocs.io/projects/af-docs/en/latest/)
-- Belle II: setup help for IN2P3CC with new conditions cache 
+- Belle II: further investigation of KEKCC site cache heavy load and conditions access
+  - 1/2 KEKCC Squids deactivated in preparation for upgrade
+  - substantial new conditions request traffic seen from IHEP node (202.122.32.238)
+- Belle II: setup help for IN2P3CC with new conditions site cache 
 - Belle II: account, Comanage setup for Computing team members for access to Openshift project
-- Belle II: more work with infrastructure team on storage claims and changes, project access privileges
+- Belle II: more work with infrastructure team on OpenShift storage claims and changes, project access privileges
+- Belle II: discussion of US Belle II web site tracking and cost (Louis)
 - SDCC: EIC monitoring PD disk requisition pinned for purchasing; smaller CPU purchase quotes to add worker nodes to Openshift pool
 - SDCC: issues with sPHENIX Gitea and other web applications using LDAP entries for users with multiple accounts, need for primary/preferred account field for records, should match BNL Active Directory values
 - SDCC: [complaints from US ATLAS](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37895) on outdated 'review' and 'po' web sites, both hosted by BNL Physics
-- SDCC: meeting, discussions on monitoring improvements for HPSS, possible Prometheus and Grafana implementation 
+- SDCC: meeting, discussions on monitoring improvements for HPSS, possible Prometheus and Grafana implementation
+- SDCC: debugging of [reported issues](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37898) with ePIC Invenio CILogon registration (Louis)
+  - site does not seem to properly link to CILogon or COmanage after CILogon affiliation check and self-registration 
+- SDCC: discussions on policy and historical context of mounting GPFS volumes on NX nodes
+  - despite [user claim](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37862), GPFS was not mounted on these nodes previously, and doing so would conflict with security policy
+- SDCC: Indico user, group administration and ACL for events within joint SDCC-sPHENIX meeting category 
+- SDCC: system and service checks after power outage affected farm nodes (2 May, 2-3am)
+- SDCC: renewed annual data center safety and job hazard training and agreement (J. McCarthy)
 - BNL: vacation days (3: 28-30 Apr) 
 
 # 21-25 Apr
