@@ -27,15 +27,22 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 5-9 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
+  - issues with IAM synchronization with CERN HR DB after IAM update on 30 Apr should have fixed bug
+    - accounts suspended before upgrade require manual setting of endTime parameter to eventually expire their inactive VO memberships
 - ATLAS: followups with infra team to expose Varnish deployment in OpenShift for outside testing
 - Belle II: investigating logging and graphing issues in production Grafana and ElasticSearch
   - conditions access plots timing out with ELK server as source
 - Belle II: followups with infra team to configure test and prod payload storage in OpenShift, add computing team members to Belle II OpenShift project access lists
+  - granted admin privileges for [COmanage membership](https://comanage.sdcc.bnl.gov/) -- can now manage OpenShift user and group access via COmanage 
 - Belle II: working with sites to set up new caches; significant continued hits from node presumably in China (202.122.32.238) as well as Czech (squid.farm.particle.cz)
 - CVMFS: continued Stratum One reports from WLCG of delayed operations
   - unpacked repo replication delayed 22 hours due to garbage collection (4 May)
 - SDCC: issues with announcements script sending multiple copies per list, not updating web page without manual fix
 - SDCC: issues with NX terminal node overload, processes running host out of memory; reported [by Chris P](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37899)
+- SDCC: confusion with STAR user [demanding immediate reinstatement](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37902) of deactivated account
+  - student left STAR experiment and allowed BNL guest appointment to expire (or possibly never completed a request), needs to resolve registration with GUV Center before SDCC account can be reinstated
+- SDCC: discussions on facility primary/supplemental accounts, LDAP denomination for non-primary accounts, matching Active Directory for primary account, assigning supplemental group membership to primary accounts (James, Jason, Saroj)
+- SDCC: discussions on NX deployment via Puppet, Git branch merging issues, rterm script merge conflicts 
 
 # 28 Apr - 2 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
