@@ -25,12 +25,24 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 5-9 May
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS: followups with infra team to expose Varnish deployment in OpenShift for outside testing
+- Belle II: investigating logging and graphing issues in production Grafana and ElasticSearch
+  - conditions access plots timing out with ELK server as source
+- Belle II: followups with infra team to configure test and prod payload storage in OpenShift, add computing team members to Belle II OpenShift project access lists
+- Belle II: working with sites to set up new caches; significant continued hits from node presumably in China (202.122.32.238) as well as Czech (squid.farm.particle.cz)
+- CVMFS: continued Stratum One reports from WLCG of delayed operations
+  - unpacked repo replication delayed 22 hours due to garbage collection (4 May)
+- SDCC: issues with announcements script sending multiple copies per list, not updating web page without manual fix
+- SDCC: issues with NX terminal node overload, processes running host out of memory; reported [by Chris P](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37899)
+
 # 28 Apr - 2 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: followups on outdated [CERN ATLAS TWiki content](https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/SPARatBNL) for BNL user storage and disk quota information; TWiki page edited to remove outdated content and point to [ATLAS AF docs]( https://usatlas.readthedocs.io/projects/af-docs/en/latest/)
 - Belle II: further investigation of KEKCC site cache heavy load and conditions access
   - 1/2 KEKCC Squids deactivated in preparation for upgrade
-  - substantial new conditions request traffic seen from IHEP node (202.122.32.238)
+  - substantial new conditions request traffic seen from unlisted, possible IHEP node (202.122.32.238)
 - Belle II: setup help for IN2P3CC with new conditions site cache 
 - Belle II: account, Comanage setup for Computing team members for access to Openshift project
 - Belle II: more work with infrastructure team on OpenShift storage claims and changes, project access privileges
@@ -46,7 +58,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: Indico user, group administration and ACL for events within joint SDCC-sPHENIX meeting category 
 - SDCC: system and service checks after power outage affected farm nodes (2 May, 2-3am)
 - SDCC: renewed annual data center safety and job hazard training and agreement (J. McCarthy)
-- BNL: vacation days (3: 28-30 Apr) 
+- BNL: vacation days (3: 28-30 Apr)
 
 # 21-25 Apr
 - ATLAS: VO, IAM user management, questions, troubleshooting
