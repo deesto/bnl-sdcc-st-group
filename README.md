@@ -35,6 +35,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: followups with infra team to configure test and prod payload storage in OpenShift, add computing team members to Belle II OpenShift project access lists
   - granted admin privileges for [COmanage membership](https://comanage.sdcc.bnl.gov/) -- can now manage OpenShift user and group access via COmanage 
 - Belle II: working with sites to set up new caches; significant continued hits from node presumably in China (202.122.32.238) as well as Czech (squid.farm.particle.cz)
+- Belle II: management of [database-conditions list memberships](https://lists.belle2.org/sympa/info/database-conditions) on Belle II Sympa for bouncing subscribers
 - CVMFS: continued Stratum One reports from WLCG of delayed operations
   - unpacked repo replication delayed 22 hours due to garbage collection (4 May)
 - SDCC: issues with announcements script sending multiple copies per list, not updating web page without manual fix
@@ -42,7 +43,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: confusion with STAR user [demanding immediate reinstatement](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37902) of deactivated account
   - student left STAR experiment and allowed BNL guest appointment to expire (or possibly never completed a request), needs to resolve registration with GUV Center before SDCC account can be reinstated
 - SDCC: discussions on facility primary/supplemental accounts, LDAP denomination for non-primary accounts, matching Active Directory for primary account, assigning supplemental group membership to primary accounts (James, Jason, Saroj)
-- SDCC: discussions on NX deployment via Puppet, Git branch merging issues, rterm script merge conflicts 
+- SDCC: discussions on NX deployment via Puppet, Git branch merging issues, rterm script merge conflicts
+- SDCC: issues with sPHENIX conditions database calibration write confirmation, [reported by Chris P.](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37904)
+  - OpenShift pod deployment seemed fine (more pods added anyway), possible issues with [client check response](https://github.com/BNLNPPS/nop ayloadclient/blob/main/src/rea lwrapper.cpp#L66) to failed or partial transactions (Ruslan)
+- SDCC: discussions, meeting on EIC PD monitoring progress, storage purchases 
 
 # 28 Apr - 2 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
