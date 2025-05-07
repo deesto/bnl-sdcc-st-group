@@ -34,20 +34,31 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - conditions access plots timing out with ELK server as source
 - Belle II: followups with infra team to configure test and prod payload storage in OpenShift, add computing team members to Belle II OpenShift project access lists
   - granted admin privileges for [COmanage membership](https://comanage.sdcc.bnl.gov/) -- can now manage OpenShift user and group access via COmanage 
-- Belle II: working with sites to set up new caches; significant continued hits from node presumably in China (202.122.32.238) as well as Czech (squid.farm.particle.cz)
+- Belle II: working with sites to set up new caches
+  - significant continued hits from node presumably in China (202.122.32.238) as well as Czech node (squid.farm.particle.cz)
 - Belle II: management of [database-conditions list memberships](https://lists.belle2.org/sympa/info/database-conditions) on Belle II Sympa for bouncing subscribers
+- Belle II: debugging of possible site problems, CVMFS client issues [at KIT site](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/539) (LCG.KIT-TARDIS.de), possibly Belle II jobs accessing ATLAS CVMFS
 - CVMFS: continued Stratum One reports from WLCG of delayed operations
   - unpacked repo replication delayed 22 hours due to garbage collection (4 May)
+- NPPS/SDCC: interview panel for candidates for EIC computing PD NPPS staff [position](https://www.myworkday.com/bnl/d/inst/15$165509/5303$1327.htmld#TABTASKID=2998%2417245) (90+ minute interview slots, 7 May)
 - SDCC: issues with announcements script sending multiple copies per list, not updating web page without manual fix
 - SDCC: issues with NX terminal node overload, processes running host out of memory; reported [by Chris P](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37899)
 - SDCC: confusion with STAR user [demanding immediate reinstatement](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37902) of deactivated account
   - student left STAR experiment and allowed BNL guest appointment to expire (or possibly never completed a request), needs to resolve registration with GUV Center before SDCC account can be reinstated
 - SDCC: discussions on facility primary/supplemental accounts, LDAP denomination for non-primary accounts, matching Active Directory for primary account, assigning supplemental group membership to primary accounts (James, Jason, Saroj)
+  - [Summary of requirements](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37846#txn-1133204), action items on LDAP side (Jason)
 - SDCC: discussions on NX deployment via Puppet, Git branch merging issues, rterm script merge conflicts
 - SDCC: issues with sPHENIX conditions database calibration write confirmation, [reported by Chris P.](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37904)
-  - OpenShift pod deployment seemed fine (more pods added anyway), possible issues with [client check response](https://github.com/BNLNPPS/nop ayloadclient/blob/main/src/rea lwrapper.cpp#L66) to failed or partial transactions (Ruslan)
-- SDCC: discussions, meeting on EIC PD monitoring progress, storage purchases 
-
+  - OpenShift pod deployment seemed fine (more pods added anyway), possible issues with [client check response](https://github.com/BNLNPPS/nop ayloadclient/blob/main/src/realwrapper.cpp#L66) to failed or partial transactions (Ruslan)
+- SDCC: discussions, meeting on EIC PD monitoring progress, storage purchases
+- SDCC: meeting on possible BNL/US FCC web requirements
+- SDCC: issues with announcement ribbon across main faility Drupal site overlapping navigation bar elements, making them unusable, due to layer ordering changes (fixed, Chris L)
+- SDCC: discussions on REANA support for obsolete/retired clusters requested by EIC and other groups
+  - Previously deployed instances unsupported, unavailable on ATLAS OKD (retired cluster) and k8s (service not running)
+- SDCC: debugging broken connections between test Prometheus and Grafana services in OpenShift
+  - OpenShift MTU change by infra team: reverted again back to default 1500 value
+- SDCC: discussions about validity of requests for creating and maintaining another [facility CUPS service](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37916) 
+    
 # 28 Apr - 2 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: followups on outdated [CERN ATLAS TWiki content](https://twiki.cern.ch/twiki/bin/viewauth/AtlasComputing/SPARatBNL) for BNL user storage and disk quota information; TWiki page edited to remove outdated content and point to [ATLAS AF docs]( https://usatlas.readthedocs.io/projects/af-docs/en/latest/)
