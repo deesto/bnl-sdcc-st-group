@@ -40,7 +40,11 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: debugging of possible site problems, CVMFS client issues [at KIT site](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/539) (LCG.KIT-TARDIS.de), possibly Belle II jobs accessing ATLAS CVMFS
 - CVMFS: continued Stratum One reports from WLCG of delayed operations
   - unpacked repo replication delayed 22 hours due to garbage collection (4 May)
-- NPPS/SDCC: interview panel for candidates for EIC computing PD NPPS staff [position](https://www.myworkday.com/bnl/d/inst/15$165509/5303$1327.htmld#TABTASKID=2998%2417245) (90+ minute interview slots, 7 May)
+- CVMFS: sPHENIX client issues [reported by Chris P](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37923)
+  - sphenix repository served outdated version of file pointer in client on multiple WNs (sphnx1212, sphnx1235)
+  - files were in use/pinned and not updated, no errors in client or in syslog, no hangs in accessing repos, cache partition only ~50% full 
+- ITD: reported queuing issues with CUPS service and broken HTTPS connections due to expired certificate (INC0207237)
+- NPPS/SDCC: interview panel for candidates for EIC computing PD NPPS staff [position](https://www.myworkday.com/bnl/d/inst/15$165509/5303$1327.htmld#TABTASKID=2998%2417245) (3 90+ minute interview slots, 7-9 May)
 - SDCC: issues with announcements script sending multiple copies per list, not updating web page without manual fix
 - SDCC: issues with NX terminal node overload, processes running host out of memory; reported [by Chris P](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37899)
 - SDCC: confusion with STAR user [demanding immediate reinstatement](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37902) of deactivated account
@@ -58,6 +62,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: debugging broken connections between test Prometheus and Grafana services in OpenShift
   - OpenShift MTU change by infra team: reverted again back to default 1500 value
 - SDCC: discussions about validity of requests for creating and maintaining another [facility CUPS service](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37916) 
+- BNL: travel over the weekend to KIT for [Belle II workshop and site meetings](ttps://indico.belle2.org/event/13885/)
+  - still waiting for travel beginning 10 May travel to be finalized as of 9 May.
     
 # 28 Apr - 2 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
