@@ -25,6 +25,19 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 12-16 May
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS/WLCG: Varnish [workshop](https://indico.cern.ch/event/1546917/)
+- ATLAS: further followups with infra team to expose Varnish deployment in OpenShift for outside testing
+- Belle II: travel to Joint Computing, Data Production, and Software [workshop](https://indico.belle2.org/event/13885/) (and Sites Meeting) canceled hours before flight on Saturday
+  - eCC to Germany not approved until day after scheduled arrival
+- Belle II: finalist for Intelligent Log Analysis for the HSF Conditions Database project selected, approved by Google Summer of Code 2025 panel
+- CVMFS: continued Stratum One reports from WLCG of delayed operations
+  - unpacked repo replication delayed 20 hours due to garbage collection (11 May)
+- CVMFS: issues with client on Jupyter node (jupyter16)
+  - node hung, no new sessions available
+  - cache partition only 32G, connfigured as 50G, space 100% full
+
 # 5-9 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - issues with IAM synchronization with CERN HR DB after IAM update on 30 Apr should have fixed bug
@@ -63,7 +76,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - OpenShift MTU change by infra team: reverted again back to default 1500 value
 - SDCC: discussions about validity of requests for creating and maintaining another [facility CUPS service](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37916) 
 - BNL: travel over the weekend to KIT for [Belle II workshop and site meetings](ttps://indico.belle2.org/event/13885/)
-  - still waiting for travel beginning 10 May travel to be finalized as of 9 May.
+  - travel was canceled on 10 May (Saturday) because eCC clearance (submitted 8 May) was not approved before flight
     
 # 28 Apr - 2 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
