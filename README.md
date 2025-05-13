@@ -31,12 +31,20 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: further followups with infra team to expose Varnish deployment in OpenShift for outside testing
 - Belle II: travel to Joint Computing, Data Production, and Software [workshop](https://indico.belle2.org/event/13885/) (and Sites Meeting) canceled hours before flight on Saturday
   - eCC to Germany not approved until day after scheduled arrival
+  - remote talks, discussion on site report (Hiro), conditions services status and migration plans
 - Belle II: finalist for Intelligent Log Analysis for the HSF Conditions Database project selected, approved by Google Summer of Code 2025 panel
 - CVMFS: continued Stratum One reports from WLCG of delayed operations
   - unpacked repo replication delayed 20 hours due to garbage collection (11 May)
 - CVMFS: issues with client on Jupyter node (jupyter16)
   - node hung, no new sessions available
   - cache partition only 32G, connfigured as 50G, space 100% full
+  - [bug report](https://github.com/cvmfs/cvmfs/issues/3832) to devs, seems reasonable to fix
+  - adaptive local fix for WNs [by Costin](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/734) approved, pushed to production
+- SDCC: sPHENIX internal elog service [broken](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37933) again
+  - issue again caused by broken GPFS mount
+- SDCC: unknown EIC/CNIPOL web site "[RHIC Polarimetry Results](https://www.cnipol.bnl.gov/)" [reported broken](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37937)
+  - was hosted by Tom T. in Physics, moved to RHEL7 VM
+  - also a broken GPFS mount, client was likely dead since VM was moved from RHEV to OpenShift a few months ago
 
 # 5-9 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
