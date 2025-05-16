@@ -27,12 +27,25 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 12-16 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
+  - users can not easily add their own CERN x.509 certificates (default encoding/formatting not accepted by IAM)
+  - management of phys-sm members (and its production group)
 - ATLAS/WLCG: Varnish [workshop](https://indico.cern.ch/event/1546917/)
 - ATLAS: further followups with infra team to expose Varnish deployment in OpenShift for outside testing
+  - working with Rob on connectivity; rebuilt Ilija's Varnish repo as an docker/podman image; pushed image to OpenShift [Quay image server](https://bnl-sdcc-quay-quay-enterprise.apps.sdcc.bnl.gov/)  
 - Belle II: travel to Joint Computing, Data Production, and Software [workshop](https://indico.belle2.org/event/13885/) (and Sites Meeting) canceled hours before flight on Saturday
   - eCC to Germany not approved until day after scheduled arrival
   - remote talks, discussion on site report (Hiro), conditions services status and migration plans
+  - after trip cancelation, received multiple "Frankfurt Accountability Drills" from safe.state.gov for response
 - Belle II: finalist for Intelligent Log Analysis for the HSF Conditions Database project selected, approved by Google Summer of Code 2025 panel
+- Belle II: working with some large sites to determine cause of considerable changes in conditions request rates
+  - KEKCC increased Squid resources, may result in better caching, lower request rates (G.Iwai)
+  - Looking into possible issues with INFN Squid and diminished performance, situation with Squid at CN-IHEP (Silvio)
+- Belle II: massive spike in conditions requests lasting over several days
+  - load caused gateway errors on local probes (15 May 00:07-00:27), timeouts for client requests
+  - some users adding private GTs in production, creating payloads > 100MB in size
+  - collective effort by Software, Data Processing, Computing teams to get heavily used payload files [moved into local CVMFS cache](https://gitlab.desy.de/belle2/admin/buildbot/-/issues/11)
+- CVMFS: [issue reported](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37951) for OSG singularity repo on all EIC WNs
+  - one node (0101) had hung CVMFS client, required file handle fix and cache repair; all other EIC WNs were fine
 - CVMFS: continued Stratum One reports from WLCG of delayed operations
   - unpacked repo replication delayed 20 hours due to garbage collection (11 May)
 - CVMFS: issues with client on Jupyter node (jupyter16)
@@ -40,6 +53,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - cache partition only 32G, connfigured as 50G, space 100% full
   - [bug report](https://github.com/cvmfs/cvmfs/issues/3832) to devs, seems reasonable to fix
   - adaptive local fix for WNs [by Costin](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/734) approved, pushed to production
+- NPPS/SDCC: interview panel for candidates for EIC computing PD NPPS staff [position](https://www.myworkday.com/bnl/d/inst/15$165509/5303$1327.htmld#TABTASKID=2998%2417245) (1 90+ minute interview slot, 16 May)
+- SDCC: [issues with sPHENIX conditions database calibration](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37904) seem related to OpenShift problems (MTU adjustments)
+  - after OpenShift changes, sPHENIX production moved from OKD to OpenShift instance on 16 May, no issues seen since
 - SDCC: sPHENIX internal elog service [broken](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37933) again
   - issue again caused by broken GPFS mount
 - SDCC: unknown EIC/CNIPOL web site "[RHIC Polarimetry Results](https://www.cnipol.bnl.gov/)" [reported broken](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37937)
