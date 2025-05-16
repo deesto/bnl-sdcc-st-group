@@ -34,7 +34,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
     - contacted multiple users waiting for approval who never confirmed their membership requests (again waiting <= two months)
 - ATLAS/WLCG: Varnish [workshop](https://indico.cern.ch/event/1546917/)
 - ATLAS: further followups with infra team to expose Varnish deployment in OpenShift for outside testing
-  - working with Rob on connectivity; rebuilt Ilija's Varnish repo as an docker/podman image; pushed image to OpenShift [Quay image server](https://bnl-sdcc-quay-quay-enterprise.apps.sdcc.bnl.gov/); dealing with issues (vulnerabilies, wrong default repo branch; build problems)
+  - working with Rob on connectivity; rebuilt Ilija's Varnish repo as an docker/podman image; pushed image to OpenShift [Quay image server](https://bnl-sdcc-quay-quay-enterprise.apps.sdcc.bnl.gov/); dealing with issues (vulnerabilities, wrong default repo branch; build problems)
 - Belle II: travel to Joint Computing, Data Production, and Software [workshop](https://indico.belle2.org/event/13885/) (and Sites Meeting) canceled hours before flight on Saturday
   - eCC to Germany not approved until day after scheduled arrival
   - remote talks, discussion on site report (Hiro), conditions services status and migration plans
