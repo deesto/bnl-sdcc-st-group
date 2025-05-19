@@ -25,6 +25,18 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 19-23 May
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - users still having problems adding their own x.509 certificates (default encoding/formatting not accepted by IAM)
+- Belle II: discussions with Distributed Computing on possible need for adding conditions proxy at BNL
+  - not needed: BNL requests never overload conditions services like larger sites with more queue slots
+- CVMFS: continued Stratum One reports from WLCG of delayed operations
+  - unpacked repo replication delayed 21 hours due to garbage collection (18 May)
+- SDCC: investigating eligibility of HSF Google Summer of Code contributor for approval of BNL, SDCC accounts, and OpenShift project access from Pakistan
+  - Rob, Cyber: Pakistan is sensitive and will trigger SME review but should be approved if justified
+- SDCC: followups on sPHENIX conditions and calibration database function and performance in OpenShift
+- SDCC: quick review of Christian's GLPI agent Puppet [deployment code](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/736/files) -- disputed need to include systemd dependency, may cause resource conflicts
+
 # 12-16 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - users can not easily add their own CERN x.509 certificates (default encoding/formatting not accepted by IAM)
