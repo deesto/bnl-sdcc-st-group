@@ -28,14 +28,27 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 19-23 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - users still having problems adding their own x.509 certificates (default encoding/formatting not accepted by IAM)
+- ATLAS: further work on Varnish deployment, service and image customization, network debugging, issues with service behind proxy
+  - With Rob, working on OpenShift network routing for addressing internal proxy requirement for outbound traffic (Varnish does not easily handle proxy egress)
 - Belle II: discussions with Distributed Computing on possible need for adding conditions proxy at BNL
   - not needed: BNL requests never overload conditions services like larger sites with more queue slots
-- CVMFS: continued Stratum One reports from WLCG of delayed operations
+- Belle II: shifter [reports](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/548) of FTS issues
+  - shifters were checking old, retired FTS web status [pages](https://fts.usatlas.bnl.gov:8449/fts3/ftsmon/#/statistics/servers); shifter [docs](https://xwiki.desy.de/xwiki/bin/view/BI/Belle%20II%20Internal/Computing%20WebHome/DistributedComputing/Data%20Production%20Shifter%20Manual/#H6.FileTransferMonitoring) updated to point to new, upgraded [cluster pages](https://fts3.usatlas.bnl.gov:8449/fts3/ftsmon/#/statistics/servers)
+  - shifter doc also moving from XWiki to [Gitlab wiki](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/wikis/Data-Production-Shift-Manual)
+  - Nagios still triggering critical alerts on retired servers being used for testing
+- CVMFS: [another report](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37971) from sPHENIX about stale repo files in CVMFS client cache
+  - expected behavior: client cache can not refresh data being accessed with active file handles
+  - as before, manually killed existing file handles and cleaned cache to allow repo file updates
+- CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations
   - unpacked repo replication delayed 21 hours due to garbage collection (18 May)
+- NPPS/SDCC: finalized interviews and panel evaluation for candidates for EIC computing PD NPPS staff [position](https://www.myworkday.com/bnl/d/inst/15$165509/5303$1327.htmld#TABTASKID=2998%2417245) (1 90+ minute interview slot, 16 May)
 - SDCC: investigating eligibility of HSF Google Summer of Code contributor for approval of BNL, SDCC accounts, and OpenShift project access from Pakistan
   - Rob, Cyber: Pakistan is sensitive and will trigger SME review but should be approved if justified
 - SDCC: followups on sPHENIX conditions and calibration database function and performance in OpenShift
 - SDCC: quick review of Christian's GLPI agent Puppet [deployment code](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/736/files) -- disputed need to include systemd dependency, may cause resource conflicts
+- SDCC: feedback, testing on Louis's new user and staff [web portal](https://useraccount-dev.sdcc.bnl.gov/) (new user form, SSH key management, announcements)
+- SDCC: feedback on Louis's [MkDocs/Material test doc server](https://staff-docs.sdcc.bnl.gov/mkdocs/), comparison to previous [Hugo/Docsy deployment](https://staff-docs.sdcc.bnl.gov/)
+- BNL: had to query Workday team to clarify conflated reporting of excess vacation balance numbers in multiple Wokrkday views (with Ofer)
 
 # 12-16 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
