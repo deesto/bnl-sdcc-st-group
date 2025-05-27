@@ -25,6 +25,29 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 26-30 May
+- ATLAS: global production and analysis outage due Rucio failure ([CERN SNOW](https://cern.service-now.com/service-portal?id=ticket&n=INC4489658))
+  - k8s routiing initially blamed, but actual cause was distrosync upgrade of bird package and failed daemon reload
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - debugging of more reported user issues with certificate authentication and registration
+    - users who log into IAM without authenticating via x.509 (or don't have certificate installed) are unable to add certificates to their memberships
+- Belle II: more work with KEKCC on their site cache and access to conditions data
+  - issues reported by KEKCC users connecting to conditions data [via KEKCC local site cache](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/3#note_1225062)
+- Belle II: more work with Software, Calibration, Distributed Computing to [add more global tags](https://gitlab.desy.de/belle2/admin/buildbot/-/issues/11) to CVMFS to improve conditions performance
+- Belle II: basf2, DIRAC issues affecting job submission and management, requires central downtime for job drain and reboot (27-28 May)
+- Belle II: issues with conditions access dashboard showing invalid data, some data missing (ELK, Grafana, Grafite)
+- CVMFS: sPHENIX client issues [reported again](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37976) on WN (sphnx1513)
+  - same as previous reports: client and cache functioning normally, could not refresh files with open handles
+- CVMFS: reported issues with ATLAS condor submit host (attsub01)
+  - user reported issue was expected behavior (empty mount point until file read request made); other possible issues present, but no trace of problems after WN was rebooted (Tom)
+- CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
+  - unpacked repo replication delayed 22 hours due to garbage collection (25 May)
+- SDCC: issues with LDAP/IDM server (idm05)
+  - high load, ns-slapd using 800% CPU, NTP fell behind (27 May)
+- SDCC: continued issues with production ELK servers (gs-elk0{1,2})
+  - low disk space warnings every few hours (25-26 May)
+- BNL: holiday (1, 26 May), vacation day (1, 30 May)
+
 # 19-23 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - users still having problems adding their own x.509 certificates (default encoding/formatting not accepted by IAM)
@@ -49,6 +72,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: feedback, testing on Louis's new user and staff [web portal](https://useraccount-dev.sdcc.bnl.gov/) (new user form, SSH key management, announcements)
 - SDCC: feedback on Louis's [MkDocs/Material test doc server](https://staff-docs.sdcc.bnl.gov/mkdocs/), comparison to previous [Hugo/Docsy deployment](https://staff-docs.sdcc.bnl.gov/)
 - BNL: had to query Workday team to clarify conflated reporting of excess vacation balance numbers in multiple Wokrkday views (with Ofer)
+- BNL: vacation day (1, 26 May)
 
 # 12-16 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
