@@ -33,6 +33,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
     - users who log into IAM without authenticating via x.509 (or don't have certificate installed) are unable to add certificates to their memberships
 - Belle II: more work with KEKCC on their site cache and access to conditions data
   - issues reported by KEKCC users connecting to conditions data [via KEKCC local site cache](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/3#note_1225062)
+  - recurance of config issues from two years ago: DNS alias published IPv6 address, with no IPv6 interface available; IPv6 traffic being forced through NATs instead of cache as intended; conditions file alias missing from destination ACLs
 - Belle II: more work with Software, Calibration, Distributed Computing to [add more global tags](https://gitlab.desy.de/belle2/admin/buildbot/-/issues/11) to CVMFS to improve conditions performance
 - Belle II: basf2, DIRAC issues affecting job submission and management, requires central downtime for job drain and reboot (27-28 May)
 - Belle II: issues with conditions access dashboard showing invalid data, some data missing (ELK, Grafana, Grafite)
