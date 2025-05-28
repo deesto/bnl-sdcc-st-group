@@ -31,14 +31,18 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - debugging of more reported user issues with certificate authentication and registration
     - users who log into IAM without authenticating via x.509 (or don't have certificate installed) are unable to add certificates to their memberships
+- ATLAS: debugging of WLCG token request and issue process for OIDC clients and storage (with Hiro)
 - Belle II: more work with KEKCC on their site cache and access to conditions data
   - issues reported by KEKCC users connecting to conditions data [via KEKCC local site cache](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/3#note_1225062)
   - recurance of config issues from two years ago: DNS alias published IPv6 address, with no IPv6 interface available; IPv6 traffic being forced through NATs instead of cache as intended; conditions file alias missing from destination ACLs
 - Belle II: more work with Software, Calibration, Distributed Computing to [add more global tags](https://gitlab.desy.de/belle2/admin/buildbot/-/issues/11) to CVMFS to improve conditions performance
 - Belle II: basf2, DIRAC issues affecting job submission and management, requires central downtime for job drain and reboot (27-28 May)
 - Belle II: issues with conditions access dashboard showing invalid data, some data missing (ELK, Grafana, Grafite)
+  - continued disk space issues with production ELK servers, ElasticSearch shard mislabeling and deletion of data
+- Belle II: [cdbweb web service](https://cdbweb.sdcc.bnl.gov) host moved from RHEV to OpenShift after AFS support addded to OpenShift (Joe)
 - CVMFS: sPHENIX client issues [reported again](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37976) on WN (sphnx1513)
-  - same as previous reports: client and cache functioning normally, could not refresh files with open handles
+  - same as previous reports: client and cache functioning normally, threads with open file handles could not refresh catalog or file content; new threads should get updated catalog and content
+  - still unclear why [incident in April](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37923) may have been different than normal operations (entire WN cache may have been frozen)
 - CVMFS: reported issues with ATLAS condor submit host (attsub01)
   - user reported issue was expected behavior (empty mount point until file read request made); other possible issues present, but no trace of problems after WN was rebooted (Tom)
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
@@ -47,6 +51,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - high load, ns-slapd using 800% CPU, NTP fell behind (27 May)
 - SDCC: continued issues with production ELK servers (gs-elk0{1,2})
   - low disk space warnings every few hours (25-26 May)
+- SDCC: another power outage in b725 data center took out one row of WNs (notified by Networking in Matttermost, documented in [Jira](https://racfjira.atlassian.net/browse/OPS-223))
+- SDCC: extensive review of NX deployment code, worked with Saroj to prepare test branch and merge code [into production](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/760)
 - BNL: holiday (1, 26 May), vacation day (1, 30 May)
 
 # 19-23 May
