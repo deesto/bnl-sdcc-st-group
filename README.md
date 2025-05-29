@@ -32,6 +32,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - debugging of more reported user issues with certificate authentication and registration
     - users who log into IAM without authenticating via x.509 (or don't have certificate installed) are unable to add certificates to their memberships
 - ATLAS: debugging of WLCG token request and issue process for OIDC clients and storage (with Hiro)
+- ATLAS: more debugging of Varnish deployment in OpenShift
+  - fielding Cyber inquiries on deployment: remote Tomcat service at CERN flagged as vulnerable; CERN claims false positive
+  - service now available for small-scale testing via [new external DNS alias](http://atlas-varnish.sdcc.bnl.gov:6082/)
 - Belle II: more work with KEKCC on their site cache and access to conditions data
   - issues reported by KEKCC users connecting to conditions data [via KEKCC local site cache](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/3#note_1225062)
   - recurance of config issues from two years ago: DNS alias published IPv6 address, with no IPv6 interface available; IPv6 traffic being forced through NATs instead of cache as intended; conditions file alias missing from destination ACLs
@@ -53,13 +56,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - low disk space warnings every few hours (25-26 May)
 - SDCC: another power outage in b725 data center took out one row of WNs (notified by Networking in Matttermost, documented in [Jira](https://racfjira.atlassian.net/browse/OPS-223))
 - SDCC: extensive review of NX deployment code, worked with Saroj to prepare test branch and merge code [into production](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/760)
+- BNL: renewed expiring Working Safely in the 725 SDCC Data Center ([AO-SDCC725](https://training.bnl.gov/Portal/AO-SDCC725)) training
+  - re-submitted list of course problems and fixes to training team (also done two years ago)
+- SDCC: discussions on logging policies and volume vs. Cyber's expectations (Shigeki)
 - BNL: holiday (1, 26 May), vacation day (1, 30 May)
 
 # 19-23 May
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - users still having problems adding their own x.509 certificates (default encoding/formatting not accepted by IAM)
 - ATLAS: further work on Varnish deployment, service and image customization, network debugging, issues with service behind proxy
-  - With Rob, working on OpenShift network routing for addressing internal proxy requirement for outbound traffic (Varnish does not easily handle proxy egress)
+  - With Rob, working on OpenShift network routing for addressing internal proxy requirement for outbound traffic (Varnish does not easily handle proxy egress connections)
 - Belle II: discussions with Distributed Computing on possible need for adding conditions proxy at BNL
   - not needed: BNL requests never overload conditions services like larger sites with more queue slots
 - Belle II: shifter [reports](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/548) of FTS issues
