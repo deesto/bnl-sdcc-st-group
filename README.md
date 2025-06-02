@@ -25,6 +25,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 2-6 Jun
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: moving forward with plans to replace current production conditions VMs with OpenShift deployment
+- CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
+  - unpacked repo replication delayed 21 hours due to garbage collection (1 Jun)
+- CVMFS: v2.13 [released](https://cvmfs.readthedocs.io/en/2.13/cpt-releasenotes.html) with bug fixes and new features
+  - BNL instances (server and replica) can not be upgraded from 2.11 & 2.12 without RHEL9 infrastructure migration support
+
 # 26-30 May
 - ATLAS: global production and analysis outage due Rucio failure ([CERN SNOW](https://cern.service-now.com/service-portal?id=ticket&n=INC4489658))
   - k8s routiing initially blamed, but actual cause was distrosync upgrade of bird package and failed daemon reload
@@ -84,7 +92,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: quick review of Christian's GLPI agent Puppet [deployment code](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/736/files) -- disputed need to include systemd dependency, may cause resource conflicts
 - SDCC: feedback, testing on Louis's new user and staff [web portal](https://useraccount-dev.sdcc.bnl.gov/) (new user form, SSH key management, announcements)
 - SDCC: feedback on Louis's [MkDocs/Material test doc server](https://staff-docs.sdcc.bnl.gov/mkdocs/), comparison to previous [Hugo/Docsy deployment](https://staff-docs.sdcc.bnl.gov/)
-- BNL: had to query Workday team to clarify conflated reporting of excess vacation balance numbers in multiple Wokrkday views (with Ofer)
+- BNL: had to query Workday team to clarify conflated reporting of excess vacation balance numbers in multiple Workday views (with Ofer)
 - BNL: vacation day (1, 26 May)
 
 # 12-16 May
