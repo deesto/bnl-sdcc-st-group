@@ -27,6 +27,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 2-6 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS: ADC seems to be moving full steam ahead with transitioning conditions data cache from Squid to Varnish (ADC Weekly [talk](https://indico.cern.ch/event/1530289/contributions/6438639/attachments/3079712/5450924/ADCweekly-ConditionsDataCachingVarnish.pdf))
 - Belle II: moving forward with plans to replace current production conditions VMs with OpenShift deployment
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
   - unpacked repo replication delayed 21 hours due to garbage collection (1 Jun)
