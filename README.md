@@ -29,10 +29,18 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: ADC seems to be moving full steam ahead with transitioning conditions data cache from Squid to Varnish (ADC Weekly [talk](https://indico.cern.ch/event/1530289/contributions/6438639/attachments/3079712/5450924/ADCweekly-ConditionsDataCachingVarnish.pdf))
 - Belle II: moving forward with plans to replace current production conditions VMs with OpenShift deployment
+  - working with OpenShift team to resolve issues with persistent volumes and claims, resource shortfalls on some worker nodes, adding resource requests and anti-affinity settings to deployments to avoid hosting issues
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
   - unpacked repo replication delayed 21 hours due to garbage collection (1 Jun)
 - CVMFS: v2.13 [released](https://cvmfs.readthedocs.io/en/2.13/cpt-releasenotes.html) with bug fixes and new features
   - BNL instances (server and replica) can not be upgraded from 2.11 & 2.12 without RHEL9 infrastructure migration support
+- SDCC: more rterm script changes [requested by sPHENIX](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37955#txn-1136148): outdated 'sphnx' node names to be replaced by new 'sphnxuser' nodes
+  - pushed code fix to EL8/9 puppet repo with [new merge request](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/776)
+  - also pushed EL7 puppet repo code fix and [new merge request](https://webdocs.sdcc.bnl.gov/cgit/puppet/catalog/diff/?id=93e01e5e5a12dfc591806f54b3360b9e4c4abe87&id2=cae6436412b2a12f933203b820f630d6a6ad83fe)
+- SDCC: chaired and annotated EIC Computing PD meeting ([3 Jun](https://docs.google.com/document/d/1OGr2SvrQe7CKvmEhnTRXCYelRFTAIXa-AueFKk19HyM/edit?tab=t.0#heading=h.a87p2bm199zj))
+- SDCC: issues found with Drupal instance for facility site: users, roles, ACLs corrupt and broken; temporary fix to give all staff users admin level privileges so they can access staff-only protected content (which is a horrible way to fix this)
+  - all Drupal instances also need security updates
+- SDCC: trying to get through a Red Hat OpenShift administration video course, without distractions and facility issues (impossible)
 
 # 26-30 May
 - ATLAS: global production and analysis outage due Rucio failure ([CERN SNOW](https://cern.service-now.com/service-portal?id=ticket&n=INC4489658))
