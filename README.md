@@ -28,18 +28,31 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 2-6 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: ADC seems to be moving full steam ahead with transitioning conditions data cache from Squid to Varnish (ADC Weekly [talk](https://indico.cern.ch/event/1530289/contributions/6438639/attachments/3079712/5450924/ADCweekly-ConditionsDataCachingVarnish.pdf))
+  - attended [WLCG Operations Coordination meeting (5 Jun)](https://indico.cern.ch/event/1554526/) to contribute to Varnish, Squid, Frontier, CVMFS discussions
 - Belle II: moving forward with plans to replace current production conditions VMs with OpenShift deployment
-  - working with OpenShift team to resolve issues with persistent volumes and claims, resource shortfalls on some worker nodes, adding resource requests and anti-affinity settings to deployments to avoid hosting issues
+  - working with OpenShift team to resolve issues with persistent volumes and claims, resource shortfalls on some worker nodes, adding resource requests and anti-affinity, settings to deployments to avoid hosting issues, discussions on adding improved OpenShift logging and export so service monitoring can be established
+  - more testing of new deployment from BNL WNs via condor, jobs still being held by condor CE for unknown reason
+- Belle II: [Gitlab ticket](https://gitlab.desy.de/belle2/software/cdb/database/-/issues/3) on understanding basf2 requests for conditions payload metadata, and reworking requests to reduce returned data size
+- Belle II: discussions with IHEP admins to determine source of conditions requests from NAT with no external DNS records, clients with internal DNS IP records, requested NAT traffic go through squid cache to reduce repeated conditions queries
+- Belle II: continued [debugging of KEKCC squid](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/3) to find imbalance between squid caching behavior, config differences between cache instances
+- Belle II: KEK campus-wide network interventions will intermittently affect access to and from all buildings and subnets except LHCONE (26 Jun - 16 Jul)
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
   - unpacked repo replication delayed 21 hours due to garbage collection (1 Jun)
 - CVMFS: v2.13 [released](https://cvmfs.readthedocs.io/en/2.13/cpt-releasenotes.html) with bug fixes and new features
   - BNL instances (server and replica) can not be upgraded from 2.11 & 2.12 without RHEL9 infrastructure migration support
+- CVMFS: [request from STAR](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38032) to use sPHENIX's CVMFS EL9 write hosts and add their build management user there
+  - sPHENIX prefers to have one legacy EL7 write host upgraded to EL9 for sharing with other experiments
 - SDCC: more rterm script changes [requested by sPHENIX](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37955#txn-1136148): outdated 'sphnx' node names to be replaced by new 'sphnxuser' nodes
   - pushed code fix to EL8/9 puppet repo with [new merge request](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/776)
   - also pushed EL7 puppet repo code fix and [new merge request](https://webdocs.sdcc.bnl.gov/cgit/puppet/catalog/diff/?id=93e01e5e5a12dfc591806f54b3360b9e4c4abe87&id2=cae6436412b2a12f933203b820f630d6a6ad83fe)
 - SDCC: chaired and annotated EIC Computing PD meeting ([3 Jun](https://docs.google.com/document/d/1OGr2SvrQe7CKvmEhnTRXCYelRFTAIXa-AueFKk19HyM/edit?tab=t.0#heading=h.a87p2bm199zj))
 - SDCC: issues found with Drupal instance for facility site: users, roles, ACLs corrupt and broken; temporary fix to give all staff users admin level privileges so they can access staff-only protected content (which is a horrible way to fix this)
   - all Drupal instances also need security updates
+- SDCC: [policy discussions](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38044) involving ex-staff and appropriate privileges in RT tickets and queues
+- SDCC: EL7 Nagios broke (5 Jun 13:15) due to failed check of NSLS2's Jira service
+  - puppet and firewall turned off on NSLS2 Jira host 90 days ago, triggering purge of NSLS2 Jira host from our puppetdb
+  - broken check [removed from EL7 puppet code](https://webdocs.sdcc.bnl.gov/cgit/puppet/catalog/commit/?id=67b245012fc90adfb034dcc88edd527d54d555a4), Nagios service restored
+- SDCC: User Services discussions on Drupal sites, monitoring projects, NX issues, rterm script issues, user accounts and MFA issues
 - SDCC: trying to get through a Red Hat OpenShift administration video course, without distractions and facility issues (impossible)
 
 # 26-30 May
