@@ -35,6 +35,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: [Gitlab ticket](https://gitlab.desy.de/belle2/software/cdb/database/-/issues/3) on understanding basf2 requests for conditions payload metadata, and reworking requests to reduce returned data size
 - Belle II: discussions with IHEP admins to determine source of conditions requests from NAT with no external DNS records, clients with internal DNS IP records, requested NAT traffic go through squid cache to reduce repeated conditions queries
 - Belle II: continued [debugging of KEKCC squid](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/3) to find imbalance between squid caching behavior, config differences between cache instances
+- Belle II: debugging of idle, held jobs on BNL WNs with Fabrics team, incorrect `FileSystemDOmain` value being set by condor and passed to jobs
+- Belle II: confirmation and fix of incorrect TSM settings for conditions database archive backups, with HPSS team
 - Belle II: KEK campus-wide network interventions will intermittently affect access to and from all buildings and subnets except LHCONE (26 Jun - 16 Jul)
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
   - unpacked repo replication delayed 21 hours due to garbage collection (1 Jun)
