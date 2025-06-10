@@ -25,6 +25,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 9-13 Jun
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: continued issues with production conditions service: 20 minute interruption of metadata access due to high load (5:00-5:20 am 9 Jun)
+- Belle II: plans to finally migrate conditions services from RHEV VMs to OpenShift pod deployment (11 Jun)
+  - DNS change routing needs to be understood, coordinated with ITD, OpenShift admins
+  - BNL Condor CE testing finally working on BNL WNs with proper requirements and job settings
+  - migration plans *canceled* due to lack of necessary domain level redirection handling in OpenShift instance, to be added in the future
+- SDCC: investigation, recovery, testing of loss of hosts, services caused by OpenShift outage (9 Jun)
+  - misconfigured LACC network link between OpenShift cluster and NetApp appliance hosting OpenShift (and RHEV) VM images after NetApp software upgrade 
+
 # 2-6 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: ADC seems to be moving full steam ahead with transitioning conditions data cache from Squid to Varnish (ADC Weekly [talk](https://indico.cern.ch/event/1530289/contributions/6438639/attachments/3079712/5450924/ADCweekly-ConditionsDataCachingVarnish.pdf))
@@ -36,6 +46,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: discussions with IHEP admins to determine source of conditions requests from NAT with no external DNS records, clients with internal DNS IP records, requested NAT traffic go through squid cache to reduce repeated conditions queries
 - Belle II: continued [debugging of KEKCC squid](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/3) to find imbalance between squid caching behavior, config differences between cache instances
 - Belle II: debugging of idle, held jobs on BNL WNs with Fabrics team, incorrect `FileSystemDOmain` value being set by condor and passed to jobs
+  - wrong condor accounting group was being set for my B2 jobs ('bellepro' instead of 'group_belle.prod'), preventing successful job submission
 - Belle II: confirmation and fix of incorrect TSM settings for conditions database archive backups, with HPSS team
 - Belle II: KEK campus-wide network interventions will intermittently affect access to and from all buildings and subnets except LHCONE (26 Jun - 16 Jul)
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
