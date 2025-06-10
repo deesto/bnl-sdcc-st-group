@@ -28,12 +28,20 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 9-13 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - Belle II: continued issues with production conditions service: 20 minute interruption of metadata access due to high load (5:00-5:20 am 9 Jun)
+- Belle II: confirmed fixes to KEKCC squid causing conditions data payload download failures from KEK, [closed reported issue](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/3)
 - Belle II: plans to finally migrate conditions services from RHEV VMs to OpenShift pod deployment (11 Jun)
   - DNS change routing needs to be understood, coordinated with ITD, OpenShift admins
   - BNL Condor CE testing finally working on BNL WNs with proper requirements and job settings
   - migration plans *canceled* due to lack of necessary domain level redirection handling in OpenShift instance, to be added in the future
+- Belle II: completed software documentation survey, provided additional feedback
+- Belle II: responded to [shifter ticket report](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/563) of broken FTS service dueo to BNL OpenShift issues
+- CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
+  - unpacked repo replication delayed 22 hours due to garbage collection (8 Jun)
+- SDCC: more issues with Grafana monitoring of Belle II production conditions services, data dropped and lost due to overpopulated indices
+  - host doesn't have enough memory to support quantity and voume of required indices (`"circuit_breaking_exception", "reason"=>"[parent] Data too large, data for [indices:data/write/bulk[s]"`)
+  - plan instead to add more memory to OpenSearch cluster replacement (Louis)
 - SDCC: investigation, recovery, testing of loss of hosts, services caused by OpenShift outage (9 Jun)
-  - misconfigured LACC network link between OpenShift cluster and NetApp appliance hosting OpenShift (and RHEV) VM images after NetApp software upgrade 
+  - misconfigured LACC network link between OpenShift cluster and NetApp appliance hosting OpenShift (and RHEV) VM images after NetApp software upgrade
 
 # 2-6 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
