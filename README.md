@@ -35,6 +35,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - migration plans *canceled* due to lack of necessary domain level redirection handling in OpenShift instance, to be added in the future
 - Belle II: completed software documentation survey, provided additional feedback
 - Belle II: responded to [shifter ticket report](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/563) of broken FTS service dueo to BNL OpenShift issues
+- Belle II: Software team will (finally) [change client code](https://gitlab.desy.de/belle2/software/basf2/-/merge_requests/4387/diffs#b8206999df3b296f920873c0221ff4a941ff951d) to check CVMFS cache for conditions data files before hitting the central conditions data service
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
   - unpacked repo replication delayed 22 hours due to garbage collection (8 Jun)
 - SDCC: more issues with Grafana monitoring of Belle II production conditions services, data dropped and lost due to overpopulated indices
@@ -42,6 +43,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - plan instead to add more memory to OpenSearch cluster replacement (Louis)
 - SDCC: investigation, recovery, testing of loss of hosts, services caused by OpenShift outage (9 Jun)
   - misconfigured LACC network link between OpenShift cluster and NetApp appliance hosting OpenShift (and RHEV) VM images after NetApp software upgrade
+- SDCC: manually modified firewall rules on backend web database server (adminweb01) for Dong's new IC submit host access, because Puppet is broken and stopped on server
+- BNL: completed [Hosting and Escorting Foreign Nationals training](https://training.bnl.gov/portal/TQ-SEC-FN) in preparation of serving as international host for Google Summer of Code HSF Database Logging project participant (Osama)  
 
 # 2-6 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
