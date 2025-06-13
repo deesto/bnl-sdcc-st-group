@@ -28,23 +28,39 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 9-13 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - Belle II: continued issues with production conditions service: 20 minute interruption of metadata access due to high load (5:00-5:20 am 9 Jun)
+  - found 430k requests for single payload file (`BeamSpot_rev_126118`) in one week (8-13 Jun) made directly from DESY batch nodes (131.169.162.0/24 // batchnnnn.desy.de)
 - Belle II: confirmed fixes to KEKCC squid causing conditions data payload download failures from KEK, [closed reported issue](https://gitlab.desy.de/belle2/software/cdb/operations/-/issues/3)
 - Belle II: plans to finally migrate conditions services from RHEV VMs to OpenShift pod deployment (11 Jun)
   - DNS change routing needs to be understood, coordinated with ITD, OpenShift admins
   - BNL Condor CE testing finally working on BNL WNs with proper requirements and job settings
-  - migration plans *canceled* due to lack of necessary domain level redirection handling in OpenShift instance, to be added in the future
+  - migration plans *postponed* due to lack of necessary domain level redirection handling in OpenShift instance, added by Rob later in the week by adding dedicated haproxy deployment in front of conditions deployment to terminate incoming connections at the *.sdcc.bnl.gov comain level
+  - extensive testing of new haproxy deployment and test endpoints, debugging of condor queues and job failures, debugging of B2 Software test code
+  - reports on OpenShift infrastructure status and progress to inqueries from BNL B2 management
 - Belle II: completed software documentation survey, provided additional feedback
 - Belle II: responded to [shifter ticket report](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/563) of broken FTS service dueo to BNL OpenShift issues
 - Belle II: Software team will (finally) [change client code](https://gitlab.desy.de/belle2/software/basf2/-/merge_requests/4387/diffs#b8206999df3b296f920873c0221ff4a941ff951d) to check CVMFS cache for conditions data files before hitting the central conditions data service
+- Belle II: KEK announced annual summer downtime dates:
+  - KEK campus-wide power outage 1-3 Aug
+  - KEKCC down 1 Aug 9:00 - 5 Aug 17:00
+  - additional network interventions 8 Jul (13:00-17:00, 90m per network switch)
+- Belle II: follow-ups on possible issues with TSM tape backup of conditions database data and backup files (Tim) 
+- Belle II: working with site admins at IHEP to setup and configure cache for conditions requests
+- Belle II: logistics set up for collaboration with Google Summer of Code HSF Database Logging project participant (Google Chat, BNL and SDCC user accounts, Overleaf for IEEE paper)
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
   - unpacked repo replication delayed 22 hours due to garbage collection (8 Jun)
 - SDCC: more issues with Grafana monitoring of Belle II production conditions services, data dropped and lost due to overpopulated indices
-  - host doesn't have enough memory to support quantity and voume of required indices (`"circuit_breaking_exception", "reason"=>"[parent] Data too large, data for [indices:data/write/bulk[s]"`)
-  - plan instead to add more memory to OpenSearch cluster replacement (Louis)
+  - host doesn't have enough memory to support quantity and voume of required indices (`"circuit_breaking_exception", "reason"=>"[parent] Data too large, data for [indices:data/write/bulk[s]"`), continuously runs out of disk space
+  - added more memory to OpenSearch cluster replacement, remove or correct broken Logstash index configurations (Louis)
+  - updates to [two-year-old RT on broken ELK service](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=36357) (never addressed by responsible group or leads)
 - SDCC: investigation, recovery, testing of loss of hosts, services caused by OpenShift outage (9 Jun)
-  - misconfigured LACC network link between OpenShift cluster and NetApp appliance hosting OpenShift (and RHEV) VM images after NetApp software upgrade
+  - failure due to LACP network link issue between OpenShift cluster and NetApp appliance hosting OpenShift (and RHEV) VM images after NetApp software upgrade
 - SDCC: manually modified firewall rules on backend web database server (adminweb01) for Dong's new IC submit host access, because Puppet is broken and stopped on server
-- BNL: completed [Hosting and Escorting Foreign Nationals training](https://training.bnl.gov/portal/TQ-SEC-FN) in preparation of serving as international host for Google Summer of Code HSF Database Logging project participant (Osama)  
+- SDCC: discussions with Shigeki (ISSO), Cyber on logging requirements and expectations from facility hosts and services
+- SDCC: added US ATLAS WBS 2.3.1.5 milestones for CVMFS, monitoring (Alexei)
+- BNL: completed [Hosting and Escorting Foreign Nationals training](https://training.bnl.gov/portal/TQ-SEC-FN) in preparation of serving as international host for Google Summer of Code HSF Database Logging project participant (Osama)
+  - reviewed Osama's guest registration and guest security plan for approval
+  - reported issues with GUV center list of departments, listed admins for guest registration
+- BNL: re-review and approval of master property record for workstation (00014438) due to department/building move to b.725 (April S.)
 
 # 2-6 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
