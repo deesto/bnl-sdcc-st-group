@@ -28,13 +28,23 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 16-20 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - Belle II: more extensive load and functional testing of new OpenShift [metadata](belle2db-test.sdcc.bnl.gov) and [payload](belle2db-files-test.sdcc.bnl.gov) test endpoints before rescheduling migration from RHEV VMs
-  - requests to B2 user, admin communities to test endpoints
+  - requests to B2 user and admin communities to validate endpoints
+  - tentative plan to migrate to OpenShift next week
 - Belle II: [slides](https://docs.google.com/presentation/d/1QdcfnJ3GKQcASjlLVGBg8qI5iOB_1QN1F0pJ4CzmbgQ/edit) and contributions to talks on conditions services at B2GM (remote, not present)
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
   - unpacked repo replication delayed 22 hours due to garbage collection (15 Jun)
+- CVMFS: still missing repo statistics on data storage since disabling `du` on servers, NetApp partitions a month ago (Joe)
+  - NetApp OnTap data analytics running for 1 month, processed about 50% of repository directories
 - SDCC: discussions on monitoring, NX Puppet code and approval workflow
+- SDCC: EIC monitoring PD purchases dispatched: VAST storage may arrive next week; Dell/Storehouse CPU shipment also in progress
+- SDCC: issues found with dashboards on production Grafana instances after recent software upgrade (Cedric/B2)
+  - lucene queries with conditions changed syntax, now require quotes around keywords and parentheses around condition tests
+- SDCC: sPHENIX [reported another issue](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38113) with OpenShift calibration database deployment
+  - client requests timeout, retry, accumulate
+  - pod deployments to one particular OpenShift worker node (worker00) result in failed connections; no failures in pods on other nodes
+  - extensive debugging of OpenShift pods, connections, workers (with Rob, Tommy, Ruslan)
 - BNL: all-hands meeting (16 Jun)
-- BNL: vacation (1, 20 Jun)
+- BNL: holiday (1, 19 Jun), vacation (1, 20 Jun)
 
 # 9-13 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
