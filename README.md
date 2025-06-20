@@ -31,6 +31,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - requests to B2 user and admin communities to validate endpoints
   - tentative plan to migrate to OpenShift next week
 - Belle II: [slides](https://docs.google.com/presentation/d/1QdcfnJ3GKQcASjlLVGBg8qI5iOB_1QN1F0pJ4CzmbgQ/edit) and contributions to talks on conditions services at B2GM (remote, not present)
+- Belle II: investigated issues with failed conditions database backups to tape (Tim)
+  - backups running via >13yo adsm script
+  - NDMP tape drive mapping broke backups for some systems
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
   - unpacked repo replication delayed 22 hours due to garbage collection (15 Jun)
 - CVMFS: still missing repo statistics on data storage since disabling `du` on servers, NetApp partitions a month ago (Joe)
@@ -43,6 +46,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - client requests timeout, retry, accumulate
   - pod deployments to one particular OpenShift worker node (worker00) result in failed connections; no failures in pods on other nodes
   - extensive debugging of OpenShift pods, connections, workers (with Rob, Tommy, Ruslan)
+  - client reads working now without issue; write pileups occuring in some situations (unrelated to OpenShift)
+- SDCC: two Globus issues reported by users in RT tickets, info routed to experts
+  - confirmed all requests to "SDCC" collection pointing to 'dtn03' end point time out 
 - BNL: all-hands meeting (16 Jun)
 - BNL: holiday (1, 19 Jun), vacation (1, 20 Jun)
 
