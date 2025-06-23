@@ -29,11 +29,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: more vulnerabilities flagged by BNL Cyber in Varnish test bed in OpenShift, all related to Tomcat (hosted at CERN)
 - Belle II: disruption in production conditions metadata services due to high request load (1:30-2:45 23 Jun)
+  - complaints from Calibration group on timeouts for large global tag downloads
 - Belle II: tenatative plan to migrate conditions services from RHEV to OpenShift on Wed 25 Jun
+  - more heavy functional and load testing before move
 - Belle II: still debugging problems with site cache at IHEP and conditions access from other nodes
+- Belle II: edits to [DDM site accounting dashboard](https://monitoring.sdcc.bnl.gov/pub/grafana/d/ddm-site-accounting-dev/ddm-site-accounting) to fix broken queries after Grafana upgrade, match internal instance changes to public dashboard (Cedric)
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
   - garbage collection on CMS repo delayed 14 days due to garbage collection (7-21 Jun)
-- BNL: vacation (1 day, 27 Jun)
+- SDCC/Physics: STAR Drupal/Invenio/Phonebook meeting
+- SDCC: User Services discussions on Puppet code for web proxies, Mattermost code updates and DB migration to PostgreSQL
+- BNL: vacation (1, 27 Jun)
 
 # 16-20 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
