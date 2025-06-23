@@ -25,6 +25,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 23-27 Jun
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: disruption in production conditions metadata services due to high request load (1:30-2:45 23 Jun)
+- Belle II: tenatative plan to migrate conditions servicces from RHEV to OpenShift on Wed 25 Jun
+- CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
+  - garbage collection on CMS repo delayed 14 days due to garbage collection (7-21 Jun)
+
 # 16-20 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - Belle II: more extensive load and functional testing of new OpenShift [metadata](belle2db-test.sdcc.bnl.gov) and [payload](belle2db-files-test.sdcc.bnl.gov) test endpoints before rescheduling migration from RHEV VMs
