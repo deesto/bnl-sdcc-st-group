@@ -27,22 +27,36 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 23-27 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS: working to [remove service proxies from personal accounts](https://indico.cern.ch/event/1509488/) in IAM (Petr)
 - ATLAS: more vulnerabilities flagged by BNL Cyber in Varnish test bed in OpenShift, all related to Tomcat (hosted at CERN)
+  - provided updated information for potential vulnerability exclusion 
 - ATLAS/WLCG: Open Technical Forum #5 on Kubernetes (24 Jun)
+- ATLAS: complaints about CVMFS slowness in builds by SW, CI, Dev teams [SW Infra Jira ticket](https://its.cern.ch/jira/browse/ATLINFR-5763)
+  - slowness due to unreasonable expectation of large file support (<=32GB) in CVMFS builds; CVMFS cache's strenth is distribution of small files
+- ATLAS/WLCG: complaints about IPv4-only traffic between BNL CVMFS servers and host at CERN (zero-lcg01.cern.ch) over LHCOPN (Hiro, Shawn)
+  - host is v4 only due to historical deployment, CERN plans to update to dual stack soon (Fabrizio)
 - Belle II: disruption in production conditions metadata services due to high request load (1:30-2:45 23 Jun)
   - complaints from Calibration group on timeouts for large global tag downloads
 - Belle II: conditions services migrated from RHEV to OpenShift on Wed 25 Jun
   - more heavy functional and load testing before move
   - MTU of backend DB interfaces still set to 1400, required change in OpenShift and reboot of host to correct
   - coordination of changes to OpenShift deployment, ITD DNS alias changes, deployment changes and fixes, testing from all B2 teams
+  - Authenticated token transfers only working via token isser web site, failing via CLI 
+  - Continued extensive debugging and troubleshooting of OpenShift deployment (with Ruslan), considering rolling back to RHEV VM instances
 - Belle II: still debugging problems with site cache at IHEP and conditions access from other nodes
   - job submission (Condor) at IHEP not yet configured to accept `BELLE2_CONDB_PROXY` var into job env 
 - Belle II: edits to [DDM site accounting dashboard](https://monitoring.sdcc.bnl.gov/pub/grafana/d/ddm-site-accounting-dev/ddm-site-accounting) to fix broken queries after Grafana upgrade, match internal instance changes to public dashboard (Cedric)
+- Belle II: more issues with delayed, failed TSM tape backups of production conditions database (Tim)
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
   - garbage collection on CMS repo delayed 14 days (7-21 Jun), delayed on cernvm-prod repo for 10+ days (14-24 Jun)
+  - snapshot of AMS repo delayed 8 hours during repo garbage collection and subsequent repo verification, required manual sync (27 Jun)
+- CVMFS: problems with auto-mounts on builds of new EL9 write hosts (Costin)
+  - Old Farm team code [explicitly blocked](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/819) auto-mount of some NFS mount points
 - SDCC/Physics: STAR Drupal/Invenio/Phonebook meeting
 - SDCC: User Services discussions on Puppet code for web proxies, Mattermost code updates and DB migration to PostgreSQL
+- SDCC: tracking down outstanding Puppet host certificate signing requests for two old Farm/Fabric nodes (Jason)
 - BNL: CDS Directorate all-hands meeting (24 Jun)
+- BNL: entered and submitted goals for FY25
 - BNL: vacation (1, 27 Jun)
 
 # 16-20 Jun
