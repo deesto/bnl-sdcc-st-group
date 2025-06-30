@@ -25,6 +25,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 30 Jun - 4 Jul
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: continued debugging of conditions services migrated from RHEV to OpenShift
+  - SW team [fixed](https://gitlab.desy.de/belle2/software/basf2/-/merge_requests/4467) problem with basf2 client: full list of conditions GTs was being used as a server status check, instead of GT status, which is a much smaller and static return
+- BNL: holiday (1, 4 Jul)
+
 # 23-27 Jun
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: working to [remove service proxies from personal accounts](https://indico.cern.ch/event/1509488/) in IAM (Petr)
