@@ -28,6 +28,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 30 Jun - 4 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - Belle II: continued debugging of conditions services migrated from RHEV to OpenShift
+  - many changes made to deployment; progress and fixes tracked [here](https://docs.google.com/document/d/1y_2Vbh91yy0Eh2gzy6alxEEccGM361-bYebq8H-h40Y/edit?usp=sharing)
   - SW team [fixed](https://gitlab.desy.de/belle2/software/basf2/-/merge_requests/4467) problem with basf2 client: full list of conditions GTs was being used as a server status check, instead of GT status, which is a much smaller and static return
 - BNL: holiday (1, 4 Jul)
 
