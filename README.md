@@ -27,9 +27,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 30 Jun - 4 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
-- Belle II: continued debugging of conditions services migrated from RHEV to OpenShift
+  - CERN SNOW tickets on VO group membership [RQF3242192], coordinated with 'team' VO management for approvals (Armen); users unable to add their own certificates [INC4563689]
+- ATLAS: more work and follow-ups on Varnish test instance in OpenShift; [GGUS ticket opened](https://helpdesk.ggus.eu/#ticket/zoom/3795/) on monitoriing deployment 
+- Belle II: continued extensive debugging of conditions services migrated from RHEV to OpenShift
   - many changes made to deployment; progress and fixes tracked [here](https://docs.google.com/document/d/1y_2Vbh91yy0Eh2gzy6alxEEccGM361-bYebq8H-h40Y/edit?usp=sharing)
   - SW team [fixed](https://gitlab.desy.de/belle2/software/basf2/-/merge_requests/4467) problem with basf2 client: full list of conditions GTs was being used as a server status check, instead of GT status, which is a much smaller and static return
+- SDCC: chaired and [recorded minutes](https://docs.google.com/document/d/1OGr2SvrQe7CKvmEhnTRXCYelRFTAIXa-AueFKk19HyM/edit?tab=t.0#heading=h.7lfmdwuoz63a) for EIC computing PD monthly meeting
+- SDCC: more problems with sPHENIX HSF CDB [reported by experiment](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38151), fixed by Ruslan
+- SDCC: Frontier Squid hosts for CVMFS and Frontier return IPv4 IPs on test even though they are dual stacked with IPv6 interfaces as well (Hiro)
+- SDCC: Feedback on deliverables for EIC PD FY 25 projects; 
+- SDCC: Foreign travel process improvement meeting
+- BNL: follow-ups on user registration for Google Summer of Code participant; no news from GUV Center since my approval on 13 Jun
 - BNL: holiday (1, 4 Jul)
 
 # 23-27 Jun
