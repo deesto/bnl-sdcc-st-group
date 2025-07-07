@@ -26,12 +26,17 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 # 7-11 Jul
-- Belle II: continuing work on correcting, tuning conditions services on OpenShift deployment, mitigating high load on DB servers
+- Belle II: continuing work on debugging, correcting, tuning conditions services on OpenShift deployment, mitigating high load on DB 
+  - high idle socket count, waiting connections correspond with high load (100% CPU) on attacned NetApp appliance for associated payload NFS share
+  - edits and comments on project [Lessons Learned](https://docs.google.com/document/d/1Vbxb5VLT-Huwy4zzGRIr1qG1gtoBlKy97IW3BPMTc3Y/edit?tab=t.0) report
+- Belle II/HSF: HSF/IRIS-HEP Training [Hackathon](https://indico.cern.ch/event/1565267/) for [databases, monitoring, conditions access](https://github.com/hsf-training/hsf-training-databases-basics/tree/main)
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
-  - snapshot on 'unpacked' repo delayed 12 hours (6 Jul) 
-  - garbage collection delayed on cernvm-prod repo for 22+ days (14 Jun - 6 Jul), delayed on sphenix repo for 14 days (6 Jul)
+  - snapshot replication on 'unpacked' repo delayed 12 hours (6 Jul) 
+  - garbage collection delayed on 'cernvm-prod' repo for 22+ days (14 Jun); delayed on 'sphenix' repo for 14 days (6 Jul)
 - SDCC: BNL ITD Red Hat Satellite upgrade triggered ~100 "pending task" notifications to SDCC staff (Joe investigating)
 - SDCC: dicussions on charging the EIC computing PD for network equipment for storage servers (Shigeki, Alexei)
+- SDCC: continued configutation of ATLAS Varnish test deployment in OpenShift
+  - continued security discussions related to remote content (Shigkei)
 
 # 30 Jun - 4 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
