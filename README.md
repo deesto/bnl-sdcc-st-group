@@ -25,10 +25,18 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 7-11 Jul
+- Belle II: continuing work on correcting, tuning conditions services on OpenShift deployment, mitigating high load on DB servers
+- CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
+  - snapshot on 'unpacked' repo delayed 12 hours (6 Jul) 
+  - garbage collection delayed on cernvm-prod repo for 22+ days (14 Jun - 6 Jul), delayed on sphenix repo for 14 days (6 Jul)
+- SDCC: BNL ITD Red Hat Satellite upgrade triggered ~100 "pending task" notifications to SDCC staff (Joe investigating)
+- SDCC: dicussions on charging the EIC computing PD for network equipment for storage servers (Shigeki, Alexei)
+
 # 30 Jun - 4 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - CERN SNOW tickets on VO group membership [RQF3242192], coordinated with 'team' VO management for approvals (Armen); users unable to add their own certificates [INC4563689]
-- ATLAS: more work and follow-ups on Varnish test instance in OpenShift; [GGUS ticket opened](https://helpdesk.ggus.eu/#ticket/zoom/3795/) on monitoriing deployment ; BNL CS still complaining about vulnerability in remote Frontier service at CERB
+- ATLAS: more work and follow-ups on Varnish test instance in OpenShift; [GGUS ticket opened](https://helpdesk.ggus.eu/#ticket/zoom/3795/) on monitoriing deployment ; BNL CS still complaining about vulnerability in remote Frontier service at CERN
 - ATLAS/WLCG: [DOMA meeting](https://indico.cern.ch/event/1556884/) on IPv6 monitoring, Rucio based tape RSE backups
 - ATLAS/Belle II: FTS issue [reported by ATLAS](https://helpdesk.ggus.eu/#ticket/zoom/3843): servers ran out of disk; fixed by Hiro
 - Belle II: continuing extensive debugging of conditions services migrated from RHEV to OpenShift
