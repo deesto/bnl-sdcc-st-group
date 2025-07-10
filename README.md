@@ -26,6 +26,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 # 7-11 Jul
+- ATLAS: CERN IT-ASDF [meeting](https://indico.cern.ch/event/1557048) on [monitoring improvements](https://indico.cern.ch/event/1557048/contributions/6556806/attachments/3100020/5496160/From%20InfluxDB%20to%20Prometheus%20&%20The%20Monitoring%20Grafana%20Catalogue.pdf) with Monit, Grafana, InfluxDB, Prometheus
+- ATLAS: VO, IAM user management, questions, troubleshooting
 - Belle II: continuing work on debugging, correcting, tuning conditions services on OpenShift deployment, mitigating high load on DB 
   - high idle socket count, waiting connections correspond with high load (100% CPU) on attacned NetApp appliance for associated payload NFS share
   - edits and comments on project [Lessons Learned](https://docs.google.com/document/d/1Vbxb5VLT-Huwy4zzGRIr1qG1gtoBlKy97IW3BPMTc3Y/edit?tab=t.0) report
@@ -33,6 +35,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - multiple bug fixes and optimizations to basf2 to improve conditions use in [Joint Data Production/Software/Computing meeting](https://notes.desy.de/MZE9jQ0xQoGAuxOnbhvh_A?view#ConditionsDB-in-Basf2-updates)
 - Belle II/HSF: HSF/IRIS-HEP Training [Hackathon](https://indico.cern.ch/event/1565267/) for [databases, monitoring, conditions access](https://github.com/hsf-training/hsf-training-databases-basics/tree/main)
 - Belle II: BNL registration for Google Summer of Code participant for HSF database logging project finally approved (4 weeks)
+- Belle II: HTCondorCE gatekeepers need to be updated: backup next week, primary in August (Hiro, Fabrics team)
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
   - snapshot replication on 'unpacked' repo delayed 12 hours (6 Jul) 
   - garbage collection delayed on 'cernvm-prod' repo for 22+ days (14 Jun); delayed on 'sphenix' repo for 14 days (6 Jul)
@@ -44,6 +47,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: User Services discussions on coredump configuration and handling, baloo file indexer service disabling for NX hosts, NX maintenance scripts and cron configuration, NX Nagios alerts, Prometheus node exporter and PostgresQL monitoring
 - SDCC: initiative to clean up and reorganize Grafana dashboards across staff and services (Costin, Jane)
   - sPHENIX overview dashboard reported as lost/deleted by Jin, restored by Costin
+  - cleanup, relocation of Belle II DDM transfers and deletions dashboards and revisions (Cedric)
 
 # 30 Jun - 4 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
