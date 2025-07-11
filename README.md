@@ -28,26 +28,36 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 # 7-11 Jul
 - ATLAS: CERN IT-ASDF [meeting](https://indico.cern.ch/event/1557048) on [monitoring improvements](https://indico.cern.ch/event/1557048/contributions/6556806/attachments/3100020/5496160/From%20InfluxDB%20to%20Prometheus%20&%20The%20Monitoring%20Grafana%20Catalogue.pdf) with Monit, Grafana, InfluxDB, Prometheus
 - ATLAS: VO, IAM user management, questions, troubleshooting
+  - preparation for ATLAS SW tutorial (14-18 Jul) increased VO and group membership requests, troubleshooting
+- ATLAS: follow-ups to Varnish test deployment: still waiting for BNL Cyber Security vulnerability clearance (Robert, Shigeki)
+- ATLAS: follow-ups to ATLAS ADC and SCI to cease ATLAS jobs requesting (and failing) to access CUDA outside CERN in non-distributed CVMFS 'projects' repo (Attila)
 - Belle II: continuing work on debugging, correcting, tuning conditions services on OpenShift deployment, mitigating high load on DB 
   - high idle socket count, waiting connections correspond with high load (100% CPU) on attacned NetApp appliance for associated payload NFS share
   - edits and comments on project [Lessons Learned](https://docs.google.com/document/d/1Vbxb5VLT-Huwy4zzGRIr1qG1gtoBlKy97IW3BPMTc3Y/edit?tab=t.0) report
   - replica DB server was not designed for production load, still running network interfaces at 1400 MTU, requires shutdown and migration to activate updated OpenShift network profile for 1500 MTU
   - multiple bug fixes and optimizations to basf2 to improve conditions use in [Joint Data Production/Software/Computing meeting](https://notes.desy.de/MZE9jQ0xQoGAuxOnbhvh_A?view#ConditionsDB-in-Basf2-updates)
+  - SW [merge request](https://gitlab.desy.de/belle2/software/basf2/-/merge_requests/4387) to use CVMFS as primary metadata provider over remote conditions service (Giacomo)
 - Belle II/HSF: HSF/IRIS-HEP Training [Hackathon](https://indico.cern.ch/event/1565267/) for [databases, monitoring, conditions access](https://github.com/hsf-training/hsf-training-databases-basics/tree/main)
-- Belle II: BNL registration for Google Summer of Code participant for HSF database logging project finally approved (4 weeks)
+- Belle II/HSF: Google Summer of Code Belle II HSF CDB 2025 [progress meeting](https://meet.google.com/wuw-ebre-zfq) (9 Jul)
+  - BNL registration for Google Summer of Code participant for HSF database logging project finally approved 10 Jul (4 weeks)
+  - midterm evaluations due next week
 - Belle II: HTCondorCE gatekeepers need to be updated: backup next week, primary in August (Hiro, Fabrics team)
 - CVMFS: continued Stratum One reports from WLCG of delayed maintenance operations due to high NAS I/O
   - snapshot replication on 'unpacked' repo delayed 12 hours (6 Jul) 
   - garbage collection delayed on 'cernvm-prod' repo for 22+ days (14 Jun); delayed on 'sphenix' repo for 14 days (6 Jul)
+  - CernVM-FS bug fix version 2.13.1 [released](https://cvmfs.readthedocs.io/en/2.13/cpt-releasenotes.html#release-notes-for-cernvm-fs-2-13-1), can not be updated from currentl EL7 final version until servers can be upgraded to >= EL9
+    - CVMFS release package using [new signing key](https://github.com/cvmfs/cvmfs/blob/devel/packaging/rpm/RPM-GPG-KEY-CernVM-2048) for >= EL10 packages and `cvmfs-release` >= v6-2
 - SDCC: BNL ITD Red Hat Satellite upgrade triggered ~100 "pending task" notifications to SDCC staff (Joe investigating)
 - SDCC: dicussions on charging the EIC computing PD for network equipment for storage servers (Shigeki, Alexei)
 - SDCC: continued configutation of ATLAS Varnish test deployment in OpenShift
   - continued security discussions related to remote content (Shigkei)
 - SDCC: Rancher Government Solutions (RGS) virtualization platform meeting, discussion ([slides](https://creynoldslides.s3.amazonaws.com/creynold_master_pdf.pdf), [docs](https://fleet.rancher.io/))
-- SDCC: User Services discussions on coredump configuration and handling, baloo file indexer service disabling for NX hosts, NX maintenance scripts and cron configuration, NX Nagios alerts, Prometheus node exporter and PostgresQL monitoring
+- SDCC: User Services discussions on coredump configuration and handling, baloo file indexer service disabling for NX hosts, NX maintenance scripts and cron configuration, NX Nagios alerts, Prometheus node exporter and PostgresQL monitoring, retiring unused Grafana development instance
 - SDCC: initiative to clean up and reorganize Grafana dashboards across staff and services (Costin, Jane)
   - sPHENIX overview dashboard reported as lost/deleted by Jin, restored by Costin
   - cleanup, relocation of Belle II DDM transfers and deletions dashboards and revisions (Cedric)
+- SDCC: initiative to get broken, abandoned Ceph pods running on abandoned EIC servers shut down, stop spamming facility logging with errors (Costin)
+- SDCC: critical Grafana [vulnerabilities](https://grafana.com/blog/2025/07/02/grafana-security-update-critical-severity-security-release-for-cve-2025-5959-cve-2025-6554-cve-2025-6191-and-cve-2025-6192-in-grafana-image-renderer-plugin-and-synthetic-monitoring-agent/) in installed Chromium-based image-renderer plugin confirmed, addressed via upgrade (Ofer, Louis)
 
 # 30 Jun - 4 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
