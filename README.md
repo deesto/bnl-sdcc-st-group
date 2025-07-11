@@ -47,6 +47,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - garbage collection delayed on 'cernvm-prod' repo for 22+ days (14 Jun); delayed on 'sphenix' repo for 14 days (6 Jul)
   - CernVM-FS bug fix version 2.13.1 [released](https://cvmfs.readthedocs.io/en/2.13/cpt-releasenotes.html#release-notes-for-cernvm-fs-2-13-1), can not be updated from currentl EL7 final version until servers can be upgraded to >= EL9
     - CVMFS release package using [new signing key](https://github.com/cvmfs/cvmfs/blob/devel/packaging/rpm/RPM-GPG-KEY-CernVM-2048) for >= EL10 packages and `cvmfs-release` >= v6-2
+- CVMFS: increased DNS masquerade cache size on Stratum One server to reduce excessive DNS client lookup logs (Costin)
+  - default dnsmasq cache size is 150, had already been increased to 5k, max size is 10k, which does not greatly improve lookup caching
 - SDCC: BNL ITD Red Hat Satellite upgrade triggered ~100 "pending task" notifications to SDCC staff (Joe investigating)
 - SDCC: dicussions on charging the EIC computing PD for network equipment for storage servers (Shigeki, Alexei)
 - SDCC: continued configutation of ATLAS Varnish test deployment in OpenShift
