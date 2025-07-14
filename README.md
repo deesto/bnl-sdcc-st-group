@@ -25,6 +25,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 14-18 Jul
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- CVMFS: follow-ups with CERN service admins on adding IPv6 interface to Stratum Zero hosts available on LHCOPN
+  - Fabrizio will look into historical reasons for current IPv4-only architecture, possibility of adding v6 
+- SDCC: BNL ITD Red Hat Satellite again sent 44 "pending task" notifications to SDCC staff (Joe investigating)
+- SDCC: follow-ups on broken EIC Ceph nodes and error log flooding (Shigeki)
+- SDCC: additional CPU node purchase authorized for integration into OpenShift as worker node for EIC monitoring PD, adding resilience to deployments (Alexei, Robert)
+
 # 7-11 Jul
 - ATLAS: CERN IT-ASDF [meeting](https://indico.cern.ch/event/1557048) on [monitoring improvements](https://indico.cern.ch/event/1557048/contributions/6556806/attachments/3100020/5496160/From%20InfluxDB%20to%20Prometheus%20&%20The%20Monitoring%20Grafana%20Catalogue.pdf) with Monit, Grafana, InfluxDB, Prometheus
 - ATLAS: VO, IAM user management, questions, troubleshooting
@@ -51,7 +59,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - default dnsmasq cache size is 150, had already been increased to 5k, max size is 10k, which does not greatly improve lookup caching
 - SDCC: BNL ITD Red Hat Satellite upgrade triggered ~100 "pending task" notifications to SDCC staff (Joe investigating)
 - SDCC: dicussions on charging the EIC computing PD for network equipment for storage servers (Shigeki, Alexei)
-- SDCC: continued configutation of ATLAS Varnish test deployment in OpenShift
+- SDCC: continued configuration of ATLAS Varnish test deployment in OpenShift
   - continued security discussions related to remote content (Shigkei)
 - SDCC: Rancher Government Solutions (RGS) virtualization platform meeting, discussion ([slides](https://creynoldslides.s3.amazonaws.com/creynold_master_pdf.pdf), [docs](https://fleet.rancher.io/))
 - SDCC: User Services discussions on coredump configuration and handling, baloo file indexer service disabling for NX hosts, NX maintenance scripts and cron configuration, NX Nagios alerts, Prometheus node exporter and PostgresQL monitoring, retiring unused Grafana development instance
