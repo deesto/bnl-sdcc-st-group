@@ -27,11 +27,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 14-18 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
-- CVMFS: follow-ups with CERN service admins on adding IPv6 interface to Stratum Zero hosts available on LHCOPN
-  - Fabrizio will look into historical reasons for current IPv4-only architecture, possibility of adding v6 
-- SDCC: BNL ITD Red Hat Satellite again sent 44 "pending task" notifications to SDCC staff (Joe investigating)
+- Belle II: new 538 TB disk cache (60*12TB, 3GB/s) added to HPSS tape array (Tim)
+- BNL: Jira purchase requisition (#0000467357) from 2019 re-opened to reconcile discrepency of $105 between billing and payment (Donna)
+- CVMFS: follow-ups with CERN service admins on adding IPv6 interface to Stratum Zero hosts available on LHCOPN (Fabrizio)
+  - CERN will look into historical reasons for current IPv4-only architecture, possibility of adding v6 
+- SDCC: BNL ITD Red Hat Satellite sent 44 new "pending task" notifications to SDCC staff over weekend (Joe investigating)
 - SDCC: follow-ups on broken EIC Ceph nodes and error log flooding (Shigeki)
+- SDCC: VAST storage installation for EIC computing PD delayed due to lack of networking connectivity
 - SDCC: additional CPU node purchase authorized for integration into OpenShift as worker node for EIC monitoring PD, adding resilience to deployments (Alexei, Robert)
+- SDCC: input to EIC computing PD proposal for FY'26 (Alexei)
+- SDCC: troubleshooting of broken Nagios service (nagios01) due to Puppet changes
 
 # 7-11 Jul
 - ATLAS: CERN IT-ASDF [meeting](https://indico.cern.ch/event/1557048) on [monitoring improvements](https://indico.cern.ch/event/1557048/contributions/6556806/attachments/3100020/5496160/From%20InfluxDB%20to%20Prometheus%20&%20The%20Monitoring%20Grafana%20Catalogue.pdf) with Monit, Grafana, InfluxDB, Prometheus
