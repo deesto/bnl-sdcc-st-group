@@ -27,16 +27,27 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 14-18 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
+   issues with user certificate DN mismatches in IAM and Rucio; [sync script](https://atlasdistributedcomputing-live.web.cern.ch/ATLASDistributedComputing-live/rucio-account-inconsistency.CMD) deleted mismatched certificate DN from Rucio mapping
+- ATLAS: follow-ups to GGUS ticket on Varnish test deployment: still waiting for BNL Cyber Security vulnerability clearance (Robert, Shigeki)
 - Belle II: new 538 TB disk cache (60*12TB, 3GB/s) added to HPSS tape array (Tim)
+- Belle II: KEK campus-wide power outage 1–5 Aug; computing systems to be paused
+- Belle II: mid-term evaluation for [Google Summer of Code](https://summerofcode.withgoogle.com/organizations/cern-hsf/projects) project for [HSF conditions database logging](https://summerofcode.withgoogle.com/organizations/cern-hsf/projects/details/bD4yyXz6)
+- Belle II: network interfaces for conditions deployment on OpenShift need IP changes, move to LHCONE network, add IPv6 addresses in August (Hiro, Mark L.)
 - BNL: Jira purchase requisition (#0000467357) from 2019 re-opened to reconcile discrepency of $105 between billing and payment (Donna)
+- CVMFS: opened [bug report](https://github.com/cvmfs/cvmfs/issues/3919) on excessive DNS lookups by Stratum One (~2M/day), many failures and lookups on remote short hostnames without FQDNs (Costin)
 - CVMFS: follow-ups with CERN service admins on adding IPv6 interface to Stratum Zero hosts available on LHCOPN (Fabrizio)
-  - CERN will look into historical reasons for current IPv4-only architecture, possibility of adding v6 
+  - CERN investigating historical reasons for current IPv4-only architecture, feasibility of adding v6 
 - SDCC: BNL ITD Red Hat Satellite sent 44 new "pending task" notifications to SDCC staff over weekend (Joe investigating)
 - SDCC: follow-ups on broken EIC Ceph nodes and error log flooding (Shigeki)
 - SDCC: VAST storage installation for EIC computing PD delayed due to lack of networking connectivity
-- SDCC: additional CPU node purchase authorized for integration into OpenShift as worker node for EIC monitoring PD, adding resilience to deployments (Alexei, Robert)
+  - PD now being charged $10-15k for network installation (Shigeki)
+  - update 16 Jul: installation will be delayed >= 1 month due to lack of fibre, other network equipment
+- SDCC: additional Dell node purchase authorized for integration into OpenShift as worker node for EIC monitoring PD, adding resilience to deployments (Alexei, Robert)
 - SDCC: input to EIC computing PD proposal for FY'26 (Alexei)
-- SDCC: troubleshooting of broken Nagios service (nagios01) due to Puppet changes
+- SDCC: troubleshooting of broken Nagios service (nagios01) due to Puppet changes (Joe)
+- SDCC: issues with [Drupal content access](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38195) for US ATLAS web site, [other Drupal issues](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37144) (Christian)
+- SDCC: STAR meeting (Shigeki)
+- BNL: began travel process to attend [Belle II General Meeting](https://indico.belle2.org/event/15881/) and computing workshops, Sep-Oct 2025 (15 Jul)
 
 # 7-11 Jul
 - ATLAS: CERN IT-ASDF [meeting](https://indico.cern.ch/event/1557048) on [monitoring improvements](https://indico.cern.ch/event/1557048/contributions/6556806/attachments/3100020/5496160/From%20InfluxDB%20to%20Prometheus%20&%20The%20Monitoring%20Grafana%20Catalogue.pdf) with Monit, Grafana, InfluxDB, Prometheus
