@@ -29,6 +29,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS: VO, IAM user management, questions, troubleshooting
    issues with user certificate DN mismatches in IAM and Rucio; [sync script](https://atlasdistributedcomputing-live.web.cern.ch/ATLASDistributedComputing-live/rucio-account-inconsistency.CMD) deleted mismatched certificate DN from Rucio mapping
 - ATLAS: follow-ups to GGUS ticket on Varnish test deployment: still waiting for BNL Cyber Security vulnerability clearance (Robert, Shigeki)
+  - CS complains that Varnish forward-proxies requests to outdated, vulnerable Tomcat version running Frontier at CERN
+- Belle II: testing Vistoria Metrics export of Belle II DDM accounting data in InfluxDB (on old ELK server)
+  - 24h data export caused 98% CPU load on Influx/ELK server (gs-elk01) for several hours
 - Belle II: new 538 TB disk cache (60*12TB, 3GB/s) added to HPSS tape array (Tim)
 - Belle II: KEK campus-wide power outage 1–5 Aug; computing systems to be paused
 - Belle II: mid-term evaluation for [Google Summer of Code](https://summerofcode.withgoogle.com/organizations/cern-hsf/projects) project for [HSF conditions database logging](https://summerofcode.withgoogle.com/organizations/cern-hsf/projects/details/bD4yyXz6)
@@ -46,6 +49,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: input to EIC computing PD proposal for FY'26 (Alexei)
 - SDCC: troubleshooting of broken Nagios service (nagios01) due to Puppet changes (Joe)
 - SDCC: issues with [Drupal content access](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38195) for US ATLAS web site, [other Drupal issues](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37144) (Christian)
+- SDCC: created procedure for adding custom disk check arguments to Nagios to avoid checking invalid paths and triggering false alerts on NX hosts
 - SDCC: STAR meeting (Shigeki)
 - BNL: began travel process to attend [Belle II General Meeting](https://indico.belle2.org/event/15881/) and computing workshops, Sep-Oct 2025 (15 Jul)
 
