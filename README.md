@@ -32,6 +32,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - CS complains that Varnish forward-proxies requests to outdated, vulnerable Tomcat version running Frontier at CERN
   - ATLAS added the deplloyment to their VP queue (without informing me), which is unacceptible in its current state (no logging, cyber vulnerability)
     - discussions about deployment, and removal from ATLAS VP queue, setup for alternative Frontier with updated, non-vulnerable Tomcat version (Ofer, Ivan)
+    - more discussion in corresponding [GGUS ticket](https://helpdesk.ggus.eu/#ticket/zoom/3795)
 - Belle II: testing Vistoria Metrics export of Belle II DDM accounting data in InfluxDB (on old ELK server)
   - 24h data export caused 98% CPU load on Influx/ELK server (gs-elk01) for several hours
 - Belle II: new 538 TB disk cache (60*12TB, 3GB/s) added to HPSS tape array (Tim)
@@ -54,6 +55,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: issues with [Drupal content access](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38195) for US ATLAS web site, [other Drupal issues](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=37144) (Christian)
 - SDCC: created procedure for adding custom disk check arguments to Nagios to avoid checking invalid paths and triggering false alerts on NX hosts
 - SDCC: STAR meeting (Shigeki)
+- SDCC: found that Puppet [was broken](https://foreman.sdcc.bnl.gov/config_reports/19650378) on all NX hosts
+  - dnsmasq was replaced facility-wide earlier in the week with unbound; dnsmasq package could not be uninstalled by Puppet due to ovirt package dependencies by NX
+  - puppet change was [backed out](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/867) since it's already live everywhere but NX (Costin)
 - BNL: began travel process to attend [Belle II General Meeting](https://indico.belle2.org/event/15881/) and computing workshops, Sep-Oct 2025 (15 Jul)
 
 # 7-11 Jul
