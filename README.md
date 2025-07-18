@@ -30,12 +30,15 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
    issues with user certificate DN mismatches in IAM and Rucio; [sync script](https://atlasdistributedcomputing-live.web.cern.ch/ATLASDistributedComputing-live/rucio-account-inconsistency.CMD) deleted mismatched certificate DN from Rucio mapping
 - ATLAS: follow-ups to GGUS ticket on Varnish test deployment: still waiting for BNL Cyber Security vulnerability clearance (Robert, Shigeki)
   - CS complains that Varnish forward-proxies requests to outdated, vulnerable Tomcat version running Frontier at CERN
+  - ATLAS added the deplloyment to their VP queue (without informing me), which is unacceptible in its current state (no logging, cyber vulnerability)
+    - discussions about deployment, and removal from ATLAS VP queue, setup for alternative Frontier with updated, non-vulnerable Tomcat version (Ofer, Ivan)
 - Belle II: testing Vistoria Metrics export of Belle II DDM accounting data in InfluxDB (on old ELK server)
   - 24h data export caused 98% CPU load on Influx/ELK server (gs-elk01) for several hours
 - Belle II: new 538 TB disk cache (60*12TB, 3GB/s) added to HPSS tape array (Tim)
 - Belle II: KEK campus-wide power outage 1–5 Aug; computing systems to be paused
 - Belle II: mid-term evaluation for [Google Summer of Code](https://summerofcode.withgoogle.com/organizations/cern-hsf/projects) project for [HSF conditions database logging](https://summerofcode.withgoogle.com/organizations/cern-hsf/projects/details/bD4yyXz6)
 - Belle II: network interfaces for conditions deployment on OpenShift need IP changes, move to LHCONE network, add IPv6 addresses in August (Hiro, Mark L.)
+- Belle II: COmanage, OpenShift group permissions for Michel to grant access to Belle II deployments
 - BNL: Jira purchase requisition (#0000467357) from 2019 re-opened to reconcile discrepency of $105 between billing and payment (Donna)
 - CVMFS: opened [bug report](https://github.com/cvmfs/cvmfs/issues/3919) on excessive DNS lookups by Stratum One (~2M/day), many failures and lookups on remote short hostnames without FQDNs (Costin)
 - CVMFS: follow-ups with CERN service admins on adding IPv6 interface to Stratum Zero hosts available on LHCOPN (Fabrizio)
