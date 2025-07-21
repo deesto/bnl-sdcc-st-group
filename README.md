@@ -27,13 +27,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 21-25 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS/WLCG: review of [three new edits and pull requests](https://github.com/WLCG-AuthZ-WG/common-jwt-profile/pulls) to WLCG AuthZ WG Common JWT profile (storage scopes, VO/path authorization, token lifetimes)
 - Belle II: edits and follow-ups to conditions service migration [post mortem document](https://docs.google.com/document/d/1Vbxb5VLT-Huwy4zzGRIr1qG1gtoBlKy97IW3BPMTc3Y/edit?usp=sharing)
 - Belle II: review of DC [Docker compose file](https://gitlab.desy.de/belle2/computing/distributed-computing/developments/dockercompose-belledirac/-/blob/main/docker/cvmfs/stratum0/Dockerfile?ref_type=heads) for CVMFS server installation, BelleDIRAC [Docker installation and setup](https://gitlab.desy.de/belle2/computing/distributed-computing/developments/dockercompose-belledirac)
-- Belle II: follow-ups with BNL GUV and ITD for computing accounts for [Google Summer of Code](https://summerofcode.withgoogle.com/organizations/cern-hsf/projects) project participant: still waiting for computing access
+- Belle II: follow-ups with BNL GUV Center, ITD (request #INC0210959) for unprocessed BNL computing account for [Google Summer of Code](https://summerofcode.withgoogle.com/organizations/cern-hsf/projects) project participant: still waiting for computing access since 9 Jul with no update
+  - computing account was granted immediately after the ITD request was opened to check its status (same day)
 - CVMFS: further [discussion](https://github.com/cvmfs/cvmfs/issues/3919), edits to patch and [merge request](https://github.com/cvmfs/cvmfs/pull/3920) to fix DNS lookups on server deployments
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
   - snapshot replication on 'ams' repo delayed 12 hours (19 Jul); verification process failure on 'unpacked' repo (21 Jul)
 - SDCC: final [PD request](https://brookhavenlab.sharepoint.com/:p:/r/sites/PDFY25EICComputing/_layouts/15/Doc.aspx?sourcedoc=%7BAF44DA19-C212-4138-BA92-DB12F25DA4AE%7D&file=FY26%20PD%20EIC%20Computing%20A.Klimentov%20July%2021%20Final.pptx&fromShare=true&action=edit&mobileredirect=true) submitted for EIC computing for FY '26 (Alexei)
+- SDCC: User Services discussions on Puppet code exceptions needed for NX (dnsmasq, Nagios disk checks)
 - BNL: vacation days (1.5: 24-25 Jul)
 
 # 14-18 Jul
