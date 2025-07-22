@@ -35,8 +35,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: further [discussion](https://github.com/cvmfs/cvmfs/issues/3919), edits to patch and [merge request](https://github.com/cvmfs/cvmfs/pull/3920) to fix DNS lookups on server deployments
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
   - snapshot replication on 'ams' repo delayed 12 hours (19 Jul); verification process failure on 'unpacked' repo (21 Jul)
+- CVMFS: debugging of awstats upload issues for DESY Stratum One (Thomas H.)
+- CVMFS: broken replication for all OSG-based repositories (22 Jul)
+  - OSG OSDF, Kubernetes outage brought down CVMFS replica server, replication operations, centralized monitoring checks
 - SDCC: final [PD request](https://brookhavenlab.sharepoint.com/:p:/r/sites/PDFY25EICComputing/_layouts/15/Doc.aspx?sourcedoc=%7BAF44DA19-C212-4138-BA92-DB12F25DA4AE%7D&file=FY26%20PD%20EIC%20Computing%20A.Klimentov%20July%2021%20Final.pptx&fromShare=true&action=edit&mobileredirect=true) submitted for EIC computing for FY '26 (Alexei)
 - SDCC: User Services discussions on Puppet code exceptions needed for NX (dnsmasq, Nagios disk checks)
+- SDCC: James fixed broken Cobbler syncs by adding `no-fail` flag to sync runs -- ignores single repo failure and continues sync instead of abort
+- BNL/CERN: private matter discussions with BNL legal and CERN representatives
 - BNL: vacation days (1.5: 24-25 Jul)
 
 # 14-18 Jul
