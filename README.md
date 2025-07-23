@@ -32,6 +32,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: review of DC [Docker compose file](https://gitlab.desy.de/belle2/computing/distributed-computing/developments/dockercompose-belledirac/-/blob/main/docker/cvmfs/stratum0/Dockerfile?ref_type=heads) for CVMFS server installation, BelleDIRAC [Docker installation and setup](https://gitlab.desy.de/belle2/computing/distributed-computing/developments/dockercompose-belledirac)
 - Belle II: follow-ups with BNL GUV Center, ITD (request #INC0210959) for unprocessed BNL computing account for [Google Summer of Code](https://summerofcode.withgoogle.com/organizations/cern-hsf/projects) project participant: still waiting for computing access since 9 Jul with no update
   - computing account was granted immediately after the ITD request was opened to check its status (same day)
+- Belle II: [shift report](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/606) of FTS server problems -- shifter was using old manual and checking non-production FTS servers 
 - CVMFS: further [discussion](https://github.com/cvmfs/cvmfs/issues/3919), edits to patch and [merge request](https://github.com/cvmfs/cvmfs/pull/3920) to fix DNS lookups on server deployments
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
   - snapshot replication on 'ams' repo delayed 12 hours (19 Jul); verification process failure on 'unpacked' repo (21 Jul)
@@ -41,6 +42,10 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC: final [PD request](https://brookhavenlab.sharepoint.com/:p:/r/sites/PDFY25EICComputing/_layouts/15/Doc.aspx?sourcedoc=%7BAF44DA19-C212-4138-BA92-DB12F25DA4AE%7D&file=FY26%20PD%20EIC%20Computing%20A.Klimentov%20July%2021%20Final.pptx&fromShare=true&action=edit&mobileredirect=true) submitted for EIC computing for FY '26 (Alexei)
 - SDCC: User Services discussions on Puppet code exceptions needed for NX (dnsmasq, Nagios disk checks)
 - SDCC: James fixed broken Cobbler syncs by adding `no-fail` flag to sync runs -- ignores single repo failure and continues sync instead of abort
+- SDCC: more problems with sPHENIX calabriation database deployment in OpenShift, [reported by Chris P](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38215)
+  - all pods deployed on two OpenShift worker nodes (01 and 09) failed to initialize and entered termination loops
+  - added those WNs to ban list for pod deployment, created [merge request](https://github.com/BNLNPPS/nopayloaddb-charts/pull/23) for change (don't have privileges to merge into main branch)
+  - adequate monitoring of deployment is still an issue. closed [older ticket](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38113) for same problem.
 - BNL/CERN: private matter discussions with BNL legal and CERN representatives
 - BNL: vacation days (1.5: 24-25 Jul)
 
