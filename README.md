@@ -25,6 +25,14 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 12-15 Aug
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: initial review of new HSF nopayloaddb [documentation](https://bnlnpps.github.io/nopayloaddb/)
+- CVMFS: debugging of excessive client proxy switching and log messages, results discussed in [CVMFS forum](https://cernvm-forum.cern.ch/t/client-proxy-switching-and-logging/569/1)
+- BNL: 1 day out of office (14 Aug)
+
+# 24 Jul - 11 Aug: holiday
+
 # 21-25 Jul
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS/WLCG: review of [three new edits and pull requests](https://github.com/WLCG-AuthZ-WG/common-jwt-profile/pulls) to WLCG AuthZ WG Common JWT profile (storage scopes, VO/path authorization, token lifetimes)
