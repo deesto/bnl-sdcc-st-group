@@ -27,8 +27,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 12-15 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS: BNL FTS needs updated activity shares settings to match CERN's ([GGUS](https://helpdesk.ggus.eu/#ticket/zoom/1000316), Hiro)
+- ATLAS: Varnish testbed still flagged as vulnerable by BNL Cyber; deployment turned off until problem can be properly mitigated
 - Belle II: initial review of new HSF nopayloaddb [documentation](https://bnlnpps.github.io/nopayloaddb/)
-- CVMFS: debugging of excessive client proxy switching and log messages, results discussed in [CVMFS forum](https://cernvm-forum.cern.ch/t/client-proxy-switching-and-logging/569/1)
+- CVMFS: working on alerts from WLCG monitoring during holiday of non-critical findings with multiple repositories
+  - alarm-triggering entries cleared in local JSON files; manual checks triggered on lhcb and unpacked repositories; other critical warnings issued during OpenShift storage outage (6 Aug), Belle KEKCC downtime (1-5 Aug)
+- CVMFS: debugging of excessive client proxy switching and log messages, results discussed in [Github issue](https://github.com/cvmfs/cvmfs/issues/3961) and [CVMFS forum](https://cernvm-forum.cern.ch/t/client-proxy-switching-and-logging/569/1)
+- SDCC: sPNEHIX web host (spweb02) triggered Nagios httpd alert on home directory (in NFS)
+  - planned GPFS maintenance caused loss of mount (Joe)  
+- SDCC/NPPS: sPHENIX calibration DB/OpenShift [issue from July](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38149) closed as completed satisfactorily (Joe)
+- BNL/CERN: reviews and edits to important paperwork
 - BNL: 1 day out of office (14 Aug)
 
 # 24 Jul - 11 Aug: holiday
