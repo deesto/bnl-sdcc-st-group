@@ -25,6 +25,21 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 18-22 Aug
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS/CVMFS: follow-ups with ATLAS Software and Computing Infrastructure Group to reduce or eliminate calls for CERN-only 'projects' repo in code outside of CERN (Attila, Dario, Asoka, Shuwei)
+  - `LD_LIBRARY_PATH` and other vars contain references to external projects repo, should be checked and removed by ASetup
+- Belle II: proactively declared conditions services "at risk" while OpenShift team applies improved networking profile to worker nodes (18-20 Aug)
+- Belle II: data missing from Victoria Metrics import of Rucio accounting from InfluxDB not missing from Influx source (Cedric)
+- Belle II: request to add partitioning to conditions database to separate requests for B2BII global tags [GitLab issue](https://gitlab.desy.de/belle2/software/cdb/operations/-/work_items/5)
+- Belle II: KEK delegation visit to BNL and data center (21 Aug)
+- CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
+  - snapshot replication on 'ams' repo delayed 9 hours (16 Aug); manual verification process on 'unpacked' repo took > 1 week
+- SDCC: mitigated complaints from NPPS about sPHENIX calibration database outage and support
+  - support was discussed in email thread, [ticket opened in RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38288) evening of 14 Aug
+    - I was out of office and unavailable on this day
+  - planned GPFS maintenance caused deployment outage (pods write log data to GPFS) 
+ 
 # 12-15 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS: BNL FTS needs updated activity shares settings to match CERN's ([GGUS](https://helpdesk.ggus.eu/#ticket/zoom/1000316), Hiro)
