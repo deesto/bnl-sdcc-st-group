@@ -35,10 +35,19 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: KEK delegation visit to BNL and data center (21 Aug)
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
   - snapshot replication on 'ams' repo delayed 9 hours (16 Aug); manual verification process on 'unpacked' repo took > 1 week
+- CVMFS: follow-up discussions on bug report for client proxy switching and logging issues ([forum](https://cernvm-forum.cern.ch/t/client-proxy-switching-and-logging/569/2) and [Github](https://github.com/cvmfs/cvmfs/issues/3961))
 - SDCC: mitigated complaints from NPPS about sPHENIX calibration database outage and support
   - support was discussed in email thread, [ticket opened in RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38288) evening of 14 Aug
     - I was out of office and unavailable on this day
   - planned GPFS maintenance caused deployment outage (pods write log data to GPFS) 
+- SDCC: problem with SSH key upload file prevented users from adding new keys (Louis)
+  - pointed out by user in new account request [ticket](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38300)
+  - Kerberos key reinstated, time zone code issues identified and resolved
+- SDCC: CVMFS, SSH client issues reported on WN farm by sPHENIX ([RT](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38295))
+  - usual "stale" file revisions on pinned files reported; pinned files broken and repos force-remounted by WN admin
+- SDCC: follow-ups with Carahsoft on unautorized Jira seat subscription change, pending Jira subscription renewal (in Nov)
+- BNL: location inquiry from Property Management on asset tracking for desktop (154209)
+- BNL: 1 day out of office (medical leave, 20 Aug)
  
 # 12-15 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
