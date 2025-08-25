@@ -25,6 +25,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 25-29 Aug
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: no reported conditions client issues during last week's OpenShift network profile maintenance
+- CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
+  - snapshot replication on 'ams' repo delayed 9 hours (23 Aug); manual verification process on 'unpacked' repo took > 2 weeks; 'unpacked' replication delayed by >12 hours multiple times (22,23 Aug) during manual verification
+
 # 18-22 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS/CVMFS: GGUS [cloud support ticket](https://helpdesk.ggus.eu/#ticket/zoom/1000385) on stuck `lastUpdated` file in ATLAS main repo (dated 4 Aug on 22 Aug)
@@ -33,7 +39,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - Belle II: proactively declared conditions services "at risk" while OpenShift team applies improved networking profile to worker nodes (18-20 Aug)
 - Belle II: data missing from Victoria Metrics import of Rucio accounting from InfluxDB not missing from Influx source (Cedric)
 - Belle II: request to add partitioning to conditions database to separate requests for B2BII global tags [GitLab issue](https://gitlab.desy.de/belle2/software/cdb/operations/-/work_items/5)
-- Belle II: KEK delegation visit to BNL and data center (21 Aug)
+- Belle II: KEK management delegation visit to BNL and data center (21 Aug)
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
   - snapshot replication on 'ams' repo delayed 9 hours (16 Aug); manual verification process on 'unpacked' repo took > 2 weeks; 'unpacked' replication delayed by >12 hours multiple times (19,20,21 Aug) during manual verification
 - CVMFS: follow-up discussions on bug report for client proxy switching and logging issues ([forum](https://cernvm-forum.cern.ch/t/client-proxy-switching-and-logging/569/2) and [Github](https://github.com/cvmfs/cvmfs/issues/3961))
