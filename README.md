@@ -27,10 +27,19 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 25-29 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS: revival of ADC Technical Meeting; first meeting on [storage (25 Aug)](https://indico.cern.ch/e/1575970)
+- ATLAS/WLCG: AuthZ working group to release working token profile version [as v1.1](https://indico.cern.ch/event/1577261/?note=344269)
 - Belle II: no reported conditions client issues during last week's OpenShift network profile maintenance
+- Belle II: post mortem for conditions migration to OpenShift [finalized](https://bnlbox.sdcc.bnl.gov/index.php/s/ZqebHmdrSAppwbt)
+- Belle II: working on exported DDM Influx data to new Victoria Metrics and filling gaps in presented data
+- Belle II/CVMFS: ACLs were lost/not transferred to new write nodes for experiment repos (Michel)
+  - Fabrics team re-enabled ACLs, confirmed new write nodes (6,7) to replace existing multi-purpose nodes
+  - Updated [docs](https://www.sdcc.bnl.gov/information/cvmfs-stratum-zero) with new node info
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
   - snapshot replication on 'ams' repo delayed 9 hours (23 Aug); manual verification process on 'unpacked' repo took > 2 weeks; 'unpacked' replication delayed by >12 hours multiple times (22,23 Aug) during manual verification
-
+- CVMFS: working on adding new [Prometheus/VM exporter](https://github.com/cvmfs-contrib/prometheus-cvmfs) to clients [across all WNs](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/928) (Valentin, Costin)
+- SDCC/sPHENIX: closed [outstanding ticket](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38215) from last month on calibration database outage as solved with no new update, per Ruslan
+ 
 # 18-22 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
 - ATLAS/CVMFS: GGUS [cloud support ticket](https://helpdesk.ggus.eu/#ticket/zoom/1000385) on stuck `lastUpdated` file in ATLAS main repo (dated 4 Aug on 22 Aug)
