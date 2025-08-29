@@ -30,6 +30,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
   - none of the other VO admins seem to be vetting and processing new membership requests
 - ATLAS: revival of ADC Technical Meeting; first meeting on [storage (25 Aug)](https://indico.cern.ch/e/1575970)
 - ATLAS/WLCG: AuthZ working group to release working token profile version [as v1.1](https://indico.cern.ch/event/1577261/?note=344269)
+- Belle II: finalized, closed long standing [conditions access issue](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/382#note_1266978) caused by request overload from Trieste site 
 - Belle II: no reported conditions client issues during last week's OpenShift network profile maintenance
 - Belle II: post mortem for conditions migration to OpenShift [finalized](https://bnlbox.sdcc.bnl.gov/index.php/s/ZqebHmdrSAppwbt)
 - Belle II: working on exported DDM Influx data to new Victoria Metrics and filling gaps in presented data
@@ -39,7 +40,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - BNL/ITD: complaints regarding new "external email" headers injected into all incoming non-BNL email messages (27 Aug, Chris C.)
   - ITD will not disable it, as it was added "for BOD 25-01 compliance"
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
-  - snapshot replication on 'ams' repo delayed 9 hours (23 Aug); manual verification process on 'unpacked' repo took > 2 weeks; 'unpacked' replication delayed by >12 hours multiple times (22,23,26,27,28 Aug) during manual repo verification
+  - snapshot replication on 'ams' repo delayed 9 hours (23 Aug); manual verification process on 'unpacked' repo took > 2 weeks; 'unpacked' replication delayed by >12 hours multiple times (22,23,26,27,28,29 Aug) during manual repo verification
 - CVMFS: working on adding new [Prometheus/VM exporter](https://github.com/cvmfs-contrib/prometheus-cvmfs) to clients [across all WNs](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/928) (Valentin, Costin)
   - one shared pool node (spool0604) core dumped continuously after installing exporter; turned out to be a bad node and unrelated to exporter
 - SDCC/sPHENIX: closed [outstanding ticket](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38215) from last month on calibration database outage as solved with no new update, per Ruslan
@@ -47,6 +48,8 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - SDCC/ATLAS: problem with ATLAS software setup [reported](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38340) on Alma 9 WN
   - setup script must be declared as alias and and run as command on EL9 instead of sourcing setup script 
 - SDCC: Jira administration of users, groups, project permissions, new permission scheme for Fabrics team for Farm Operations project (Tom)
+- SDCC: user's Condor batch help request sent to old RHIC support email list, transfered request to [new RT ticket](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38345)
+- SDCC: corrected and unified Nagios checks for experiment CVMFS read-only repos, and [fixed](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/934) CVMFS repo mount point issues for experiment write nodes (Ozskar, Costin)
  
 # 18-22 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
