@@ -25,6 +25,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 1-5 Sep
+- SDCC: detection and repair of services, hosts broken over holiday weekend by [power outage](https://docs.google.com/document/d/1lN3ecdxtEg7844ZYnUMmy02exyd_A3T0NPoRU9G7Ag4/edit?usp=sharing) last Friday afternoon (29 Aug 2pm)
+  - CVMFS: repositories that were replicating when the power was cut were corrupted, required manual repair
+  - Belle II: backup conditions database services did not come back online, required intervention to Kubernetes and Docker pods
+  - sPHENIX: calibration database services deployment required intervention to move OpenShift pods off of non-functioning worker nodes (Ruslan, Chris P.) 
+- BNL: holiday (1, 1 Sep)
+
 # 25-29 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - none of the other VO admins seem to be vetting and processing new membership requests
