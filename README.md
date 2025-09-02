@@ -26,6 +26,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 # 1-5 Sep
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- ATLAS: renewed expiring CERN Computer Security training and Computing Rules agreement
+- ATLAS: renewed expiring CERN CA user grid certificate, and propagated to major experiment site WN farms for grid work (SDCC, CERN, DESY, KEK)
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
   - manual verification process on 'unpacked' repo taking > 3 weeks; 'unpacked' replication delayed by >12 hours multiple times (31 Aug, 1 Sep) during manual repo verification
 - SDCC: detection and repair of services, hosts broken over holiday weekend by [power outage](https://docs.google.com/document/d/1lN3ecdxtEg7844ZYnUMmy02exyd_A3T0NPoRU9G7Ag4/edit?usp=sharing) last Friday afternoon (29 Aug 2pm)
@@ -37,7 +40,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 25-29 Aug
 - ATLAS: VO, IAM user management, questions, troubleshooting
-  - none of the other VO admins seem to be vetting and processing new membership requests
+  - at the moment, none of the other VO admins seem to be vetting and processing new membership requests
 - ATLAS: revival of ADC Technical Meeting; first meeting on [storage (25 Aug)](https://indico.cern.ch/e/1575970)
 - ATLAS/WLCG: AuthZ working group to release working token profile version [as v1.1](https://indico.cern.ch/event/1577261/?note=344269)
 - Belle II: finalized, closed long standing [conditions access issue](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/data-production-shift/-/issues/382#note_1266978) caused by request overload from Trieste site 
