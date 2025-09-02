@@ -26,10 +26,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 # 1-5 Sep
+- CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
+  - manual verification process on 'unpacked' repo taking > 3 weeks; 'unpacked' replication delayed by >12 hours multiple times (31 Aug, 1 Sep) during manual repo verification
 - SDCC: detection and repair of services, hosts broken over holiday weekend by [power outage](https://docs.google.com/document/d/1lN3ecdxtEg7844ZYnUMmy02exyd_A3T0NPoRU9G7Ag4/edit?usp=sharing) last Friday afternoon (29 Aug 2pm)
   - CVMFS: repositories that were replicating when the power was cut were corrupted, required manual repair
   - Belle II: backup conditions database services did not come back online, required intervention to Kubernetes and Docker pods
-  - sPHENIX: calibration database services deployment required intervention to move OpenShift pods off of non-functioning worker nodes (Ruslan, Chris P.) 
+  - sPHENIX: calibration database services deployment required intervention to move OpenShift pods off of non-functioning worker nodes (Ruslan, Chris P.)
+  - SDCC: authentication scripts failed to sync user tokens between IPA and PIdea: created two tokens for one user and lost another user's token; required manual clean-up (Louis)
 - BNL: holiday (1, 1 Sep)
 
 # 25-29 Aug
