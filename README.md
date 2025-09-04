@@ -27,15 +27,39 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 
 # 1-5 Sep
 - ATLAS: VO, IAM user management, questions, troubleshooting
+  - New [IAM admins API token doc](https://atlas-computing.docs.cern.ch/operations/IAM/index.html) added to ATLAS Computing MKdocs site (Petr)
 - ATLAS: renewed expiring CERN Computer Security training and Computing Rules agreement
 - ATLAS: renewed expiring CERN CA user grid certificate, and propagated to major experiment site WN farms for grid work (SDCC, CERN, DESY, KEK)
+- ATLAS: BNL's Frontier traffic has been diverted from BNL's Frontier Squid caches to Varnish caches at other US T2 sites (AGLT2, NET2)
+  - traffic to pair of Squid caches stopped 27 Aug
+  - Test Varnish deployment in BNL OpenShift remains vulnerable, disabled
+  - Updated [outstanding GGUS ticket](https://helpdesk.ggus.eu/#ticket/zoom/3795) with details of ATLAS's decision to reroute traffic away from BNL
+- Belle II: BNL dCache intervention (3 Sep) and effects tracked in [Gitlab issue](https://gitlab.desy.de/belle2/computing/distributed-computing/operations/tasks/-/issues/319) (Cedric) 
+- Belle II: Final evaluation [submitted](https://summerofcode.withgoogle.com/evaluations/jAknOPjv), final project meeting for Google Summer of Code HSF Nopayloaddb logging project participant
+  - sadly, participant was never able to complete all accounts and authorization necessary to gain access to our OpenShift cluster during the project
+- Belle II: more testing of exporting existing DDM data in InfluxDB (on ELK server) directly into Victoria Metrics (Costin)
+- CVMFS: failed ATLAS jobs [reported](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38367) on one shared pool node (spool0676), with broken CVMFS client
+  - no repos were mountable; two stale repos were inaccessible; shared cache directories could not be cleared and client could not be recoved via normal means
+  - node reboot failed (Tom); very likely a HW disk failure
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
   - manual verification process on 'unpacked' repo taking > 3 weeks; 'unpacked' replication delayed by >12 hours multiple times (31 Aug, 1 Sep) during manual repo verification
 - SDCC: detection and repair of services, hosts broken over holiday weekend by [power outage](https://docs.google.com/document/d/1lN3ecdxtEg7844ZYnUMmy02exyd_A3T0NPoRU9G7Ag4/edit?usp=sharing) last Friday afternoon (29 Aug 2pm)
   - CVMFS: repositories that were replicating when the power was cut were corrupted, required manual repair
+  - Belle II: [CDB Web](https://cdbweb.sdcc.bnl.gov/) web-based conditions data site did not survive power outage, required manual intervention to revive
+    - hosting server, flask service fine after reboot, but httpd service had been disabled, did not start
   - Belle II: backup conditions database services did not come back online, required intervention to Kubernetes and Docker pods
   - sPHENIX: calibration database services deployment required intervention to move OpenShift pods off of non-functioning worker nodes (Ruslan, Chris P.)
   - SDCC: authentication scripts failed to sync user tokens between IPA and PIdea: created two tokens for one user and lost another user's token; required manual clean-up (Louis)
+  - SDCC: web services [acode-browser](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38366), internal [old webdocs](https://old-webdocs.racf.bnl.gov/) stopped working after power failure
+    - iptables, httpd, pound, ssh service configuration issues on both hosts, caused by Puppet turned off (not disabled) for several years and running on reboot (Joe, Christian)
+      - permanent pound config fix [added](https://webdocs.sdcc.bnl.gov/cgit/puppet/catalog/diff/?id=b02cfd5320357c3b56d6aae9120b353121a00239&id2=ac973524867e630d53a1d2efda63f928ad3d2525)
+- SDCC: negotiating potentially disruptive cyber scans on CVMFS core hosts with Shigeki
+- SDCC/CVMFS: problem on sphenix WNs with conflicting CVMFS package repos on nodes upgraded during 29 Aug power outage (Oszkar, Costin)
+  - [fix in puppet](https://webdocs.sdcc.bnl.gov/repos/puppet/puppet/pulls/938/) to specify package file name and block OSG repo for CVMFS packages 
+- SDCC: removed future EIC PD project time from reported FTE (Alexei)
+- SDCC: info meeting with STAR on possible Gitea hosting and features (Shigeki, James, Louis)
+- SDCC: review of earlier [pull request](https://github.com/BNLNPPS/nopayloaddb-charts/pull/23) to sPHENIX Nopayloaddb deployment to correct failed pod deployments on specific OpenShift worker nodes
+- BNL: renewed expiring [Responsible Property Management training](https://training.bnl.gov/Portal/TQ-PROPERTY) via [challenge exam](https://training.bnl.gov/Portal/TQ-PROPERTY-CE)
 - BNL: holiday (1, 1 Sep)
 
 # 25-29 Aug
