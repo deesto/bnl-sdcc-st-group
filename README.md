@@ -25,6 +25,12 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 8-12 Sep
+- Belle II: need to restrict and enforce conditions global tag name length < 80 characters
+- CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
+  - manual verification process on 'unpacked' repo took > 3 weeks and timed out; 'ams' replication delayed by 12 hours
+- SDCC: Globus client issue [reported](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38166): directory listing timeouts due to hung NFS mount (Joe) 
+ 
 # 1-5 Sep
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - New [IAM admins API token doc](https://atlas-computing.docs.cern.ch/operations/IAM/index.html) added to ATLAS Computing MKdocs site (Petr)
