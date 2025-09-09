@@ -35,6 +35,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
   - manual verification process on 'unpacked' repo took > 4 weeks and timed out; 'ams' replication delayed by 12 hours
   - verified other sites (with local disk vs. NAS storage) do not have these problems; server upgrade to v2.13.2 (after EL9 upgrade) plus code patches may help
+- ITD: follow-ups to Help Desk ticket (from May 2025) on replacing broken CUPS print service with PrinterLogic (INC0207237, Dennis)
 - SDCC: Globus client issue [reported](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38166): directory listing timeouts due to hung NFS mount (Joe) 
 - SDCC: RT user/group/queue management
 - SDCC: more complaints about SSH key upload errors [RT#38398](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38398)
