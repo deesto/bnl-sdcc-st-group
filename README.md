@@ -26,10 +26,19 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 # 8-12 Sep
-- Belle II: need to restrict and enforce conditions global tag name length < 80 characters
+- ATLAS: VO, IAM user management, questions, troubleshooting
+  - US ATLAS group membership requests were left unattended for > 1 month
+- ATLAS: follow-ups with ADC toward eliminating extraneous, error-prone requests for projects CVMFS repo outside of CERN by reworking CUDA path and version job variables (Asoka) 
+- ATLAS/WLCG: WLCG [Open Technical Forum](https://indico.cern.ch/event/1562124/) #6 (9-10 Sep)
+- Belle II: investigation and follow-up on conditions database partitioning request and suggestions [DESY Gitlab](https://gitlab.desy.de/belle2/software/cdb/operations/-/work_items/5)
+  - also to-do: need to restrict and enforce conditions global tag name length < 80 characters
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
-  - manual verification process on 'unpacked' repo took > 3 weeks and timed out; 'ams' replication delayed by 12 hours
+  - manual verification process on 'unpacked' repo took > 4 weeks and timed out; 'ams' replication delayed by 12 hours
+  - verified other sites (with local disk vs. NAS storage) do not have these problems; server upgrade to v2.13.2 (after EL9 upgrade) plus code patches may help
 - SDCC: Globus client issue [reported](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38166): directory listing timeouts due to hung NFS mount (Joe) 
+- SDCC: RT user/group/queue management
+- SDCC: more complaints about SSH key upload errors [RT#38398](https://rt.racf.bnl.gov/rt/Ticket/Display.html?id=38398)
+  - user tried to upload existing SSH key to wrong account
  
 # 1-5 Sep
 - ATLAS: VO, IAM user management, questions, troubleshooting
