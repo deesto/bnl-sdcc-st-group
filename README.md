@@ -37,6 +37,9 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS/WLCG: AuthZ WG [proposal](https://docs.google.com/document/d/1mtTtQEV7WN0mM3KYMXXTzgUKvmwxjd7gsIVkNndCIg0/edit?usp=sharing) for standardizing JSON web key set (JWKS) caches
 - Belle II: investigation and follow-up on conditions database partitioning request and suggestions [DESY Gitlab](https://gitlab.desy.de/belle2/software/cdb/operations/-/work_items/5)
   - also to-do: need to restrict and enforce conditions global tag name length < 80 characters
+- Belle II: more testing of exportin DDM accounting data from Influx to Victoria Matrics (Costin)
+  - full, direct historical import from Influx (gs-elk01) into Victoria Metrics (skybuild02) took 8 days (4-12 Sep)
+- Belle II: debugging of remote access to OpenShift for Belle II projects, auth for B2 computing members, token access, SSH tunneling and proxying (Rob)
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
   - manual verification process on 'unpacked' repo took > 4 weeks and timed out; 'ams' replication delayed by 12 hours
   - verified other sites (with local disk vs. NAS storage) do not have these problems; server upgrade to v2.13.2 (after EL9 upgrade) plus code patches may help
