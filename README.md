@@ -25,6 +25,13 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# 15-19 Sep
+- ATLAS: VO, IAM user management, questions, troubleshooting
+- CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
+  - another manual verification process on 'unpacked' repo started last week
+  - 'ams' repo replication delayed by 10 hours (13 Sep); 'fcc' repo replication delayed by 9 hours (13 Sep); 'unpacked' repo replication delayed by 15 hours (14,15 Sep)
+- RACF: BNL Indico user, role access management (Alexei)
+
 # 8-12 Sep
 - ATLAS: VO, IAM user management, questions, troubleshooting
   - user, manager, group management for phys-higp (and production) groups 
@@ -37,7 +44,7 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - ATLAS/WLCG: AuthZ WG [proposal](https://docs.google.com/document/d/1mtTtQEV7WN0mM3KYMXXTzgUKvmwxjd7gsIVkNndCIg0/edit?usp=sharing) for standardizing JSON web key set (JWKS) caches
 - Belle II: investigation and follow-up on conditions database partitioning request and suggestions [DESY Gitlab](https://gitlab.desy.de/belle2/software/cdb/operations/-/work_items/5)
   - also to-do: need to restrict and enforce conditions global tag name length < 80 characters
-- Belle II: more testing of exportin DDM accounting data from Influx to Victoria Matrics (Costin)
+- Belle II: more testing of exporting DDM accounting data from Influx to Victoria Matrics (Costin)
   - full, direct historical import from Influx (gs-elk01) into Victoria Metrics (skybuild02) took 8 days (4-12 Sep)
 - Belle II: debugging of remote access to OpenShift for Belle II projects, auth for B2 computing members, token access, SSH tunneling and proxying (Rob)
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
