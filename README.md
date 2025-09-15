@@ -25,12 +25,16 @@ Work logs for the S&amp;T Group in the SDCC at BNL.
 - WLCG Frontier Meeting (remote)
 - WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
+# --2025--
+
 # 15-19 Sep
 - ATLAS: VO, IAM user management, questions, troubleshooting
+- Belle II: recovery of backup conditiions services after VM migration from RHEV to OpenShift (Joe)
 - CVMFS: continued Stratum One reports from WLCG of impacted maintenance operations due to high NAS I/O
   - another manual verification process on 'unpacked' repo started last week
   - 'ams' repo replication delayed by 10 hours (13 Sep); 'fcc' repo replication delayed by 9 hours (13 Sep); 'unpacked' repo replication delayed by 15 hours (14,15 Sep)
-- RACF: BNL Indico user, role access management (Alexei)
+- SDCC: meeting with Victoria Metrics to discuss pricing and licensing (Costin) 
+- SDCC: BNL Indico user, role access management (Alexei)
 
 # 8-12 Sep
 - ATLAS: VO, IAM user management, questions, troubleshooting
