@@ -1,3 +1,29 @@
+# BNL SDCC S&amp;T Group
+Work logs for the S&amp;T Group in the SDCC at BNL.
+
+## Ongoing Meetings
+- ATLAS ADC (weekly)
+- Belle II BNL Software & Computing (weekly, BNL, remote)
+- Belle II Conditions Database Coordination (monthly, remote)
+- Belle II Distributed Computing (weekly, KEK, remote)
+- CVMFS Coordination (monthly, CERN, remote)
+- NPP All Hands Meetings (quarterly)
+- NPPS Group Meetings (bi-weekly)
+- Rucio Token Working Group (monthly, CERN, remote)
+- SDCC ATLAS Tier 1 (weekly, remote)
+- SDCC Liaison (monthly)
+- SDCC Projects (weekly)
+- SDCC Services & Tools (weekly)
+- SDCC Staff (monthly)
+- SDCC Technical (monthly)
+- SDCC User Services section (weekly)
+- US ATLAS Computing Facility (weekly, remote)
+- US ATLAS Facilities Research & Development (bi-weekly, remote)
+- US ATLAS Tier 2 (weekly)
+- WLCG AuthZ Working Group (bi-weekly, remote)
+- WLCG DOMA (monthly, remote)
+- WLCG Frontier Meeting (remote)
+- WLCG Unified Token (GUT) Profile Working Group (monthly, remote)
 
 # --2025--
 
